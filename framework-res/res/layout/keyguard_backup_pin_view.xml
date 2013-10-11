@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.policy.impl.keyguard.KeyguardSpareKeyView android:orientation="vertical" android:id="@id/keyguard_backup_pin_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_maxHeight="@dimen/keyguard_security_height" android:layout_maxWidth="@dimen/keyguard_security_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/keyguard_message_area" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <EditText android:textColorHint="#fff9f9f9" android:id="@id/backup_pin" android:nextFocusRight="@id/ok" android:nextFocusDown="@id/ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/kg_login_backup_pin_hint" android:inputType="textPassword" android:privateImeOptions="inputType=EngToggle" android:imeOptions="actionDone" android:layout_marginStart="7.0dip" android:layout_marginEnd="7.0dip" />
+        <Button android:layout_gravity="left" android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dip" android:text="@string/ok" android:layout_below="@id/backup_pin" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</com.android.internal.policy.impl.keyguard.KeyguardSpareKeyView>

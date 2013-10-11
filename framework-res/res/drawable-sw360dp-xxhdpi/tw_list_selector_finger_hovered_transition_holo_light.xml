@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tw_list_finger_hovered_normal_holo_light" />
+    <item android:drawable="@drawable/tw_list_finger_hovered_hovering_holo_light" />
+</transition>

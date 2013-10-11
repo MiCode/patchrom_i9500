@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d सेकंदांपूर्वी</item>
+        <item quantity="one">1 सेकंदापूर्वी</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d मिनिटांपूर्वी</item>
+        <item quantity="one">1 मिनिटापूर्वी</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d तासांपूर्वी</item>
+        <item quantity="one">1 तासापूर्वी</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">शेवटचे %d दिवस</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d दिवसांपूर्वी</item>
+        <item quantity="one">काल</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">%d सेकंदांत</item>
+        <item quantity="one">1 सेकंदामध्‍ये</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">%d मिनिटांमध्ये</item>
+        <item quantity="one">1 मिनिटात</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">%d तासांमध्ये</item>
+        <item quantity="one">1 तासात</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">%d दिवसांत</item>
+        <item quantity="one">उद्या</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d सेकंदांपूर्वी</item>
+        <item quantity="one">1 सेकंदापूर्वी</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d मिनिटांपूर्वी</item>
+        <item quantity="one">1 मिनिटापूर्वी</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d तासांपूर्वी</item>
+        <item quantity="one">1 तासापूर्वी</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d दिवसांपूर्वी</item>
+        <item quantity="one">काल</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">%d से. मध्ये</item>
+        <item quantity="one">1 सेकंदात</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">प्रत्येक %d मिनिटांनी</item>
+        <item quantity="one">1 मिनिटात</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">%d तासांमध्ये</item>
+        <item quantity="one">1 तासात</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">%d दिवसांत</item>
+        <item quantity="one">उद्या</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Wi-Fi नेटवर्क्स उपलब्ध</item>
+        <item quantity="one">Wi-Fi नेटवर्क्स उपलब्ध</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d पैकी %2$d</item>
+        <item quantity="one">1 जुळते</item>
+    </plurals>
+</resources>

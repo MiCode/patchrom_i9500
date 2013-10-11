@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/keyguard_circle_unlock_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/keyguard_circle_effect_circle_root" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/keyguard_circle_effect_circle_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/keyguard_circle_effect_circle_in_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_unlock_circle_circleview_in" />
+            <ImageView android:layout_gravity="center" android:id="@id/keyguard_circle_effect_circle_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_unlock_circle_1" android:alpha="0.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/keyguard_circle_effect_circle_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_unlock_circle_2" android:alpha="0.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/keyguard_circle_effect_circle_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_unlock_circle_3" android:alpha="0.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/keyguard_circle_effect_circle_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_unlockscreen_lock_01" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/keyguard_circle_effect_arrow_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/keyguard_circle_effect_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_unlock_circle_arrow_1" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>முகப்பு</item>
+        <item>வேலை</item>
+        <item>மற்றவை</item>
+        <item>கஸ்டம்</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>யாஹூ</item>
+        <item>இஸ்கைப்</item>
+        <item>QQ</item>
+        <item>கூகுள் டாக்</item>
+        <item>ICQ</item>
+        <item>ஜாபர்</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>வேலை</item>
+        <item>மற்றவை</item>
+        <item>கஸ்டம்</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>முகப்பு</item>
+        <item>மொபைல்</item>
+        <item>வேலை</item>
+        <item>பணி தொலைநகலி</item>
+        <item>வீட்டு தொலைநகலி</item>
+        <item>பேஜர்</item>
+        <item>மற்றவை</item>
+        <item>கஸ்டம்</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>முகப்பு</item>
+        <item>வேலை</item>
+        <item>மற்றவை</item>
+        <item>கஸ்டம்</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>முகப்பு</item>
+        <item>வேலை</item>
+        <item>மற்றவை</item>
+        <item>கஸ்டம்</item>
+    </string-array>
+</resources>

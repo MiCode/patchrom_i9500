@@ -1,0 +1,46 @@
+﻿<?xml  version="1.0" encoding="UTF-8" ?>
+<SamsungMobileFeauture>
+  <Version>ED002</Version>
+  <Country>HONG KONG</Country>
+  <CountryISO>HK</CountryISO>
+  <SalesCode>TGY</SalesCode>
+  <FeatureSet>
+    <CscFeature_Contact_ANRConfig>0</CscFeature_Contact_ANRConfig>
+    <CscFeature_Contact_EnableStrokeSortList>TRUE</CscFeature_Contact_EnableStrokeSortList>
+    <CscFeature_Contact_EnableBPMFSortList>TRUE</CscFeature_Contact_EnableBPMFSortList>
+    <CscFeature_Contact_AddPreloadedSpeedDialAs>None,0,None,None</CscFeature_Contact_AddPreloadedSpeedDialAs>
+    <CscFeature_Contact_EnableMenuStorageStatus>TRUE</CscFeature_Contact_EnableMenuStorageStatus>
+    <CscFeature_Contact_CheckSimAlphaLength4UnicodeName>TRUE</CscFeature_Contact_CheckSimAlphaLength4UnicodeName>
+    <CscFeature_Contact_DisableMenuNameOrder>TRUE</CscFeature_Contact_DisableMenuNameOrder>
+    <CscFeature_Setting_EditOption4ApnType>List</CscFeature_Setting_EditOption4ApnType>
+    <CscFeature_Calendar_EnableLocalHolidayDisplay>HKTW</CscFeature_Calendar_EnableLocalHolidayDisplay>
+    <CscFeature_Calendar_EnableLunar>TRUE</CscFeature_Calendar_EnableLunar>
+    <CscFeature_Calendar_SetColorOfDays>XXXXXBR</CscFeature_Calendar_SetColorOfDays>
+    <CscFeature_Clock_ReplaceNameTaiwanWithTaipei>true</CscFeature_Clock_ReplaceNameTaiwanWithTaipei>
+    <CscFeature_Message_MinSlideDuration>5</CscFeature_Message_MinSlideDuration>
+    <CscFeature_Message_DisableMenuSmsInputMode>TRUE</CscFeature_Message_DisableMenuSmsInputMode>
+    <CscFeature_Message_SmsMaxByte>0</CscFeature_Message_SmsMaxByte>
+    <CscFeature_Message_EnableStageFlightLib>TRUE</CscFeature_Message_EnableStageFlightLib>
+    <CscFeature_Message_EnableTextFieldColor>TRUE</CscFeature_Message_EnableTextFieldColor>
+    <CscFeature_Message_UserAgent>Android-Mms/2.0</CscFeature_Message_UserAgent>
+    <CscFeature_Message_MMSMaxCharPerSlide>2000</CscFeature_Message_MMSMaxCharPerSlide>
+    <CscFeature_Message_EnablePhoneNumberFormattingInMsg>FALSE</CscFeature_Message_EnablePhoneNumberFormattingInMsg>
+    <CscFeature_Email_UseFixedSmtpPortAs>25</CscFeature_Email_UseFixedSmtpPortAs>
+    <CscFeature_Camera_CameraFlicker>50hz</CscFeature_Camera_CameraFlicker>
+    <CscFeature_Camera_EnableCameraDuringCall>TRUE</CscFeature_Camera_EnableCameraDuringCall>
+    <CscFeature_MyFiles_SupportRmvbFileFormat>TRUE</CscFeature_MyFiles_SupportRmvbFileFormat>
+    <CscFeature_MediaScanner_FixLocaleTo>HK</CscFeature_MediaScanner_FixLocaleTo>
+    <CscFeature_MediaScanner_SkipFolder4>/storage/emulated/0/autonavidata50/,/storage/emulated/0/DioDict3B/</CscFeature_MediaScanner_SkipFolder4>
+    <CscFeature_Streaming_AddCommandCondition4MusicholicApp>TRUE</CscFeature_Streaming_AddCommandCondition4MusicholicApp>
+    <CscFeature_Streaming_DrivingTestTunning4>3HK</CscFeature_Streaming_DrivingTestTunning4>
+    <CscFeature_Web_DisableChooser4>audio/*,audio/mp3,audio/x-mp3,audio/mpeg,audio/mp4,audio/mp4a-latm,application/sdp,video/mpeg,video/3gp,video/3gpp,video/3gpp2,video/x-ms-asf,video/x-ms-wmv,video/x-ms-wma,video/webm,video/flv,video/mkv,video/divx,video/avi,video/skm,video/sktm,video/k3g,video/ak3g,video/x-msvideo,video/vnd.ms-playready.media.pyv,application/x-mpegurl,application/vnd.apple.mpegurl,audio/x-mpegurl,application/x-mpegurl,video/mp4</CscFeature_Web_DisableChooser4>
+    <CscFeature_Web_EnableAutoSimHomeUrlInProfile>FALSE</CscFeature_Web_EnableAutoSimHomeUrlInProfile>
+    <CscFeature_Web_bool_EnablePriorityUserBookmark>FALSE</CscFeature_Web_bool_EnablePriorityUserBookmark>
+    <CscFeature_Web_EnableDeleteAllBookmarks>TRUE</CscFeature_Web_EnableDeleteAllBookmarks>
+    <CscFeature_Web_SetHomepageURL>http://content.samsung.com/mobile/hk</CscFeature_Web_SetHomepageURL>
+    <CscFeature_Launcher_DisableFastScrollIndex>TRUE</CscFeature_Launcher_DisableFastScrollIndex>
+    <CscFeature_Launcher_TotalPageCount>7</CscFeature_Launcher_TotalPageCount>
+    <CscFeature_Launcher_DefaultPageNumber>3</CscFeature_Launcher_DefaultPageNumber>
+    <CscFeature_Setting_UseDefaultTtsEngineAs>TRUE</CscFeature_Setting_UseDefaultTtsEngineAs>
+  </FeatureSet>
+</SamsungMobileFeauture>

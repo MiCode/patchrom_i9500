@@ -1,0 +1,3 @@
+zh_HK.lang	98b3206ad5c9283cc40991b0951b252a	3435
+zh_HK_gb18030_hkscs-ak-cur.lite.res	75edd6532f2be9efdd33da2239eb7ced	11216043
+zh_HK_gb18030_hkscs-lk-text.lite.res	72bcbe1b96f28c0103caa4b5653f01d7	2943987

@@ -1,0 +1,30 @@
+<ThermistorObserver>
+    <!-- TODO:: "surface" property have to be renamed to "ap". "ap" property is deprecated. -->
+    <TemperatureTable pollingTimeOut="10000">
+        <!--
+        <step level="0" surface="450" ap="0" />
+        <step level="1" surface="500" ap="0" />
+        <step level="2" surface="550" ap="0" />
+        <step level="3" surface="600" ap="0" />
+        <step level="4" surface="650" ap="0" />
+        -->
+    </TemperatureTable>
+    <Action>
+        <!--
+        <step level="0">
+        </step>
+        <step level="1">
+            <type name="ARMFreq" value="1200000" />
+        </step>
+        <step level="2">
+            <type name="ARMFreq" value="800000" />
+        </step>
+        <step level="3">
+            <type name="ARMFreq" value="600000" />
+        </step>
+        <step level="4">
+            <type name="ARMFreq" value="400000" />
+        </step>
+        -->
+    </Action>
+</ThermistorObserver>

@@ -1,0 +1,3 @@
+zh_TW.lang	a0739120b136f5305e9783efb641b8f2	3357
+zh_TW_gb18030-ak-cur.lite.res	b7bd11219de83b675d9c5c13a17f8cb4	10526513
+zh_TW_gb18030-lk-text.lite.res	b0088550972ae0ffd7012588bb9bd7cf	3387332

@@ -1,0 +1,128 @@
+<ThermistorObserverAP>
+    <TemperatureTable scenario="default">
+        <step level="0" temp="490" />
+        <step level="1" temp="510" />
+        <step level="2" temp="530" />
+        <step level="3" temp="550" />
+        <step level="4" temp="570" />
+        <step level="5" temp="590" />
+        <step level="6" temp="610" />
+        <step level="7" temp="680" />
+        <step level="8" temp="730" />
+    </TemperatureTable>
+    <Action>
+        <step level="0">
+        </step>
+        <step level="1">
+            <type name="ACL" value="on" />
+        </step>
+        <step level="2">
+            <type name="ARMFreq" value="1458000" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="250" />
+        </step>
+        <step level="3">
+            <type name="ARMFreq" value="1242000" />
+            <type name="ChargeCurrent" value="50" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="230" />
+        </step>
+        <step level="4">
+            <type name="ARMFreq" value="1026000" />
+            <type name="GPUFreq" value="320" />
+            <type name="ChargeCurrent" value="30" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+        </step>
+        <step level="5">
+            <type name="ARMFreq" value="1026000" />
+            <type name="GPUFreq" value="320" />
+            <type name="ChargeCurrent" value="30" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+        </step>
+        <step level="6">
+            <type name="ARMFreq" value="1026000" />
+            <type name="GPUFreq" value="320" />
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+            <type name="Flash" value="off" />
+        </step>
+        <step level="7">
+            <type name="ARMFreq" value="1026000" />
+            <type name="GPUFreq" value="320" />
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+            <type name="Flash" value="off" />
+        </step>
+        <step level="8">
+            <type name="ARMFreq" value="1026000" />
+            <type name="GPUFreq" value="320" />
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+            <type name="Flash" value="off" />
+            <type name="RecordingStop" value="on" />
+        </step>
+    </Action>
+    <TemperatureTable scenario="BenchmarkBooster">
+        <step level="0" temp="490" />
+        <step level="1" temp="510" />
+        <step level="2" temp="530" />
+        <step level="3" temp="550" />
+        <step level="4" temp="570" />
+        <step level="5" temp="590" />
+        <step level="6" temp="610" />
+        <step level="7" temp="680" />
+        <step level="8" temp="730" />
+    </TemperatureTable>
+    <Action>
+        <step level="0">
+        </step>
+        <step level="1">
+            <type name="ACL" value="on" />
+        </step>
+        <step level="2">
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="250" />
+        </step>
+        <step level="3">
+            <type name="ChargeCurrent" value="50" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="230" />
+        </step>
+        <step level="4">
+            <type name="ChargeCurrent" value="30" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+        </step>
+        <step level="5">
+            <type name="ChargeCurrent" value="30" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+        </step>
+        <step level="6">
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+            <type name="Flash" value="off" />
+        </step>
+        <step level="7">
+            <type name="ARMFreq" value="1026000" />
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+            <type name="Flash" value="off" />
+        </step>
+        <step level="8">
+            <type name="ARMFreq" value="1026000" />
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="200" />
+            <type name="Flash" value="off" />
+            <type name="RecordingStop" value="on" />
+        </step>
+    </Action>
+</ThermistorObserverAP>

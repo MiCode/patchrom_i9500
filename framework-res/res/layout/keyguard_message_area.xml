@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.internal.policy.impl.keyguard.KeyguardMessageArea android:textSize="@dimen/kg_status_line_font_size" android:textColor="#fff9f9f9" android:ellipsize="marquee" android:id="@id/keyguard_message_area" android:padding="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#99000000" android:shadowDy="5.0" android:shadowRadius="5.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

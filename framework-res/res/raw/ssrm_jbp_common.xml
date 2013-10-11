@@ -1,0 +1,9 @@
+<SmartResourceAllocator>
+    <ApplicationStatus>
+        <!-- This elements are just for reference table entries to honor application requests. -->
+    </ApplicationStatus>
+    <Scenario>
+        <!-- This means that you are doing actions when foreground process is changed. -->
+        <!-- This means that you are doing actions when application internal status changed. -->
+    </Scenario>
+</SmartResourceAllocator>

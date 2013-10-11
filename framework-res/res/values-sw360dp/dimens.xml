@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keyguard_security_width">360.0dip</dimen>
+    <dimen name="keyguard_eca_bottom_margin">17.0dip</dimen>
+    <dimen name="multiwindow_gap">25.0dip</dimen>
+    <dimen name="multiwindow_def_width">344.0dip</dimen>
+    <dimen name="multiwindow_def_height">268.0dip</dimen>
+    <dimen name="multiwindow_minimized_width">170.0dip</dimen>
+    <dimen name="multiwindow_minimized_height">29.0dip</dimen>
+    <dimen name="tw_compactmenu_width">315.0dip</dimen>
+</resources>

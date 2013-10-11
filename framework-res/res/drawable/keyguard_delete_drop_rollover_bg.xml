@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/kg_widget_delete_drop_rollover_bg" />
+    <item android:drawable="@drawable/kg_widget_delete_drop_target_bg" />
+</selector>

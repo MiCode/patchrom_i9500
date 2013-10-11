@@ -1,0 +1,42 @@
+﻿<?xml  version="1.0" encoding="UTF-8" ?>
+<SamsungMobileFeauture>
+  <Version>ED002</Version>
+  <Country>TAIWAN</Country>
+  <CountryISO>TW</CountryISO>
+  <SalesCode>BRI</SalesCode>
+  <FeatureSet>
+    <CscFeature_Contact_ANRConfig>0</CscFeature_Contact_ANRConfig>
+    <CscFeature_Contact_EnableStrokeSortList>TRUE</CscFeature_Contact_EnableStrokeSortList>
+    <CscFeature_Contact_EnableBPMFSortList>TRUE</CscFeature_Contact_EnableBPMFSortList>
+    <CscFeature_Contact_AddPreloadedSpeedDialAs>None,0,None,None</CscFeature_Contact_AddPreloadedSpeedDialAs>
+    <CscFeature_Contact_EnableMenuStorageStatus>TRUE</CscFeature_Contact_EnableMenuStorageStatus>
+    <CscFeature_Contact_CheckSimAlphaLength4UnicodeName>TRUE</CscFeature_Contact_CheckSimAlphaLength4UnicodeName>
+    <CscFeature_Contact_DisableMenuNameOrder>TRUE</CscFeature_Contact_DisableMenuNameOrder>
+    <CscFeature_Setting_EditOption4ApnType>List</CscFeature_Setting_EditOption4ApnType>
+    <CscFeature_Calendar_EnableLocalHolidayDisplay>HKTW</CscFeature_Calendar_EnableLocalHolidayDisplay>
+    <CscFeature_Calendar_EnableLunar>TRUE</CscFeature_Calendar_EnableLunar>
+    <CscFeature_Calendar_SetColorOfDays>XXXXXBR</CscFeature_Calendar_SetColorOfDays>
+    <CscFeature_Message_MinSlideDuration>5</CscFeature_Message_MinSlideDuration>
+    <CscFeature_Message_DisableMenuSmsInputMode>TRUE</CscFeature_Message_DisableMenuSmsInputMode>
+    <CscFeature_Message_SmsMaxByte>0</CscFeature_Message_SmsMaxByte>
+    <CscFeature_Message_EnableStageFlightLib>TRUE</CscFeature_Message_EnableStageFlightLib>
+    <CscFeature_Message_EnableTextFieldColor>TRUE</CscFeature_Message_EnableTextFieldColor>
+    <CscFeature_Message_MmsModeCaptureVideoBitRate>0</CscFeature_Message_MmsModeCaptureVideoBitRate>
+    <CscFeature_Message_MmsModeCaptureVideoMaxDuration>0</CscFeature_Message_MmsModeCaptureVideoMaxDuration>
+    <CscFeature_Message_UserAgent>Android-Mms/2.0</CscFeature_Message_UserAgent>
+    <CscFeature_Message_MMSMaxCharPerSlide>2000</CscFeature_Message_MMSMaxCharPerSlide>
+    <CscFeature_Message_EnablePhoneNumberFormattingInMsg>FALSE</CscFeature_Message_EnablePhoneNumberFormattingInMsg>
+    <CscFeature_Email_UseFixedSmtpPortAs>25</CscFeature_Email_UseFixedSmtpPortAs>
+    <CscFeature_Camera_CameraFlicker>60hz</CscFeature_Camera_CameraFlicker>
+    <CscFeature_Camera_EnableCameraDuringCall>TRUE</CscFeature_Camera_EnableCameraDuringCall>
+    <CscFeature_MyFiles_SupportRmvbFileFormat>TRUE</CscFeature_MyFiles_SupportRmvbFileFormat>
+    <CscFeature_MediaScanner_FixLocaleTo>TW</CscFeature_MediaScanner_FixLocaleTo>
+    <CscFeature_MediaScanner_SkipFolder4>/storage/emulated/0/autonavidata50/,/storage/emulated/0/DioDict3B/</CscFeature_MediaScanner_SkipFolder4>
+    <CscFeature_FMRadio_DisableRTPlusInfo>TRUE</CscFeature_FMRadio_DisableRTPlusInfo>
+    <CscFeature_Web_EnableAutoSimHomeUrlInProfile>FALSE</CscFeature_Web_EnableAutoSimHomeUrlInProfile>
+    <CscFeature_Web_bool_EnablePriorityUserBookmark>FALSE</CscFeature_Web_bool_EnablePriorityUserBookmark>
+    <CscFeature_Web_EnableDeleteAllBookmarks>TRUE</CscFeature_Web_EnableDeleteAllBookmarks>
+    <CscFeature_Launcher_DisableFastScrollIndex>TRUE</CscFeature_Launcher_DisableFastScrollIndex>
+    <CscFeature_Setting_UseDefaultTtsEngineAs>TRUE</CscFeature_Setting_UseDefaultTtsEngineAs>
+  </FeatureSet>
+</SamsungMobileFeauture>

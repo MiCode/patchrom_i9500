@@ -1,0 +1,3 @@
+nb_NO-ak-cur.lite.res	dfb911ec486358aaff88af3fcba7742a	497710
+nb_NO-lk-text.lite.res	77d90d13b5d6b2787381a8eca6216289	4444924
+nb_NO.lang	6deb0dbf5d55673860934ef9a7066204	3251

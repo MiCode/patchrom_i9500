@@ -1,0 +1,10 @@
+
+.method public forceDismiss()V
+    .locals 0
+
+    .prologue
+    invoke-direct {p0}, Lmiui/view/VolumePanel;->forceTimeout()V
+
+    return-void
+.end method
+

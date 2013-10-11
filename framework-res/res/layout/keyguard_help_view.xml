@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.policy.impl.keyguard.sec.LockscreenHelpOverlay androidprv:orientation="vertical" androidprv:id="@id/help_entire_layout" androidprv:layout_width="fill_parent" androidprv:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:androidprv="http://schemas.android.com/apk/res/android">
+    <RelativeLayout androidprv:orientation="vertical" androidprv:id="@id/help_overlay_first_view" androidprv:visibility="gone" androidprv:layout_width="fill_parent" androidprv:layout_height="fill_parent">
+        <RelativeLayout androidprv:gravity="bottom" androidprv:orientation="vertical" androidprv:id="@id/help_overlay_layout1" androidprv:layout_width="fill_parent" androidprv:layout_height="222.0dip">
+            <LinearLayout androidprv:orientation="vertical" androidprv:id="@id/popup_layout1" androidprv:background="@drawable/keyguard_popup_upper_selector" androidprv:layout_width="@dimen/overlay_bubble_width" androidprv:layout_height="wrap_content" androidprv:layout_marginLeft="@dimen/overlay_bubble_padding">
+                <TextView androidprv:textSize="18.0dip" androidprv:textColor="#ff000000" androidprv:gravity="left" androidprv:id="@id/popup_text1" androidprv:paddingLeft="@dimen/overlay_text_padding" androidprv:paddingTop="6.0dip" androidprv:paddingRight="@dimen/overlay_text_padding" androidprv:layout_width="wrap_content" androidprv:layout_height="wrap_content" androidprv:text="@string/screen_overlay_01" />
+                <LinearLayout androidprv:gravity="left|center" androidprv:orientation="horizontal" androidprv:layout_width="fill_parent" androidprv:layout_height="48.0dip" androidprv:alpha="0.9">
+                    <CheckBox androidprv:id="@id/checkBox1" androidprv:layout_width="30.0dip" androidprv:layout_height="30.0dip" androidprv:layout_marginLeft="10.0dip" androidprv:button="@drawable/tw_btn_check_holo_light" />
+                    <TextView androidprv:textSize="18.0dip" androidprv:textColor="#ff000000" androidprv:gravity="center_vertical" androidprv:layout_width="wrap_content" androidprv:layout_height="fill_parent" androidprv:layout_marginLeft="5.0dip" androidprv:text="@string/checkbox_description" />
+                </LinearLayout>
+                <Button androidprv:textSize="17.0dip" androidprv:textColor="#ffffffff" androidprv:gravity="center" androidprv:id="@id/popup_button1" androidprv:background="@drawable/keyguard_popup_button_background_holo_light" androidprv:layout_width="fill_parent" androidprv:layout_height="@dimen/overlay_button_height" androidprv:layout_marginLeft="@dimen/overlay_button_margin_side" androidprv:layout_marginRight="@dimen/overlay_button_margin_side" androidprv:layout_marginBottom="3.0dip" androidprv:text="@string/ok" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout androidprv:id="@id/indicate_layout1" androidprv:background="@drawable/keyguard_popup" androidprv:layout_width="@dimen/overlay_indicate_width" androidprv:layout_height="@dimen/overlay_indicate_unlock_height" androidprv:layout_marginLeft="@dimen/overlay_indicate_padding" androidprv:layout_marginTop="222.0dip" androidprv:layout_marginRight="@dimen/overlay_indicate_padding" androidprv:layout_marginBottom="@dimen/overlay_indicate_padding" />
+    </RelativeLayout>
+    <RelativeLayout androidprv:orientation="vertical" androidprv:id="@id/help_overlay_second_view" androidprv:layout_width="fill_parent" androidprv:layout_height="fill_parent">
+        <RelativeLayout androidprv:orientation="vertical" androidprv:id="@id/help_overlay_layout2" androidprv:layout_width="fill_parent" androidprv:layout_height="wrap_content">
+            <LinearLayout androidprv:orientation="vertical" androidprv:id="@id/popup_layout2" androidprv:background="@drawable/keyguard_popup_under_selector" androidprv:layout_width="@dimen/overlay_bubble_width" androidprv:layout_height="wrap_content" androidprv:layout_marginLeft="@dimen/overlay_bubble_padding" androidprv:layout_marginTop="222.0dip">
+                <TextView androidprv:textSize="18.0dip" androidprv:textColor="#ff000000" androidprv:gravity="left" androidprv:id="@id/popup_text2" androidprv:paddingLeft="@dimen/overlay_text_padding" androidprv:paddingTop="10.0dip" androidprv:paddingRight="@dimen/overlay_text_padding" androidprv:layout_width="wrap_content" androidprv:layout_height="wrap_content" androidprv:text="@string/screen_overlay_02" />
+                <LinearLayout androidprv:gravity="left|center" androidprv:orientation="horizontal" androidprv:layout_width="fill_parent" androidprv:layout_height="48.0dip" androidprv:alpha="0.9">
+                    <CheckBox androidprv:id="@id/checkBox2" androidprv:layout_width="30.0dip" androidprv:layout_height="30.0dip" androidprv:layout_marginLeft="10.0dip" androidprv:button="@drawable/tw_btn_check_holo_light" />
+                    <TextView androidprv:textSize="18.0dip" androidprv:textColor="#ff000000" androidprv:gravity="center_vertical" androidprv:layout_width="wrap_content" androidprv:layout_height="fill_parent" androidprv:layout_marginLeft="5.0dip" androidprv:text="@string/checkbox_description" />
+                </LinearLayout>
+                <Button androidprv:textSize="17.0dip" androidprv:textColor="#ffffffff" androidprv:gravity="center" androidprv:id="@id/popup_button2" androidprv:background="@drawable/keyguard_popup_button_background_holo_light" androidprv:layout_width="fill_parent" androidprv:layout_height="@dimen/overlay_button_height" androidprv:layout_marginLeft="@dimen/overlay_button_margin_side" androidprv:layout_marginRight="@dimen/overlay_button_margin_side" androidprv:layout_marginBottom="1.0dip" androidprv:text="@string/ok" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout androidprv:id="@id/indicate_layout2" androidprv:background="@drawable/keyguard_popup" androidprv:layout_width="@dimen/overlay_indicate_width" androidprv:layout_height="@dimen/overlay_indicate_widget_height" androidprv:layout_marginLeft="@dimen/overlay_indicate_padding" androidprv:layout_marginTop="32.0dip" androidprv:layout_marginRight="@dimen/overlay_indicate_padding" androidprv:layout_marginBottom="@dimen/overlay_indicate_padding" />
+    </RelativeLayout>
+</com.android.internal.policy.impl.keyguard.sec.LockscreenHelpOverlay>

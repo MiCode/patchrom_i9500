@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<SDP version="0.9" domain="particular">
+	<Contents>
+		<Image>
+			<DefaultFolder>
+				<Internal value="/DCIM/Camera" />
+				<External value="/DCIM/Camera" />
+			</DefaultFolder>
+
+			<Transfer>
+				<FileType value="JPG" />
+				<Option value="Auto" />
+			</Transfer>
+
+			<FileFormat>
+				<JPG>
+					<MaxFileSize value="10485760" />
+					<MaxWidth value="5000" />
+					<MaxHeight value="5000" />
+				</JPG>
+				<GIF>
+					<MaxFileSize value="10485760" />
+					<MaxWidth value="4000" />
+					<MaxHeight value="3000" />
+				</GIF>
+				<BMP>
+					<MaxFileSize value="10485760" />
+					<MaxWidth value="4000" />
+					<MaxHeight value="3000" />
+				</BMP>
+				<PNG>
+					<MaxFileSize value="10485760" />
+					<MaxWidth value="4000" />
+					<MaxHeight value="3000" />
+				</PNG>
+				<WBMP>
+					<MaxFileSize value="10485760" />
+					<MaxWidth value="4000" />
+					<MaxHeight value="3000" />
+				</WBMP>
+				<WEBP>
+					<MaxFileSize value="10485760" />
+					<MaxWidth value="4000" />
+					<MaxHeight value="3000" />
+				</WEBP>
+			</FileFormat>
+		</Image>
+
+		<Music>
+			<DefaultFolder>
+				<Internal value="/Music" />
+				<External value="/Music" />
+			</DefaultFolder>
+
+			<Transfer>
+				<FileType value="MP3" />
+				<RichInfo value="TRUE" />
+			</Transfer>
+
+			<FileFormat>
+				<MP3>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="327680" />
+					<MaxSamplingRate value="49152" />
+				</MP3>
+				<IMY>
+					<MaxFileSize value="104857600" />
+					<MaxBitrate value="" />
+					<MaxSamplingRate value="" />
+				</IMY>
+				<MID>
+					<MaxFileSize value="104857600" />
+					<MaxBitrate value="" />
+					<MaxSampling value="" />
+				</MID>
+				<AMR>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="12288" />
+					<MaxSampling value="8192" />
+				</AMR>
+				<WAV>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="" />
+					<MaxSampling value="49152" />
+				</WAV>
+				<AAC>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="131072" />
+					<MaxSampling value="49152" />
+				</AAC>
+				<WMA>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="131072" />
+					<MaxSampling value="49152" />
+				</WMA>
+				<M4A>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="131072" />
+					<MaxSampling value="49152" />
+				</M4A>
+				<OGG>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="131072" />
+					<MaxSampling value="49152" />
+				</OGG>
+				<_3GA>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="131072" />
+					<MaxSampling value="49152" />
+				</_3GA>
+				<FLAC>
+					<MaxFileSize value="2147483648" />
+					<MaxBitrate value="131072" />
+					<MaxSampling value="49152" />
+				</FLAC>
+			</FileFormat>
+		</Music>
+
+			<Movie>
+			<DefaultFolder>
+				<Internal value="/DCIM/Camera" />
+				<External value="/DCIM/Camera" />
+			</DefaultFolder>
+			<MaxFileCount value="" />
+			<Transfer>
+				<FileType value="MP4" />
+				<Option value="Auto" />
+			</Transfer>
+			<FileFormat>
+
+				<AVI>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="MPEG4 SP" />
+							<Codec value="MPEG4 ASP" />
+							<Codec value="DIVX" />
+							<Codec value="Xvid" />
+							<Codec value="H.264 BP" />
+							<Codec value="H.264 MP" />
+							<Codec value="H.264 HP" />
+							<Codec value="VC-1 SP" />
+							<Codec value="VC-1 MP" />
+							<Codec value="VC-1 AP" />
+							<Codec name="DivX 3.11" value="DivX 3.11">
+								<MaxWidth value="720" />
+								<MaxHeight value="480" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="2097152" />
+							</Codec>
+							<Codec name="MP43" value="MP43">
+								<MaxWidth value="720" />
+								<MaxHeight value="480" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="2097152" />
+							</Codec>
+						</Codecs>
+						<MaxWidth value="1920" />
+						<MaxHeight value="1080" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="20971520" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="AAC LC" />
+							<Codec value="AAC+" />
+							<Codec name="eAAC+" value="eAAC+">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="65536" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="MP3" value="MP3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="327680" />
+								<MaxChannel value="2" />
+							</Codec>
+							<Codec name="WMA10 PRO" value="WMA10 PRO">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="768000" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="WMA LOSSLESS" value="WMA LOSSLESS">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="WMA9 STD" value="WMA9 STD">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="327680" />
+								<MaxChannel value="2" />
+							</Codec>
+						  <Codec name="AC3" value="AC3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="655360" />
+								<MaxChannel value="6" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="131072" />
+						<MaxChannel value="6" />
+					</Audio>
+				</AVI>
+
+				<MP4>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="MPEG4 SP" />
+							<Codec value="MPEG4 ASP" />
+							<Codec value="H.264 BP" />
+							<Codec value="H.264 MP" />
+							<Codec value="H.264 HP" />
+							<Codec name="H.263 P0" value="H.263 P0">
+								<MaxWidth value="720" />
+								<MaxHeight value="480" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="6291456" />
+							</Codec>
+						</Codecs>
+						<MaxWidth value="1920" />
+						<MaxHeight value="1080" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="20971520" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="AAC LC" />
+							<Codec value="AAC+" />
+							<Codec name="eAAC+" value="eAAC+">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="65536" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="MP3" value="MP3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="327680" />
+								<MaxChannel value="2" />
+							</Codec>
+							<Codec name="AMR-NB" value="AMR-NB">
+								<MaxSamplingRate value="8000" />
+								<MaxBitrate value="12493" />
+								<MaxChannel value="1" />
+							</Codec>
+							<Codec name="AMR-WB" value="AMR-WB">
+								<MaxSamplingRate value="16000" />
+								<MaxBitrate value="24422" />
+								<MaxChannel value="1" />
+							</Codec>
+							<Codec name="AC3" value="AC3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="655360" />
+								<MaxChannel value="6" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="131072" />
+						<MaxChannel value="6" />
+					</Audio>
+				</MP4>
+
+				<_3GP>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="MPEG4 SP" />
+							<Codec value="MPEG4 ASP" />
+							<Codec value="H.264 BP" />
+							<Codec value="H.264 MP" />
+							<Codec value="H.264 HP" />
+							<Codec name="H.263 P0" value="H.263 P0">
+								<MaxWidth value="720" />
+								<MaxHeight value="480" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="6291456" />
+							</Codec>
+						</Codecs>
+						<MaxWidth value="1920" />
+						<MaxHeight value="1080" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="20971520" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="AAC LC" />
+							<Codec value="AAC+" />
+							<Codec name="eAAC+" value="eAAC+">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="65536" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="MP3" value="MP3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="327680" />
+								<MaxChannel value="2" />
+							</Codec>
+							<Codec name="AMR-NB" value="AMR-NB">
+								<MaxSamplingRate value="8000" />
+								<MaxBitrate value="12493" />
+								<MaxChannel value="1" />
+							</Codec>
+							<Codec name="AMR-WB" value="AMR-WB">
+								<MaxSamplingRate value="16000" />
+								<MaxBitrate value="24422" />
+								<MaxChannel value="1" />
+							</Codec>
+							<Codec name="AC3" value="AC3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="655360" />
+								<MaxChannel value="6" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="131072" />
+						<MaxChannel value="6" />
+					</Audio>
+				</_3GP>
+
+				<MKV>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="MPEG4 SP" />
+							<Codec value="MPEG4 ASP" />
+							<Codec value="H.264 BP" />
+							<Codec value="H.264 MP" />
+							<Codec value="H.264 HP" />
+						</Codecs>
+						<Codec name="VP8" value="VP8">
+							<MaxWidth value="720" />
+							<MaxHeight value="480" />
+							<MaxFrameRate value="30" />
+							<MaxBitrate value="2097152" />
+						</Codec>
+						<MaxWidth value="1920" />
+						<MaxHeight value="1080" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="20971520" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="AAC LC" />
+							<Codec value="AAC+" />
+							<Codec name="eAAC+" value="eAAC+">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="65536" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="MP3" value="MP3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="327680" />
+								<MaxChannel value="2" />
+							</Codec>
+							<Codec name="FLAC" value="FLAC">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="Vorbis" value="Vorbis">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="327680" />
+								<MaxChannel value="2" />
+							</Codec>
+							<Codec name="AC3" value="AC3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="655360" />
+								<MaxChannel value="6" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="131072" />
+						<MaxChannel value="6" />
+					</Audio>
+				</MKV>
+
+				<WMV>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="WMV7" />
+							<Codec value="WMV8" />
+							<Codec value="MP43" />
+							<Codec name="VC-1 SP" value="VC-1 SP">
+								<MaxWidth value="1920" />
+								<MaxHeight value="1080" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="20971520" />
+							</Codec>
+							<Codec name="VC-1 MP" value="VC-1 MP">
+								<MaxWidth value="1920" />
+								<MaxHeight value="1080" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="20971520" />
+							</Codec>
+							<Codec name="VC-1 AP" value="VC-1 AP">
+								<MaxWidth value="1920" />
+								<MaxHeight value="1080" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="20971520" />
+							</Codec>
+						</Codecs>
+						<MaxWidth value="720" />
+						<MaxHeight value="480" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="2097152" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="WMA9 STD" />
+							<Codec name="WMA10 PRO" value="WMA10 PRO">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="768000" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="WMA LOSSLESS" value="WMA LOSSLESS">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="" />
+								<MaxChannel value="6" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="327680" />
+						<MaxChannel value="2" />
+					</Audio>
+				</WMV>
+
+				<ASF>
+				<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="WMV7" />
+							<Codec value="WMV8" />
+							<Codec value="MP43" />
+							<Codec name="VC-1 SP" value="VC-1 SP">
+								<MaxWidth value="1920" />
+								<MaxHeight value="1080" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="20971520" />
+							</Codec>
+							<Codec name="VC-1 MP" value="VC-1 MP">
+								<MaxWidth value="1920" />
+								<MaxHeight value="1080" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="20971520" />
+							</Codec>
+							<Codec name="VC-1 AP" value="VC-1 AP">
+								<MaxWidth value="1920" />
+								<MaxHeight value="1080" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="20971520" />
+							</Codec>
+						</Codecs>
+						<MaxWidth value="720" />
+						<MaxHeight value="480" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="2097152" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="WMA9 STD" />
+							<Codec name="WMA10 PRO" value="WMA10 PRO">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="768000" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="WMA LOSSLESS" value="WMA LOSSLESS">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="" />
+								<MaxChannel value="6" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="327680" />
+						<MaxChannel value="2" />
+					</Audio>
+				</ASF>
+
+				<FLV>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="H.264 BP" />
+							<Codec value="H.264 MP" />
+							<Codec value="H.264 HP" />
+							<Codec name="H263 Sorenson" value="H263 Sorenson">
+								<MaxWidth value="720" />
+								<MaxHeight value="480" />
+								<MaxFrameRate value="30" />
+								<MaxBitrate value="2097152" />
+							</Codec>
+						</Codecs>
+						<MaxWidth value="1920" />
+						<MaxHeight value="1080" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="20971520" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="AAC LC" />
+							<Codec value="AAC+" />
+							<Codec name="eAAC+" value="eAAC+">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="65536" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="MP3" value="MP3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="327680" />
+								<MaxChannel value="2" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="131072" />
+						<MaxChannel value="6" />
+					</Audio>
+				</FLV>
+
+				<WebM>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="VP8" />
+						</Codecs>
+						<MaxWidth value="1920" />
+						<MaxHeight value="1080" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="20971520" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="Vorbis" />
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="327680" />
+						<MaxChannel value="2" />
+					</Audio>
+				</WebM>
+				
+	      <TS>
+					<MaxFileSize value="4294967296" />
+					<Video>
+						<Codecs>
+							<Codec value="H.264 BP" />
+							<Codec value="H.264 MP" />
+							<Codec value="H.264 HP" />
+						</Codecs>
+						<MaxWidth value="1920" />
+						<MaxHeight value="1080" />
+						<MaxFrameRate value="30" />
+						<MaxBitrate value="20971520" />
+					</Video>
+					<Audio>
+						<Codecs>
+							<Codec value="AAC LC" />
+							<Codec value="AAC+" />
+							<Codec name="eAAC+" value="eAAC+">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="65536" />
+								<MaxChannel value="6" />
+							</Codec>
+							<Codec name="AC3" value="AC3">
+								<MaxSamplingRate value="48000" />
+								<MaxBitrate value="655360" />
+								<MaxChannel value="6" />
+							</Codec>
+						</Codecs>
+						<MaxSamplingRate value="48000" />
+						<MaxBitrate value="131072" />
+						<MaxChannel value="6" />
+					</Audio>
+				</TS>
+			</FileFormat>
+		</Movie>
+
+
+		<Playlist>
+			<DefaultFolder>
+				<Internal value="/Playlists"/>
+			</DefaultFolder>
+			<FileFormat>
+				<PLA/>
+			</FileFormat> 
+		</Playlist>
+
+		<SMemo2 Version="1.0">
+			<DefaultFolder>
+				<Internal value="/SMemo"/>
+				<External value=""/>
+      </DefaultFolder>
+      <ConvertSmemo1  value="TRUE"/>
+		</SMemo2>
+
+		<BackupRestore version="2.0" platform="Android">
+			<Content name="Phonebook" Type="Standard" version="2.0"
+				supportVersion="2.0" />
+			<Content name="Calendar" Type="Platform" version="2.0"
+				supportVersion="2.0" Detail="Appointment" />
+			<Content name="Message" Type="Custom" version="2.0"
+				supportVersion="2.0" RestoreReboot="true">
+				<TargetFilePath value="System:\BR\Message.bk" />
+			</Content>
+			<Content name="Task" Type="Platform" version="2.0"
+				supportVersion="2.0" /> 
+			<Content name="Logs" Type="Platform" version="2.0"
+				supportVersion="2.0">
+				<TargetFilePath value="System:\BR\CallLog.bk" />
+			</Content>
+			<!-- not support <Content name="MusicSetting" Type="Custom" version="2.0" 
+				supportVersion="2.0" > <TargetFilePath value="System:\BR\MusicSetting.bk"/> 
+				</Content> -->
+			<Content name="Music">
+				<FileExtension
+					value="mp3;m4a;mp4;wav;amr;awb;wma;ogg;oga;aac;3ga;flac;mpga;imy;mid;qcp;mmf;asf" />
+				<TargetFilePath value="Internal:\*" />
+			</Content>
+			<!-- not support <Content name="PhotoSetting" Type="Custom" version="2.0" 
+				supportVersion="2.0" > <TargetFilePath value="System:\BR\PhotoSetting.bk"/> 
+				</Content> -->
+			<Content name="Photo">
+				<FileExtension value="jpg;jpeg;gif;png;bmp;wbmp;tif;tiff" />
+				<TargetFilePath value="Internal:\*" />
+			</Content>
+			<!-- not support <Content name="VideoSetting" Type="Custom" version="2.0" 
+				supportVersion="2.0" > <TargetFilePath value="System:\BR\VideoSetting.bk"/> 
+				</Content> -->
+			<Content name="Video">
+				<FileExtension
+					value="avi;mp4;m4v;3gp;3g2;3gpp;3gpp2;mkv;wmv;asf;flv;divx;mpg;mpeg;rm;rmvb;mov;k3g;skm;svi;swf" />
+				<TargetFilePath value="Internal:\*" />
+			</Content>
+			<Content name="Others">
+				<FileExtension value="*" />
+				<TargetFilePath value="Internal:\*" />
+				<ExceptFolderPath value="Internal:\Android\data;Internal:\_SamsungBnR_\BR" />
+			</Content>
+			<Content name="Configuration" Type="Custom" version="2.0"
+				supportVersion="2.0" Detail="Wallpaper;Ringtone;ETC;noAirplain">
+				<TargetFilePath value="System:\BR\Configuration.bk" />
+			</Content>
+			<!--<Content name="Network" Type="Device" version="2.0"
+				supportVersion="2.0" Detail="Radio">
+				<TargetFilePath value="System:\BR\Network.bk" />
+			</Content>-->
+			<Content name="Email" Type="Device" version="2.0"
+				supportVersion="2.0" Detail="Account;Settings">
+				<TargetFilePath value="System:\BR\Email.bk" />
+			</Content>
+			<Content name="SMemo2" version="1.0" supportVersion="1.0" Detail="LinkedToSplanner">
+				<FileExtension value="snb"/>
+				<TargetFilePath value="Internal:\*"/>
+			</Content>
+			<Content name="Application" Type="Device" version="2.0" supportVersion="2.0" Detail="VerificationType1">
+				<FileExtension value="*" /> 
+				<TargetFilePath value="Internal:\restore\*" /> 
+			</Content>
+		</BackupRestore>
+	</Contents>
+</SDP>

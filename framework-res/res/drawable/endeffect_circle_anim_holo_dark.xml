@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_001" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_002" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_003" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_004" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_005" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_006" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_007" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_008" />
+    <item android:duration="30" android:drawable="@drawable/endeffect_circle_holo_dark_009" />
+</animation-list>

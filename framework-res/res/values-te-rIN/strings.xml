@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_long_standalone_january">జనవరి</string>
+    <string name="month_long_standalone_february">ఫిబ్రవరి</string>
+    <string name="month_long_standalone_march">మార్చి</string>
+    <string name="month_long_standalone_april">ఏప్రిల్</string>
+    <string name="month_long_standalone_may">మే</string>
+    <string name="month_long_standalone_june">జూన్</string>
+    <string name="month_long_standalone_july">జూలై</string>
+    <string name="month_long_standalone_august">ఆగష్టు</string>
+    <string name="month_long_standalone_september">సెప్టెంబర్</string>
+    <string name="month_long_standalone_october">అక్టోబర్</string>
+    <string name="month_long_standalone_november">నవంబర్</string>
+    <string name="month_long_standalone_december">డిసెంబర్</string>
+    <string name="month_long_january">జనవరి</string>
+    <string name="month_long_february">ఫిబ్రవరి</string>
+    <string name="month_long_march">మార్చి</string>
+    <string name="month_long_april">ఏప్రిల్</string>
+    <string name="month_long_may">మే</string>
+    <string name="month_long_june">జూన్</string>
+    <string name="month_long_july">జూలై</string>
+    <string name="month_long_august">ఆగష్టు</string>
+    <string name="month_long_september">సెప్టెంబర్</string>
+    <string name="month_long_october">అక్టోబర్</string>
+    <string name="month_long_november">నవంబర్</string>
+    <string name="month_long_december">డిసెంబర్</string>
+    <string name="month_medium_january">జన</string>
+    <string name="month_medium_february">ఫిబ్ర</string>
+    <string name="month_medium_march">మార్చి</string>
+    <string name="month_medium_april">ఏప్రి</string>
+    <string name="month_medium_may">మే</string>
+    <string name="month_medium_june">జూన్</string>
+    <string name="month_medium_july">జూలై</string>
+    <string name="month_medium_august">ఆగష్టు</string>
+    <string name="month_medium_september">సెప్టెం</string>
+    <string name="month_medium_october">అక్టో</string>
+    <string name="month_medium_november">నవం</string>
+    <string name="month_medium_december">డిసెం</string>
+    <string name="month_shortest_january">జ</string>
+    <string name="month_shortest_february">ఫి</string>
+    <string name="month_shortest_march">మా</string>
+    <string name="month_shortest_april">ఏ</string>
+    <string name="month_shortest_may">మే</string>
+    <string name="month_shortest_june">జూన్</string>
+    <string name="month_shortest_july">జూ</string>
+    <string name="month_shortest_august">ఆ</string>
+    <string name="month_shortest_september">సె</string>
+    <string name="month_shortest_october">అ</string>
+    <string name="month_shortest_november">న</string>
+    <string name="month_shortest_december">డి</string>
+    <string name="day_of_week_long_sunday">ఆదివారం</string>
+    <string name="day_of_week_long_monday">సోమవారం</string>
+    <string name="day_of_week_long_tuesday">మంగళవారం</string>
+    <string name="day_of_week_long_wednesday">బుధవారం</string>
+    <string name="day_of_week_long_thursday">గురువారం</string>
+    <string name="day_of_week_long_friday">శుక్రవారం</string>
+    <string name="day_of_week_long_saturday">శనివారం</string>
+    <string name="day_of_week_medium_sunday">ఆది</string>
+    <string name="day_of_week_medium_monday">సోమ</string>
+    <string name="day_of_week_medium_tuesday">మంగళ</string>
+    <string name="day_of_week_medium_wednesday">బుధ</string>
+    <string name="day_of_week_medium_thursday">గురు</string>
+    <string name="day_of_week_medium_friday">శుక్ర</string>
+    <string name="day_of_week_medium_saturday">శని</string>
+    <string name="day_of_week_short_sunday">ఆది</string>
+    <string name="day_of_week_short_monday">సోమ</string>
+    <string name="day_of_week_short_tuesday">మంగళ</string>
+    <string name="day_of_week_short_wednesday">బుధ</string>
+    <string name="day_of_week_short_thursday">గురు</string>
+    <string name="day_of_week_short_friday">శుక్ర</string>
+    <string name="day_of_week_short_saturday">శని</string>
+    <string name="day_of_week_shortest_sunday">ఆ</string>
+    <string name="day_of_week_shortest_monday">సో</string>
+    <string name="day_of_week_shortest_tuesday">మ</string>
+    <string name="day_of_week_shortest_wednesday">బు</string>
+    <string name="day_of_week_shortest_thursday">గు</string>
+    <string name="day_of_week_shortest_friday">శు</string>
+    <string name="day_of_week_shortest_saturday">శ</string>
+    <string name="am">am</string>
+    <string name="pm">pm</string>
+    <string name="yesterday">నిన్నటి రోజు</string>
+    <string name="today">ఈ రోజు</string>
+    <string name="tomorrow">రేపు</string>
+    <string name="hour_minute_24" formatted="false">%H:%M</string>
+    <string name="hour_minute_ampm" formatted="false">%-l:%M%p</string>
+    <string name="hour_minute_cap_ampm" formatted="false">%-l:%M%^p</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
+    <string name="twenty_four_hour_time_format">HH:mm</string>
+    <string name="numeric_date" formatted="false">%-m/%-e/%Y</string>
+    <string name="numeric_date_format">M/d/yyyy</string>
+    <string name="numeric_date_template" formatted="false">%s/%s/%s</string>
+    <string name="month_day_year" formatted="false">%B %-e, %Y</string>
+    <string name="time_of_day" formatted="false">%-l:%M:%S %p</string>
+    <string name="date_and_time" formatted="false">%b %-e, %Y, %-l:%M:%S %p</string>
+    <string name="date_time">%1$s, %2$s</string>
+    <string name="time_date">%1$s, %3$s</string>
+    <string name="abbrev_month_day_year" formatted="false">%b %-e, %Y</string>
+    <string name="month_day" formatted="false">%B %-e</string>
+    <string name="month">%-B</string>
+    <string name="month_year" formatted="false">%B %Y</string>
+    <string name="abbrev_month_day" formatted="false">%b %-e</string>
+    <string name="abbrev_month">%-b</string>
+    <string name="abbrev_month_year" formatted="false">%b %Y</string>
+    <string name="time1_time2">%1$s – %2$s</string>
+    <string name="date1_date2">%2$s – %5$s</string>
+    <string name="numeric_md1_md2">%2$s/%3$s – %7$s/%8$s</string>
+    <string name="numeric_wday1_md1_wday2_md2">%1$s, %2$s/%3$s – %6$s, %7$s/%8$s</string>
+    <string name="numeric_mdy1_mdy2">%2$s/%3$s/%4$s – %7$s/%8$s/%9$s</string>
+    <string name="numeric_wday1_mdy1_wday2_mdy2">%1$s, %2$s/%3$s/%4$s – %6$s, %7$s/%8$s/%9$s</string>
+    <string name="numeric_wday1_mdy1_time1_wday2_mdy2_time2">%1$s, %2$s/%3$s/%4$s, %5$s – %6$s, %7$s/%8$s/%9$s, %10$s</string>
+    <string name="numeric_md1_time1_md2_time2">%2$s/%3$s, %5$s – %7$s/%8$s, %10$s</string>
+    <string name="numeric_wday1_md1_time1_wday2_md2_time2">%1$s, %2$s/%3$s, %5$s – %6$s, %7$s/%8$s, %10$s</string>
+    <string name="numeric_mdy1_time1_mdy2_time2">%2$s/%3$s/%4$s, %5$s – %7$s/%8$s/%9$s, %10$s</string>
+    <string name="wday1_date1_time1_wday2_date2_time2">%1$s, %2$s, %3$s – %4$s, %5$s, %6$s</string>
+    <string name="wday1_date1_wday2_date2">%1$s, %2$s – %4$s, %5$s</string>
+    <string name="date1_time1_date2_time2">%2$s, %3$s – %5$s, %6$s</string>
+    <string name="time_wday_date">%1$s, %2$s, %3$s</string>
+    <string name="wday_date">%2$s, %3$s</string>
+    <string name="time_wday">%1$s, %2$s</string>
+    <string name="same_year_md1_md2">%2$s %3$s – %7$s %8$s</string>
+    <string name="same_year_wday1_md1_wday2_md2">%1$s, %2$s %3$s – %6$s, %7$s %8$s</string>
+    <string name="same_year_md1_time1_md2_time2">%2$s %3$s, %5$s – %7$s %8$s, %10$s</string>
+    <string name="same_month_md1_time1_md2_time2">%2$s %3$s, %5$s – %7$s %8$s, %10$s</string>
+    <string name="same_year_wday1_md1_time1_wday2_md2_time2">%1$s, %2$s %3$s, %5$s – %6$s, %7$s %8$s, %10$s</string>
+    <string name="same_month_wday1_md1_time1_wday2_md2_time2">%1$s, %2$s %3$s, %5$s – %6$s, %7$s %8$s, %10$s</string>
+    <string name="same_year_mdy1_time1_mdy2_time2">%2$s %3$s, %4$s, %5$s – %7$s %8$s, %9$s, %10$s</string>
+    <string name="same_month_mdy1_time1_mdy2_time2">%2$s %3$s, %4$s, %5$s – %7$s %8$s, %9$s, %10$s</string>
+    <string name="same_year_wday1_mdy1_time1_wday2_mdy2_time2">%1$s, %2$s %3$s, %4$s, %5$s – %6$s, %7$s %8$s, %9$s, %10$s</string>
+    <string name="same_month_wday1_mdy1_time1_wday2_mdy2_time2">%1$s, %2$s %3$s, %4$s, %5$s – %6$s, %7$s %8$s, %9$s, %10$s</string>
+    <string name="same_month_wday1_mdy1_wday2_mdy2">%1$s, %2$s %3$s, %4$s – %6$s, %7$s %8$s, %9$s</string>
+    <string name="same_month_md1_md2">%2$s %3$s – %8$s</string>
+    <string name="same_month_wday1_md1_wday2_md2">%1$s, %2$s %3$s – %6$s, %7$s %8$s</string>
+    <string name="same_year_mdy1_mdy2">%2$s %3$s – %7$s %8$s, %9$s</string>
+    <string name="same_month_mdy1_mdy2">%2$s %3$s – %8$s, %9$s</string>
+    <string name="same_year_wday1_mdy1_wday2_mdy2">%1$s, %2$s %3$s – %6$s, %7$s %8$s, %9$s</string>
+    <string name="short_format_month">%b</string>
+    <string name="full_wday_month_day_no_year">EEEE, MMMM d</string>
+    <string name="full_wday_day_month_no_year">EEEE, d MMMM</string>
+    <string name="abbrev_wday_month_day_no_year">EEE, MMMM d</string>
+    <string name="abbrev_wday_month_day_year">EEE, MMM d, yyyy</string>
+    <string name="abbrev_wday_day_abbrev_month_no_year">E, d MMM</string>
+    <string name="abbrev_wday_abbrev_month_day_no_year">E, MMM d</string>
+    <string name="clear_cover_wday_day">E</string>
+    <string name="clear_cover_month_day_no_year">MMM d</string>
+    <string name="clear_cover_day_month_no_year">d MMM</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>ઘર</item>
+        <item>કામ</item>
+        <item>બીજા</item>
+        <item>વિવિધ</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>વિન્ડોઝ લાઈવ</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>ગુગલ ટૉક</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>કામ</item>
+        <item>બીજા</item>
+        <item>વિવિધ</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>ઘર</item>
+        <item>મોબાઈલ</item>
+        <item>કામ</item>
+        <item>વર્ક ફૅક્સ</item>
+        <item>હોમ ફેક્સ</item>
+        <item>પેજર</item>
+        <item>બીજા</item>
+        <item>વિવિધ</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>ઘર</item>
+        <item>કામ</item>
+        <item>બીજા</item>
+        <item>વિવિધ</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>ઘર</item>
+        <item>કામ</item>
+        <item>બીજા</item>
+        <item>વિવિધ</item>
+    </string-array>
+</resources>

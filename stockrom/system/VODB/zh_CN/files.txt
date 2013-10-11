@@ -1,0 +1,3 @@
+zh_CN.lang	01a0b667151ff66e160fdaea672212a7	3357
+zh_CN_gb18030-ak-cur.lite.res	a03d94ab6c3e9b68c712fc714f9bd014	10526513
+zh_CN_gb18030-lk-text.lite.res	62f95316a0a9e7ffd71b3c19b71e1cd6	3303848

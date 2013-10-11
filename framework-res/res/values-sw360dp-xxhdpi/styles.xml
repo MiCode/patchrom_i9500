@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Button.NumPadKey" parent="@style/Widget.Button">
+        <item name="textSize">33.0dip</item>
+        <item name="textStyle">normal</item>
+        <item name="textColor">#ffffffff</item>
+        <item name="gravity">left|center</item>
+        <item name="background">?selectableItemBackground</item>
+        <item name="paddingLeft">20.0dip</item>
+        <item name="paddingBottom">10.0dip</item>
+        <item name="singleLine">true</item>
+        <item name="shadowColor">#99000000</item>
+        <item name="shadowDy">5.0</item>
+        <item name="shadowRadius">5.0</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.NumPadKey" parent="@style/TextAppearance">
+        <item name="textSize">33.0dip</item>
+        <item name="textStyle">normal</item>
+        <item name="textColor">#ffffffff</item>
+        <item name="shadowColor">#99000000</item>
+        <item name="shadowDy">5.0</item>
+        <item name="shadowRadius">5.0</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.NumPadKey.Klondike" parent="@style/TextAppearance.NumPadKey">
+        <item name="textSize">15.0dip</item>
+        <item name="textStyle">normal</item>
+        <item name="textColor">#ffffffff</item>
+        <item name="shadowColor">#99000000</item>
+        <item name="shadowDy">5.0</item>
+        <item name="shadowRadius">5.0</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+    </style>
+</resources>

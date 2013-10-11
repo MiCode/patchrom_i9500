@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher" >
+
+    <home>
+
+        <!-- Screen 1 -->
+        <sactivitywidget
+            launcher:packageName="com.samsung.android.widgetapp.briefing4x2"
+            launcher:className="com.samsung.android.widgetapp.briefing4x2.BriefingWidget"
+            launcher:screen="1" 
+            launcher:x="0" 
+            launcher:y="0" 
+            launcher:spanX="4" 
+            launcher:spanY="2" />
+        <favorite 
+            launcher:packageName="com.sec.chaton" 
+            launcher:className="com.sec.chaton.HomeActivity" 
+            launcher:screen="1" 
+            launcher:x="0" 
+            launcher:y="3" />
+        <favorite 
+            launcher:packageName="com.samsung.groupcast" 
+            launcher:className="com.samsung.groupcast.start.StartActivity" 
+            launcher:screen="1" 
+            launcher:x="1" 
+            launcher:y="3" />
+        <favorite 
+            launcher:packageName="tv.peel.samsung.app" 
+            launcher:className="com.peel.main.Main" 
+            launcher:screen="1" 
+            launcher:x="2" 
+            launcher:y="3" />
+        <favorite 
+            launcher:packageName="com.dropbox.android" 
+            launcher:className="com.dropbox.android.activity.DropboxBrowser" 
+            launcher:screen="1" 
+            launcher:x="3" 
+            launcher:y="3" />
+
+        <!-- Screen 2 -->
+        <sactivitywidget
+            launcher:className="com.samsung.android.tripwidget.TravelSurfaceWidget"
+            launcher:packageName="com.samsung.android.tripwidget"
+            launcher:screen="2"
+            launcher:spanX="4"
+            launcher:spanY="2"
+            launcher:x="0"
+            launcher:y="0" />
+
+        <appwidget
+            launcher:packageName="flipboard.app" 
+            launcher:className="flipboard.widget.FlipboardWidgetMedium" 
+            launcher:screen="2"
+            launcher:spanX="4"
+            launcher:spanY="2"
+            launcher:x="0"
+            launcher:y="2" />
+
+        <!-- Screen 3 -->
+        <sactivitywidget
+            launcher:className="com.sec.android.widgetapp.ap.hero.accuweather.SurfaceWidgetWeather"
+            launcher:packageName="com.sec.android.widgetapp.ap.hero.accuweather"
+            launcher:screen="3"
+            launcher:spanX="4"
+            launcher:spanY="2"
+            launcher:themeName="Accuweather2013"
+            launcher:x="0"
+            launcher:y="0" />
+
+        <appwidget 
+            launcher:packageName="android.googleSearch.googleSearchWidget" 
+            launcher:className="android.googleSearch.googleSearchWidget.GoogleSearchProvider" 
+            launcher:screen="3" 
+            launcher:x="0" 
+            launcher:y="2" 
+            launcher:spanX="4" 
+            launcher:spanY="1" />
+        <favorite 
+            launcher:packageName="com.android.email" 
+            launcher:className="com.android.email.activity.Welcome" 
+            launcher:screen="3" 
+            launcher:x="0" 
+            launcher:y="3" />
+        <favorite 
+            launcher:packageName="com.sec.android.app.camera" 
+            launcher:className="com.sec.android.app.camera.Camera" 
+            launcher:screen="3" 
+            launcher:x="1" 
+            launcher:y="3" />
+        <favorite 
+            launcher:packageName="com.sec.android.app.samsungapps" 
+            launcher:className="com.sec.android.app.samsungapps.Main" 
+            launcher:screen="3" 
+            launcher:x="2" 
+            launcher:y="3" />
+        <favorite 
+            launcher:packageName="com.android.vending" 
+            launcher:className="com.android.vending.AssetBrowserActivity" 
+            launcher:screen="3" 
+            launcher:x="3" 
+            launcher:y="3" />
+
+        <!-- Screen 4 -->
+        <sactivitywidget
+            launcher:className="com.samsung.android.app.storyalbumwidget.StoryAlbumWidget"
+            launcher:packageName="com.samsung.android.app.storyalbumwidget"
+            launcher:screen="4"
+            launcher:spanX="4"
+            launcher:spanY="3"
+            launcher:x="0"
+            launcher:y="0" />
+
+        <appwidget
+            launcher:className="com.sec.android.app.shealth.widget.homescreenwidget.WalkMateAppWidget"
+            launcher:packageName="com.sec.android.app.shealth"
+            launcher:screen="4"
+            launcher:spanX="4"
+            launcher:spanY="1"
+            launcher:x="0"
+            launcher:y="3" />
+
+        <!-- Screen 5 -->
+        <appwidget
+            launcher:className="com.sec.everglades.widget.EvergladesWidgetProvider"
+            launcher:packageName="com.sec.everglades"
+            launcher:screen="5"
+            launcher:spanX="4"
+            launcher:spanY="4"
+            launcher:x="0"
+            launcher:y="0" />
+	    
+        <!-- Screen 6 -->
+        <appwidget
+            launcher:className="com.solitonmusic.solitons.Widget4x1"
+            launcher:packageName="com.solitonmusic.solitons"
+            launcher:screen="6"
+            launcher:spanX="4"
+            launcher:spanY="1"
+            launcher:x="0"
+            launcher:y="0" />
+        <favorite 
+            launcher:packageName="com.solitonmusic.solitons"
+            launcher:className="com.innopage.Soliton.Splash" 
+            launcher:screen="6" 
+            launcher:x="0" 
+            launcher:y="3" />	    
+	    
+    </home>
+
+    <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
+
+    <hotseat>
+
+        <favorite
+            launcher:className="com.android.contacts.activities.DialtactsActivity"
+            launcher:packageName="com.android.contacts"
+            launcher:screen="0" />
+
+        <favorite
+            launcher:className="com.android.contacts.activities.PeopleActivity"
+            launcher:packageName="com.android.contacts"
+            launcher:screen="1" />
+
+        <favorite
+            launcher:className="com.android.mms.ui.ConversationComposer"
+            launcher:packageName="com.android.mms"
+            launcher:screen="2" />
+
+        <favorite
+            launcher:className="com.sec.android.app.sbrowser.SBrowserMainActivity"
+            launcher:packageName="com.sec.android.app.sbrowser"
+            launcher:screen="3" />
+    </hotseat>
+
+</favorites>

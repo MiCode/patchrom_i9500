@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="config_multiWindowSupportAppList">
+        <item>com.android.email</item>
+        <item>com.android.mms</item>
+        <item>com.sec.android.mms.kor</item>
+        <item>com.sec.android.app.snotebook</item>
+        <item>com.sec.chaton</item>
+        <item>com.google.android.apps.maps</item>
+        <item>com.google.android.maps</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.talk</item>
+        <item>com.google.android.youtube</item>
+        <item>com.google.android.gsf.login</item>
+        <item>com.android.chrome</item>
+        <item>com.facebook.katana</item>
+        <item>com.kakao.talk</item>
+        <item>com.twitter.android</item>
+        <item>com.infraware.polarisviewer4</item>
+        <item>com.infraware.polarisoffice4</item>
+    </string-array>
+    <string-array name="config_multiWindowSupportPackageList">
+        <item>com.google.android.apps.maps</item>
+        <item>com.google.android.maps</item>
+    </string-array>
+    <string-array name="config_multiWindowSupportComponentList">
+        <item>com.google.android.apps.maps.MapsActivity</item>
+        <item>com.google.android.maps.MapsActivity</item>
+    </string-array>
+    <array name="config_multiWindowFixedRatioList" />
+    <string-array name="config_multiWindowHideFlashBarPackageList">
+        <item>com.vlingo.midas</item>
+        <item>com.skt.skaf.l001mtm091</item>
+        <item>kt.navi</item>
+        <item>com.mnsoft.lgunavi</item>
+    </string-array>
+</resources>

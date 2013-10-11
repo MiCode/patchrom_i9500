@@ -1,0 +1,29 @@
+From 5b1513ea215e88015d037d3f442dfb04228b25ed Mon Sep 17 00:00:00 2001
+From: mochangming <mochangming@xiaomi.com>
+Date: Mon, 23 Sep 2013 16:08:14 +0800
+Subject: [PATCH] MiuiPhoneGlobals.patch
+
+---
+ .../smali/com/android/phone/MiuiPhoneGlobals.smali |    9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+--- a/Phone/smali/com/android/phone/MiuiPhoneGlobals.smali
++++ b/Phone/smali/com/android/phone/MiuiPhoneGlobals.smali
+@@ -482,7 +482,13 @@
+ 
+     invoke-virtual {p0, v1, v0}, Lcom/android/phone/MiuiPhoneGlobals;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+ 
+-    invoke-static {}, Lcom/android/internal/telephony/uicc/UiccController;->getInstance()Lcom/android/internal/telephony/uicc/UiccController;
++    iget-object v1, p0, Lcom/android/phone/MiuiPhoneGlobals;->phone:Lcom/android/internal/telephony/Phone;
++
++    invoke-static {v1}, Lcom/android/phone/MiuiPhoneUtils;->getBasePhone(Lcom/android/internal/telephony/Phone;)Lcom/android/internal/telephony/PhoneBase;
++
++    move-result-object v1
++
++    invoke-static {v1}, Lcom/android/internal/telephony/uicc/UiccController;->getInstance(Lcom/android/internal/telephony/PhoneBase;)Lcom/android/internal/telephony/uicc/UiccController;
+ 
+     move-result-object v1
+ 
+-- 
+1.7.9.5
+

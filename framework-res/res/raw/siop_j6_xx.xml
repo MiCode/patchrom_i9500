@@ -1,0 +1,59 @@
+<ThermistorObserverAP>
+    <TemperatureTable>
+        <step level="0" temp="420" />
+        <step level="1" temp="440" />
+        <step level="2" temp="460" />
+        <step level="3" temp="480" />
+        <step level="4" temp="500" />
+        <step level="5" temp="520" />
+        <step level="6" temp="600" />
+        <step level="7" temp="620" />
+    </TemperatureTable>
+    <Action>
+        <step level="0">
+        </step>
+        <step level="1">
+            <type name="ACL" value="on" />
+        </step>
+        <step level="2">
+            <type name="ARMFreq" value="1458000" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="160" />
+        </step>
+        <step level="3">
+            <type name="ARMFreq" value="1242000" />
+            <type name="ChargeCurrent" value="50" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="140" />
+        </step>
+        <step level="4">
+            <type name="ARMFreq" value="1026000" />
+            <type name="ChargeCurrent" value="30" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="130" />
+            <type name="Flash" value="off" />
+        </step>
+        <step level="5">
+            <type name="ARMFreq" value="1026000" />
+            <type name="ChargeCurrent" value="30" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="130" />
+            <type name="Flash" value="off" />
+        </step>
+        <step level="6">
+            <type name="ARMFreq" value="1026000" />
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="130" />
+            <type name="Flash" value="off" />
+        </step>
+        <step level="7">
+            <type name="ARMFreq" value="1026000" />
+            <type name="ChargeCurrent" value="0" />
+            <type name="ACL" value="on" />
+            <type name="LCDBrightness" value="130" />
+            <type name="Flash" value="off" />
+            <type name="RecordingStop" value="on" />
+        </step>
+    </Action>
+</ThermistorObserverAP>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="tw_extseekbar_thumboffset_compute_value">15</integer>
+</resources>
