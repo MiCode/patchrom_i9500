@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quick_settings_list">
+        <item>Wifi</item>
+        <item>Location</item>
+        <item>SilentMode</item>
+        <item>AutoRotate</item>
+        <item>Bluetooth</item>
+        <item>MobileData</item>
+        <item>DormantMode</item>
+        <item>PowerSaving</item>
+        <item>AllShareCast</item>
+        <item>MultiWindow</item>
+        <item>WiFiHotspot</item>
+        <item>SBeam</item>
+        <item>Nfc</item>
+        <item>AirView</item>
+        <item>AirGesture</item>
+        <item>DrivingMode</item>
+        <item>SmartStay</item>
+        <item>SmartPause</item>
+        <item>SmartScroll</item>
+        <item>Sync</item>
+        <item>AirplaneMode</item>
+    </string-array>
+    <string-array name="quick_settings_list_xec">
+        <item>Wifi</item>
+        <item>Location</item>
+        <item>SilentMode</item>
+        <item>AutoRotate</item>
+        <item>MobileData</item>
+        <item>Bluetooth</item>
+        <item>DormantMode</item>
+        <item>PowerSaving</item>
+        <item>AllShareCast</item>
+        <item>MultiWindow</item>
+        <item>WiFiHotspot</item>
+        <item>SBeam</item>
+        <item>Nfc</item>
+        <item>AirView</item>
+        <item>AirGesture</item>
+        <item>DrivingMode</item>
+        <item>SmartStay</item>
+        <item>SmartPause</item>
+        <item>SmartScroll</item>
+        <item>Sync</item>
+        <item>AirplaneMode</item>
+    </string-array>
+</resources>

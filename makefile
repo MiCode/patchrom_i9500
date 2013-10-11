@@ -12,6 +12,8 @@ local-miui-modified-apps := Phone MiuiHome
 
 local-miui-removed-apps := SettingsProvider MediaProvider
 
+local-modified-apps := SecSettingsProvider
+
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
 # (1) be defined after including porting.mk if using any global variable(see porting.mk)

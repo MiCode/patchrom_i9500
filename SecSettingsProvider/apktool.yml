@@ -1,0 +1,13 @@
+version: 1.5.3.2c5f176a94
+apkFileName: SecSettingsProvider.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '17'
+packageInfo:
+  cur_package: com.android.providers.settings
+  orig_package: com.android.providers.settings
+compressionType: false
