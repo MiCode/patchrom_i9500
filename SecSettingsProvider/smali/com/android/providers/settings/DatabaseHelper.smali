@@ -7561,7 +7561,7 @@
     .line 3191
     const-string v0, "intelligent_sleep_mode"
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
