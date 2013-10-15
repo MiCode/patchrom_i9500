@@ -3740,13 +3740,16 @@
     .local v12, soundUri:Landroid/net/Uri;
     if-eqz v12, :cond_4
 
-    .line 1044
-    invoke-virtual {v12}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
+    invoke-static {v12}, Lcom/android/providers/settings/SettingsProvider$Injector;->getAuthority(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 1045
     .local v6, authority:Ljava/lang/String;
+    invoke-static {v12, v11}, Lcom/android/providers/settings/SettingsProvider$Injector;->checkUriForExtraCases(Landroid/net/Uri;I)Landroid/net/Uri;
+
+    move-result-object v12
+
     const-string v0, "drm"
 
     invoke-virtual {v6, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -3944,13 +3947,16 @@
     .local v5, soundUri:Landroid/net/Uri;
     if-eqz v5, :cond_2
 
-    .line 1003
-    invoke-virtual {v5}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
+    invoke-static {v5}, Lcom/android/providers/settings/SettingsProvider$Injector;->getAuthority(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 1004
     .local v0, authority:Ljava/lang/String;
+    invoke-static {v5, v4}, Lcom/android/providers/settings/SettingsProvider$Injector;->checkUriForExtraCases(Landroid/net/Uri;I)Landroid/net/Uri;
+
+    move-result-object v5
+
     const-string v6, "drm"
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
