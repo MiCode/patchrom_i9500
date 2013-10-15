@@ -2165,6 +2165,45 @@
 .end method
 
 .method public static setActualDefaultRingtoneUri(Landroid/content/Context;ILandroid/net/Uri;)V
+    .locals 3
+    .parameter "context"
+    .parameter "type"
+    .parameter "ringtoneUri"
+
+    .prologue
+    invoke-static {p1}, Landroid/media/RingtoneManager;->getSettingForType(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .local v0, setting:Ljava/lang/String;
+    if-nez v0, :cond_0
+
+    :goto_0
+    return-void
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    if-eqz p2, :cond_1
+
+    invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    :goto_1
+    invoke-static {v2, v0, v1}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    goto :goto_1
+.end method
+
+.method public static setActualDefaultRingtoneUri_samsung(Landroid/content/Context;ILandroid/net/Uri;)V
     .locals 16
     .parameter "context"
     .parameter "type"
