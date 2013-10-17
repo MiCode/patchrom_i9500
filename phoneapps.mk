@@ -5,6 +5,7 @@ local-phone-apps := ApplicationsProvider DefaultContainerService \
 					SamsungChineseIME SamsungIME \
 					DrmProvider MtpApplication \
 					SamsungCamera2 Bluetooth \
+					NfcNci 
 					
 					
 						
