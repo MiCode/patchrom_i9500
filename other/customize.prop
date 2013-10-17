@@ -1,0 +1,10 @@
+
+# begin customize properties
+ro.miui.ui.version.code=3
+ro.miui.ui.version.name=V5
+ro.config.ringtone=MI.ogg
+ro.config.notification_sound=FadeIn.ogg
+ro.config.alarm_alert=GoodMorning.ogg
+ro.config.sms_received_sound=FadeIn.ogg
+ro.config.sms_delivered_sound=MessageComplete.ogg
+# end customize properties

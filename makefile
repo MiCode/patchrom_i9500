@@ -36,7 +36,7 @@ local-pre-zip-misc:
 	cp -f other/gpsd  $(ZIP_DIR)/system/bin/gpsd
 	mv $(ZIP_DIR)/system/framework/framework_ext.jar $(ZIP_DIR)/system/framework/framework2.jar &
 	cp -f other/libselinux.so $(ZIP_DIR)/system/lib/libselinux.so
-	echo -e "ro.miui.ui.version.code=3\nro.miui.ui.version.name=V5\n" >> out/ZIP/system/build.prop
+	sed -i '/# end build properties/r other/customize.prop' $(ZIP_DIR)/system/build.prop
 
 %.sign-plat : out/%
 	java -jar $(TOOL_DIR)/signapk.jar $(PORT_ROOT)/build/security/platform.x509.pem $(PORT_ROOT)/build/security/platform.pk8  $< $<.signed
