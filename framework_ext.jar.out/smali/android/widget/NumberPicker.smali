@@ -322,7 +322,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v0, v0, Landroid/widget/NumberPicker;->SELECTOR_WHEEL_ITEM_COUNT:I
+    iget v0, v0, Landroid/widget/NumberPicker;->SELECTOR_WHEEL_ITEM_COUNT:I
 
     new-array v0, v0, [I
 
