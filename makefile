@@ -33,6 +33,7 @@ local-pre-zip-misc:
 	cp -rf stockrom/system/app/mcRegistry $(ZIP_DIR)/system/app/mcRegistry
 	cp -f stockrom/system/app/FFFFFFFF000000000000000000000001.drbin $(ZIP_DIR)/system/app/FFFFFFFF000000000000000000000001.drbin
 	cp -f other/premiui  $(ZIP_DIR)/system/bin/premiui
+	cp -f other/gpsd  $(ZIP_DIR)/system/bin/gpsd
 	mv $(ZIP_DIR)/system/framework/framework_ext.jar $(ZIP_DIR)/system/framework/framework2.jar &
 	cp -f other/libselinux.so $(ZIP_DIR)/system/lib/libselinux.so
 	echo -e "ro.miui.ui.version.code=3\nro.miui.ui.version.name=V5\n" >> out/ZIP/system/build.prop
