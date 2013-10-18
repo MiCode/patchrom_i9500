@@ -39,6 +39,7 @@ local-pre-zip-misc:
 	sed -i '/# end build properties/r other/customize.prop' $(ZIP_DIR)/system/build.prop
 	cp -f other/mac_permissions.xml $(ZIP_DIR)/system/etc/security/mac_permissions.xml
 	cp -f other/system_fonts.xml $(ZIP_DIR)/system/etc/system_fonts.xml
+	rm -rf $(ZIP_DIR)/system/media/audio/ui/PowerOn.ogg
 
 %.sign-plat : out/%
 	java -jar $(TOOL_DIR)/signapk.jar $(PORT_ROOT)/build/security/platform.x509.pem $(PORT_ROOT)/build/security/platform.pk8  $< $<.signed
