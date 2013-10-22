@@ -71,4 +71,8 @@ then
 	appendSmaliPart ${2/out\//}
 fi
 
+if [ $2 = "$BUILD_OUT/android.policy" ]
+then
+	overlaySmali ${2/out\//}
+fi
 
