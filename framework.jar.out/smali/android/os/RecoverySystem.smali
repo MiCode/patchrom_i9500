@@ -615,6 +615,30 @@
     return-object v3
 .end method
 
+.method private static fixOtaPath(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+    .parameter "filename"
+
+    .prologue
+    const-string/jumbo v0, "storage/emulated"
+
+    const-string v1, "data/media"
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string/jumbo v0, "storage/extSdCard"
+
+    const-string/jumbo v1, "sdcard"
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static installPackage(Landroid/content/Context;Ljava/io/File;)V
     .locals 11
     .parameter "context"
@@ -687,8 +711,11 @@
 
     move-result-object v4
 
-    .line 361
     .local v4, filename:Ljava/lang/String;
+    invoke-static {v4}, Landroid/os/RecoverySystem;->fixOtaPath(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
     const-string v7, "RecoverySystem"
 
     new-instance v8, Ljava/lang/StringBuilder;
