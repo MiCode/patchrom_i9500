@@ -6,6 +6,8 @@ local-zip-file := stockrom.zip
 
 local-out-zip-file := MIUI_i9500.zip
 
+local-previous-target-dir := ~/ota_test/i9500
+
 local-density := XXHDPI
 
 local-miui-modified-apps := Phone MiuiHome 
@@ -20,6 +22,8 @@ local-modified-apps := SecSettingsProvider
 # (2) the name should be leaded with local- to prevent any conflict with global targets
 local-pre-zip := local-pre-zip-misc
 local-after-zip:= local-put-to-phone
+
+otatype := fullota
 
 include phoneapps.mk
 include $(PORT_BUILD)/porting.mk

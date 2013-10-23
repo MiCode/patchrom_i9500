@@ -26,6 +26,21 @@ function overlaySmali() {
     done
 }
 
+function applyPatch() {
+	for file in $1/*.patch
+	do
+		cp $file out/
+		cd out
+		git.apply `basename $file`
+        cd ..
+        for file2 in `find $2 -name *.rej`
+        do
+            echo "$file2 fail"
+            exit 1
+        done
+	done
+}
+
 
 if [ $2 = "$BUILD_OUT/framework" ]
 then
@@ -73,6 +88,6 @@ fi
 
 if [ $2 = "$BUILD_OUT/android.policy" ]
 then
-	overlaySmali ${2/out\//}
+	applyPatch ${2/out\//}
 fi
 
