@@ -10882,7 +10882,7 @@
 
     cmp-long v30, v30, v32
 
-    if-nez v30, :cond_1e
+    if-nez v30, :cond_20
 
     .line 2633
     iget v0, v15, Landroid/net/wifi/WifiConfiguration;->recoverableRSSI:I
@@ -10893,19 +10893,19 @@
 
     move/from16 v1, v30
 
-    if-le v0, v1, :cond_1d
+    if-le v0, v1, :cond_1f
 
     .line 2634
     iget-boolean v0, v15, Landroid/net/wifi/WifiConfiguration;->inRecoverArea:Z
 
     move/from16 v30, v0
 
-    if-eqz v30, :cond_1c
+    if-eqz v30, :cond_1e
 
     .line 2635
     sget-boolean v30, Landroid/net/wifi/WifiStateMachine;->DBG:Z
 
-    if-eqz v30, :cond_1b
+    if-eqz v30, :cond_1d
 
     new-instance v30, Ljava/lang/StringBuilder;
 
@@ -11052,7 +11052,7 @@
 
     aget-object v30, v30, v31
 
-    if-eqz v30, :cond_14
+    if-eqz v30, :cond_1b
 
     .line 2607
     iget-object v0, v4, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
@@ -11069,8 +11069,66 @@
 
     goto/16 :goto_6
 
-    .line 2636
+    .line 2609
     :cond_1b
+    iget-object v0, v15, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
+
+    move-object/from16 v30, v0
+
+    const/16 v31, 0x5
+
+    invoke-virtual/range {v30 .. v31}, Ljava/util/BitSet;->get(I)Z
+
+    move-result v30
+
+    if-eqz v30, :cond_1c
+
+    .line 2610
+    iget-object v0, v4, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
+
+    move-object/from16 v30, v0
+
+    const-string v31, "WAPI-PSK"
+
+    invoke-virtual/range {v30 .. v31}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v30
+
+    if-nez v30, :cond_14
+
+    goto/16 :goto_6
+
+    .line 2611
+    :cond_1c
+    iget-object v0, v15, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
+
+    move-object/from16 v30, v0
+
+    const/16 v31, 0x6
+
+    invoke-virtual/range {v30 .. v31}, Ljava/util/BitSet;->get(I)Z
+
+    move-result v30
+
+    if-eqz v30, :cond_14
+
+    .line 2612
+    iget-object v0, v4, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
+
+    move-object/from16 v30, v0
+
+    const-string v31, "WAPI-CERT"
+
+    invoke-virtual/range {v30 .. v31}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v30
+
+    if-nez v30, :cond_14
+
+    goto/16 :goto_6
+
+    .line 2636
+    :cond_1d
     new-instance v30, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v30 .. v30}, Ljava/lang/StringBuilder;-><init>()V
@@ -11116,17 +11174,17 @@
     goto/16 :goto_7
 
     .line 2642
-    :cond_1c
+    :cond_1e
     const/16 v30, 0x1
 
     move/from16 v0, v30
 
     iput-boolean v0, v15, Landroid/net/wifi/WifiConfiguration;->inRecoverArea:Z
 
-    goto :goto_8
+    goto/16 :goto_8
 
     .line 2646
-    :cond_1d
+    :cond_1f
     iget-boolean v0, v15, Landroid/net/wifi/WifiConfiguration;->inRecoverArea:Z
 
     move/from16 v30, v0
@@ -11154,7 +11212,7 @@
     goto/16 :goto_6
 
     .line 2652
-    :cond_1e
+    :cond_20
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v30
@@ -11205,7 +11263,7 @@
     .line 2655
     sget-boolean v30, Landroid/net/wifi/WifiStateMachine;->DBG:Z
 
-    if-eqz v30, :cond_1f
+    if-eqz v30, :cond_21
 
     new-instance v30, Ljava/lang/StringBuilder;
 
@@ -11271,7 +11329,7 @@
     goto/16 :goto_6
 
     .line 2656
-    :cond_1f
+    :cond_21
     new-instance v30, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v30 .. v30}, Ljava/lang/StringBuilder;-><init>()V

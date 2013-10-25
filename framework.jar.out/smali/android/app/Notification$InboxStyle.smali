@@ -194,7 +194,7 @@
     .line 2248
     .end local v7           #str:Ljava/lang/CharSequence;
     :cond_2
-    const v11, 0x10203d7
+    const v11, 0x10203d9
 
     iget-object v8, p0, Landroid/app/Notification$InboxStyle;->mTexts:Ljava/util/ArrayList;
 
@@ -210,7 +210,7 @@
     invoke-virtual {v1, v11, v8}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
     .line 2251
-    const v8, 0x10203d6
+    const v8, 0x10203d8
 
     iget-object v11, p0, Landroid/app/Notification$InboxStyle;->mTexts:Ljava/util/ArrayList;
 
@@ -245,13 +245,13 @@
 
     :array_0
     .array-data 0x4
-        0xcft 0x3t 0x2t 0x1t
-        0xd0t 0x3t 0x2t 0x1t
         0xd1t 0x3t 0x2t 0x1t
         0xd2t 0x3t 0x2t 0x1t
         0xd3t 0x3t 0x2t 0x1t
         0xd4t 0x3t 0x2t 0x1t
         0xd5t 0x3t 0x2t 0x1t
+        0xd6t 0x3t 0x2t 0x1t
+        0xd7t 0x3t 0x2t 0x1t
     .end array-data
 .end method
 

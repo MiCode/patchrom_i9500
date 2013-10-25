@@ -248,13 +248,6 @@
 
     .line 1381
     .end local v0           #client:Landroid/view/accessibility/IAccessibilityManagerClient;
-    :cond_0
-    invoke-virtual {p2}, Landroid/os/RemoteCallbackList;->finishBroadcast()V
-
-    .line 1383
-    return-void
-
-    .line 1381
     .end local v1           #i:I
     .end local v2           #userClientCount:I
     :catchall_0
@@ -272,6 +265,14 @@
     move-exception v3
 
     goto :goto_1
+
+    .line 1381
+    .end local v0           #client:Landroid/view/accessibility/IAccessibilityManagerClient;
+    :cond_0
+    invoke-virtual {p2}, Landroid/os/RemoteCallbackList;->finishBroadcast()V
+
+    .line 1383
+    return-void
 .end method
 
 .method private sendStateToClientsForUser(II)V

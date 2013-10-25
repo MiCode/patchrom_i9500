@@ -667,6 +667,7 @@
     .line 1061
     invoke-virtual {p2}, Landroid/view/WindowInfo;->recycle()V
 
+    .line 1060
     :cond_5
     throw v4
 

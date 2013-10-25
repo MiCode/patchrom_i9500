@@ -579,10 +579,10 @@
         0x1020022 -> :sswitch_2
         0x102027a -> :sswitch_7
         0x102027c -> :sswitch_3
-        0x1020491 -> :sswitch_4
-        0x1020492 -> :sswitch_5
-        0x1020493 -> :sswitch_6
-        0x1020494 -> :sswitch_8
+        0x1020493 -> :sswitch_4
+        0x1020494 -> :sswitch_5
+        0x1020495 -> :sswitch_6
+        0x1020496 -> :sswitch_8
     .end sparse-switch
 .end method
 
@@ -758,7 +758,7 @@
     .line 243
     const/4 v11, 0x0
 
-    const v12, 0x1020492
+    const v12, 0x1020494
 
     invoke-direct {p0, p2, v11, v12}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
@@ -793,7 +793,7 @@
     .line 248
     const/4 v11, 0x0
 
-    const v12, 0x1020493
+    const v12, 0x1020495
 
     invoke-direct {p0, p2, v11, v12}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
@@ -807,14 +807,14 @@
     .line 250
     const/4 v11, 0x0
 
-    const v12, 0x1020494
+    const v12, 0x1020496
 
     invoke-direct {p0, p2, v11, v12}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
     .line 251
     const/4 v11, 0x0
 
-    const v12, 0x1020491
+    const v12, 0x1020493
 
     invoke-direct {p0, p2, v11, v12}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
@@ -859,7 +859,7 @@
     .line 253
     .restart local v1       #canCut:Z
     :cond_7
-    const v11, 0x1020492
+    const v11, 0x1020494
 
     invoke-direct {p0, p2, v2, v11}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
@@ -889,7 +889,7 @@
     invoke-direct {p0, p2, v1, v11}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
     .line 259
-    const v11, 0x1020493
+    const v11, 0x1020495
 
     invoke-direct {p0, p2, v1, v11}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
@@ -931,7 +931,7 @@
     .line 267
     const/4 v11, 0x0
 
-    const v12, 0x1020494
+    const v12, 0x1020496
 
     invoke-direct {p0, p2, v11, v12}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 
@@ -1055,7 +1055,7 @@
     :cond_9
     const/4 v11, 0x1
 
-    const v12, 0x1020494
+    const v12, 0x1020496
 
     invoke-direct {p0, p2, v11, v12}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
 

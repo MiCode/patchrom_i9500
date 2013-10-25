@@ -68,12 +68,12 @@
         <item quantity="one">내일</item>
     </plurals>
     <plurals name="wifi_available">
-        <item quantity="other">Wi-Fi를 사용할 수 있습니다</item>
-        <item quantity="one">Wi-Fi 사용할 수 있음</item>
+        <item quantity="other">WLAN를 사용할 수 있습니다</item>
+        <item quantity="one">WLAN 사용할 수 있음</item>
     </plurals>
     <plurals name="wifi_available_detailed">
-        <item quantity="other">개방형 Wi-Fi 네트워크 사용 가능</item>
-        <item quantity="one">개방형 Wi-Fi 네트워크 사용 가능</item>
+        <item quantity="other">사용 가능한 WLAN 네트워크 열기</item>
+        <item quantity="one">사용 가능한 WLAN 네트워크 열기</item>
     </plurals>
     <plurals name="matches_found">
         <item quantity="other">%1$d / %2$d</item>

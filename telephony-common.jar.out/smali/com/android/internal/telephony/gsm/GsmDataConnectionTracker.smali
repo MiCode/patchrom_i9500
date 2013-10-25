@@ -4631,7 +4631,34 @@
 
     if-eqz v8, :cond_0
 
+    .line 3125
+    iget-object v8, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+
+    invoke-virtual {v8}, Lcom/android/internal/telephony/PhoneBase;->getServiceState()Landroid/telephony/ServiceState;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Landroid/telephony/ServiceState;->getRoaming()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_2
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/DataConnectionTracker;->getDataOnRoamingEnabled()Z
+
+    move-result v8
+
+    if-nez v8, :cond_2
+
+    .line 3126
+    const-string v8, "isDataAllowedOnDataDisabled: not allowed due to roaming"
+
+    invoke-virtual {p0, v8}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->log(Ljava/lang/String;)V
+
+    goto :goto_0
+
     .line 3131
+    :cond_2
     iget-object v8, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
     invoke-virtual {v8}, Lcom/android/internal/telephony/PhoneBase;->getServiceStateTracker()Lcom/android/internal/telephony/ServiceStateTracker;
@@ -4654,7 +4681,7 @@
 
     .line 3133
     .local v4, r:Lcom/android/internal/telephony/IccRecords;
-    if-eqz v4, :cond_a
+    if-eqz v4, :cond_b
 
     invoke-virtual {v4}, Lcom/android/internal/telephony/IccRecords;->getRecordsLoaded()Z
 
@@ -4675,14 +4702,14 @@
 
     .line 3136
     .local v2, desiredPowerState:Z
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_3
 
     iget-boolean v8, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mAutoAttachOnCreation:Z
 
-    if-eqz v8, :cond_b
+    if-eqz v8, :cond_c
 
-    :cond_2
-    if-eqz v6, :cond_b
+    :cond_3
+    if-eqz v6, :cond_c
 
     iget-object v8, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
@@ -4692,7 +4719,7 @@
 
     sget-object v9, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
 
-    if-eq v8, v9, :cond_3
+    if-eq v8, v9, :cond_4
 
     iget-object v8, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
@@ -4704,32 +4731,32 @@
 
     move-result v8
 
-    if-eqz v8, :cond_b
+    if-eqz v8, :cond_c
 
-    :cond_3
+    :cond_4
     iget-boolean v8, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mIsPsRestricted:Z
 
-    if-nez v8, :cond_b
+    if-nez v8, :cond_c
 
-    if-eqz v2, :cond_b
+    if-eqz v2, :cond_c
 
     const/4 v0, 0x1
 
     .line 3144
     .local v0, allowed:Z
     :goto_2
-    if-nez v0, :cond_9
+    if-nez v0, :cond_a
 
     .line 3145
     const-string v5, ""
 
     .line 3146
     .local v5, reason:Ljava/lang/String;
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_5
 
     iget-boolean v7, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mAutoAttachOnCreation:Z
 
-    if-nez v7, :cond_4
+    if-nez v7, :cond_5
 
     .line 3147
     new-instance v7, Ljava/lang/StringBuilder;
@@ -4755,8 +4782,8 @@
     move-result-object v5
 
     .line 3149
-    :cond_4
-    if-nez v6, :cond_5
+    :cond_5
+    if-nez v6, :cond_6
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -4777,7 +4804,7 @@
     move-result-object v5
 
     .line 3150
-    :cond_5
+    :cond_6
     iget-object v7, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
     invoke-virtual {v7}, Lcom/android/internal/telephony/PhoneBase;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
@@ -4786,7 +4813,7 @@
 
     sget-object v8, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
 
-    if-eq v7, v8, :cond_6
+    if-eq v7, v8, :cond_7
 
     iget-object v7, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
@@ -4798,7 +4825,7 @@
 
     move-result v7
 
-    if-nez v7, :cond_6
+    if-nez v7, :cond_7
 
     .line 3152
     new-instance v7, Ljava/lang/StringBuilder;
@@ -4849,10 +4876,10 @@
     move-result-object v5
 
     .line 3155
-    :cond_6
+    :cond_7
     iget-boolean v7, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mIsPsRestricted:Z
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_8
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -4873,8 +4900,8 @@
     move-result-object v5
 
     .line 3156
-    :cond_7
-    if-nez v2, :cond_8
+    :cond_8
+    if-nez v2, :cond_9
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -4895,7 +4922,7 @@
     move-result-object v5
 
     .line 3157
-    :cond_8
+    :cond_9
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -4917,7 +4944,7 @@
     invoke-virtual {p0, v7}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->log(Ljava/lang/String;)V
 
     .end local v5           #reason:Ljava/lang/String;
-    :cond_9
+    :cond_a
     move v7, v0
 
     .line 3159
@@ -4926,7 +4953,7 @@
     .end local v0           #allowed:Z
     .end local v2           #desiredPowerState:Z
     .end local v6           #recordsLoaded:Z
-    :cond_a
+    :cond_b
     move v6, v7
 
     .line 3133
@@ -4934,7 +4961,7 @@
 
     .restart local v2       #desiredPowerState:Z
     .restart local v6       #recordsLoaded:Z
-    :cond_b
+    :cond_c
     move v0, v7
 
     .line 3136

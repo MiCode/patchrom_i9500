@@ -68,12 +68,12 @@
         <item quantity="one">明天</item>
     </plurals>
     <plurals name="wifi_available">
-        <item quantity="other">可用的 Wi-Fi 網路</item>
-        <item quantity="one">可用的Wi-Fi 網路</item>
+        <item quantity="other">可用的 WLAN 網路</item>
+        <item quantity="one">可用的WLAN 網路</item>
     </plurals>
     <plurals name="wifi_available_detailed">
-        <item quantity="other">開啟可用 Wi-Fi 網路</item>
-        <item quantity="one">開啟可用 Wi-Fi 網路</item>
+        <item quantity="other">開啟可用的 WLAN 網路</item>
+        <item quantity="one">開啟可用的 WLAN 網路</item>
     </plurals>
     <plurals name="matches_found">
         <item quantity="other">%1$d/%2$d</item>

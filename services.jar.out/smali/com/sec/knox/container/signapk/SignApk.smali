@@ -864,7 +864,7 @@
     :try_start_4
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
     .line 450
     :goto_4
@@ -888,13 +888,12 @@
     :try_start_5
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
 
     .line 450
     :goto_5
     const/4 v1, 0x0
 
-    .line 448
     :cond_4
     throw v2
 
@@ -902,7 +901,7 @@
     :catch_1
     move-exception v3
 
-    goto :goto_5
+    goto :goto_4
 
     .restart local v0       #e:Ljava/io/IOException;
     :catch_2
@@ -914,7 +913,7 @@
     :catch_3
     move-exception v3
 
-    goto :goto_4
+    goto :goto_5
 .end method
 
 .method private static readBytes(Ljava/io/InputStream;)[B

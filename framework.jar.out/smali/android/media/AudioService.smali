@@ -21356,7 +21356,7 @@
     .restart local v2       #poolId:[I
     :cond_4
     :try_start_1
-    const-string v3, ""
+    const-string v3, "CHN"
 
     const-string v5, "KOR"
 

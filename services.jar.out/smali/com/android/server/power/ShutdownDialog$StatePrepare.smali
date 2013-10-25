@@ -65,7 +65,7 @@
     const/4 v1, 0x1
 
     .line 277
-    const-string v2, ""
+    const-string v2, "CHN"
 
     const-string v3, "KOR"
 

@@ -298,12 +298,12 @@
     :cond_5
     iget-object v10, p0, Lcom/android/internal/telephony/RIL$RILSender;->this$0:Lcom/android/internal/telephony/RIL;
 
-    .end local v4           #ex:Ljava/io/IOException;
-    :goto_1
     #calls: Lcom/android/internal/telephony/RIL;->releaseWakeLockIfDone()V
     invoke-static {v10}, Lcom/android/internal/telephony/RIL;->access$200(Lcom/android/internal/telephony/RIL;)V
 
     .line 428
+    .end local v4           #ex:Ljava/io/IOException;
+    :goto_1
     if-nez v1, :cond_0
 
     iget-object v10, p0, Lcom/android/internal/telephony/RIL$RILSender;->this$0:Lcom/android/internal/telephony/RIL;
@@ -386,6 +386,9 @@
     :cond_7
     iget-object v10, p0, Lcom/android/internal/telephony/RIL$RILSender;->this$0:Lcom/android/internal/telephony/RIL;
 
+    #calls: Lcom/android/internal/telephony/RIL;->releaseWakeLockIfDone()V
+    invoke-static {v10}, Lcom/android/internal/telephony/RIL;->access$200(Lcom/android/internal/telephony/RIL;)V
+
     goto :goto_1
 
     .line 395
@@ -458,6 +461,9 @@
 
     .line 425
     iget-object v10, p0, Lcom/android/internal/telephony/RIL$RILSender;->this$0:Lcom/android/internal/telephony/RIL;
+
+    #calls: Lcom/android/internal/telephony/RIL;->releaseWakeLockIfDone()V
+    invoke-static {v10}, Lcom/android/internal/telephony/RIL;->access$200(Lcom/android/internal/telephony/RIL;)V
 
     goto :goto_1
 

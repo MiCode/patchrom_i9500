@@ -262,7 +262,7 @@
 
     .line 222
     .local v3, rootView:Landroid/view/View;
-    const v4, 0x1020407
+    const v4, 0x1020409
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -271,7 +271,7 @@
     iput-object v4, p0, Lcom/kikin/KikinResultsViewController;->mActionBarContainer:Landroid/view/View;
 
     .line 225
-    const v4, 0x102040a
+    const v4, 0x102040c
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -298,7 +298,7 @@
     .line 233
     iget-object v4, p0, Lcom/kikin/KikinResultsViewController;->mActionBarContainer:Landroid/view/View;
 
-    const v5, 0x1020409
+    const v5, 0x102040b
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -930,7 +930,7 @@
 
     .line 897
     .local v5, rootView:Landroid/view/View;
-    const v6, 0x1020403
+    const v6, 0x1020405
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1299,7 +1299,7 @@
 
     .line 788
     .local v3, rootView:Landroid/view/View;
-    const v6, 0x1020407
+    const v6, 0x1020409
 
     invoke-virtual {v3, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1310,7 +1310,7 @@
     if-eqz v0, :cond_2
 
     .line 795
-    const v6, 0x1020409
+    const v6, 0x102040b
 
     invoke-virtual {v0, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1344,7 +1344,7 @@
     .end local v2           #doneView:Landroid/view/View;
     .restart local v1       #actionBarContextView:Landroid/view/View;
     :cond_2
-    const v6, 0x1020403
+    const v6, 0x1020405
 
     invoke-virtual {v3, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

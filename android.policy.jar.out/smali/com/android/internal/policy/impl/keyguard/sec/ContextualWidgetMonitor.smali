@@ -223,13 +223,13 @@
     .local v2, res:Landroid/content/res/Resources;
     new-instance v3, Landroid/content/ComponentName;
 
-    const v4, 0x10408c7
+    const v4, 0x10408c8
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x10408c8
+    const v5, 0x10408c9
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -242,13 +242,13 @@
     .line 232
     new-instance v3, Landroid/content/ComponentName;
 
-    const v4, 0x10408c9
+    const v4, 0x10408ca
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x10408ca
+    const v5, 0x10408cb
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -261,13 +261,13 @@
     .line 237
     new-instance v3, Landroid/content/ComponentName;
 
-    const v4, 0x10408cb
+    const v4, 0x10408cc
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x10408cc
+    const v5, 0x10408cd
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -280,13 +280,13 @@
     .line 242
     new-instance v3, Landroid/content/ComponentName;
 
-    const v4, 0x10408d1
+    const v4, 0x10408d2
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x10408d2
+    const v5, 0x10408d3
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

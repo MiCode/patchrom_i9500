@@ -443,7 +443,7 @@
 
     iget-object v13, v0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v14, 0x102046f
+    const v14, 0x1020471
 
     invoke-virtual {v13, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -460,7 +460,7 @@
 
     iget-object v13, v0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v14, 0x1020470
+    const v14, 0x1020472
 
     invoke-virtual {v13, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -477,7 +477,7 @@
 
     iget-object v13, v0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v14, 0x10203ac
+    const v14, 0x10203ae
 
     invoke-virtual {v13, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -494,7 +494,7 @@
 
     iget-object v13, v0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v14, 0x1020471
+    const v14, 0x1020473
 
     invoke-virtual {v13, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1796,7 +1796,7 @@
     .line 600
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v9, 0x1020473
+    const v9, 0x1020475
 
     invoke-virtual {v7, v9}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1842,7 +1842,7 @@
     .line 606
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v9, 0x1020472
+    const v9, 0x1020474
 
     invoke-virtual {v7, v9}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1871,7 +1871,7 @@
     .line 609
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v9, 0x1020474
+    const v9, 0x1020476
 
     invoke-virtual {v7, v9}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1889,7 +1889,7 @@
     .line 615
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v9, 0x10203ea
+    const v9, 0x10203ec
 
     invoke-virtual {v7, v9}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

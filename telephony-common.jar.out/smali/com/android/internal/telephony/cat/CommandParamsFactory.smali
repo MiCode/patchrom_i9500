@@ -2083,13 +2083,16 @@
 
     throw v0
 
+    .line 1044
     .end local v7           #e:Ljava/lang/IndexOutOfBoundsException;
     :pswitch_0
     sget-object v4, Lcom/android/internal/telephony/cat/LaunchBrowserMode;->USE_EXISTING_BROWSER:Lcom/android/internal/telephony/cat/LaunchBrowserMode;
 
+    .line 1045
     .restart local v4       #mode:Lcom/android/internal/telephony/cat/LaunchBrowserMode;
     goto :goto_1
 
+    .line 1047
     .end local v4           #mode:Lcom/android/internal/telephony/cat/LaunchBrowserMode;
     :pswitch_1
     sget-object v4, Lcom/android/internal/telephony/cat/LaunchBrowserMode;->LAUNCH_NEW_BROWSER:Lcom/android/internal/telephony/cat/LaunchBrowserMode;
@@ -2097,6 +2100,7 @@
     .restart local v4       #mode:Lcom/android/internal/telephony/cat/LaunchBrowserMode;
     goto :goto_1
 
+    .line 1065
     :cond_6
     const/4 v0, 0x0
 
@@ -2104,6 +2108,7 @@
 
     nop
 
+    .line 1038
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_0
@@ -2114,7 +2119,6 @@
 .method private processOpenChannel(Lcom/android/internal/telephony/cat/CommandDetails;Ljava/util/List;)Z
     .locals 23
     .parameter "cmdDet"
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4816,11 +4820,14 @@
     :cond_f
     move v9, v11
 
+    .line 834
     goto :goto_6
 
+    .line 843
     :pswitch_1
     if-eqz v8, :cond_9
 
+    .line 844
     iget-object v9, p0, Lcom/android/internal/telephony/cat/CommandParamsFactory;->mIconLoader:Lcom/android/internal/telephony/cat/IconLoader;
 
     throw v8
@@ -4833,12 +4840,15 @@
 
     goto :goto_7
 
+    .line 849
     :pswitch_2
     throw v3
 
+    .line 850
     .local v7, recordNumbers:[I
     if-eqz v8, :cond_10
 
+    .line 852
     throw v3
 
     array-length v9, v9
@@ -4874,10 +4884,6 @@
     goto :goto_7
 
     .line 839
-    nop
-
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -4889,7 +4895,6 @@
 .method private processSendDTMF(Lcom/android/internal/telephony/cat/CommandDetails;Ljava/util/List;)Z
     .locals 9
     .parameter "cmdDet"
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

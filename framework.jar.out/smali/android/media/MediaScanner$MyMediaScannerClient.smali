@@ -877,22 +877,18 @@
 
     invoke-static {v6, v7, v8}, Landroid/media/MediaScanner;->access$3614(Landroid/media/MediaScanner;J)J
 
-    .line 1267
     if-eqz v42, :cond_f
 
-    .line 1268
     invoke-static/range {v42 .. v42}, Landroid/content/ContentUris;->parseId(Landroid/net/Uri;)J
 
     move-result-wide v45
 
-    .line 1269
     move-wide/from16 v0, v45
 
     move-object/from16 v2, p1
 
     iput-wide v0, v2, Landroid/media/MediaScanner$FileEntry;->mRowId:J
 
-    .line 1308
     :cond_f
     :goto_5
     if-eqz v38, :cond_2f
@@ -913,7 +909,6 @@
 
     if-eqz p3, :cond_30
 
-    .line 1310
     const-string v6, "notification_sound"
 
     move-object/from16 v0, p0

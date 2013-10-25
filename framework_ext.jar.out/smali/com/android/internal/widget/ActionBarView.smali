@@ -1352,7 +1352,7 @@
     .line 1249
     iget-object v1, p0, Lcom/android/internal/widget/ActionBarView;->mMultiWindowMenuButton:Landroid/view/View;
 
-    const v2, 0x1020448
+    const v2, 0x102044a
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setId(I)V
 
@@ -2876,7 +2876,7 @@
     .line 474
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mIndeterminateProgressView:Landroid/widget/ProgressBar;
 
-    const v1, 0x1020405
+    const v1, 0x1020407
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setId(I)V
 
@@ -2918,7 +2918,7 @@
     .line 465
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mProgressView:Landroid/widget/ProgressBar;
 
-    const v1, 0x1020406
+    const v1, 0x1020408
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setId(I)V
 

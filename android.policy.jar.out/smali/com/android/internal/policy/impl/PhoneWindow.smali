@@ -906,7 +906,7 @@
 
     .line 3768
     :cond_1
-    const v0, 0x1020405
+    const v0, 0x1020407
 
     invoke-virtual {p0, v0}, Landroid/view/Window;->findViewById(I)Landroid/view/View;
 
@@ -1060,7 +1060,7 @@
 
     .line 3782
     :cond_1
-    const v0, 0x1020406
+    const v0, 0x1020408
 
     invoke-virtual {p0, v0}, Landroid/view/Window;->findViewById(I)Landroid/view/View;
 
@@ -2078,7 +2078,7 @@
 
     .line 3468
     :cond_8
-    const v17, 0x1020408
+    const v17, 0x102040a
 
     move-object/from16 v0, p0
 
@@ -2286,7 +2286,7 @@
     .end local v10           #outValue:Landroid/util/TypedValue;
     .end local v11           #smallestScreenWidthDp:I
     :goto_5
-    const v17, 0x102040a
+    const v17, 0x102040c
 
     move-object/from16 v0, p0
 
@@ -2336,7 +2336,7 @@
     invoke-virtual {v0, v14}, Lcom/android/internal/widget/AbsActionBarView;->setSplitWhenNarrow(Z)V
 
     .line 3509
-    const v17, 0x1020409
+    const v17, 0x102040b
 
     move-object/from16 v0, p0
 

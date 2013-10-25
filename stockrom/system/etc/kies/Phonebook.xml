@@ -15,9 +15,10 @@
 		<SupportFullSizePhoto  Value="TRUE"/>
 		<PhotoSize accessibility="all" value="720*720"/>
 		<MultipleAccount value="TRUE"/>
+		<LunarCalendar value="true"/>
 		<MinimumYear value="1902"/>
 		<MaximumYear value="2037"/>
-		<DialChar value="*#,+,;()/N- ." />
+		<DialChar value="+*#,;N" />
 		<Enums>
 			<Enum name="TEL_TYPE" >
 				<Element type="Default" name="Mobile" />
@@ -29,7 +30,6 @@
 				<Element type="Default" name="Etc" />
 				<Element type="Default" name="Custom" />
 				<Element type="Default" name="Callback" />
-				<Element type="Internet" name="InternetPhone" />
 			</Enum>
 			<Enum name="GENERAL_TYPE">
 				<Element name="Private" />
@@ -44,12 +44,11 @@
 				<Element name="Custom" value="3" />
 			</Enum>
 			<Enum name="MESSENGER_TYPE" >
+				<Element name="QQ" />
 				<Element name="AIM" />
 				<Element name="WindowsLive" />
 				<Element name="Yahoo" />
 				<Element name="Skype" />
-				<Element name="QQ" />
-				<Element name="GoogleTalk" />
 				<Element name="ICQ" />
 				<Element name="Jabber" />
 				<Element name="Custom" />
@@ -79,13 +78,6 @@
 		<DataField>
 			<Names>
 				<FirstName type="String" charset="utf-16" MaxLength="2000"/>
-				<MiddleName type="String" charset="utf-16" MaxLength="2000"  />
-				<LastName type="String" charset="utf-16" MaxLength="2000"/>
-				<TitleName type="String" charset="utf-16" MaxLength="2000"  />
-				<SuffixName type="String" charset="utf-16" MaxLength="2000"  />
-				<ReadingFirstName type="String" charset="utf-16" MaxLength="2000" />
-				<ReadingMiddleName type="String" charset="utf-16" MaxLength="2000" />
-				<ReadingLastName type="String" charset="utf-16"	MaxLength="2000" />
 			</Names>
 			<TelNumbers>
 				<TelNumber Count="10">
@@ -108,7 +100,7 @@
 			<Addresses>
 				<address count="5">
 					<AddrType type="ADDRESS_TYPE" value="3"/>
-					<Neighborhood type="String" charset="utf-16" MaxLength="2000" />
+					<Neighborhood type="Text" charset="utf-16" MaxLength="2000" />
 				</address>
 			</Addresses>
 			<Organizations>

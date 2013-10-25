@@ -809,7 +809,7 @@
     invoke-super {p0}, Lcom/android/internal/policy/impl/keyguard/KeyguardAbsKeyInputView;->onFinishInflate()V
 
     .line 180
-    const v2, 0x1020384
+    const v2, 0x1020386
 
     invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -827,7 +827,7 @@
     if-eqz v2, :cond_0
 
     .line 183
-    const v2, 0x1020383
+    const v2, 0x1020385
 
     invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

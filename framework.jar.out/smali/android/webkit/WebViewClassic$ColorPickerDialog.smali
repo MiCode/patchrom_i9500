@@ -25,18 +25,18 @@
     .parameter "context"
 
     .prologue
-    .line 7331
+    .line 7322
     iput-object p1, p0, Landroid/webkit/WebViewClassic$ColorPickerDialog;->this$0:Landroid/webkit/WebViewClassic;
 
-    .line 7332
+    .line 7323
     invoke-direct {p0, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
-    .line 7333
+    .line 7324
     const-string v0, "Pick a Color"
 
     invoke-virtual {p0, v0}, Landroid/webkit/WebViewClassic$ColorPickerDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 7334
+    .line 7325
     return-void
 .end method
 
@@ -47,15 +47,15 @@
     .parameter "savedInstanceState"
 
     .prologue
-    .line 7338
+    .line 7329
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
-    .line 7339
+    .line 7330
     const v1, 0x109003b
 
     invoke-virtual {p0, v1}, Landroid/webkit/WebViewClassic$ColorPickerDialog;->setContentView(I)V
 
-    .line 7341
+    .line 7332
     const v1, 0x10202c5
 
     invoke-virtual {p0, v1}, Landroid/webkit/WebViewClassic$ColorPickerDialog;->findViewById(I)Landroid/view/View;
@@ -64,7 +64,7 @@
 
     check-cast v0, Landroid/widget/GridView;
 
-    .line 7342
+    .line 7333
     .local v0, gridViewColors:Landroid/widget/GridView;
     new-instance v1, Landroid/webkit/WebViewClassic$ColorPickerAdapter;
 
@@ -74,20 +74,20 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 7345
+    .line 7336
     new-instance v1, Landroid/webkit/WebViewClassic$ColorPickerDialog$1;
 
     invoke-direct {v1, p0, v0}, Landroid/webkit/WebViewClassic$ColorPickerDialog$1;-><init>(Landroid/webkit/WebViewClassic$ColorPickerDialog;Landroid/widget/GridView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 7354
+    .line 7345
     new-instance v1, Landroid/webkit/WebViewClassic$ColorPickerDialog$2;
 
     invoke-direct {v1, p0}, Landroid/webkit/WebViewClassic$ColorPickerDialog$2;-><init>(Landroid/webkit/WebViewClassic$ColorPickerDialog;)V
 
     invoke-virtual {p0, v1}, Landroid/webkit/WebViewClassic$ColorPickerDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 7359
+    .line 7350
     return-void
 .end method

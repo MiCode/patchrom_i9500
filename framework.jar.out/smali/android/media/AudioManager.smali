@@ -3940,12 +3940,12 @@
 
     move-result v0
 
-    :goto_0
     move v1, v0
 
     .line 2917
     .end local v0           #delay:I
     .local v1, delay:I
+    :goto_0
     return v1
 
     .line 2914
@@ -3981,13 +3981,23 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_0
+    move v1, v0
 
     .line 2917
+    .end local v0           #delay:I
+    .restart local v1       #delay:I
+    goto :goto_0
+
+    .end local v1           #delay:I
     .end local v2           #e:Landroid/os/RemoteException;
+    .restart local v0       #delay:I
     :catchall_0
     move-exception v4
 
+    move v1, v0
+
+    .end local v0           #delay:I
+    .restart local v1       #delay:I
     goto :goto_0
 .end method
 

@@ -20,7 +20,7 @@ jhwan.kim@hdlnc.com  -->
 <!-- KIES -->
 <CscFeature_Kies_SupportCategory>Device,Calendar,Contents,Phonebook,Message,Phonebook_com.android.exchange,Phonebook_com.google,Phonebook_com.osp.app.signin,hk,DeviceInfo,BackupRestore</CscFeature_Kies_SupportCategory>
 <CscFeature_Kies_DrCategory>SN_IMEI_FILE,Ril_Sales,Normal,MSISDN_File,Normal,GT-I9300,Normal,Normal,Normal</CscFeature_Kies_DrCategory>
-<CscFeature_Kies_WifiCategory>Phone,Normal,Normal,1920X1080,20,Normal</CscFeature_Kies_WifiCategory>
-<CscFeature_Kies_NpsCategory>Splanner,Smemo2,Normal,Normal,none_Memo,Normal,Normal,Normal,Normal,Normal,Normal,Boost,Normal,Normal,Normal,Normal</CscFeature_Kies_NpsCategory>
+<CscFeature_Kies_WifiCategory>Phone,Normal,Normal,1920X1080,20,Kies_via_WLAN</CscFeature_Kies_WifiCategory>
+<CscFeature_Kies_NpsCategory>Splanner,Smemo2,Normal,Normal,none_Memo,Normal,Normal,Lunar_Cn,Normal,Normal,Normal,Boost,Normal,Normal,Normal,Normal</CscFeature_Kies_NpsCategory>
 </FeatureSet>
 </SamsungMobileFeature>

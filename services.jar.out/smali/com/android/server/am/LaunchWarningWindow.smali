@@ -86,7 +86,7 @@
     invoke-virtual {v3, v5, v4}, Landroid/view/Window;->setFeatureDrawableResource(II)V
 
     .line 45
-    const v3, 0x1020395
+    const v3, 0x1020397
 
     invoke-virtual {p0, v3}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -111,7 +111,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 47
-    const v3, 0x1020396
+    const v3, 0x1020398
 
     invoke-virtual {p0, v3}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -154,7 +154,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 50
-    const v3, 0x1020397
+    const v3, 0x1020399
 
     invoke-virtual {p0, v3}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -180,7 +180,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 52
-    const v3, 0x1020398
+    const v3, 0x102039a
 
     invoke-virtual {p0, v3}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 

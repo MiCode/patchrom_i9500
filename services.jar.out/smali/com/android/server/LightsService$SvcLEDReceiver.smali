@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 491
+    .line 499
     iput-object p1, p0, Lcom/android/server/LightsService$SvcLEDReceiver;->this$0:Lcom/android/server/LightsService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -37,7 +37,7 @@
     .parameter "x1"
 
     .prologue
-    .line 491
+    .line 499
     invoke-direct {p0, p1}, Lcom/android/server/LightsService$SvcLEDReceiver;-><init>(Lcom/android/server/LightsService;)V
 
     return-void
@@ -51,56 +51,56 @@
     .parameter "intent"
 
     .prologue
-    .line 494
+    .line 502
     const-string v0, "LightsService"
 
     const-string v1, "[SvcLED] SvcLEDReceiver"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 496
-    iget-object v0, p0, Lcom/android/server/LightsService$SvcLEDReceiver;->this$0:Lcom/android/server/LightsService;
-
-    #getter for: Lcom/android/server/LightsService;->mSvcLEDHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/server/LightsService;->access$800(Lcom/android/server/LightsService;)Landroid/os/Handler;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/server/LightsService$SvcLEDReceiver;->this$0:Lcom/android/server/LightsService;
-
-    #getter for: Lcom/android/server/LightsService;->mWakeLockAquireTask:Lcom/android/server/LightsService$WakeLockAquireTask;
-    invoke-static {v1}, Lcom/android/server/LightsService;->access$2900(Lcom/android/server/LightsService;)Lcom/android/server/LightsService$WakeLockAquireTask;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 498
+    .line 503
     iget-object v0, p0, Lcom/android/server/LightsService$SvcLEDReceiver;->this$0:Lcom/android/server/LightsService;
 
     #getter for: Lcom/android/server/LightsService;->mSvcLEDThread:Landroid/os/HandlerThread;
-    invoke-static {v0}, Lcom/android/server/LightsService;->access$400(Lcom/android/server/LightsService;)Landroid/os/HandlerThread;
+    invoke-static {v0}, Lcom/android/server/LightsService;->access$300(Lcom/android/server/LightsService;)Landroid/os/HandlerThread;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 499
+    .line 505
     :try_start_0
+    iget-object v0, p0, Lcom/android/server/LightsService$SvcLEDReceiver;->this$0:Lcom/android/server/LightsService;
+
+    #getter for: Lcom/android/server/LightsService;->mSvcLEDHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/server/LightsService;->access$700(Lcom/android/server/LightsService;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/android/server/LightsService$SvcLEDReceiver;->this$0:Lcom/android/server/LightsService;
+
+    #getter for: Lcom/android/server/LightsService;->mWakeLockAquireTask:Lcom/android/server/LightsService$WakeLockAquireTask;
+    invoke-static {v2}, Lcom/android/server/LightsService;->access$2900(Lcom/android/server/LightsService;)Lcom/android/server/LightsService$WakeLockAquireTask;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 507
     iget-object v0, p0, Lcom/android/server/LightsService$SvcLEDReceiver;->this$0:Lcom/android/server/LightsService;
 
     const/4 v2, 0x1
 
     #calls: Lcom/android/server/LightsService;->enableSvcLEDLightSensorLocked(Z)V
-    invoke-static {v0, v2}, Lcom/android/server/LightsService;->access$600(Lcom/android/server/LightsService;Z)V
+    invoke-static {v0, v2}, Lcom/android/server/LightsService;->access$500(Lcom/android/server/LightsService;Z)V
 
-    .line 500
+    .line 508
     monitor-exit v1
 
-    .line 501
+    .line 509
     return-void
 
-    .line 500
+    .line 508
     :catchall_0
     move-exception v0
 

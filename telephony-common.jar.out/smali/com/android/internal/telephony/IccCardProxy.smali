@@ -853,7 +853,7 @@
     :try_start_1
     invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
     :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
 
     .line 1045
     :goto_0
@@ -907,22 +907,22 @@
     :try_start_4
     invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_2
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 1040
+    .line 1043
     :goto_2
     throw v4
 
     .line 1042
     :catch_2
-    move-exception v5
-
-    goto :goto_2
-
-    :catch_3
     move-exception v4
 
     goto :goto_0
+
+    :catch_3
+    move-exception v5
+
+    goto :goto_2
 .end method
 
 .method private log(Ljava/lang/String;)V

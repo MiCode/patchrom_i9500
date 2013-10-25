@@ -7,7 +7,7 @@
         <FriendlyName value="ja3g"/>
         <ProductLineup value="HHP"/>
         <OS value="Android" version="4.2"/>
-        <TargetMarket value="Europe" />
+        <TargetMarket value="China" />
         <LoadingMode value="Runtime"/>
         <Platform value="Android" lab="MSDG"/>
         <Language value="English" />

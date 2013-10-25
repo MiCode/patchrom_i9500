@@ -551,20 +551,25 @@
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardHost:Landroid/widget/FrameLayout;
 
+    .line 117
     const/4 v8, -0x1
 
+    .line 118
     .local v8, stretch:I
     const v4, 0x4100800
 
+    .line 123
     .local v4, flags:I
     iget-boolean v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mNeedsInput:Z
 
     if-nez v1, :cond_2
 
+    .line 124
     const/high16 v1, 0x2
 
     or-int/2addr v4, v1
 
+    .line 126
     :cond_2
     invoke-static {}, Landroid/app/ActivityManager;->isHighEndGfx()Z
 

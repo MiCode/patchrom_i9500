@@ -10,9 +10,10 @@
 		<PhotoSize accessibility="all" value="720*720"/>
 		<MultipleAccount value="TRUE"/>
 		<SupportSync value="FALSE"/>
+		<LunarCalendar value="true"/>
 		<MinimumYear value="1902"/>
 		<MaximumYear value="2037"/>
-		<DialChar value="*#,+,;()/N- ." />
+		<DialChar value="+*#,;N" />
 		<Enums>
 			<Enum name="TEL_TYPE" >
 				<Element type="Default" name="Mobile" />
@@ -39,12 +40,11 @@
 				<Element name="Custom" value="3" />
 			</Enum>
 			<Enum name="MESSENGER_TYPE" >
+				<Element name="QQ"/>
 				<Element name="AIM" />
 				<Element name="WindowsLive"/>
 				<Element name="Yahoo"/>
 				<Element name="Skype"/>
-				<Element name="QQ"/>
-				<Element name="GoogleTalk" />
 				<Element name="ICQ"/>
 				<Element name="Jabber"/>
 				<Element name="Custom"/>

@@ -189,12 +189,12 @@
     if-eqz v1, :cond_1
 
     .line 589
-    .end local v3           #sql:Ljava/lang/String;
-    :goto_0
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     .line 593
+    .end local v3           #sql:Ljava/lang/String;
     :cond_1
+    :goto_0
     return v0
 
     .line 585
@@ -215,8 +215,12 @@
     .line 588
     if-eqz v1, :cond_1
 
+    .line 589
+    invoke-interface {v1}, Landroid/database/Cursor;->close()V
+
     goto :goto_0
 
+    .line 588
     .end local v2           #e:Ljava/lang/Exception;
     :catchall_0
     move-exception v4
@@ -226,7 +230,6 @@
     .line 589
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 588
     :cond_2
     throw v4
 .end method
@@ -741,7 +744,7 @@
     move-result-object v15
 
     .line 379
-    if-eqz v15, :cond_6
+    if-eqz v15, :cond_4
 
     .line 380
     :goto_1
@@ -749,7 +752,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_4
 
     .line 381
     new-instance v3, Landroid/content/ContentValues;
@@ -896,14 +899,26 @@
 
     goto :goto_1
 
-    .line 388
+    .line 391
     .end local v18           #i:I
+    :cond_4
+    if-eqz v15, :cond_5
+
+    .line 392
+    invoke-interface {v15}, Landroid/database/Cursor;->close()V
+
+    .line 395
+    :cond_5
+    :goto_4
+    return-object v16
+
+    .line 388
     :catch_0
     move-exception v17
 
     .line 389
     .local v17, e:Ljava/lang/Exception;
-    :goto_4
+    :goto_5
     :try_start_2
     const-string v3, "EcppStorageHelper"
 
@@ -914,36 +929,28 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 391
-    if-eqz v15, :cond_4
-
-    .line 392
-    .end local v17           #e:Ljava/lang/Exception;
-    :goto_5
-    invoke-interface {v15}, Landroid/database/Cursor;->close()V
-
-    .line 395
-    :cond_4
-    return-object v16
-
-    .line 391
-    :catchall_0
-    move-exception v3
-
-    :goto_6
     if-eqz v15, :cond_5
 
     .line 392
     invoke-interface {v15}, Landroid/database/Cursor;->close()V
 
+    goto :goto_4
+
     .line 391
-    :cond_5
-    throw v3
+    .end local v17           #e:Ljava/lang/Exception;
+    :catchall_0
+    move-exception v3
+
+    :goto_6
+    if-eqz v15, :cond_6
+
+    .line 392
+    invoke-interface {v15}, Landroid/database/Cursor;->close()V
 
     :cond_6
-    if-eqz v15, :cond_4
+    throw v3
 
-    goto :goto_5
-
+    .line 391
     .end local v11           #buf:Ljava/lang/StringBuffer;
     .restart local v10       #arr$:[Ljava/lang/String;
     .restart local v12       #buf:Ljava/lang/StringBuffer;
@@ -966,7 +973,7 @@
 
     .end local v12           #buf:Ljava/lang/StringBuffer;
     .restart local v11       #buf:Ljava/lang/StringBuffer;
-    goto :goto_4
+    goto :goto_5
 .end method
 
 .method insertOrUpdate(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)Z

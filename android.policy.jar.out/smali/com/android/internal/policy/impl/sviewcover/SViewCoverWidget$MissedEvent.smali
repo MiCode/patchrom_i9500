@@ -923,7 +923,7 @@
     invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 317
-    const v0, 0x1020401
+    const v0, 0x1020403
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -934,7 +934,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;->mMissedCallTextView:Landroid/widget/TextView;
 
     .line 318
-    const v0, 0x1020400
+    const v0, 0x1020402
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -945,7 +945,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;->mMissedMsgTextView:Landroid/widget/TextView;
 
     .line 319
-    const v0, 0x10203ff
+    const v0, 0x1020401
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

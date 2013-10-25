@@ -169,7 +169,7 @@
     <string name="global_actions_toggle_airplane_mode_enable">Enable airplane mode</string>
     <string name="global_actions_airplane_mode_on_status">Airplane mode is ON</string>
     <string name="global_actions_airplane_mode_off_status">Airplane mode is OFF</string>
-    <string name="global_actions_airplane_mode_on_status_confirm">Airplane mode allows you to turn off calling, messaging and data network features. It also turns off connectivity features such as Wi-Fi and Bluetooth. To use Wi-Fi and Bluetooth, turn them on in Settings or on the notification panel</string>
+    <string name="global_actions_airplane_mode_on_status_confirm">Airplane mode allows you to turn off calling, messaging and data network features. It also turns off connectivity features such as WLAN and Bluetooth. To use WLAN and Bluetooth, turn them on in Settings or on the notification panel</string>
     <string name="global_actions_airplane_mode_on_status_confirm_body">Airplane mode allows you to turn off calling, messaging, and mobile networks functions</string>
     <string name="global_actions_airplane_mode_off_status_confirm">Airplane mode will be disabled</string>
     <string name="ringtone_silent">Silent</string>

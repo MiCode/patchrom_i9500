@@ -1157,7 +1157,7 @@
     :pswitch_1
     const-string v7, "CHN"
 
-    const-string v8, ""
+    const-string v8, "CHN"
 
     invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

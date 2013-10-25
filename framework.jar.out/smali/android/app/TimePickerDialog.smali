@@ -128,7 +128,7 @@
     invoke-virtual {p0, v2}, Landroid/app/TimePickerDialog;->setView(Landroid/view/View;)V
 
     .line 143
-    const v3, 0x1020445
+    const v3, 0x1020447
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

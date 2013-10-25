@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 726
+    .line 727
     iput-object p1, p0, Landroid/os/DVFSHelper$1;->this$0:Landroid/os/DVFSHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 728
+    .line 729
     iget-object v1, p0, Landroid/os/DVFSHelper$1;->this$0:Landroid/os/DVFSHelper;
 
     const/4 v2, 0x1
@@ -50,7 +50,7 @@
     #calls: Landroid/os/DVFSHelper;->sendProxyBenchMarkStatusToSSRM(Z)V
     invoke-static {v1, v2}, Landroid/os/DVFSHelper;->access$000(Landroid/os/DVFSHelper;Z)V
 
-    .line 730
+    .line 731
     const-wide/16 v1, 0x1388
 
     :try_start_0
@@ -59,21 +59,21 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 734
+    .line 735
     iget-object v1, p0, Landroid/os/DVFSHelper$1;->this$0:Landroid/os/DVFSHelper;
 
     #calls: Landroid/os/DVFSHelper;->sendProxyBenchMarkStatusToSSRM(Z)V
     invoke-static {v1, v4}, Landroid/os/DVFSHelper;->access$000(Landroid/os/DVFSHelper;Z)V
 
-    .line 736
+    .line 737
     :goto_0
     return-void
 
-    .line 731
+    .line 732
     :catch_0
     move-exception v0
 
-    .line 732
+    .line 733
     .local v0, e:Ljava/lang/InterruptedException;
     :try_start_1
     const-string v1, "DVFSHelper"
@@ -100,7 +100,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 734
+    .line 735
     iget-object v1, p0, Landroid/os/DVFSHelper$1;->this$0:Landroid/os/DVFSHelper;
 
     #calls: Landroid/os/DVFSHelper;->sendProxyBenchMarkStatusToSSRM(Z)V

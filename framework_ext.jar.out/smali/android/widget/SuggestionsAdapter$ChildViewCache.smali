@@ -80,7 +80,7 @@
     iput-object v0, p0, Landroid/widget/SuggestionsAdapter$ChildViewCache;->mIcon2:Landroid/widget/ImageView;
 
     .line 313
-    const v0, 0x1020413
+    const v0, 0x1020415
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

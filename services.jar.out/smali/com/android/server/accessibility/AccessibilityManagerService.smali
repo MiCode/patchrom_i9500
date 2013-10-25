@@ -3361,37 +3361,30 @@
 
     .line 611
     .local v3, root:Landroid/view/accessibility/AccessibilityNodeInfo;
-    if-nez v3, :cond_0
+    if-nez v3, :cond_1
 
     .line 629
+    :cond_0
+    :goto_0
     invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityInteractionClient;->removeConnection(I)V
 
-    :goto_0
+    .line 627
     return v6
 
     .line 614
-    :cond_0
+    :cond_1
     const/4 v7, 0x2
 
     :try_start_1
     invoke-virtual {v3, v7}, Landroid/view/accessibility/AccessibilityNodeInfo;->findFocus(I)Landroid/view/accessibility/AccessibilityNodeInfo;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     move-result-object v2
 
     .line 616
     .local v2, focus:Landroid/view/accessibility/AccessibilityNodeInfo;
-    if-nez v2, :cond_1
-
-    .line 629
-    invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityInteractionClient;->removeConnection(I)V
-
-    goto :goto_0
+    if-eqz v2, :cond_0
 
     .line 619
-    :cond_1
-    :try_start_2
     invoke-virtual {v2, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->getBoundsInScreen(Landroid/graphics/Rect;)V
 
     .line 621
@@ -3425,17 +3418,15 @@
     iget v9, v9, Landroid/graphics/Point;->y:I
 
     invoke-virtual {p1, v6, v7, v8, v9}, Landroid/graphics/Rect;->intersect(IIII)Z
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 627
     const/4 v6, 0x1
 
-    .line 629
-    invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityInteractionClient;->removeConnection(I)V
-
     goto :goto_0
 
+    .line 629
     .end local v2           #focus:Landroid/view/accessibility/AccessibilityNodeInfo;
     .end local v3           #root:Landroid/view/accessibility/AccessibilityNodeInfo;
     .end local v5           #windowBounds:Landroid/graphics/Rect;
@@ -3514,7 +3505,7 @@
     move-result-object v0
 
     .line 650
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
     .line 651
     iget-object v3, v0, Landroid/view/WindowInfo;->frame:Landroid/graphics/Rect;
@@ -3556,18 +3547,17 @@
     .restart local v0       #info:Landroid/view/WindowInfo;
     .restart local v1       #token:Landroid/os/IBinder;
     .restart local v2       #windowId:I
-    :cond_2
-    if-eqz v0, :cond_3
+    :catchall_1
+    move-exception v3
+
+    if-eqz v0, :cond_2
 
     .line 658
     invoke-virtual {v0}, Landroid/view/WindowInfo;->recycle()V
 
-    .line 661
-    :cond_3
-    :goto_1
-    const/4 v3, 0x0
-
-    goto :goto_0
+    .line 657
+    :cond_2
+    throw v3
 
     .line 654
     :catch_0
@@ -3577,21 +3567,20 @@
     if-eqz v0, :cond_3
 
     .line 658
+    :goto_1
     invoke-virtual {v0}, Landroid/view/WindowInfo;->recycle()V
 
-    goto :goto_1
+    .line 661
+    :cond_3
+    const/4 v3, 0x0
+
+    goto :goto_0
 
     .line 657
-    :catchall_1
-    move-exception v3
-
-    if-eqz v0, :cond_4
-
-    .line 658
-    invoke-virtual {v0}, Landroid/view/WindowInfo;->recycle()V
-
     :cond_4
-    throw v3
+    if-eqz v0, :cond_3
+
+    goto :goto_1
 .end method
 
 .method getActiveWindowId()I

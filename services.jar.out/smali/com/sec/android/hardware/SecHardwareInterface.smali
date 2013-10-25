@@ -1740,7 +1740,7 @@
 
     move-result v7
 
-    if-eqz v7, :cond_4
+    if-eqz v7, :cond_3
 
     .line 445
     :cond_0
@@ -1785,11 +1785,11 @@
     .line 464
     .end local v2           #fw:Ljava/io/FileWriter;
     .local v3, fw:Ljava/io/FileWriter;
-    if-lez p0, :cond_7
+    if-lez p0, :cond_6
 
     const/16 v7, 0xf
 
-    if-ge p0, v7, :cond_7
+    if-ge p0, v7, :cond_6
 
     .line 465
     :try_start_1
@@ -1831,36 +1831,34 @@
     .line 480
     .end local v4           #lLevel:Ljava/lang/String;
     :goto_1
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_9
 
     .line 482
     :try_start_2
     invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_5
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_4
 
-    :cond_2
-    :goto_2
     move-object v2, v3
 
     .line 488
     .end local v1           #fl:Ljava/io/File;
     .end local v3           #fw:Ljava/io/FileWriter;
     .restart local v2       #fw:Ljava/io/FileWriter;
-    :cond_3
-    :goto_3
+    :cond_2
+    :goto_2
     return-void
 
     .line 447
     .end local v6           #path:Ljava/lang/String;
-    :cond_4
+    :cond_3
     const-string v7, "SHV-E160S"
 
     invoke-virtual {v5, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v7
 
-    if-nez v7, :cond_5
+    if-nez v7, :cond_4
 
     const-string v7, "SHV-E160K"
 
@@ -1868,7 +1866,7 @@
 
     move-result v7
 
-    if-nez v7, :cond_5
+    if-nez v7, :cond_4
 
     const-string v7, "SHV-E160L"
 
@@ -1876,10 +1874,10 @@
 
     move-result v7
 
-    if-eqz v7, :cond_6
+    if-eqz v7, :cond_5
 
     .line 450
-    :cond_5
+    :cond_4
     const-string v7, "SecHardwareInterface"
 
     const-string v8, "Torch path is /sys/class/ledflash/sec_ledflash/torch"
@@ -1894,7 +1892,7 @@
 
     .line 453
     .end local v6           #path:Ljava/lang/String;
-    :cond_6
+    :cond_5
     const-string v7, "SecHardwareInterface"
 
     const-string v8, "Torch path is sys/class/camera/flash/rear_flash"
@@ -1911,8 +1909,8 @@
     .end local v2           #fw:Ljava/io/FileWriter;
     .restart local v1       #fl:Ljava/io/File;
     .restart local v3       #fw:Ljava/io/FileWriter;
-    :cond_7
-    if-nez p0, :cond_8
+    :cond_6
+    if-nez p0, :cond_7
 
     .line 469
     :try_start_3
@@ -1944,14 +1942,14 @@
     .end local v3           #fw:Ljava/io/FileWriter;
     .local v0, e:Ljava/io/FileNotFoundException;
     .restart local v2       #fw:Ljava/io/FileWriter;
-    :goto_4
+    :goto_3
     :try_start_4
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 480
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
     .line 482
     :try_start_5
@@ -1959,7 +1957,7 @@
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
 
-    goto :goto_3
+    goto :goto_2
 
     .line 483
     :catch_1
@@ -1967,17 +1965,16 @@
 
     .line 484
     .local v0, e:Ljava/io/IOException;
-    :goto_5
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    goto :goto_3
+    goto :goto_2
 
     .line 472
     .end local v0           #e:Ljava/io/IOException;
     .end local v2           #fw:Ljava/io/FileWriter;
     .restart local v1       #fl:Ljava/io/File;
     .restart local v3       #fw:Ljava/io/FileWriter;
-    :cond_8
+    :cond_7
     :try_start_6
     const-string v7, "SecHardwareInterface"
 
@@ -2007,14 +2004,14 @@
     .end local v3           #fw:Ljava/io/FileWriter;
     .restart local v0       #e:Ljava/io/IOException;
     .restart local v2       #fw:Ljava/io/FileWriter;
-    :goto_6
+    :goto_4
     :try_start_7
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 480
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
     .line 482
     :try_start_8
@@ -2022,34 +2019,22 @@
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_3
 
-    goto :goto_3
+    goto :goto_2
 
     .line 483
     :catch_3
     move-exception v0
 
-    goto :goto_5
+    .line 484
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 480
-    .end local v0           #e:Ljava/io/IOException;
-    :catchall_0
-    move-exception v7
-
-    :goto_7
-    if-eqz v2, :cond_9
-
-    .line 482
-    :try_start_9
-    invoke-virtual {v2}, Ljava/io/OutputStreamWriter;->close()V
-    :try_end_9
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_4
-
-    .line 480
-    :cond_9
-    :goto_8
-    throw v7
+    goto :goto_2
 
     .line 483
+    .end local v0           #e:Ljava/io/IOException;
+    .end local v2           #fw:Ljava/io/FileWriter;
+    .restart local v1       #fl:Ljava/io/File;
+    .restart local v3       #fw:Ljava/io/FileWriter;
     :catch_4
     move-exception v0
 
@@ -2057,13 +2042,34 @@
     .restart local v0       #e:Ljava/io/IOException;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    goto :goto_8
+    move-object v2, v3
+
+    .line 485
+    .end local v3           #fw:Ljava/io/FileWriter;
+    .restart local v2       #fw:Ljava/io/FileWriter;
+    goto :goto_2
+
+    .line 480
+    .end local v0           #e:Ljava/io/IOException;
+    .end local v1           #fl:Ljava/io/File;
+    :catchall_0
+    move-exception v7
+
+    :goto_5
+    if-eqz v2, :cond_8
+
+    .line 482
+    :try_start_9
+    invoke-virtual {v2}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
+
+    .line 485
+    :cond_8
+    :goto_6
+    throw v7
 
     .line 483
-    .end local v0           #e:Ljava/io/IOException;
-    .end local v2           #fw:Ljava/io/FileWriter;
-    .restart local v1       #fl:Ljava/io/File;
-    .restart local v3       #fw:Ljava/io/FileWriter;
     :catch_5
     move-exception v0
 
@@ -2071,10 +2077,13 @@
     .restart local v0       #e:Ljava/io/IOException;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    goto :goto_2
+    goto :goto_6
 
     .line 480
     .end local v0           #e:Ljava/io/IOException;
+    .end local v2           #fw:Ljava/io/FileWriter;
+    .restart local v1       #fl:Ljava/io/File;
+    .restart local v3       #fw:Ljava/io/FileWriter;
     :catchall_1
     move-exception v7
 
@@ -2082,20 +2091,30 @@
 
     .end local v3           #fw:Ljava/io/FileWriter;
     .restart local v2       #fw:Ljava/io/FileWriter;
-    goto :goto_7
+    goto :goto_5
 
     .line 477
     .end local v1           #fl:Ljava/io/File;
     :catch_6
     move-exception v0
 
-    goto :goto_6
+    goto :goto_4
 
     .line 475
     :catch_7
     move-exception v0
 
-    goto :goto_4
+    goto :goto_3
+
+    .end local v2           #fw:Ljava/io/FileWriter;
+    .restart local v1       #fl:Ljava/io/File;
+    .restart local v3       #fw:Ljava/io/FileWriter;
+    :cond_9
+    move-object v2, v3
+
+    .end local v3           #fw:Ljava/io/FileWriter;
+    .restart local v2       #fw:Ljava/io/FileWriter;
+    goto/16 :goto_2
 .end method
 
 .method public static setTorchLight(Z)V

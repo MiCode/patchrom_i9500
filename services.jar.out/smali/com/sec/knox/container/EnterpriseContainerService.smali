@@ -4293,13 +4293,13 @@
     if-eqz v4, :cond_1
 
     .line 3735
-    :goto_0
     invoke-virtual {v4}, Ljava/io/InputStream;->close()V
 
     .line 3739
     .end local v4           #input:Ljava/io/InputStream;
     .end local v6           #pInfo:Landroid/content/pm/PackageInfo;
     :cond_1
+    :goto_0
     return-object v8
 
     .line 3727
@@ -4333,9 +4333,14 @@
     move-result-object v11
 
     invoke-static {v10, v11}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 3734
     if-eqz v4, :cond_1
+
+    .line 3735
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
 
     goto :goto_0
 
@@ -4347,6 +4352,7 @@
     .line 3730
     .local v3, e:Ljava/lang/IndexOutOfBoundsException;
     :goto_2
+    :try_start_3
     const-string v10, "EnterpriseContainerService"
 
     invoke-static {v3}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
@@ -4354,9 +4360,14 @@
     move-result-object v11
 
     invoke-static {v10, v11}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 3734
     if-eqz v4, :cond_1
+
+    .line 3735
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
 
     goto :goto_0
 
@@ -4368,6 +4379,7 @@
     .line 3732
     .local v3, e:Ljava/lang/Exception;
     :goto_3
+    :try_start_4
     const-string v10, "EnterpriseContainerService"
 
     invoke-static {v3}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
@@ -4375,14 +4387,18 @@
     move-result-object v11
 
     invoke-static {v10, v11}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 3734
     if-eqz v4, :cond_1
 
+    .line 3735
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+
     goto :goto_0
 
+    .line 3734
     .end local v3           #e:Ljava/lang/Exception;
     :catchall_0
     move-exception v10
@@ -4393,10 +4409,10 @@
     .line 3735
     invoke-virtual {v4}, Ljava/io/InputStream;->close()V
 
-    .line 3734
     :cond_2
     throw v10
 
+    .line 3734
     .end local v4           #input:Ljava/io/InputStream;
     .restart local v1       #byteSignature:[B
     .restart local v2       #cf:Ljava/security/cert/CertificateFactory;
@@ -4622,10 +4638,50 @@
     :try_start_4
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
 
     :cond_2
-    :goto_3
+    move-object v1, v2
+
+    .line 2138
+    .end local v2           #in:Ljava/io/BufferedReader;
+    .restart local v1       #in:Ljava/io/BufferedReader;
+    goto :goto_2
+
+    .line 2136
+    .end local v1           #in:Ljava/io/BufferedReader;
+    .restart local v2       #in:Ljava/io/BufferedReader;
+    :catch_1
+    move-exception v0
+
+    .line 2137
+    .restart local v0       #e:Ljava/io/IOException;
+    const-string v6, "EnterpriseContainerService"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "Exception: "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-static {v0}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
     move-object v1, v2
 
     .line 2139
@@ -4633,61 +4689,8 @@
     .restart local v1       #in:Ljava/io/BufferedReader;
     goto :goto_2
 
-    .line 2132
+    .line 2136
     .end local v3           #line:Ljava/lang/String;
-    :catchall_0
-    move-exception v6
-
-    .line 2133
-    :goto_4
-    if-eqz v1, :cond_3
-
-    .line 2134
-    :try_start_5
-    invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
-
-    .line 2132
-    :cond_3
-    :goto_5
-    throw v6
-
-    .line 2136
-    :catch_1
-    move-exception v0
-
-    .line 2137
-    .restart local v0       #e:Ljava/io/IOException;
-    const-string v7, "EnterpriseContainerService"
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v9, "Exception: "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-static {v0}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_5
-
-    .line 2136
     :catch_2
     move-exception v0
 
@@ -4720,47 +4723,64 @@
 
     goto :goto_2
 
-    .line 2136
+    .line 2132
     .end local v0           #e:Ljava/io/IOException;
-    .end local v1           #in:Ljava/io/BufferedReader;
-    .restart local v2       #in:Ljava/io/BufferedReader;
-    .restart local v3       #line:Ljava/lang/String;
+    :catchall_0
+    move-exception v6
+
+    .line 2133
+    :goto_3
+    if-eqz v1, :cond_3
+
+    .line 2134
+    :try_start_5
+    invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
+
+    .line 2138
+    :cond_3
+    :goto_4
+    throw v6
+
+    .line 2136
     :catch_3
     move-exception v0
 
     .line 2137
     .restart local v0       #e:Ljava/io/IOException;
-    const-string v6, "EnterpriseContainerService"
+    const-string v7, "EnterpriseContainerService"
 
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "Exception: "
+    const-string v9, "Exception: "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-static {v0}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v9
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    goto :goto_3
+    move-result-object v8
+
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_4
 
     .line 2132
     .end local v0           #e:Ljava/io/IOException;
-    .end local v3           #line:Ljava/lang/String;
+    .end local v1           #in:Ljava/io/BufferedReader;
+    .restart local v2       #in:Ljava/io/BufferedReader;
     :catchall_1
     move-exception v6
 
@@ -4768,7 +4788,7 @@
 
     .end local v2           #in:Ljava/io/BufferedReader;
     .restart local v1       #in:Ljava/io/BufferedReader;
-    goto :goto_4
+    goto :goto_3
 
     .line 2129
     :catch_4
@@ -7147,16 +7167,15 @@
     if-eqz v4, :cond_1
 
     .line 2640
+    invoke-static/range {v20 .. v21}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    .line 2643
     .end local v13           #mountPathFile:Ljava/io/File;
     .end local v14           #mountSDPathFile:Ljava/io/File;
     .end local v18           #srcPathFile:Ljava/io/File;
     .end local v19           #srcSDPathFile:Ljava/io/File;
-    :goto_0
-    invoke-static/range {v20 .. v21}, Landroid/os/Binder;->restoreCallingIdentity(J)V
-
-    .line 2643
     :cond_1
-    :goto_1
+    :goto_0
     return v3
 
     .line 2612
@@ -7311,7 +7330,7 @@
 
     const/16 v4, 0xd
 
-    if-eq v3, v4, :cond_6
+    if-eq v3, v4, :cond_5
 
     .line 2631
     const-string v3, "EnterpriseContainerService"
@@ -7332,6 +7351,26 @@
     cmp-long v4, v20, v4
 
     if-eqz v4, :cond_1
+
+    .line 2640
+    invoke-static/range {v20 .. v21}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto/16 :goto_0
+
+    .line 2639
+    :cond_5
+    const-wide/16 v3, 0x0
+
+    cmp-long v3, v20, v3
+
+    if-eqz v3, :cond_6
+
+    .line 2640
+    invoke-static/range {v20 .. v21}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    .line 2643
+    :cond_6
+    const/4 v3, 0x1
 
     goto/16 :goto_0
 
@@ -7368,8 +7407,12 @@
 
     if-eqz v4, :cond_1
 
+    .line 2640
+    invoke-static/range {v20 .. v21}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
     goto/16 :goto_0
 
+    .line 2639
     .end local v11           #e:Ljava/lang/Exception;
     :catchall_0
     move-exception v3
@@ -7378,36 +7421,13 @@
 
     cmp-long v4, v20, v4
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_7
 
     .line 2640
     invoke-static/range {v20 .. v21}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2639
-    :cond_5
-    throw v3
-
-    .restart local v2       #encryptCallback:Lcom/sec/knox/container/EnterpriseContainerService$ContainerEncryptionCallback;
-    .restart local v6       #newPassword:Ljava/lang/String;
-    .restart local v13       #mountPathFile:Ljava/io/File;
-    .restart local v14       #mountSDPathFile:Ljava/io/File;
-    .restart local v18       #srcPathFile:Ljava/io/File;
-    .restart local v19       #srcSDPathFile:Ljava/io/File;
-    :cond_6
-    const-wide/16 v3, 0x0
-
-    cmp-long v3, v20, v3
-
-    if-eqz v3, :cond_7
-
-    .line 2640
-    invoke-static/range {v20 .. v21}, Landroid/os/Binder;->restoreCallingIdentity(J)V
-
-    .line 2643
     :cond_7
-    const/4 v3, 0x1
-
-    goto/16 :goto_1
+    throw v3
 .end method
 
 .method private registerReceiverPerContainer(Ljava/lang/String;)V
@@ -7692,17 +7712,17 @@
 
     .line 3576
     .local v6, packageNames:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
-    if-eqz v6, :cond_2
+    if-eqz v6, :cond_4
 
     invoke-interface {v6}, Ljava/util/List;->size()I
 
     move-result v10
 
-    if-lez v10, :cond_2
+    if-lez v10, :cond_4
 
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mActiveAdminList:Ljava/util/ArrayList;
 
-    if-eqz v10, :cond_2
+    if-eqz v10, :cond_4
 
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mActiveAdminList:Ljava/util/ArrayList;
 
@@ -7710,7 +7730,7 @@
 
     move-result v10
 
-    if-lez v10, :cond_2
+    if-lez v10, :cond_4
 
     .line 3578
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
@@ -7727,7 +7747,7 @@
 
     .line 3580
     .local v4, mDPM:Landroid/app/admin/DevicePolicyManager;
-    if-eqz v4, :cond_2
+    if-eqz v4, :cond_4
 
     .line 3581
     new-instance v7, Ljava/util/ArrayList;
@@ -7747,7 +7767,7 @@
 
     move-result v10
 
-    if-eqz v10, :cond_3
+    if-eqz v10, :cond_2
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -7872,19 +7892,18 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 3608
-    .end local v1           #e:Ljava/lang/Exception;
-    :cond_2
-    :goto_1
     invoke-static {v8, v9}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     .line 3610
+    .end local v1           #e:Ljava/lang/Exception;
+    :goto_1
     return-void
 
     .line 3593
     .restart local v4       #mDPM:Landroid/app/admin/DevicePolicyManager;
     .restart local v6       #packageNames:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     .restart local v7       #removeAdminList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/content/ComponentName;>;"
-    :cond_3
+    :cond_2
     :try_start_2
     invoke-virtual {v7}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -7895,7 +7914,7 @@
     .line 3594
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRemoveAdminMap:Ljava/util/HashMap;
 
-    if-nez v10, :cond_4
+    if-nez v10, :cond_3
 
     .line 3595
     new-instance v10, Ljava/util/HashMap;
@@ -7905,7 +7924,7 @@
     iput-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRemoveAdminMap:Ljava/util/HashMap;
 
     .line 3597
-    :cond_4
+    :cond_3
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRemoveAdminMap:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -7917,22 +7936,17 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    goto :goto_1
-
     .line 3608
     .end local v4           #mDPM:Landroid/app/admin/DevicePolicyManager;
-    .end local v6           #packageNames:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     .end local v7           #removeAdminList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/content/ComponentName;>;"
-    :catchall_0
-    move-exception v10
-
+    :cond_4
+    :goto_2
     invoke-static {v8, v9}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    throw v10
+    goto :goto_1
 
     .line 3599
     .restart local v4       #mDPM:Landroid/app/admin/DevicePolicyManager;
-    .restart local v6       #packageNames:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     .restart local v7       #removeAdminList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/content/ComponentName;>;"
     :cond_5
     :try_start_3
@@ -7961,7 +7975,18 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 
-    goto :goto_1
+    goto :goto_2
+
+    .line 3608
+    .end local v4           #mDPM:Landroid/app/admin/DevicePolicyManager;
+    .end local v6           #packageNames:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
+    .end local v7           #removeAdminList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/content/ComponentName;>;"
+    :catchall_0
+    move-exception v10
+
+    invoke-static {v8, v9}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw v10
 .end method
 
 .method private removeContainerHelper(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
@@ -11706,10 +11731,10 @@
 
     .line 4582
     :cond_0
-    :goto_0
     invoke-static {v1, v2}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     .line 4584
+    :goto_0
     return-void
 
     .line 4577
@@ -11747,18 +11772,13 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_0
-
     .line 4582
-    .end local v0           #e:Landroid/os/RemoteException;
-    :catchall_0
-    move-exception v4
-
     invoke-static {v1, v2}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    throw v4
+    goto :goto_0
 
     .line 4579
+    .end local v0           #e:Landroid/os/RemoteException;
     :catch_1
     move-exception v0
 
@@ -11793,7 +11813,18 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
+    .line 4582
+    invoke-static {v1, v2}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
     goto :goto_0
+
+    .end local v0           #e:Ljava/lang/Exception;
+    :catchall_0
+    move-exception v4
+
+    invoke-static {v1, v2}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw v4
 .end method
 
 .method public createContainer(Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;I)Z
@@ -12148,11 +12179,9 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 3913
-    :goto_0
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
-    .line 3910
-    :goto_1
+    :goto_0
     return v3
 
     .line 3870
@@ -12178,15 +12207,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_0
-
     .line 3913
-    :catchall_0
-    move-exception v3
-
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
-    throw v3
+    goto :goto_0
 
     .line 3876
     :cond_1
@@ -12253,11 +12277,17 @@
     iget v4, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContainerId:I
 
     invoke-direct {p0, v4}, Lcom/sec/knox/container/EnterpriseContainerService;->cleanupContainer(I)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 3913
+    invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
     goto :goto_0
 
     .line 3886
     :cond_3
+    :try_start_3
     iget v5, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContainerId:I
 
     if-ge v5, v8, :cond_7
@@ -12333,24 +12363,25 @@
     iget v4, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContainerId:I
 
     invoke-direct {p0, v4}, Lcom/sec/knox/container/EnterpriseContainerService;->cleanupContainer(I)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 3913
+    invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
     goto/16 :goto_0
 
-    .line 3913
     :cond_5
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
     move v3, v4
 
-    .line 3898
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 3901
     .end local v2           #tempState:Lcom/sec/knox/container/constants/CSState;
     :cond_6
-    :try_start_3
+    :try_start_4
     const-string v4, "EnterpriseContainerService"
 
     const-string v5, "Container password: is either null or empty"
@@ -12366,11 +12397,17 @@
     iget v4, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContainerId:I
 
     invoke-direct {p0, v4}, Lcom/sec/knox/container/EnterpriseContainerService;->cleanupContainer(I)V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    .line 3913
+    invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
     goto/16 :goto_0
 
     .line 3907
     :cond_7
+    :try_start_5
     const-string v4, "EnterpriseContainerService"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -12410,10 +12447,21 @@
     iget v4, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContainerId:I
 
     invoke-direct {p0, v4}, Lcom/sec/knox/container/EnterpriseContainerService;->cleanupContainer(I)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .line 3913
+    invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
     goto/16 :goto_0
+
+    .end local v0           #oldId:J
+    :catchall_0
+    move-exception v3
+
+    invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
+
+    throw v3
 .end method
 
 .method public enforcePasswordChange(I)Z
@@ -19778,7 +19826,7 @@
     invoke-direct {p0, v5, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->enforceEnterpriseContainerPermission(II)I
 
     .line 5510
-    if-eqz p2, :cond_2
+    if-eqz p2, :cond_1
 
     .line 5511
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
@@ -19811,7 +19859,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     iget-object v5, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
 
@@ -19825,7 +19873,7 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->getContainerStatus(I)I
 
@@ -19833,7 +19881,7 @@
 
     const/16 v6, 0x5b
 
-    if-ne v5, v6, :cond_1
+    if-ne v5, v6, :cond_2
 
     .line 5518
     if-nez p3, :cond_0
@@ -19845,7 +19893,7 @@
 
     .line 5521
     :cond_0
-    if-eqz p3, :cond_1
+    if-eqz p3, :cond_2
 
     .line 5522
     invoke-direct {p0, p3}, Lcom/sec/knox/container/EnterpriseContainerService;->getValidStr(Ljava/lang/String;)Ljava/lang/String;
@@ -19861,18 +19909,25 @@
     move-result v4
 
     .line 5530
-    .end local v1           #list:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
-    :cond_1
-    :goto_0
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     .line 5533
+    .end local v1           #list:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     .end local v2           #token:J
-    :cond_2
+    :cond_1
+    :goto_0
     return v4
 
-    .line 5527
+    .line 5530
+    .restart local v1       #list:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     .restart local v2       #token:J
+    :cond_2
+    invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_0
+
+    .line 5527
+    .end local v1           #list:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     :catch_0
     move-exception v0
 
@@ -19907,9 +19962,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 5530
+    invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
     goto :goto_0
 
-    .line 5530
     .end local v0           #e:Ljava/lang/Exception;
     :catchall_0
     move-exception v4
@@ -20119,7 +20176,7 @@
     invoke-direct {p0, v6, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->enforceEnterpriseContainerPermission(II)I
 
     .line 5540
-    if-eqz p2, :cond_1
+    if-eqz p2, :cond_0
 
     .line 5541
     iget-object v6, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
@@ -20152,7 +20209,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_0
+    if-eqz v6, :cond_1
 
     iget-object v6, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
 
@@ -20166,7 +20223,7 @@
 
     move-result-object v6
 
-    if-eqz v6, :cond_0
+    if-eqz v6, :cond_1
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->getContainerStatus(I)I
 
@@ -20174,7 +20231,7 @@
 
     const/16 v7, 0x5b
 
-    if-ne v6, v7, :cond_0
+    if-ne v6, v7, :cond_1
 
     .line 5547
     iget-object v6, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
@@ -20199,20 +20256,25 @@
     const/4 v5, 0x1
 
     .line 5557
-    .end local v0           #am:Landroid/app/ActivityManager;
-    :cond_0
-    :goto_0
     invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     .line 5560
+    .end local v0           #am:Landroid/app/ActivityManager;
     .end local v2           #list:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     .end local v3           #token:J
-    :cond_1
+    :cond_0
+    :goto_0
     return v5
 
-    .line 5552
+    .line 5557
     .restart local v2       #list:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     .restart local v3       #token:J
+    :cond_1
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_0
+
+    .line 5552
     :catch_0
     move-exception v1
 
@@ -20247,18 +20309,13 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_0
-
     .line 5557
-    .end local v1           #e:Landroid/content/ActivityNotFoundException;
-    :catchall_0
-    move-exception v5
-
     invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    throw v5
+    goto :goto_0
 
     .line 5554
+    .end local v1           #e:Landroid/content/ActivityNotFoundException;
     :catch_1
     move-exception v1
 
@@ -20293,7 +20350,18 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
+    .line 5557
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
     goto :goto_0
+
+    .end local v1           #e:Ljava/lang/Exception;
+    :catchall_0
+    move-exception v5
+
+    invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw v5
 .end method
 
 .method public stopTimer(ILandroid/os/IBinder;)Z

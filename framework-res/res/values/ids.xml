@@ -323,6 +323,8 @@
     <item type="id" name="keyguard_selector_view_frame">false</item>
     <item type="id" name="shortcut_item_root">false</item>
     <item type="id" name="keyguard_signature_view">false</item>
+    <item type="id" name="signature_signview_container">false</item>
+    <item type="id" name="signature_lockscreen_help_text">false</item>
     <item type="id" name="keyguard_sim_perso_view">false</item>
     <item type="id" name="keyguard_sim_pin_view">false</item>
     <item type="id" name="sim_lockscreen_image">false</item>

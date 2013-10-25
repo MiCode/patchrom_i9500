@@ -85,7 +85,7 @@
 
     move-result v3
 
-    const v4, 0x102040a
+    const v4, 0x102040c
 
     if-ne v3, v4, :cond_0
 
@@ -407,7 +407,7 @@
     invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 76
-    const v0, 0x1020408
+    const v0, 0x102040a
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

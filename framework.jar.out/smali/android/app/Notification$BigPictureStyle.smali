@@ -72,7 +72,7 @@
 
     .line 2069
     .local v0, contentView:Landroid/widget/RemoteViews;
-    const v1, 0x10203cd
+    const v1, 0x10203cf
 
     iget-object v2, p0, Landroid/app/Notification$BigPictureStyle;->mPicture:Landroid/graphics/Bitmap;
 

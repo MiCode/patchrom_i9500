@@ -5,8 +5,8 @@ out/target/product/ja3g/obj/STATIC_LIBRARIES/libsec_cryptfs_intermediates/../../
  bionic/libc/include/sys/cdefs_elf.h \
  bionic/libc/include/android/api-level.h bionic/libc/include/sys/_types.h \
  bionic/libc/arch-arm/include/machine/_types.h \
- /home/se.infra/jenkins1/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-HKTW-REL/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stdarg.h \
- /home/se.infra/jenkins1/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-HKTW-REL/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stddef.h \
+ /home/se.infra/jenkins2/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-OPEN-TRUNK/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stdarg.h \
+ /home/se.infra/jenkins2/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-OPEN-TRUNK/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stddef.h \
  bionic/libc/include/sys/types.h bionic/libc/include/stdint.h \
  bionic/libc/kernel/common/linux/posix_types.h \
  bionic/libc/kernel/common/linux/stddef.h \
@@ -58,8 +58,8 @@ out/target/product/ja3g/obj/STATIC_LIBRARIES/libsec_cryptfs_intermediates/../../
  bionic/libc/include/sys/cdefs_elf.h :
  bionic/libc/include/android/api-level.h bionic/libc/include/sys/_types.h :
  bionic/libc/arch-arm/include/machine/_types.h :
- /home/se.infra/jenkins1/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-HKTW-REL/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stdarg.h :
- /home/se.infra/jenkins1/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-HKTW-REL/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stddef.h :
+ /home/se.infra/jenkins2/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-OPEN-TRUNK/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stdarg.h :
+ /home/se.infra/jenkins2/workspace/HUDSON_CHN_GSM_JELLYBEANPLUS_ADONIS-3G-OPEN-TRUNK/android/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin/../lib/gcc/arm-linux-androideabi/4.6.x-google/include/stddef.h :
  bionic/libc/include/sys/types.h bionic/libc/include/stdint.h :
  bionic/libc/kernel/common/linux/posix_types.h :
  bionic/libc/kernel/common/linux/stddef.h :

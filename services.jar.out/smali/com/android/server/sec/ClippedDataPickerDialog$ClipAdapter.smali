@@ -68,9 +68,9 @@
     .line 1305
     :array_0
     .array-data 0x4
-        0x52t 0x4t 0x2t 0x1t
         0x54t 0x4t 0x2t 0x1t
-        0x53t 0x4t 0x2t 0x1t
+        0x56t 0x4t 0x2t 0x1t
+        0x55t 0x4t 0x2t 0x1t
     .end array-data
 .end method
 
@@ -1195,7 +1195,7 @@
 
     .line 1786
     :pswitch_0
-    const v8, 0x1020452
+    const v8, 0x1020454
 
     invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1263,7 +1263,7 @@
     .line 1803
     .end local v6           #tv:Landroid/widget/TextView;
     :pswitch_1
-    const v8, 0x1020454
+    const v8, 0x1020456
 
     invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1317,7 +1317,7 @@
     .line 1839
     .end local v7           #tvHTML:Landroid/widget/TextView;
     :pswitch_2
-    const v8, 0x1020453
+    const v8, 0x1020455
 
     invoke-virtual {p1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

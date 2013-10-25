@@ -90,7 +90,7 @@
 
     move-result v22
 
-    if-eqz v22, :cond_4
+    if-eqz v22, :cond_5
 
     .line 67
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -192,7 +192,7 @@
     invoke-direct {v14, v9}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 80
     .end local v13           #output:Ljava/io/FileOutputStream;
@@ -228,21 +228,23 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_4
 
     .line 84
-    if-eqz v14, :cond_b
+    if-eqz v14, :cond_0
 
     .line 86
     :try_start_2
     invoke-virtual {v14}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_3
 
+    :cond_0
+    :goto_1
     move-object v13, v14
 
     .line 92
     .end local v14           #output:Ljava/io/FileOutputStream;
     .restart local v13       #output:Ljava/io/FileOutputStream;
-    :cond_0
-    :goto_1
+    :cond_1
+    :goto_2
     const-string v6, "-k -t -z -d -o /data/log/dumpstate_app_anr"
 
     .line 107
@@ -261,7 +263,7 @@
     invoke-virtual {v0, v1}, Lcom/android/server/am/AppNotRespondingDialog;->setCancelable(Z)V
 
     .line 113
-    if-eqz p4, :cond_6
+    if-eqz p4, :cond_7
 
     move-object/from16 v0, p4
 
@@ -279,7 +281,7 @@
 
     .line 116
     .local v11, name1:Ljava/lang/CharSequence;
-    :goto_2
+    :goto_3
     const/4 v12, 0x0
 
     .line 117
@@ -300,7 +302,7 @@
 
     move/from16 v1, v23
 
-    if-ne v0, v1, :cond_8
+    if-ne v0, v1, :cond_9
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -316,18 +318,18 @@
 
     move-result-object v12
 
-    if-eqz v12, :cond_8
+    if-eqz v12, :cond_9
 
     .line 119
-    if-eqz v11, :cond_7
+    if-eqz v11, :cond_8
 
     .line 120
     const v17, 0x10405b4
 
     .line 142
     .local v17, resid:I
-    :goto_3
-    if-eqz v12, :cond_a
+    :goto_4
+    if-eqz v12, :cond_b
 
     const/16 v22, 0x2
 
@@ -363,7 +365,7 @@
 
     move-result-object v22
 
-    :goto_4
+    :goto_5
     move-object/from16 v0, p0
 
     move-object/from16 v1, v22
@@ -447,7 +449,7 @@
 
     move-object/from16 v22, v0
 
-    if-eqz v22, :cond_2
+    if-eqz v22, :cond_3
 
     .line 155
     const/16 v18, 0x0
@@ -468,7 +470,7 @@
 
     .line 158
     .local v8, edm:Landroid/app/enterprise/EnterpriseDeviceManager;
-    if-eqz v8, :cond_1
+    if-eqz v8, :cond_2
 
     .line 159
     invoke-virtual {v8}, Landroid/app/enterprise/EnterpriseDeviceManager;->getRestrictionPolicy()Landroid/app/enterprise/RestrictionPolicy;
@@ -476,14 +478,14 @@
     move-result-object v18
 
     .line 161
-    :cond_1
-    if-eqz v18, :cond_2
+    :cond_2
+    if-eqz v18, :cond_3
 
     invoke-virtual/range {v18 .. v18}, Landroid/app/enterprise/RestrictionPolicy;->isGoogleCrashReportAllowed()Z
 
     move-result v22
 
-    if-eqz v22, :cond_2
+    if-eqz v22, :cond_3
 
     .line 163
     const/16 v22, -0x3
@@ -523,7 +525,7 @@
     .line 171
     .end local v8           #edm:Landroid/app/enterprise/EnterpriseDeviceManager;
     .end local v18           #rp:Landroid/app/enterprise/RestrictionPolicy;
-    :cond_2
+    :cond_3
     const v22, 0x10405b3
 
     move-object/from16 v0, v16
@@ -541,7 +543,7 @@
     invoke-virtual {v0, v1}, Lcom/android/server/am/AppNotRespondingDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 172
-    if-eqz p5, :cond_3
+    if-eqz p5, :cond_4
 
     .line 173
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/am/AppNotRespondingDialog;->getWindow()Landroid/view/Window;
@@ -553,7 +555,7 @@
     invoke-virtual/range {v22 .. v23}, Landroid/view/Window;->setType(I)V
 
     .line 175
-    :cond_3
+    :cond_4
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/am/AppNotRespondingDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v22
@@ -635,45 +637,21 @@
     .end local v13           #output:Ljava/io/FileOutputStream;
     .end local v15           #pkg:Ljava/lang/String;
     .end local v17           #resid:I
-    :cond_4
+    :cond_5
     const-string v10, "/data/log/looper.txt"
 
     goto/16 :goto_0
 
-    .line 87
+    .line 81
     .restart local v9       #file:Ljava/io/File;
-    .restart local v14       #output:Ljava/io/FileOutputStream;
+    .restart local v13       #output:Ljava/io/FileOutputStream;
     .restart local v15       #pkg:Ljava/lang/String;
     :catch_0
     move-exception v7
 
-    .line 88
-    .local v7, e:Ljava/io/IOException;
-    const-string v22, "AppNotRespondingDialog"
-
-    const-string v23, "output.close() failed"
-
-    move-object/from16 v0, v22
-
-    move-object/from16 v1, v23
-
-    invoke-static {v0, v1, v7}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    move-object v13, v14
-
-    .line 89
-    .end local v14           #output:Ljava/io/FileOutputStream;
-    .restart local v13       #output:Ljava/io/FileOutputStream;
-    goto/16 :goto_1
-
-    .line 81
-    .end local v7           #e:Ljava/io/IOException;
-    :catch_1
-    move-exception v7
-
     .line 82
-    .restart local v7       #e:Ljava/io/IOException;
-    :goto_5
+    .local v7, e:Ljava/io/IOException;
+    :goto_6
     :try_start_3
     const-string v22, "AppNotRespondingDialog"
 
@@ -706,18 +684,18 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 84
-    if-eqz v13, :cond_0
+    if-eqz v13, :cond_1
 
     .line 86
     :try_start_4
     invoke-virtual {v13}, Ljava/io/FileOutputStream;->close()V
     :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
     .line 87
-    :catch_2
+    :catch_1
     move-exception v7
 
     .line 88
@@ -731,57 +709,38 @@
 
     invoke-static {v0, v1, v7}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
     .line 84
     .end local v7           #e:Ljava/io/IOException;
     :catchall_0
     move-exception v22
 
-    :goto_6
-    if-eqz v13, :cond_5
+    :goto_7
+    if-eqz v13, :cond_6
 
     .line 86
     :try_start_5
     invoke-virtual {v13}, Ljava/io/FileOutputStream;->close()V
     :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
 
-    .line 89
-    :cond_5
-    :goto_7
+    .line 84
+    :cond_6
+    :goto_8
     throw v22
 
-    .line 87
-    :catch_3
-    move-exception v7
-
-    .line 88
-    .restart local v7       #e:Ljava/io/IOException;
-    const-string v23, "AppNotRespondingDialog"
-
-    const-string v24, "output.close() failed"
-
-    move-object/from16 v0, v23
-
-    move-object/from16 v1, v24
-
-    invoke-static {v0, v1, v7}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    goto :goto_7
-
     .line 113
-    .end local v7           #e:Ljava/io/IOException;
     .restart local v6       #dumpCmd:Ljava/lang/String;
-    :cond_6
+    :cond_7
     const/4 v11, 0x0
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
     .line 122
     .restart local v11       #name1:Ljava/lang/CharSequence;
     .restart local v12       #name2:Ljava/lang/CharSequence;
-    :cond_7
+    :cond_8
     move-object v11, v12
 
     .line 123
@@ -793,12 +752,12 @@
     const v17, 0x10405b6
 
     .restart local v17       #resid:I
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     .line 127
     .end local v17           #resid:I
-    :cond_8
-    if-eqz v11, :cond_9
+    :cond_9
+    if-eqz v11, :cond_a
 
     .line 128
     move-object/from16 v0, p3
@@ -809,11 +768,11 @@
     const v17, 0x10405b5
 
     .restart local v17       #resid:I
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     .line 131
     .end local v17           #resid:I
-    :cond_9
+    :cond_a
     move-object/from16 v0, p3
 
     iget-object v11, v0, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
@@ -822,10 +781,10 @@
     const v17, 0x10405b7
 
     .restart local v17       #resid:I
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     .line 142
-    :cond_a
+    :cond_b
     const/16 v22, 0x1
 
     move/from16 v0, v22
@@ -852,15 +811,53 @@
 
     move-result-object v22
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
-    .line 84
+    .line 87
     .end local v6           #dumpCmd:Ljava/lang/String;
     .end local v11           #name1:Ljava/lang/CharSequence;
     .end local v12           #name2:Ljava/lang/CharSequence;
-    .end local v13           #output:Ljava/io/FileOutputStream;
     .end local v17           #resid:I
+    :catch_2
+    move-exception v7
+
+    .line 88
+    .restart local v7       #e:Ljava/io/IOException;
+    const-string v23, "AppNotRespondingDialog"
+
+    const-string v24, "output.close() failed"
+
+    move-object/from16 v0, v23
+
+    move-object/from16 v1, v24
+
+    invoke-static {v0, v1, v7}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_8
+
+    .line 87
+    .end local v7           #e:Ljava/io/IOException;
+    .end local v13           #output:Ljava/io/FileOutputStream;
     .restart local v14       #output:Ljava/io/FileOutputStream;
+    :catch_3
+    move-exception v7
+
+    .line 88
+    .restart local v7       #e:Ljava/io/IOException;
+    const-string v22, "AppNotRespondingDialog"
+
+    const-string v23, "output.close() failed"
+
+    move-object/from16 v0, v22
+
+    move-object/from16 v1, v23
+
+    invoke-static {v0, v1, v7}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto/16 :goto_1
+
+    .line 84
+    .end local v7           #e:Ljava/io/IOException;
     :catchall_1
     move-exception v22
 
@@ -868,7 +865,7 @@
 
     .end local v14           #output:Ljava/io/FileOutputStream;
     .restart local v13       #output:Ljava/io/FileOutputStream;
-    goto :goto_6
+    goto :goto_7
 
     .line 81
     .end local v13           #output:Ljava/io/FileOutputStream;
@@ -880,16 +877,7 @@
 
     .end local v14           #output:Ljava/io/FileOutputStream;
     .restart local v13       #output:Ljava/io/FileOutputStream;
-    goto/16 :goto_5
-
-    .end local v13           #output:Ljava/io/FileOutputStream;
-    .restart local v14       #output:Ljava/io/FileOutputStream;
-    :cond_b
-    move-object v13, v14
-
-    .end local v14           #output:Ljava/io/FileOutputStream;
-    .restart local v13       #output:Ljava/io/FileOutputStream;
-    goto/16 :goto_1
+    goto/16 :goto_6
 .end method
 
 .method static synthetic access$000(Lcom/android/server/am/AppNotRespondingDialog;)Lcom/android/server/am/ProcessRecord;

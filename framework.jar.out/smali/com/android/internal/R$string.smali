@@ -85,7 +85,7 @@
 
 .field public static final SS_MINIMISE:I = 0x1040849
 
-.field public static final SS_STOP_THE_OTHER_VIDEO_AND_TRY_AGAIN:I = 0x10408d3
+.field public static final SS_STOP_THE_OTHER_VIDEO_AND_TRY_AGAIN:I = 0x10408d4
 
 .field public static final SS_SWITCH_TO_PREVIOUS_SIZE:I = 0x1040727
 
@@ -661,6 +661,8 @@
 
 .field public static final cu_operator_name:I = 0x10407d7
 
+.field public static final cu_usimtoolkit:I = 0x10408bd
+
 .field public static final cut:I = 0x1040003
 
 .field public static final data_call_restriction:I = 0x104021d
@@ -803,37 +805,37 @@
 
 .field public static final default_audio_route_name_dock_speakers:I = 0x1040837
 
-.field public static final default_audio_route_name_hdmi:I = 0x10408c0
+.field public static final default_audio_route_name_hdmi:I = 0x10408c1
 
 .field public static final default_audio_route_name_headphones:I = 0x1040836
 
 .field public static final default_media_route_name_hdmi:I = 0x1040838
 
-.field public static final default_missed_widget_class_name:I = 0x10408c8
+.field public static final default_missed_widget_class_name:I = 0x10408c9
 
-.field public static final default_missed_widget_package_name:I = 0x10408c7
+.field public static final default_missed_widget_package_name:I = 0x10408c8
 
-.field public static final default_music_widget_class_name:I = 0x10408ca
+.field public static final default_music_widget_class_name:I = 0x10408cb
 
-.field public static final default_music_widget_package_name:I = 0x10408c9
+.field public static final default_music_widget_package_name:I = 0x10408ca
 
-.field public static final default_permission_group:I = 0x10408bd
+.field public static final default_permission_group:I = 0x10408be
 
-.field public static final default_preload_widget_class_name:I = 0x10408ce
+.field public static final default_preload_widget_class_name:I = 0x10408cf
 
-.field public static final default_preload_widget_package_name:I = 0x10408cd
+.field public static final default_preload_widget_package_name:I = 0x10408ce
 
-.field public static final default_remote_widget_class_name:I = 0x10408cc
+.field public static final default_remote_widget_class_name:I = 0x10408cd
 
-.field public static final default_remote_widget_package_name:I = 0x10408cb
+.field public static final default_remote_widget_package_name:I = 0x10408cc
 
-.field public static final default_sec_music_widget_class_name:I = 0x10408d2
+.field public static final default_sec_music_widget_class_name:I = 0x10408d3
 
-.field public static final default_sec_music_widget_package_name:I = 0x10408d1
+.field public static final default_sec_music_widget_package_name:I = 0x10408d2
 
-.field public static final default_shortcut_widget_class_name:I = 0x10408d0
+.field public static final default_shortcut_widget_class_name:I = 0x10408d1
 
-.field public static final default_shortcut_widget_package_name:I = 0x10408cf
+.field public static final default_shortcut_widget_package_name:I = 0x10408d0
 
 .field public static final default_text_encoding:I = 0x10400e5
 
@@ -887,7 +889,7 @@
 
 .field public static final dlg_ok:I = 0x1040642
 
-.field public static final dont_show_again_message:I = 0x10408d6
+.field public static final dont_show_again_message:I = 0x10408d7
 
 .field public static final double_tap_toast:I = 0x1040517
 
@@ -939,7 +941,7 @@
 
 .field public static final eventTypeOther:I = 0x104046a
 
-.field public static final exceeded_maxlength:I = 0x10408d5
+.field public static final exceeded_maxlength:I = 0x10408d6
 
 .field public static final ext_media_badremoval_notification_message:I = 0x1040679
 
@@ -1346,6 +1348,8 @@
 .field public static final keyguard_pin_accepted:I = 0x10404a5
 
 .field public static final keyguard_recovery_instructions:I = 0x10408a5
+
+.field public static final keyguard_signature_guide:I = 0x10407e9
 
 .field public static final kg_emergency_call_label:I = 0x1040869
 
@@ -1757,7 +1761,7 @@
 
 .field public static final more_item_label:I = 0x104056f
 
-.field public static final ms_domain_site:I = 0x10408d8
+.field public static final ms_domain_site:I = 0x10408d9
 
 .field public static final msim_carrier_text_format:I = 0x1040897
 
@@ -1789,9 +1793,9 @@
 
 .field public static final no_matches:I = 0x10406d3
 
-.field public static final no_more_contents:I = 0x10408f2
+.field public static final no_more_contents:I = 0x10408f3
 
-.field public static final no_more_items:I = 0x10408f1
+.field public static final no_more_items:I = 0x10408f2
 
 .field public static final noon:I = 0x1040595
 
@@ -1837,7 +1841,7 @@
 
 .field public static final open_permission_deny:I = 0x104056d
 
-.field public static final operation_not_allowed:I = 0x10408d4
+.field public static final operation_not_allowed:I = 0x10408d5
 
 .field public static final operator_46004:I = 0x10407e7
 
@@ -2053,11 +2057,11 @@
 
 .field public static final perms_description_app:I = 0x104062c
 
-.field public static final perms_hide:I = 0x10408be
+.field public static final perms_hide:I = 0x10408bf
 
 .field public static final perms_new_perm_prefix:I = 0x104062b
 
-.field public static final perms_show_all:I = 0x10408bf
+.field public static final perms_show_all:I = 0x10408c0
 
 .field public static final petabyteShort:I = 0x10400ed
 
@@ -2285,7 +2289,7 @@
 
 .field public static final reset:I = 0x10406bd
 
-.field public static final resolver_guide_title:I = 0x10408f3
+.field public static final resolver_guide_title:I = 0x10408f4
 
 .field public static final restart_confirm:I = 0x1040190
 
@@ -2487,7 +2491,7 @@
 
 .field public static final serviceisEnabled:I = 0x1040136
 
-.field public static final set_bing_as_default:I = 0x10408d7
+.field public static final set_bing_as_default:I = 0x10408d8
 
 .field public static final setup_autofill:I = 0x1040519
 
@@ -2689,33 +2693,33 @@
 
 .field public static final translate:I = 0x10408a8
 
-.field public static final tw_clipboard_already_exists:I = 0x10408dc
+.field public static final tw_clipboard_already_exists:I = 0x10408dd
 
-.field public static final tw_clipboard_delete_all:I = 0x10408e8
+.field public static final tw_clipboard_delete_all:I = 0x10408e9
 
-.field public static final tw_clipboard_delete_all_from_clipboard:I = 0x10408ed
+.field public static final tw_clipboard_delete_all_from_clipboard:I = 0x10408ee
 
-.field public static final tw_clipboard_done:I = 0x10408ea
+.field public static final tw_clipboard_done:I = 0x10408eb
 
-.field public static final tw_clipboard_edit:I = 0x10408e9
+.field public static final tw_clipboard_edit:I = 0x10408ea
 
-.field public static final tw_clipboard_html_pasted_from_clipboard:I = 0x10408f0
+.field public static final tw_clipboard_html_pasted_from_clipboard:I = 0x10408f1
 
-.field public static final tw_clipboard_no_item:I = 0x10408ec
+.field public static final tw_clipboard_no_item:I = 0x10408ed
 
-.field public static final tw_clipboard_no_items_to_paste:I = 0x10408dd
+.field public static final tw_clipboard_no_items_to_paste:I = 0x10408de
 
-.field public static final tw_clipboard_pasted_from_clipboard:I = 0x10408ee
+.field public static final tw_clipboard_pasted_from_clipboard:I = 0x10408ef
 
-.field public static final tw_clipboard_save:I = 0x10408eb
+.field public static final tw_clipboard_save:I = 0x10408ec
 
-.field public static final tw_clipboard_title_description:I = 0x10408ef
+.field public static final tw_clipboard_title_description:I = 0x10408f0
 
-.field public static final tw_clipboard_title_text:I = 0x10408e2
+.field public static final tw_clipboard_title_text:I = 0x10408e3
 
-.field public static final tw_ids_com_body_delete_from_clipboard:I = 0x10408e4
+.field public static final tw_ids_com_body_delete_from_clipboard:I = 0x10408e5
 
-.field public static final tw_ids_com_header_clipboard_options:I = 0x10408e3
+.field public static final tw_ids_com_header_clipboard_options:I = 0x10408e4
 
 .field public static final twelve_hour_time_format:I = 0x10400a5
 
@@ -2731,7 +2735,7 @@
 
 .field public static final unsupportedMmiCode:I = 0x10400f2
 
-.field public static final unsupported_in_popupbrowser:I = 0x10408d9
+.field public static final unsupported_in_popupbrowser:I = 0x10408da
 
 .field public static final untitled:I = 0x104000f
 
@@ -2893,7 +2897,7 @@
 
 .field public static final web_user_agent_target_content:I = 0x1040512
 
-.field public static final webkit_module:I = 0x10408c1
+.field public static final webkit_module:I = 0x10408c2
 
 .field public static final webpage_unresponsive:I = 0x10405bb
 

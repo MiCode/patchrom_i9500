@@ -683,11 +683,11 @@
 
     iget-object v4, v4, Lcom/sec/android/facedetection/FaceDetectionService;->lock2:Ljava/util/concurrent/locks/Lock;
 
-    :goto_7
     invoke-interface {v4}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 424
     :cond_4
+    :goto_7
     iget-object v4, p0, Lcom/sec/android/facedetection/FaceDetectionService$EventHandler;->this$0:Lcom/sec/android/facedetection/FaceDetectionService;
 
     #calls: Lcom/sec/android/facedetection/FaceDetectionService;->letGo()V
@@ -751,6 +751,8 @@
     iget-object v4, p0, Lcom/sec/android/facedetection/FaceDetectionService$EventHandler;->this$0:Lcom/sec/android/facedetection/FaceDetectionService;
 
     iget-object v4, v4, Lcom/sec/android/facedetection/FaceDetectionService;->lock2:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v4}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     goto :goto_7
 
@@ -822,8 +824,6 @@
     goto :goto_8
 
     .line 267
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1

@@ -94,7 +94,7 @@
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardSimPukView$4;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardSimPukView;
 
-    const v6, 0x1020447
+    const v6, 0x1020449
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

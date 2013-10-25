@@ -1987,7 +1987,7 @@
     .parameter "progress"
 
     .prologue
-    const v4, 0x102040d
+    const v4, 0x102040f
 
     .line 1745
     const-string v0, ""
@@ -2043,7 +2043,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/server/DirEncryptServiceHelper;->mRemoteProgressView:Landroid/widget/RemoteViews;
 
-    const v2, 0x102040e
+    const v2, 0x1020410
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2078,7 +2078,7 @@
     .line 1758
     iget-object v1, p0, Lcom/android/server/DirEncryptServiceHelper;->mRemoteProgressView:Landroid/widget/RemoteViews;
 
-    const v2, 0x102040f
+    const v2, 0x1020411
 
     const/16 v3, 0x64
 

@@ -1035,7 +1035,7 @@
     if-eqz p1, :cond_2
 
     .line 391
-    const v4, 0x10408dd
+    const v4, 0x10408de
 
     const/4 v5, 0x0
 

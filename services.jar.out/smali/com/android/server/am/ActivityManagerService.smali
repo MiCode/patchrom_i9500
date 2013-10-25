@@ -60728,6 +60728,584 @@
     return v0
 .end method
 
+.method public killProcessesForMemoryLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)V
+    .locals 20
+    .parameter "proc"
+    .parameter "reason"
+
+    .prologue
+    .line 16708
+    const-string v16, "ActivityManager"
+
+    new-instance v17, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v18, "killProcessesForMemoryLocked("
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, p0
+
+    iget-wide v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMemMaxThreshold:J
+
+    move-wide/from16 v18, v0
+
+    invoke-virtual/range {v17 .. v19}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string v18, ", "
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMinAdj:I
+
+    move/from16 v18, v0
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string v18, ", "
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMaxCnt:I
+
+    move/from16 v18, v0
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string v18, ")"
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v17
+
+    invoke-static/range {v16 .. v17}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 16710
+    const/4 v13, 0x0
+
+    .line 16711
+    .local v13, toBeKilled:I
+    invoke-static {}, Landroid/os/Process;->getFreeMemory()J
+
+    move-result-wide v4
+
+    .line 16712
+    .local v4, availableMem:J
+    move-object/from16 v0, p0
+
+    iget-wide v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMemMaxThreshold:J
+
+    move-wide/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-wide v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMemMinThreshold:J
+
+    move-wide/from16 v18, v0
+
+    sub-long v11, v16, v18
+
+    .line 16713
+    .local v11, thresholdRange:J
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMaxCnt:I
+
+    move/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMinCnt:I
+
+    move/from16 v17, v0
+
+    sub-int v10, v16, v17
+
+    .line 16714
+    .local v10, sizeRange:I
+    const-wide/16 v14, 0x0
+
+    .line 16716
+    .local v14, unit:J
+    const-wide/16 v16, 0x0
+
+    cmp-long v16, v11, v16
+
+    if-lez v16, :cond_3
+
+    if-lez v10, :cond_3
+
+    .line 16717
+    int-to-long v0, v10
+
+    move-wide/from16 v16, v0
+
+    div-long v14, v11, v16
+
+    .line 16719
+    move-object/from16 v0, p0
+
+    iget-wide v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMemMaxThreshold:J
+
+    move-wide/from16 v16, v0
+
+    cmp-long v16, v4, v16
+
+    if-gez v16, :cond_0
+
+    .line 16720
+    const-wide/16 v16, 0x0
+
+    cmp-long v16, v14, v16
+
+    if-lez v16, :cond_2
+
+    .line 16721
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMinCnt:I
+
+    move/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-wide v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMemMaxThreshold:J
+
+    move-wide/from16 v17, v0
+
+    sub-long v17, v17, v4
+
+    div-long v17, v17, v14
+
+    move-wide/from16 v0, v17
+
+    long-to-int v0, v0
+
+    move/from16 v17, v0
+
+    add-int v13, v16, v17
+
+    .line 16726
+    :goto_0
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMaxCnt:I
+
+    move/from16 v16, v0
+
+    move/from16 v0, v16
+
+    if-le v13, v0, :cond_0
+
+    .line 16727
+    move-object/from16 v0, p0
+
+    iget v13, v0, Lcom/android/server/am/ActivityManagerService;->mKillMaxCnt:I
+
+    .line 16735
+    :cond_0
+    :goto_1
+    const-string v16, "ActivityManager"
+
+    new-instance v17, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v18, "Before kill : freeMemory "
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string v18, ", toBeKilled "
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v17
+
+    invoke-static/range {v16 .. v17}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 16737
+    if-gtz v13, :cond_4
+
+    .line 16801
+    :cond_1
+    return-void
+
+    .line 16723
+    :cond_2
+    move-object/from16 v0, p0
+
+    iget v13, v0, Lcom/android/server/am/ActivityManagerService;->mKillMaxCnt:I
+
+    goto :goto_0
+
+    .line 16731
+    :cond_3
+    const-string v16, "ActivityManager"
+
+    const-string v17, "thresholdRange <= 0 or sizeRange <= 0, so kill as many as max count"
+
+    invoke-static/range {v16 .. v17}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 16732
+    move-object/from16 v0, p0
+
+    iget v13, v0, Lcom/android/server/am/ActivityManagerService;->mKillMaxCnt:I
+
+    goto :goto_1
+
+    .line 16741
+    :cond_4
+    new-instance v9, Ljava/util/ArrayList;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mLruProcesses:Ljava/util/ArrayList;
+
+    move-object/from16 v16, v0
+
+    invoke-virtual/range {v16 .. v16}, Ljava/util/ArrayList;->size()I
+
+    move-result v16
+
+    move/from16 v0, v16
+
+    invoke-direct {v9, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 16743
+    .local v9, list:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/util/Pair<Lcom/android/server/am/ProcessRecord;Ljava/lang/Integer;>;>;"
+    const/4 v7, 0x0
+
+    .local v7, i:I
+    :goto_2
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mLruProcesses:Ljava/util/ArrayList;
+
+    move-object/from16 v16, v0
+
+    invoke-virtual/range {v16 .. v16}, Ljava/util/ArrayList;->size()I
+
+    move-result v16
+
+    move/from16 v0, v16
+
+    if-ge v7, v0, :cond_5
+
+    .line 16744
+    new-instance v16, Landroid/util/Pair;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mLruProcesses:Ljava/util/ArrayList;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v17
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v18
+
+    invoke-direct/range {v16 .. v18}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    move-object/from16 v0, v16
+
+    invoke-virtual {v9, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 16743
+    add-int/lit8 v7, v7, 0x1
+
+    goto :goto_2
+
+    .line 16747
+    :cond_5
+    invoke-virtual {v9}, Ljava/util/ArrayList;->size()I
+
+    move-result v16
+
+    if-lez v16, :cond_1
+
+    .line 16751
+    new-instance v6, Lcom/android/server/am/ActivityManagerService$22;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v6, v0}, Lcom/android/server/am/ActivityManagerService$22;-><init>(Lcom/android/server/am/ActivityManagerService;)V
+
+    .line 16766
+    .local v6, comparator:Ljava/util/Comparator;,"Ljava/util/Comparator<Landroid/util/Pair<Lcom/android/server/am/ProcessRecord;Ljava/lang/Integer;>;>;"
+    invoke-static {v9, v6}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+
+    .line 16768
+    invoke-virtual {v9}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    .line 16769
+    .local v2, N:I
+    const/4 v7, 0x0
+
+    .line 16770
+    const/4 v8, 0x0
+
+    .line 16773
+    .local v8, killed:I
+    if-nez p1, :cond_6
+
+    .line 16774
+    const-string v16, "ActivityManager"
+
+    const-string v17, "proc is null"
+
+    invoke-static/range {v16 .. v17}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 16777
+    :cond_6
+    :goto_3
+    if-ge v7, v2, :cond_1
+
+    if-ge v8, v13, :cond_1
+
+    .line 16778
+    invoke-virtual {v9, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v16
+
+    check-cast v16, Landroid/util/Pair;
+
+    move-object/from16 v0, v16
+
+    iget-object v3, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    check-cast v3, Lcom/android/server/am/ProcessRecord;
+
+    .line 16780
+    .local v3, app:Lcom/android/server/am/ProcessRecord;
+    iget-boolean v0, v3, Lcom/android/server/am/ProcessRecord;->killedBackground:Z
+
+    move/from16 v16, v0
+
+    if-nez v16, :cond_8
+
+    .line 16781
+    iget v0, v3, Lcom/android/server/am/ProcessRecord;->setAdj:I
+
+    move/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget v0, v0, Lcom/android/server/am/ActivityManagerService;->mKillMinAdj:I
+
+    move/from16 v17, v0
+
+    move/from16 v0, v16
+
+    move/from16 v1, v17
+
+    if-lt v0, v1, :cond_1
+
+    .line 16782
+    if-eqz p1, :cond_7
+
+    iget-object v0, v3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p1
+
+    iget-object v0, v0, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    move-object/from16 v17, v0
+
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v16
+
+    if-nez v16, :cond_8
+
+    .line 16784
+    :cond_7
+    iget v0, v3, Lcom/android/server/am/ProcessRecord;->pid:I
+
+    move/from16 v16, v0
+
+    invoke-static/range {v16 .. v16}, Landroid/os/Process;->killProcessQuiet(I)V
+
+    .line 16785
+    add-int/lit8 v8, v8, 0x1
+
+    .line 16786
+    const-string v16, "ActivityManager"
+
+    new-instance v17, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v18, "kill "
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    iget-object v0, v3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    move-object/from16 v18, v0
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string v18, "(adj "
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    iget v0, v3, Lcom/android/server/am/ProcessRecord;->curAdj:I
+
+    move/from16 v18, v0
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string v18, ") cnt "
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v17
+
+    invoke-static/range {v16 .. v17}, Landroid/util/Slog;->secD(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 16787
+    const/16 v16, 0x7547
+
+    const/16 v17, 0x5
+
+    move/from16 v0, v17
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    move-object/from16 v17, v0
+
+    const/16 v18, 0x0
+
+    iget v0, v3, Lcom/android/server/am/ProcessRecord;->userId:I
+
+    move/from16 v19, v0
+
+    invoke-static/range {v19 .. v19}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v19
+
+    aput-object v19, v17, v18
+
+    const/16 v18, 0x1
+
+    iget v0, v3, Lcom/android/server/am/ProcessRecord;->pid:I
+
+    move/from16 v19, v0
+
+    invoke-static/range {v19 .. v19}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v19
+
+    aput-object v19, v17, v18
+
+    const/16 v18, 0x2
+
+    iget-object v0, v3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    move-object/from16 v19, v0
+
+    aput-object v19, v17, v18
+
+    const/16 v18, 0x3
+
+    iget v0, v3, Lcom/android/server/am/ProcessRecord;->setAdj:I
+
+    move/from16 v19, v0
+
+    invoke-static/range {v19 .. v19}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v19
+
+    aput-object v19, v17, v18
+
+    const/16 v18, 0x4
+
+    aput-object p2, v17, v18
+
+    invoke-static/range {v16 .. v17}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
+
+    .line 16789
+    const/16 v16, 0x1
+
+    move/from16 v0, v16
+
+    iput-boolean v0, v3, Lcom/android/server/am/ProcessRecord;->killedBackground:Z
+
+    .line 16797
+    :cond_8
+    add-int/lit8 v7, v7, 0x1
+
+    .line 16798
+    goto/16 :goto_3
+.end method
+
 .method final logAppTooSlow(Lcom/android/server/am/ProcessRecord;JLjava/lang/String;)V
     .locals 0
     .parameter "app"

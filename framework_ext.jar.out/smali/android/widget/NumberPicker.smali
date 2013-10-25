@@ -860,7 +860,7 @@
     if-nez v17, :cond_6
 
     .line 709
-    const v17, 0x10203d8
+    const v17, 0x10203da
 
     move-object/from16 v0, p0
 
@@ -922,7 +922,7 @@
     if-nez v17, :cond_7
 
     .line 719
-    const v17, 0x10203da
+    const v17, 0x10203dc
 
     move-object/from16 v0, p0
 
@@ -975,7 +975,7 @@
 
     .line 728
     :goto_4
-    const v17, 0x10203d9
+    const v17, 0x10203db
 
     move-object/from16 v0, p0
 
@@ -1264,7 +1264,7 @@
 
     .line 776
     :cond_3
-    const v17, 0x10203d8
+    const v17, 0x10203da
 
     move-object/from16 v0, p0
 
@@ -1273,7 +1273,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setNextFocusDownId(I)V
 
     .line 777
-    const v17, 0x10203da
+    const v17, 0x10203dc
 
     move-object/from16 v0, p0
 
@@ -1282,7 +1282,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setNextFocusUpId(I)V
 
     .line 778
-    const v17, 0x10203d9
+    const v17, 0x10203db
 
     move-object/from16 v0, p0
 
@@ -1291,7 +1291,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setNextFocusRightId(I)V
 
     .line 779
-    const v17, 0x10203d9
+    const v17, 0x10203db
 
     move-object/from16 v0, p0
 

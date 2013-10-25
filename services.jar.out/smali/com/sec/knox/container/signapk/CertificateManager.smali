@@ -667,13 +667,13 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 303
-    .end local v2           #ex:Ljava/security/cert/CertificateException;
-    :goto_1
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
 
     .line 306
+    .end local v2           #ex:Ljava/security/cert/CertificateException;
     .end local v3           #input:Ljava/io/FileInputStream;
     :cond_0
+    :goto_1
     const/4 v4, 0x0
 
     goto :goto_0
@@ -696,18 +696,13 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    goto :goto_1
-
     .line 303
-    .end local v2           #ex:Ljava/lang/IllegalArgumentException;
-    :catchall_0
-    move-exception v4
-
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
 
-    throw v4
+    goto :goto_1
 
     .line 300
+    .end local v2           #ex:Ljava/lang/IllegalArgumentException;
     :catch_2
     move-exception v2
 
@@ -724,7 +719,18 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
+    .line 303
+    invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
+
     goto :goto_1
+
+    .end local v2           #ex:Ljava/lang/NullPointerException;
+    :catchall_0
+    move-exception v4
+
+    invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
+
+    throw v4
 .end method
 
 .method private readCertificateForApk()Ljava/security/cert/X509Certificate;
@@ -841,13 +847,13 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 325
-    .end local v2           #ex:Ljava/security/cert/CertificateException;
-    :goto_1
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
 
     .line 328
+    .end local v2           #ex:Ljava/security/cert/CertificateException;
     .end local v3           #input:Ljava/io/FileInputStream;
     :cond_0
+    :goto_1
     const/4 v4, 0x0
 
     goto :goto_0
@@ -870,18 +876,13 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    goto :goto_1
-
     .line 325
-    .end local v2           #ex:Ljava/lang/IllegalArgumentException;
-    :catchall_0
-    move-exception v4
-
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
 
-    throw v4
+    goto :goto_1
 
     .line 322
+    .end local v2           #ex:Ljava/lang/IllegalArgumentException;
     :catch_2
     move-exception v2
 
@@ -898,7 +899,18 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
+    .line 325
+    invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
+
     goto :goto_1
+
+    .end local v2           #ex:Ljava/lang/NullPointerException;
+    :catchall_0
+    move-exception v4
+
+    invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
+
+    throw v4
 .end method
 
 .method private readPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
@@ -1015,13 +1027,12 @@
     move-result-object v5
 
     .line 260
-    :goto_0
     invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
 
     .line 262
     .end local v0           #bytes:[B
     .end local v4           #spec:Ljava/security/spec/KeySpec;
-    :goto_1
+    :goto_0
     return-object v5
 
     .line 254
@@ -1045,6 +1056,9 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
     move-result-object v5
+
+    .line 260
+    invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
 
     goto :goto_0
 
@@ -1074,7 +1088,7 @@
     .line 262
     const/4 v5, 0x0
 
-    goto :goto_1
+    goto :goto_0
 
     .line 260
     .end local v1           #ex:Ljava/io/FileNotFoundException;
@@ -1198,10 +1212,9 @@
     move-result-object v5
 
     .line 283
-    :goto_0
     invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
 
-    .line 280
+    :goto_0
     return-object v5
 
     .line 279
@@ -1223,9 +1236,11 @@
 
     move-result-object v5
 
+    .line 283
+    invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
+
     goto :goto_0
 
-    .line 283
     .end local v0           #bytes:[B
     .end local v1           #ex:Ljava/security/spec/InvalidKeySpecException;
     .end local v4           #spec:Ljava/security/spec/KeySpec;

@@ -1083,7 +1083,7 @@
     :cond_0
     iget v3, v2, Landroid/graphics/Point;->y:I
 
-    if-gez v3, :cond_2
+    if-gtz v3, :cond_2
 
     .line 846
     iget v3, p1, Landroid/graphics/Rect;->bottom:I

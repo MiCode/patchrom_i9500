@@ -237,12 +237,12 @@
     .line 3506
     iget-object v8, p0, Lcom/sec/knox/container/EnterpriseContainerService$UninstallPackageThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 
-    .end local v3           #e:Ljava/lang/Exception;
-    :goto_1
     #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
     invoke-static {v8}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
 
     .line 3509
+    .end local v3           #e:Ljava/lang/Exception;
+    :goto_1
     :try_start_6
     iget-object v8, p0, Lcom/sec/knox/container/EnterpriseContainerService$UninstallPackageThread;->mStatusCb:Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
@@ -383,6 +383,9 @@
     :cond_2
     iget-object v8, p0, Lcom/sec/knox/container/EnterpriseContainerService$UninstallPackageThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 
+    #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
+    invoke-static {v8}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
+
     goto :goto_1
 
     .end local v0           #adminId:I
@@ -488,5 +491,5 @@
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_2
 
-    goto :goto_2
+    goto/16 :goto_2
 .end method

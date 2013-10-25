@@ -759,7 +759,7 @@
     invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 137
-    const v0, 0x10203f8
+    const v0, 0x10203fa
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -770,7 +770,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;->mClockView:Landroid/widget/LinearLayout;
 
     .line 138
-    const v0, 0x10203f9
+    const v0, 0x10203fb
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -781,7 +781,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;->mTime:Landroid/widget/TextView;
 
     .line 139
-    const v0, 0x10203fa
+    const v0, 0x10203fc
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -792,7 +792,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;->mAmPm:Landroid/widget/TextView;
 
     .line 140
-    const v0, 0x10203fb
+    const v0, 0x10203fd
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -803,7 +803,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;->mDayofWeek:Landroid/widget/TextView;
 
     .line 141
-    const v0, 0x10203fc
+    const v0, 0x10203fe
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -1355,7 +1355,7 @@
     iput-object v4, p0, Lcom/android/internal/policy/impl/keyguard/sec/KeyguardUnlockView;->mUnlockView:Lcom/android/internal/policy/impl/keyguard/sec/UnlockView;
 
     .line 388
-    const v4, 0x1020392
+    const v4, 0x1020394
 
     invoke-virtual {p0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1381,7 +1381,7 @@
     iput-object v4, p0, Lcom/android/internal/policy/impl/keyguard/sec/KeyguardUnlockView;->mDefaultHelpText:Ljava/lang/String;
 
     .line 390
-    const v4, 0x1020393
+    const v4, 0x1020395
 
     invoke-virtual {p0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1557,7 +1557,7 @@
     iput-object v4, p0, Lcom/android/internal/policy/impl/keyguard/sec/KeyguardUnlockView;->mSecurityMessageDisplay:Lcom/android/internal/policy/impl/keyguard/SecurityMessageDisplay;
 
     .line 447
-    const v4, 0x1020391
+    const v4, 0x1020393
 
     invoke-virtual {p0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2503,7 +2503,7 @@
     if-eqz v1, :cond_0
 
     .line 539
-    const v4, 0x1020394
+    const v4, 0x1020396
 
     invoke-virtual {p0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

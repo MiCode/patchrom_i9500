@@ -594,7 +594,7 @@
     .line 1028
     iget-object v0, p0, Landroid/webkit/BrowserFrame;->mContext:Landroid/content/Context;
 
-    const v1, 0x10408d9
+    const v1, 0x10408da
 
     const/4 v2, 0x0
 
@@ -2977,7 +2977,7 @@
 
     iget-object v2, p0, Landroid/webkit/BrowserFrame;->mContext:Landroid/content/Context;
 
-    const v3, 0x10408d8
+    const v3, 0x10408d9
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2985,7 +2985,7 @@
 
     iget-object v3, p0, Landroid/webkit/BrowserFrame;->mContext:Landroid/content/Context;
 
-    const v4, 0x10408d7
+    const v4, 0x10408d8
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

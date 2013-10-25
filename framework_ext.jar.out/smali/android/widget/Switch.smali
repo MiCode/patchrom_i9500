@@ -692,7 +692,7 @@
 
     const-string v9, "USA"
 
-    const-string v10, ""
+    const-string v10, "CHN"
 
     invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -709,7 +709,7 @@
     .line 228
     const-string v9, "KOR"
 
-    const-string v10, ""
+    const-string v10, "CHN"
 
     invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

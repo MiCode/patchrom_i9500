@@ -2005,7 +2005,7 @@
 
     .prologue
     .line 1832
-    const v2, 0x102038f
+    const v2, 0x1020391
 
     invoke-direct {p0, v2}, Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;->getWidgetPosition(I)I
 
@@ -2375,13 +2375,13 @@
     .local v3, res:Landroid/content/res/Resources;
     new-instance v1, Landroid/content/ComponentName;
 
-    const v4, 0x10408cd
+    const v4, 0x10408ce
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x10408ce
+    const v5, 0x10408cf
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4873,7 +4873,7 @@
 
     .line 1530
     :cond_0
-    const v0, 0x1020390
+    const v0, 0x1020392
 
     goto :goto_0
 
@@ -4920,7 +4920,7 @@
 
     .line 1541
     :pswitch_4
-    const v0, 0x1020386
+    const v0, 0x1020388
 
     goto :goto_0
 
@@ -4955,19 +4955,19 @@
 
     .line 1551
     :pswitch_8
-    const v0, 0x1020382
+    const v0, 0x1020384
 
     goto :goto_0
 
     .line 1552
     :pswitch_9
-    const v0, 0x1020385
+    const v0, 0x1020387
 
     goto :goto_0
 
     .line 1553
     :pswitch_a
-    const v0, 0x1020381
+    const v0, 0x1020383
 
     goto :goto_0
 
@@ -5079,7 +5079,7 @@
 
     .prologue
     .line 1847
-    const v0, 0x102038f
+    const v0, 0x1020391
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;->findViewById(I)Landroid/view/View;
 
@@ -5577,7 +5577,7 @@
     const/4 v1, 0x0
 
     .line 1818
-    const v2, 0x102038f
+    const v2, 0x1020391
 
     invoke-direct {p0, v2}, Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;->getWidgetPosition(I)I
 
@@ -8353,7 +8353,7 @@
     .line 2138
     if-ltz p1, :cond_0
 
-    const v0, 0x102038f
+    const v0, 0x1020391
 
     invoke-direct {p0, v0}, Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;->getWidgetPosition(I)I
 
@@ -9918,7 +9918,7 @@
     .line 1246
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;->mAppWidgetContainer:Lcom/android/internal/policy/impl/keyguard/KeyguardWidgetPager;
 
-    const v1, 0x1020388
+    const v1, 0x102038a
 
     invoke-direct {p0, v1}, Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;->getWidgetPosition(I)I
 

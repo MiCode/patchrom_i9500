@@ -634,9 +634,9 @@
     invoke-direct {v4, p1, p2}, Ljava/io/RandomAccessFile;-><init>(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_4
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_6
 
     .line 1219
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -701,7 +701,7 @@
     :try_start_2
     invoke-virtual {v4}, Ljava/io/RandomAccessFile;->close()V
     :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_7
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
     :cond_0
     :goto_0
@@ -718,12 +718,27 @@
     :goto_1
     return-object v5
 
-    .line 1240
+    .line 1243
     .end local v3           #raf:Ljava/io/RandomAccessFile;
     .restart local v1       #got:I
     .restart local v2       #length:I
     .restart local v4       #raf:Ljava/io/RandomAccessFile;
     .restart local v5       #storedPassword:[B
+    :catch_0
+    move-exception v0
+
+    .line 1244
+    .local v0, ex:Ljava/io/IOException;
+    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+
+    const-string v8, "Unable to close hash data stream"
+
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 1240
+    .end local v0           #ex:Ljava/io/IOException;
     :cond_1
     if-eqz v4, :cond_2
 
@@ -731,22 +746,41 @@
     :try_start_3
     invoke-virtual {v4}, Ljava/io/RandomAccessFile;->close()V
     :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_8
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
 
     :cond_2
     :goto_2
     move-object v3, v4
 
-    .line 1229
+    .line 1245
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
     goto :goto_1
 
+    .line 1243
+    .end local v3           #raf:Ljava/io/RandomAccessFile;
+    .restart local v4       #raf:Ljava/io/RandomAccessFile;
+    :catch_1
+    move-exception v0
+
+    .line 1244
+    .restart local v0       #ex:Ljava/io/IOException;
+    sget-object v6, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+
+    const-string v7, "Unable to close hash data stream"
+
+    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_2
+
     .line 1230
+    .end local v0           #ex:Ljava/io/IOException;
     .end local v1           #got:I
     .end local v2           #length:I
+    .end local v4           #raf:Ljava/io/RandomAccessFile;
     .end local v5           #storedPassword:[B
-    :catch_0
+    .restart local v3       #raf:Ljava/io/RandomAccessFile;
+    :catch_2
     move-exception v0
 
     .line 1231
@@ -777,7 +811,7 @@
     :try_start_5
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_6
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
 
     .end local v0           #ex:Ljava/io/FileNotFoundException;
     :cond_3
@@ -787,12 +821,28 @@
     .line 1247
     goto :goto_1
 
+    .line 1243
+    .restart local v0       #ex:Ljava/io/FileNotFoundException;
+    :catch_3
+    move-exception v0
+
+    .line 1244
+    .local v0, ex:Ljava/io/IOException;
+    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+
+    const-string v8, "Unable to close hash data stream"
+
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_4
+
     .line 1233
-    :catch_1
+    .end local v0           #ex:Ljava/io/IOException;
+    :catch_4
     move-exception v0
 
     .line 1234
-    .local v0, ex:Ljava/io/IOException;
+    .restart local v0       #ex:Ljava/io/IOException;
     :goto_5
     :try_start_6
     sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
@@ -819,12 +869,12 @@
     :try_start_7
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_7
-    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_2
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_5
 
     goto :goto_4
 
     .line 1243
-    :catch_2
+    :catch_5
     move-exception v0
 
     .line 1244
@@ -832,19 +882,18 @@
 
     const-string v8, "Unable to close hash data stream"
 
-    :goto_6
     invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_4
 
     .line 1236
     .end local v0           #ex:Ljava/io/IOException;
-    :catch_3
+    :catch_6
     move-exception v0
 
     .line 1237
     .local v0, ex:Ljava/lang/Exception;
-    :goto_7
+    :goto_6
     :try_start_8
     sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -863,12 +912,12 @@
     :try_start_9
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_9
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_4
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_7
 
     goto :goto_4
 
     .line 1243
-    :catch_4
+    :catch_7
     move-exception v0
 
     .line 1244
@@ -877,7 +926,9 @@
 
     const-string v8, "Unable to close hash data stream"
 
-    goto :goto_6
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_4
 
     .line 1239
     .end local v0           #ex:Ljava/io/IOException;
@@ -885,87 +936,38 @@
     move-exception v6
 
     .line 1240
-    :goto_8
+    :goto_7
     if-eqz v3, :cond_4
 
     .line 1241
     :try_start_a
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_a
-    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_5
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_8
 
-    .line 1239
+    .line 1245
     :cond_4
-    :goto_9
+    :goto_8
     throw v6
 
     .line 1243
-    :catch_5
-    move-exception v0
-
-    .line 1244
-    .restart local v0       #ex:Ljava/io/IOException;
-    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
-
-    const-string v8, "Unable to close hash data stream"
-
-    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_9
-
-    .line 1243
-    .local v0, ex:Ljava/io/FileNotFoundException;
-    :catch_6
-    move-exception v0
-
-    .line 1244
-    .local v0, ex:Ljava/io/IOException;
-    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
-
-    const-string v8, "Unable to close hash data stream"
-
-    goto :goto_6
-
-    .line 1243
-    .end local v0           #ex:Ljava/io/IOException;
-    .end local v3           #raf:Ljava/io/RandomAccessFile;
-    .restart local v1       #got:I
-    .restart local v2       #length:I
-    .restart local v4       #raf:Ljava/io/RandomAccessFile;
-    .restart local v5       #storedPassword:[B
-    :catch_7
-    move-exception v0
-
-    .line 1244
-    .restart local v0       #ex:Ljava/io/IOException;
-    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
-
-    const-string v8, "Unable to close hash data stream"
-
-    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 1243
-    .end local v0           #ex:Ljava/io/IOException;
     :catch_8
     move-exception v0
 
     .line 1244
     .restart local v0       #ex:Ljava/io/IOException;
-    sget-object v6, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
-    const-string v7, "Unable to close hash data stream"
+    const-string v8, "Unable to close hash data stream"
 
-    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_2
+    goto :goto_8
 
     .line 1239
     .end local v0           #ex:Ljava/io/IOException;
-    .end local v1           #got:I
-    .end local v2           #length:I
-    .end local v5           #storedPassword:[B
+    .end local v3           #raf:Ljava/io/RandomAccessFile;
+    .restart local v4       #raf:Ljava/io/RandomAccessFile;
     :catchall_1
     move-exception v6
 
@@ -973,7 +975,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_8
+    goto :goto_7
 
     .line 1236
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -985,7 +987,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_7
+    goto :goto_6
 
     .line 1233
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -2032,9 +2034,9 @@
     invoke-direct {v4, p1, p2}, Ljava/io/RandomAccessFile;-><init>(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_5
 
     .line 1134
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -2102,28 +2104,53 @@
     :try_start_2
     invoke-virtual {v4}, Ljava/io/RandomAccessFile;->close()V
     :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_7
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
     .line 1162
-    .end local v0           #c:Ljava/nio/channels/FileChannel;
-    .end local v2           #hash:[B
-    .end local v4           #raf:Ljava/io/RandomAccessFile;
-    :goto_0
     const/4 v3, 0x0
 
     .line 1168
+    .end local v0           #c:Ljava/nio/channels/FileChannel;
+    .end local v2           #hash:[B
+    .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
     :cond_1
-    :goto_1
+    :goto_0
     return v5
 
-    .line 1147
+    .line 1164
+    .end local v3           #raf:Ljava/io/RandomAccessFile;
+    .restart local v0       #c:Ljava/nio/channels/FileChannel;
+    .restart local v2       #hash:[B
+    .restart local v4       #raf:Ljava/io/RandomAccessFile;
     :catch_0
+    move-exception v1
+
+    .line 1165
+    .local v1, ex:Ljava/io/IOException;
+    sget-object v6, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+
+    const-string v7, "Unable to close store hash data stream"
+
+    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    move-object v3, v4
+
+    .line 1167
+    .end local v4           #raf:Ljava/io/RandomAccessFile;
+    .restart local v3       #raf:Ljava/io/RandomAccessFile;
+    goto :goto_0
+
+    .line 1147
+    .end local v0           #c:Ljava/nio/channels/FileChannel;
+    .end local v1           #ex:Ljava/io/IOException;
+    .end local v2           #hash:[B
+    :catch_1
     move-exception v1
 
     .line 1150
     .local v1, ex:Ljava/io/FileNotFoundException;
-    :goto_2
+    :goto_1
     :try_start_3
     sget-object v6, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -2149,12 +2176,15 @@
     :try_start_4
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
+
+    .line 1162
+    const/4 v3, 0x0
 
     goto :goto_0
 
     .line 1164
-    :catch_1
+    :catch_2
     move-exception v1
 
     .line 1165
@@ -2163,19 +2193,18 @@
 
     const-string v7, "Unable to close store hash data stream"
 
-    :goto_3
     invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_1
+    goto :goto_0
 
     .line 1152
     .end local v1           #ex:Ljava/io/IOException;
-    :catch_2
+    :catch_3
     move-exception v1
 
     .line 1154
     .restart local v1       #ex:Ljava/io/IOException;
-    :goto_4
+    :goto_2
     :try_start_5
     sget-object v6, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -2201,12 +2230,15 @@
     :try_start_6
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
+
+    .line 1162
+    const/4 v3, 0x0
 
     goto :goto_0
 
     .line 1164
-    :catch_3
+    :catch_4
     move-exception v1
 
     .line 1165
@@ -2214,16 +2246,18 @@
 
     const-string v7, "Unable to close store hash data stream"
 
-    goto :goto_3
+    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
 
     .line 1156
     .end local v1           #ex:Ljava/io/IOException;
-    :catch_4
+    :catch_5
     move-exception v1
 
     .line 1157
     .local v1, ex:Ljava/lang/Exception;
-    :goto_5
+    :goto_3
     :try_start_7
     sget-object v6, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -2242,12 +2276,15 @@
     :try_start_8
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_5
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_6
+
+    .line 1162
+    const/4 v3, 0x0
 
     goto :goto_0
 
     .line 1164
-    :catch_5
+    :catch_6
     move-exception v1
 
     .line 1165
@@ -2256,7 +2293,9 @@
 
     const-string v7, "Unable to close store hash data stream"
 
-    goto :goto_3
+    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
 
     .line 1159
     .end local v1           #ex:Ljava/io/IOException;
@@ -2264,25 +2303,25 @@
     move-exception v6
 
     .line 1160
-    :goto_6
+    :goto_4
     if-eqz v3, :cond_2
 
     .line 1161
     :try_start_9
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_9
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_6
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_7
 
     .line 1162
     const/4 v3, 0x0
 
-    .line 1159
+    .line 1166
     :cond_2
-    :goto_7
+    :goto_5
     throw v6
 
     .line 1164
-    :catch_6
+    :catch_7
     move-exception v1
 
     .line 1165
@@ -2293,36 +2332,10 @@
 
     invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_7
-
-    .line 1164
-    .end local v1           #ex:Ljava/io/IOException;
-    .end local v3           #raf:Ljava/io/RandomAccessFile;
-    .restart local v0       #c:Ljava/nio/channels/FileChannel;
-    .restart local v2       #hash:[B
-    .restart local v4       #raf:Ljava/io/RandomAccessFile;
-    :catch_7
-    move-exception v1
-
-    .line 1165
-    .restart local v1       #ex:Ljava/io/IOException;
-    sget-object v6, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
-
-    const-string v7, "Unable to close store hash data stream"
-
-    invoke-static {v6, v7}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    .end local v1           #ex:Ljava/io/IOException;
-    :cond_3
-    move-object v3, v4
-
-    .end local v4           #raf:Ljava/io/RandomAccessFile;
-    .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_1
+    goto :goto_5
 
     .line 1159
-    .end local v0           #c:Ljava/nio/channels/FileChannel;
-    .end local v2           #hash:[B
+    .end local v1           #ex:Ljava/io/IOException;
     .end local v3           #raf:Ljava/io/RandomAccessFile;
     .restart local v4       #raf:Ljava/io/RandomAccessFile;
     :catchall_1
@@ -2332,7 +2345,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_6
+    goto :goto_4
 
     .line 1156
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -2344,7 +2357,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_5
+    goto :goto_3
 
     .line 1152
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -2356,7 +2369,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_4
+    goto :goto_2
 
     .line 1147
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -2368,7 +2381,18 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_2
+    goto :goto_1
+
+    .end local v3           #raf:Ljava/io/RandomAccessFile;
+    .restart local v0       #c:Ljava/nio/channels/FileChannel;
+    .restart local v2       #hash:[B
+    .restart local v4       #raf:Ljava/io/RandomAccessFile;
+    :cond_3
+    move-object v3, v4
+
+    .end local v4           #raf:Ljava/io/RandomAccessFile;
+    .restart local v3       #raf:Ljava/io/RandomAccessFile;
+    goto/16 :goto_0
 .end method
 
 .method private storePassword(ILjava/lang/String;)V
@@ -2912,9 +2936,9 @@
     invoke-direct {v4, p1, p2}, Ljava/io/RandomAccessFile;-><init>(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_7
 
     .line 1176
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -2979,7 +3003,7 @@
     :try_start_2
     invoke-virtual {v4}, Ljava/io/RandomAccessFile;->close()V
     :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_7
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
     :cond_0
     :goto_0
@@ -2995,12 +3019,27 @@
     :goto_1
     return v6
 
-    .line 1190
+    .line 1208
     .end local v3           #raf:Ljava/io/RandomAccessFile;
     .restart local v1       #got:I
     .restart local v2       #length:I
     .restart local v4       #raf:Ljava/io/RandomAccessFile;
     .restart local v5       #storedPassword:[B
+    :catch_0
+    move-exception v0
+
+    .line 1209
+    .local v0, ex:Ljava/io/IOException;
+    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+
+    const-string v8, "Unable to close verify hash data stream"
+
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 1190
+    .end local v0           #ex:Ljava/io/IOException;
     :cond_2
     :try_start_3
     sget v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->ORIGINAL_PASSWORD_HASH_SIZE:I
@@ -3028,20 +3067,35 @@
     :try_start_4
     invoke-virtual {v4}, Ljava/io/RandomAccessFile;->close()V
     :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_8
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
 
     :cond_3
     :goto_2
     move-object v3, v4
 
-    .line 1191
+    .line 1210
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
     goto :goto_1
 
-    .line 1193
+    .line 1208
     .end local v3           #raf:Ljava/io/RandomAccessFile;
     .restart local v4       #raf:Ljava/io/RandomAccessFile;
+    :catch_1
+    move-exception v0
+
+    .line 1209
+    .restart local v0       #ex:Ljava/io/IOException;
+    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+
+    const-string v8, "Unable to close verify hash data stream"
+
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_2
+
+    .line 1193
+    .end local v0           #ex:Ljava/io/IOException;
     :cond_4
     :try_start_5
     invoke-direct {p0, p3}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->passwordToHash(Ljava/lang/String;)[B
@@ -3064,22 +3118,41 @@
     :try_start_6
     invoke-virtual {v4}, Ljava/io/RandomAccessFile;->close()V
     :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_9
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
 
     :cond_5
     :goto_3
     move-object v3, v4
 
-    .line 1193
+    .line 1210
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
     goto :goto_1
 
+    .line 1208
+    .end local v3           #raf:Ljava/io/RandomAccessFile;
+    .restart local v4       #raf:Ljava/io/RandomAccessFile;
+    :catch_2
+    move-exception v0
+
+    .line 1209
+    .restart local v0       #ex:Ljava/io/IOException;
+    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
+
+    const-string v8, "Unable to close verify hash data stream"
+
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_3
+
     .line 1195
+    .end local v0           #ex:Ljava/io/IOException;
     .end local v1           #got:I
     .end local v2           #length:I
+    .end local v4           #raf:Ljava/io/RandomAccessFile;
     .end local v5           #storedPassword:[B
-    :catch_0
+    .restart local v3       #raf:Ljava/io/RandomAccessFile;
+    :catch_3
     move-exception v0
 
     .line 1196
@@ -3110,12 +3183,12 @@
     :try_start_8
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_4
 
     goto :goto_1
 
     .line 1208
-    :catch_1
+    :catch_4
     move-exception v0
 
     .line 1209
@@ -3124,19 +3197,18 @@
 
     const-string v8, "Unable to close verify hash data stream"
 
-    :goto_5
     invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
     .line 1198
     .end local v0           #ex:Ljava/io/IOException;
-    :catch_2
+    :catch_5
     move-exception v0
 
     .line 1199
     .restart local v0       #ex:Ljava/io/IOException;
-    :goto_6
+    :goto_5
     :try_start_9
     sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -3162,12 +3234,12 @@
     :try_start_a
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_a
-    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_3
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_6
 
     goto :goto_1
 
     .line 1208
-    :catch_3
+    :catch_6
     move-exception v0
 
     .line 1209
@@ -3175,16 +3247,18 @@
 
     const-string v8, "Unable to close verify hash data stream"
 
-    goto :goto_5
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_1
 
     .line 1201
     .end local v0           #ex:Ljava/io/IOException;
-    :catch_4
+    :catch_7
     move-exception v0
 
     .line 1202
     .local v0, ex:Ljava/lang/Exception;
-    :goto_7
+    :goto_6
     :try_start_b
     sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -3203,12 +3277,12 @@
     :try_start_c
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_c
-    .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_5
+    .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_8
 
-    goto :goto_1
+    goto/16 :goto_1
 
     .line 1208
-    :catch_5
+    :catch_8
     move-exception v0
 
     .line 1209
@@ -3217,7 +3291,9 @@
 
     const-string v8, "Unable to close verify hash data stream"
 
-    goto :goto_5
+    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto/16 :goto_1
 
     .line 1204
     .end local v0           #ex:Ljava/io/IOException;
@@ -3225,71 +3301,21 @@
     move-exception v6
 
     .line 1205
-    :goto_8
+    :goto_7
     if-eqz v3, :cond_6
 
     .line 1206
     :try_start_d
     invoke-virtual {v3}, Ljava/io/RandomAccessFile;->close()V
     :try_end_d
-    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_6
+    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_9
 
-    .line 1204
+    .line 1210
     :cond_6
-    :goto_9
+    :goto_8
     throw v6
 
     .line 1208
-    :catch_6
-    move-exception v0
-
-    .line 1209
-    .restart local v0       #ex:Ljava/io/IOException;
-    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
-
-    const-string v8, "Unable to close verify hash data stream"
-
-    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_9
-
-    .line 1208
-    .end local v0           #ex:Ljava/io/IOException;
-    .end local v3           #raf:Ljava/io/RandomAccessFile;
-    .restart local v1       #got:I
-    .restart local v2       #length:I
-    .restart local v4       #raf:Ljava/io/RandomAccessFile;
-    .restart local v5       #storedPassword:[B
-    :catch_7
-    move-exception v0
-
-    .line 1209
-    .restart local v0       #ex:Ljava/io/IOException;
-    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
-
-    const-string v8, "Unable to close verify hash data stream"
-
-    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto/16 :goto_0
-
-    .line 1208
-    .end local v0           #ex:Ljava/io/IOException;
-    :catch_8
-    move-exception v0
-
-    .line 1209
-    .restart local v0       #ex:Ljava/io/IOException;
-    sget-object v7, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
-
-    const-string v8, "Unable to close verify hash data stream"
-
-    invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto/16 :goto_2
-
-    .line 1208
-    .end local v0           #ex:Ljava/io/IOException;
     :catch_9
     move-exception v0
 
@@ -3301,13 +3327,12 @@
 
     invoke-static {v7, v8}, Lcom/sec/knox/container/utils/LogUtil;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto/16 :goto_3
+    goto :goto_8
 
     .line 1204
     .end local v0           #ex:Ljava/io/IOException;
-    .end local v1           #got:I
-    .end local v2           #length:I
-    .end local v5           #storedPassword:[B
+    .end local v3           #raf:Ljava/io/RandomAccessFile;
+    .restart local v4       #raf:Ljava/io/RandomAccessFile;
     :catchall_1
     move-exception v6
 
@@ -3315,7 +3340,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_8
+    goto :goto_7
 
     .line 1201
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -3327,7 +3352,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_7
+    goto :goto_6
 
     .line 1198
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -3339,7 +3364,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto :goto_6
+    goto :goto_5
 
     .line 1195
     .end local v3           #raf:Ljava/io/RandomAccessFile;
@@ -3351,7 +3376,7 @@
 
     .end local v4           #raf:Ljava/io/RandomAccessFile;
     .restart local v3       #raf:Ljava/io/RandomAccessFile;
-    goto/16 :goto_4
+    goto :goto_4
 .end method
 
 

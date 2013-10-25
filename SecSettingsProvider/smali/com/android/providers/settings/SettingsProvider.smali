@@ -3714,29 +3714,24 @@
     .end annotation
 
     .prologue
-    .line 1034
     invoke-static {p1}, Landroid/media/RingtoneManager;->getDefaultType(Landroid/net/Uri;)I
 
     move-result v11
 
-    .line 1036
     .local v11, ringtoneType:I
     const/4 v0, -0x1
 
     if-eq v11, v0, :cond_5
 
-    .line 1037
     invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object v7
 
-    .line 1040
     .local v7, context:Landroid/content/Context;
     invoke-static {v7, v11}, Landroid/media/RingtoneManager;->getActualDefaultRingtoneUri(Landroid/content/Context;I)Landroid/net/Uri;
 
     move-result-object v12
 
-    .line 1042
     .local v12, soundUri:Landroid/net/Uri;
     if-eqz v12, :cond_4
 
@@ -3744,7 +3739,6 @@
 
     move-result-object v6
 
-    .line 1045
     .local v6, authority:Ljava/lang/String;
     invoke-static {v12, v11}, Lcom/android/providers/settings/SettingsProvider$Injector;->checkUriForExtraCases(Landroid/net/Uri;I)Landroid/net/Uri;
 
@@ -3921,29 +3915,24 @@
     .end annotation
 
     .prologue
-    .line 993
     invoke-static {p1}, Landroid/media/RingtoneManager;->getDefaultType(Landroid/net/Uri;)I
 
     move-result v4
 
-    .line 995
     .local v4, ringtoneType:I
     const/4 v6, -0x1
 
     if-eq v4, v6, :cond_2
 
-    .line 996
     invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    .line 999
     .local v1, context:Landroid/content/Context;
     invoke-static {v1, v4}, Landroid/media/RingtoneManager;->getActualDefaultRingtoneUri(Landroid/content/Context;I)Landroid/net/Uri;
 
     move-result-object v5
 
-    .line 1001
     .local v5, soundUri:Landroid/net/Uri;
     if-eqz v5, :cond_2
 
@@ -3951,7 +3940,6 @@
 
     move-result-object v0
 
-    .line 1004
     .local v0, authority:Ljava/lang/String;
     invoke-static {v5, v4}, Lcom/android/providers/settings/SettingsProvider$Injector;->checkUriForExtraCases(Landroid/net/Uri;I)Landroid/net/Uri;
 

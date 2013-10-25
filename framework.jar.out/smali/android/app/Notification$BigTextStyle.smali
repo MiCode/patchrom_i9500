@@ -49,7 +49,7 @@
     .locals 8
 
     .prologue
-    const v7, 0x10203cb
+    const v7, 0x10203cd
 
     const/4 v2, 0x0
 
@@ -96,7 +96,7 @@
     if-eqz v6, :cond_0
 
     .line 2148
-    const v1, 0x10203c7
+    const v1, 0x10203c9
 
     move v3, v2
 

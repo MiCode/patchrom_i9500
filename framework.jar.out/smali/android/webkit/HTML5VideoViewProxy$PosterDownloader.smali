@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 545
+    .line 559
     const/4 v0, 0x0
 
     sput v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mQueueRefCount:I
@@ -58,10 +58,10 @@
     .parameter "proxy"
 
     .prologue
-    .line 561
+    .line 575
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 563
+    .line 577
     :try_start_0
     new-instance v1, Ljava/net/URL;
 
@@ -71,25 +71,25 @@
     :try_end_0
     .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 567
+    .line 581
     :goto_0
     iput-object p2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mProxy:Landroid/webkit/HTML5VideoViewProxy;
 
-    .line 568
+    .line 582
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
     iput-object v1, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mHandler:Landroid/os/Handler;
 
-    .line 569
+    .line 583
     return-void
 
-    .line 564
+    .line 578
     :catch_0
     move-exception v0
 
-    .line 565
+    .line 579
     .local v0, e:Ljava/net/MalformedURLException;
     const/4 v1, 0x0
 
@@ -103,7 +103,7 @@
     .parameter "x0"
 
     .prologue
-    .line 542
+    .line 556
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestHandle:Landroid/net/http/RequestHandle;
 
     return-object v0
@@ -114,7 +114,7 @@
     .parameter "x0"
 
     .prologue
-    .line 542
+    .line 556
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mUrl:Ljava/net/URL;
 
     return-object v0
@@ -125,7 +125,7 @@
     .parameter "x0"
 
     .prologue
-    .line 542
+    .line 556
     iget v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mStatusCode:I
 
     return v0
@@ -137,12 +137,12 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 665
+    .line 679
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
     if-eqz v0, :cond_0
 
-    .line 667
+    .line 681
     :try_start_0
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
@@ -151,15 +151,15 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 671
+    .line 685
     :goto_0
     iput-object v1, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
-    .line 674
+    .line 688
     :cond_0
     return-void
 
-    .line 671
+    .line 685
     :catchall_0
     move-exception v0
 
@@ -167,7 +167,7 @@
 
     throw v0
 
-    .line 668
+    .line 682
     :catch_0
     move-exception v0
 
@@ -178,17 +178,17 @@
     .locals 1
 
     .prologue
-    .line 685
+    .line 699
     sget v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mQueueRefCount:I
 
     if-nez v0, :cond_1
 
-    .line 692
+    .line 706
     :cond_0
     :goto_0
     return-void
 
-    .line 688
+    .line 702
     :cond_1
     sget v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mQueueRefCount:I
 
@@ -198,12 +198,12 @@
 
     if-nez v0, :cond_0
 
-    .line 689
+    .line 703
     sget-object v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestQueue:Landroid/net/http/RequestQueue;
 
     invoke-virtual {v0}, Landroid/net/http/RequestQueue;->shutdown()V
 
-    .line 690
+    .line 704
     const/4 v0, 0x0
 
     sput-object v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestQueue:Landroid/net/http/RequestQueue;
@@ -215,12 +215,12 @@
     .locals 2
 
     .prologue
-    .line 678
+    .line 692
     sget-object v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestQueue:Landroid/net/http/RequestQueue;
 
     if-nez v0, :cond_0
 
-    .line 679
+    .line 693
     new-instance v0, Landroid/net/http/RequestQueue;
 
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mProxy:Landroid/webkit/HTML5VideoViewProxy;
@@ -233,7 +233,7 @@
 
     sput-object v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestQueue:Landroid/net/http/RequestQueue;
 
-    .line 681
+    .line 695
     :cond_0
     sget v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mQueueRefCount:I
 
@@ -241,7 +241,7 @@
 
     sput v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mQueueRefCount:I
 
-    .line 682
+    .line 696
     return-void
 .end method
 
@@ -251,26 +251,26 @@
     .locals 1
 
     .prologue
-    .line 589
+    .line 603
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestHandle:Landroid/net/http/RequestHandle;
 
     if-eqz v0, :cond_0
 
-    .line 590
+    .line 604
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestHandle:Landroid/net/http/RequestHandle;
 
     invoke-virtual {v0}, Landroid/net/http/RequestHandle;->cancel()V
 
-    .line 591
+    .line 605
     const/4 v0, 0x0
 
     iput-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestHandle:Landroid/net/http/RequestHandle;
 
-    .line 593
+    .line 607
     :cond_0
     invoke-direct {p0}, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->releaseQueue()V
 
-    .line 594
+    .line 608
     return-void
 .end method
 
@@ -279,7 +279,7 @@
     .parameter "certificate"
 
     .prologue
-    .line 650
+    .line 664
     return-void
 .end method
 
@@ -289,19 +289,19 @@
     .parameter "len"
 
     .prologue
-    .line 611
+    .line 625
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
     if-nez v0, :cond_0
 
-    .line 612
+    .line 626
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     iput-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
-    .line 614
+    .line 628
     :cond_0
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
@@ -309,7 +309,7 @@
 
     invoke-virtual {v0, p1, v1, p2}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
-    .line 615
+    .line 629
     return-void
 .end method
 
@@ -317,14 +317,14 @@
     .locals 5
 
     .prologue
-    .line 619
+    .line 633
     iget v2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mStatusCode:I
 
     const/16 v3, 0xc8
 
     if-ne v2, v3, :cond_2
 
-    .line 620
+    .line 634
     iget-object v2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->size()I
@@ -333,7 +333,7 @@
 
     if-lez v2, :cond_0
 
-    .line 621
+    .line 635
     iget-object v2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -352,24 +352,24 @@
 
     move-result-object v1
 
-    .line 623
+    .line 637
     .local v1, poster:Landroid/graphics/Bitmap;
     iget-object v2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mProxy:Landroid/webkit/HTML5VideoViewProxy;
 
     #calls: Landroid/webkit/HTML5VideoViewProxy;->doSetPoster(Landroid/graphics/Bitmap;)V
     invoke-static {v2, v1}, Landroid/webkit/HTML5VideoViewProxy;->access$400(Landroid/webkit/HTML5VideoViewProxy;Landroid/graphics/Bitmap;)V
 
-    .line 625
+    .line 639
     .end local v1           #poster:Landroid/graphics/Bitmap;
     :cond_0
     invoke-direct {p0}, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->cleanup()V
 
-    .line 645
+    .line 659
     :cond_1
     :goto_0
     return-void
 
-    .line 626
+    .line 640
     :cond_2
     iget v2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mStatusCode:I
 
@@ -383,7 +383,7 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 629
+    .line 643
     :try_start_0
     new-instance v2, Ljava/net/URL;
 
@@ -399,13 +399,13 @@
     :try_end_0
     .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 633
+    .line 647
     :goto_1
     iget-object v2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mUrl:Ljava/net/URL;
 
     if-eqz v2, :cond_1
 
-    .line 634
+    .line 648
     iget-object v2, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mHandler:Landroid/os/Handler;
 
     new-instance v3, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader$1;
@@ -416,11 +416,11 @@
 
     goto :goto_0
 
-    .line 630
+    .line 644
     :catch_0
     move-exception v0
 
-    .line 631
+    .line 645
     .local v0, e:Ljava/net/MalformedURLException;
     const/4 v2, 0x0
 
@@ -435,10 +435,10 @@
     .parameter "description"
 
     .prologue
-    .line 654
+    .line 668
     invoke-direct {p0}, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->cleanup()V
 
-    .line 655
+    .line 669
     return-void
 .end method
 
@@ -447,7 +447,7 @@
     .parameter "error"
 
     .prologue
-    .line 661
+    .line 675
     const/4 v0, 0x0
 
     return v0
@@ -458,10 +458,10 @@
     .parameter "headers"
 
     .prologue
-    .line 606
+    .line 620
     iput-object p1, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mHeaders:Landroid/net/http/Headers;
 
-    .line 607
+    .line 621
     return-void
 .end method
 
@@ -471,20 +471,20 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 572
+    .line 586
     invoke-direct {p0}, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->retainQueue()V
 
-    .line 574
+    .line 588
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mUrl:Ljava/net/URL;
 
     if-nez v0, :cond_1
 
-    .line 586
+    .line 600
     :cond_0
     :goto_0
     return-void
 
-    .line 581
+    .line 595
     :cond_1
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mUrl:Ljava/net/URL;
 
@@ -492,7 +492,7 @@
 
     move-result-object v7
 
-    .line 582
+    .line 596
     .local v7, protocol:Ljava/lang/String;
     const-string v0, "http"
 
@@ -510,7 +510,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 583
+    .line 597
     :cond_2
     sget-object v0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mRequestQueue:Landroid/net/http/RequestQueue;
 
@@ -545,9 +545,9 @@
     .parameter "reason_phrase"
 
     .prologue
-    .line 601
+    .line 615
     iput p3, p0, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->mStatusCode:I
 
-    .line 602
+    .line 616
     return-void
 .end method

@@ -884,7 +884,7 @@
 
     const-string v4, "USA"
 
-    const-string v7, ""
+    const-string v7, "CHN"
 
     invoke-virtual {v4, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -962,7 +962,7 @@
 
     move-result-object v5
 
-    const-string v6, ""
+    const-string v6, "CHN"
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

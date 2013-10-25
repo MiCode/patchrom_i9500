@@ -845,7 +845,7 @@
     invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 508
-    const v0, 0x102038a
+    const v0, 0x102038c
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -856,7 +856,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->mTransportControls:Landroid/widget/LinearLayout;
 
     .line 509
-    const v0, 0x10203fe
+    const v0, 0x1020400
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -867,7 +867,7 @@
     iput-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->mTrackTitle:Landroid/widget/TextView;
 
     .line 510
-    const v0, 0x10203fd
+    const v0, 0x10203ff
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -4,10 +4,9 @@
 	<PublicName>GT-I9500</PublicName>
 	</MobileData>
 	<CustomerDataSet>
-	<CSCName>I9500OZS</CSCName>
+	<CSCName>I9500CHN</CSCName>
 	<CSCVersion>BMG1</CSCVersion>
-	<NbCustomer>2</NbCustomer>
-	<CustomerData src="/Customer/TGY/customer.xml" />
-	<CustomerData src="/Customer/BRI/customer.xml" />
+	<NbCustomer>1</NbCustomer>
+	<CustomerData src="/Customer/CHN/customer.xml" />
 	</CustomerDataSet>
 </SW-Configuration>

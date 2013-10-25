@@ -121,7 +121,7 @@
 
     .prologue
     .line 132
-    const v1, 0x10203e2
+    const v1, 0x10203e4
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

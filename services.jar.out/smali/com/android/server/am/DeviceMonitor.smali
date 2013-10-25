@@ -389,15 +389,8 @@
     goto :goto_1
 
     .line 132
-    .end local v1           #file:Ljava/io/File;
-    :cond_2
-    invoke-static {v4}, Lcom/android/server/am/DeviceMonitor;->closeQuietly(Ljava/io/Closeable;)V
-
-    .line 134
-    return-void
-
-    .line 132
     .end local v0           #arr$:[Ljava/io/File;
+    .end local v1           #file:Ljava/io/File;
     .end local v2           #i$:I
     .end local v3           #len$:I
     :catchall_0
@@ -406,6 +399,15 @@
     invoke-static {v4}, Lcom/android/server/am/DeviceMonitor;->closeQuietly(Ljava/io/Closeable;)V
 
     throw v6
+
+    .restart local v0       #arr$:[Ljava/io/File;
+    .restart local v2       #i$:I
+    .restart local v3       #len$:I
+    :cond_2
+    invoke-static {v4}, Lcom/android/server/am/DeviceMonitor;->closeQuietly(Ljava/io/Closeable;)V
+
+    .line 134
+    return-void
 .end method
 
 .method private dump(Ljava/io/File;Ljava/io/OutputStream;)V

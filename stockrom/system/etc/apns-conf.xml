@@ -9794,7 +9794,7 @@
       type="mms"
   />
 
-  <apn carrier="CSL Data"
+<apn carrier="CSL Data"
       mcc="454"
       mnc="00"
       apn="hkcsl"
@@ -9805,14 +9805,12 @@
       mmsport="8080"
       type="default,supl,mms"
   />
-
   <apn carrier="CSL Tethering"
       mcc="454"
       mnc="00"
       apn="internet"
       type="dun"
   />
-
   <apn carrier="CSL Data"
       mcc="454"
       mnc="02"
@@ -9832,6 +9830,136 @@
       type="dun"
   />
 
+
+  <apn carrier="CSL Data"
+      mcc="454"
+      mnc="10"
+      apn="hkcsl"
+      mmsc="http://192.168.58.171:8002"
+      mmsproxy="192.168.59.51"
+      mmsport="8080"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="CSL Tethering"
+      mcc="454"
+      mnc="10"
+      apn="internet"
+      type="dun"
+  />
+    <apn carrier="CSL Data"
+      mcc="454"
+      mnc="18"
+      apn="hkcsl"
+      proxy="192.168.59.51"
+      port="8080"
+      mmsc="http://192.168.58.171:8002"
+      mmsproxy="192.168.59.51"
+      mmsport="8080"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="CSL Tethering"
+      mcc="454"
+      mnc="18"
+      apn="internet"
+      type="dun"
+  />
+  
+<apn carrier="CSL LTE Data"
+      mcc="454"
+      mnc="00"
+      apn="mobile"
+      proxy="192.168.59.51"
+      port="8080"
+      mmsc="http://192.168.58.171:8002"
+      mmsproxy="192.168.59.51"
+      mmsport="8080"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="CSL LTE Tethering"
+      mcc="454"
+      mnc="00"
+      apn="lte.internet"
+      type="dun"
+  />
+
+  <apn carrier="CSL LTE Data"
+      mcc="454"
+      mnc="02"
+      apn="mobile"
+      proxy="192.168.59.51"
+      port="8080"
+      mmsc="http://192.168.58.171:8002"
+      mmsproxy="192.168.59.51"
+      mmsport="8080"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="CSL LTE Tethering"
+      mcc="454"
+      mnc="02"
+      apn="lte.internet"
+      type="dun"
+  />
+
+
+  <apn carrier="CSL LTE Data"
+      mcc="454"
+      mnc="10"
+      apn="mobile"
+      mmsc="http://192.168.58.171:8002"
+      mmsproxy="192.168.59.51"
+      mmsport="8080"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="CSL LTE Tethering"
+      mcc="454"
+      mnc="10"
+      apn="lte.internet"
+      type="dun"
+  />
+    <apn carrier="CSL LTE Data"
+      mcc="454"
+      mnc="18"
+      apn="mobile"
+      proxy="192.168.59.51"
+      port="8080"
+      mmsc="http://192.168.58.171:8002"
+      mmsproxy="192.168.59.51"
+      mmsport="8080"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="CSL LTE Tethering"
+      mcc="454"
+      mnc="18"
+      apn="lte.internet"
+      type="dun"
+  />
+
+
+  <apn carrier="3 LTE"
+      mcc="454"
+      mnc="03"
+      authtype="1"
+      apn="mobile.lte.three.com.hk"
+      mmsc="http://mms.um.three.com.hk:10021/mmsc"
+      mmsproxy="172.20.97.116"
+      mmsport="8799"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="3 LTE Tethering"
+      mcc="454"
+      mnc="03"
+      authtype="1"
+      apn="share.lte.three.com.hk"
+      type="dun"
+  />
+  
   <apn carrier="3"
       mcc="454"
       mnc="03"
@@ -9850,7 +9978,7 @@
       apn="mobile.three.com.hk"
       type="dun"
   />
-
+  
   <apn carrier="3-DB-MMS"
       mcc="454"
       mnc="04"
@@ -9864,6 +9992,25 @@
   <apn carrier="3-DB-GPRS"
       mcc="454"
       mnc="04"
+      apn="web-g.three.com.hk"
+      proxy="10.30.15.53"
+      port="8080"
+      type="default,supl"
+  />
+  
+  <apn carrier="3-DB-MMS"
+      mcc="454"
+      mnc="14"
+      apn="mms-g.three.com.hk"
+      mmsc="http://10.30.15.51:10021/mmsc"
+      mmsproxy="10.30.15.53"
+      mmsport="8080"
+      type="mms"
+  />
+
+  <apn carrier="3-DB-GPRS"
+      mcc="454"
+      mnc="14"
       apn="web-g.three.com.hk"
       proxy="10.30.15.53"
       port="8080"
@@ -9877,30 +10024,44 @@
       mmsc="http://mms.smartone.com/server"
       mmsproxy="10.9.9.9"
       mmsport="8080"
-      type="default,supl,mms"
+      type="default,supl,mms,dun"
   />
-
-  <apn carrier="CSL Data"
+    
+    <apn carrier="SmarTone HK"
       mcc="454"
-      mnc="10"
-      apn="hkcsl"
-      mmsc="http://192.168.58.171:8002"
-      mmsproxy="192.168.59.51"
+      mnc="15"
+      apn="SmarTone"
+      mmsc="http://mms.smartone.com/server"
+      mmsproxy="10.9.9.9"
+      mmsport="8080"
+      type="default,supl,mms,dun"
+  />
+  <apn carrier="SmarTone HK"
+      mcc="454"
+      mnc="17"
+      apn="SmarTone"
+      mmsc="http://mms.smartone.com/server"
+      mmsproxy="10.9.9.9"
+      mmsport="8080"
+      type="default,supl,mms,dun"
+  />
+  
+  <apn carrier="SmarTone MAC"
+      mcc="455"
+      mnc="00"
+      apn="smartgprs"
+      proxy="10.9.9.29"
+      port="8080"
+      mmsc="http://mms.smartone.com.mo/dmog/mo"
+      mmsproxy="10.9.9.29"
       mmsport="8080"
       type="default,supl,mms"
-  />
-
-  <apn carrier="CSL Tethering"
-      mcc="454"
-      mnc="10"
-      apn="internet"
-      type="dun"
   />
 
   <apn carrier="CMHK MMS"
       mcc="454"
       mnc="12"
-      apn="peoples.mms"
+      apn="cmhk"
       mmsc="http://mms.hk.chinamobile.com/mms"
       mmsproxy="172.31.31.36"
       mmsport="8080"
@@ -9910,39 +10071,28 @@
   <apn carrier="CMHK GPRS"
       mcc="454"
       mnc="12"
-      apn="peoples.net"
+      apn="cmhk"
       proxy="172.31.31.36"
       port="8080"
       type="default,supl"
   />
-
-  <apn carrier="3-DB-MMS"
+    <apn carrier="CMHK MMS"
       mcc="454"
-      mnc="14"
-      apn="mms-g.three.com.hk"
-      mmsc="http://10.30.15.51:10021/mmsc"
-      mmsproxy="10.30.15.53"
+      mnc="13"
+      apn="cmhk"
+      mmsc="http://mms.hk.chinamobile.com/mms"
+      mmsproxy="172.31.31.36"
       mmsport="8080"
       type="mms"
   />
 
-  <apn carrier="3-DB-GPRS"
+  <apn carrier="CMHK GPRS"
       mcc="454"
-      mnc="14"
-      apn="web-g.three.com.hk"
-      proxy="10.30.15.53"
+      mnc="13"
+      apn="cmhk"
+      proxy="172.31.31.36"
       port="8080"
       type="default,supl"
-  />
-  
-  <apn carrier="SmarTone HK"
-      mcc="454"
-      mnc="15"
-      apn="SmarTone"
-      mmsc="http://mms.smartone.com/server"
-      mmsproxy="10.9.9.9"
-      mmsport="8080"
-      type="default,supl,mms"
   />
 
   <apn carrier="PCCW_GPRS"
@@ -9963,37 +10113,7 @@
       mmsport="8080"
       type="mms"
   />
-
-  <apn carrier="SmarTone HK"
-      mcc="454"
-      mnc="17"
-      apn="SmarTone"
-      mmsc="http://mms.smartone.com/server"
-      mmsproxy="10.9.9.9"
-      mmsport="8080"
-      type="default,supl,mms"
-  />
-
-  <apn carrier="CSL Data"
-      mcc="454"
-      mnc="18"
-      apn="hkcsl"
-      proxy="192.168.59.51"
-      port="8080"
-      mmsc="http://192.168.58.171:8002"
-      mmsproxy="192.168.59.51"
-      mmsport="8080"
-      type="default,supl,mms"
-  />
-
-  <apn carrier="CSL Tethering"
-      mcc="454"
-      mnc="18"
-      apn="internet"
-      type="dun"
-  />
-
-  <apn carrier="PCCW 3G"
+    <apn carrier="PCCW 3G"
       mcc="454"
       mnc="19"
       apn="pccw"
@@ -10002,19 +10122,7 @@
       mmsport="8080"
       type="default,supl,mms"
   />
-
-  <apn carrier="SmarTone MAC"
-      mcc="455"
-      mnc="00"
-      apn="smartgprs"
-      proxy="10.9.9.29"
-      port="8080"
-      mmsc="http://mms.smartone.com.mo/dmog/mo"
-      mmsproxy="10.9.9.29"
-      mmsport="8080"
-      type="default,supl,mms"
-  />
-
+  
   <apn carrier="CTMdata"
       mcc="455"
       mnc="01"
@@ -10045,6 +10153,24 @@
       mmsport="8080"
       type="default,supl,mms"
   />
+  <apn carrier="CTM"
+      mcc="455"
+      mnc="04"
+      apn="ctm-mobile"
+      proxy="192.168.99.2"
+      port="8080"
+      type="default,supl"
+  />
+
+  <apn carrier="CTM MMS"
+      mcc="455"
+      mnc="04"
+      apn="ctmmms"
+      mmsc="http://mms.wap.ctm.net:8002"
+      mmsproxy="192.168.99.3"
+      mmsport="8080"
+      type="mms"
+  />
 
   <apn carrier="3 Macau MMS"
       mcc="455"
@@ -10063,25 +10189,6 @@
       user="hutchison"
       password="1234"
       type="default,supl"
-  />
-
-  <apn carrier="CTM"
-      mcc="455"
-      mnc="04"
-      apn="ctm-mobile"
-      proxy="192.168.99.2"
-      port="8080"
-      type="default,supl"
-  />
-
-  <apn carrier="CTM MMS"
-      mcc="455"
-      mnc="04"
-      apn="ctmmms"
-      mmsc="http://mms.wap.ctm.net:8002"
-      mmsproxy="192.168.99.3"
-      mmsport="8080"
-      type="mms"
   />
 
   <apn carrier="CMNET"

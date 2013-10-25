@@ -78,13 +78,13 @@
     .local v5, res:Landroid/content/res/Resources;
     new-instance v2, Landroid/content/ComponentName;
 
-    const v8, 0x10408cf
+    const v8, 0x10408d0
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
-    const v9, 0x10408d0
+    const v9, 0x10408d1
 
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

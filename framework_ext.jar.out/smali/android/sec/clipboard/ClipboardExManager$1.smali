@@ -38,7 +38,7 @@
     .parameter "msg"
 
     .prologue
-    const v3, 0x10408dc
+    const v3, 0x10408dd
 
     const v2, 0x1040752
 

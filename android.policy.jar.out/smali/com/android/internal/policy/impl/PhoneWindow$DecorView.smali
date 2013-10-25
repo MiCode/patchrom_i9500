@@ -4278,7 +4278,7 @@
     .line 2586
     .end local v2           #bLocationChange:Z
     :cond_b
-    const v13, 0x1020402
+    const v13, 0x1020404
 
     move-object/from16 v0, p0
 

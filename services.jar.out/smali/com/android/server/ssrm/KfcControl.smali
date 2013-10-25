@@ -73,7 +73,7 @@
 
     const-string v0, "KOR"
 
-    const-string v1, ""
+    const-string v1, "CHN"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -126,7 +126,7 @@
 
     const-string v1, "KOR"
 
-    const-string v2, ""
+    const-string v2, "CHN"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

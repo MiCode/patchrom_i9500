@@ -703,32 +703,6 @@
 
     goto :goto_3
 
-    .end local v4           #i:I
-    :catchall_0
-    move-exception v10
-
-    move-object v11, v10
-
-    add-int/lit8 v4, v8, -0x1
-
-    .restart local v4       #i:I
-    :goto_4
-    if-ltz v4, :cond_4
-
-    .line 1601
-    invoke-virtual {v6, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    move-result-object v10
-
-    check-cast v10, Landroid/view/WindowInfo;
-
-    invoke-virtual {v10}, Landroid/view/WindowInfo;->recycle()V
-
-    .line 1600
-    add-int/lit8 v4, v4, -0x1
-
-    goto :goto_4
-
     :cond_4
     throw v11
 
@@ -761,6 +735,35 @@
 
     .line 1610
     return-void
+
+    .line 1600
+    .end local v1           #displayHeight:I
+    .end local v3           #displayWidth:I
+    .end local v4           #i:I
+    :catchall_0
+    move-exception v10
+
+    move-object v11, v10
+
+    add-int/lit8 v4, v8, -0x1
+
+    .restart local v4       #i:I
+    :goto_4
+    if-ltz v4, :cond_4
+
+    .line 1601
+    invoke-virtual {v6, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Landroid/view/WindowInfo;
+
+    invoke-virtual {v10}, Landroid/view/WindowInfo;->recycle()V
+
+    .line 1600
+    add-int/lit8 v4, v4, -0x1
+
+    goto :goto_4
 .end method
 
 .method public rotationChanged()V

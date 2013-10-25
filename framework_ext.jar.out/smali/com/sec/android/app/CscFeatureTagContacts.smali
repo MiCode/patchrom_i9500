@@ -124,6 +124,8 @@
 
 .field public static final TAG_CSCFEATURE_CONTACT_ENABLEUIM:Ljava/lang/String; = "CscFeature_Contact_EnableUIM"
 
+.field public static final TAG_CSCFEATURE_CONTACT_ENABLEYELLOWPAGEFOR:Ljava/lang/String; = "CscFeature_Contact_EnableYellowPageFor"
+
 .field public static final TAG_CSCFEATURE_CONTACT_EXPORTALLNUMBERTOSIM:Ljava/lang/String; = "CscFeature_Contact_ExportAllNumberToSIM"
 
 .field public static final TAG_CSCFEATURE_CONTACT_EXPORTTOSIMPHONEACCOUNTONLY:Ljava/lang/String; = "CscFeature_Contact_ExportToSimPhoneAccountOnly"

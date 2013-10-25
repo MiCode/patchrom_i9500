@@ -30,17 +30,17 @@
     .parameter "endOff"
 
     .prologue
-    .line 6241
+    .line 6240
     iput-object p1, p0, Landroid/webkit/HtmlComposerView$SelectionOffset;->this$0:Landroid/webkit/HtmlComposerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6242
+    .line 6241
     iput p2, p0, Landroid/webkit/HtmlComposerView$SelectionOffset;->startOffset:I
 
-    .line 6243
+    .line 6242
     iput p3, p0, Landroid/webkit/HtmlComposerView$SelectionOffset;->endOffset:I
 
-    .line 6244
+    .line 6243
     return-void
 .end method

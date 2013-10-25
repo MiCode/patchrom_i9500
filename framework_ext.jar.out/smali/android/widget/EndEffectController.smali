@@ -822,7 +822,7 @@
     if-ne v11, v12, :cond_8
 
     .line 166
-    const v6, 0x10408f2
+    const v6, 0x10408f3
 
     .line 170
     :cond_7
@@ -843,7 +843,7 @@
     if-ne v11, v12, :cond_7
 
     .line 168
-    const v6, 0x10408f1
+    const v6, 0x10408f2
 
     goto :goto_2
 .end method

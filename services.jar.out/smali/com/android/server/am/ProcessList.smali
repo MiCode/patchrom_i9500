@@ -222,30 +222,18 @@
     sput v0, Lcom/android/server/am/ProcessList;->INIT_HIDDEN_APPS:I
 
     .line 355
-    const-string v0, "persist.sys.min_hidden"
+    const-string v0, "MIN_HIDDEN_APPS_FOR_DHA"
 
-    const-string v1, "MIN_HIDDEN_APPS_FOR_DHA"
-
-    invoke-static {v1}, Lcom/android/server/am/ProcessList;->dynamicStatus(Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+    invoke-static {v0}, Lcom/android/server/am/ProcessList;->dynamicStatus(Ljava/lang/String;)I
 
     move-result v0
 
     sput v0, Lcom/android/server/am/ProcessList;->MIN_HIDDEN_APPS_FOR_DHA:I
 
     .line 357
-    const-string v0, "persist.sys.max_hidden_lowmem"
+    const-string v0, "MAX_HIDDEN_APPS_FOR_LOWMEM"
 
-    const-string v1, "MAX_HIDDEN_APPS_FOR_LOWMEM"
-
-    invoke-static {v1}, Lcom/android/server/am/ProcessList;->dynamicStatus(Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+    invoke-static {v0}, Lcom/android/server/am/ProcessList;->dynamicStatus(Ljava/lang/String;)I
 
     move-result v0
 
@@ -1512,26 +1500,14 @@
     if-ne v15, v0, :cond_6
 
     .line 509
-    const-string v15, "persist.sys.dha_threshold"
-
-    const-wide/32 v16, 0x9600000
-
-    invoke-static/range {v15 .. v17}, Landroid/os/SystemProperties;->getLong(Ljava/lang/String;J)J
-
-    move-result-wide v15
+    const-wide/32 v15, 0x9600000
 
     move-object/from16 v0, p0
 
     iput-wide v15, v0, Lcom/android/server/am/ProcessList;->mSzDHAThreshold:J
 
     .line 510
-    const-string v15, "persist.sys.dha_def_threshold"
-
-    const-wide/32 v16, 0x3200000
-
-    invoke-static/range {v15 .. v17}, Landroid/os/SystemProperties;->getLong(Ljava/lang/String;J)J
-
-    move-result-wide v15
+    const-wide/32 v15, 0x3200000
 
     move-object/from16 v0, p0
 
@@ -1920,39 +1896,6 @@
     .line 567
     add-int/lit8 v2, v2, -0x3
 
-    .line 569
-    const-string v8, "ActivityManager"
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v10, "Decrease Hidden App Number from "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    const-string v10, "to "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     .end local v4           #szAvailableMem:J
     .end local v6           #szFreeMem:J
     :cond_2
@@ -2007,39 +1950,6 @@
     .line 578
     add-int/lit8 v2, v2, 0x3
 
-    .line 580
-    const-string v8, "ActivityManager"
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v10, "Increase Hidden App Number from "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    const-string v10, "to "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     goto :goto_1
 
     .line 584
@@ -2060,39 +1970,6 @@
 
     .line 585
     add-int/lit8 v2, v2, 0x3
-
-    .line 587
-    const-string v8, "ActivityManager"
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v10, "Increase Hidden App Number from "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    const-string v10, "to "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_1
 .end method

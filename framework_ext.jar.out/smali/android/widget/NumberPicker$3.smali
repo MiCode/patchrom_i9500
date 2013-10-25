@@ -114,7 +114,7 @@
 
     move-result v4
 
-    const v5, 0x10203d8
+    const v5, 0x10203da
 
     if-ne v4, v5, :cond_2
 

@@ -470,13 +470,13 @@
     .line 2332
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService$InstallThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 
-    .end local v0           #apkFilePath:Ljava/lang/String;
-    .end local v7           #msg:Landroid/os/Message;
-    :goto_0
     #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
     invoke-static {v10}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
 
     .line 2334
+    .end local v0           #apkFilePath:Ljava/lang/String;
+    .end local v7           #msg:Landroid/os/Message;
+    :goto_0
     return-void
 
     .line 2268
@@ -535,6 +535,9 @@
 
     .line 2332
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService$InstallThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
+
+    #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
+    invoke-static {v10}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
 
     goto :goto_0
 
@@ -700,6 +703,9 @@
     .line 2332
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService$InstallThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 
+    #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
+    invoke-static {v10}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
+
     goto/16 :goto_0
 
     .line 2308
@@ -857,6 +863,9 @@
     :cond_6
     :goto_2
     iget-object v10, p0, Lcom/sec/knox/container/EnterpriseContainerService$InstallThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
+
+    #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
+    invoke-static {v10}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
 
     goto/16 :goto_0
 

@@ -1,0 +1,4 @@
+/system/preload/QQ_V2012_Deletable.apk
+/system/preload/Sinamicroblog_V3.0_Deletable.apk
+/system/preload/QQBrowser_V3.0_Deletable.apk
+/system/preload/NCR.apk

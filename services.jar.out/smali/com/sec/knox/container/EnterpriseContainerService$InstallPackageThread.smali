@@ -134,12 +134,12 @@
     :goto_0
     iget-object v9, p0, Lcom/sec/knox/container/EnterpriseContainerService$InstallPackageThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 
-    .end local v8           #sourceApkFile:Ljava/io/File;
-    :goto_1
     #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
     invoke-static {v9}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
 
     .line 3419
+    .end local v8           #sourceApkFile:Ljava/io/File;
+    :goto_1
     :try_start_1
     iget-object v9, p0, Lcom/sec/knox/container/EnterpriseContainerService$InstallPackageThread;->mStatusCb:Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
@@ -356,6 +356,9 @@
 
     .line 3416
     iget-object v9, p0, Lcom/sec/knox/container/EnterpriseContainerService$InstallPackageThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
+
+    #calls: Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
+    invoke-static {v9}, Lcom/sec/knox/container/EnterpriseContainerService;->access$5800(Lcom/sec/knox/container/EnterpriseContainerService;)V
 
     goto/16 :goto_1
 
@@ -588,8 +591,6 @@
     goto/16 :goto_0
 
     .line 3308
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1f5
         :pswitch_0

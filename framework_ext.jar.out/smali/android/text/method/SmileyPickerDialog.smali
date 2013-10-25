@@ -461,7 +461,7 @@
     invoke-virtual {p0, v2}, Landroid/app/Dialog;->setContentView(I)V
 
     .line 128
-    const v2, 0x102041f
+    const v2, 0x1020421
 
     invoke-virtual {p0, v2}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 

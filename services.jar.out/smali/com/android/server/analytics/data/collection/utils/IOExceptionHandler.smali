@@ -61,20 +61,20 @@
     invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->process(Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_3
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
     .line 152
     :try_start_2
     invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->flush(Ljava/lang/Object;)V
     :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_6
 
     .line 158
     :goto_0
     :try_start_3
     invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->sync(Ljava/lang/Object;)V
     :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_7
 
     .line 163
     :goto_1
@@ -99,19 +99,39 @@
 
     throw v3
 
-    .line 153
+    .line 147
     .restart local v2       #io:Ljava/lang/Object;,"TS;"
     :catch_0
     move-exception v0
 
-    .line 154
+    .line 148
     .local v0, e:Ljava/io/IOException;
     :try_start_5
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    goto :goto_0
+    .line 152
+    :try_start_6
+    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->flush(Ljava/lang/Object;)V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
+
+    .line 158
+    :goto_3
+    :try_start_7
+    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->sync(Ljava/lang/Object;)V
+    :try_end_7
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_5
+
+    .line 163
+    :goto_4
+    :try_start_8
+    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->close(Ljava/lang/Object;)V
+    :try_end_8
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
+
+    goto :goto_2
 
     .line 165
     .end local v0           #e:Ljava/io/IOException;
@@ -125,52 +145,59 @@
 
     goto :goto_2
 
-    .line 159
+    .line 151
     .end local v0           #e:Ljava/io/IOException;
+    .restart local v2       #io:Ljava/lang/Object;,"TS;"
+    :catchall_0
+    move-exception v3
+
+    .line 152
+    :try_start_9
+    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->flush(Ljava/lang/Object;)V
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_2
+
+    .line 158
+    :goto_5
+    :try_start_a
+    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->sync(Ljava/lang/Object;)V
+    :try_end_a
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_3
+
+    .line 163
+    :goto_6
+    :try_start_b
+    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->close(Ljava/lang/Object;)V
+
+    .line 151
+    throw v3
+
+    .line 172
+    .end local v2           #io:Ljava/lang/Object;,"TS;"
+    :cond_0
+    return-void
+
+    .line 153
     .restart local v2       #io:Ljava/lang/Object;,"TS;"
     :catch_2
     move-exception v0
 
-    .line 160
+    .line 154
     .restart local v0       #e:Ljava/io/IOException;
-    :try_start_6
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_1
 
-    goto :goto_1
+    goto :goto_5
 
-    .line 147
+    .line 159
     .end local v0           #e:Ljava/io/IOException;
     :catch_3
     move-exception v0
 
-    .line 148
+    .line 160
     .restart local v0       #e:Ljava/io/IOException;
-    :try_start_7
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
-    .line 152
-    :try_start_8
-    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->flush(Ljava/lang/Object;)V
-    :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_4
-
-    .line 158
-    :goto_3
-    :try_start_9
-    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->sync(Ljava/lang/Object;)V
-    :try_end_9
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
-
-    .line 163
-    :goto_4
-    :try_start_a
-    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->close(Ljava/lang/Object;)V
-
-    goto :goto_2
+    goto :goto_6
 
     .line 153
     :catch_4
@@ -187,37 +214,11 @@
 
     .line 160
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_a
-    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_1
 
     goto :goto_4
 
-    .line 151
-    .end local v0           #e:Ljava/io/IOException;
-    :catchall_0
-    move-exception v3
-
-    .line 152
-    :try_start_b
-    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->flush(Ljava/lang/Object;)V
-    :try_end_b
-    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_6
-
-    .line 158
-    :goto_5
-    :try_start_c
-    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->sync(Ljava/lang/Object;)V
-    :try_end_c
-    .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_7
-
-    .line 163
-    :goto_6
-    :try_start_d
-    invoke-virtual {p0, v2}, Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;->close(Ljava/lang/Object;)V
-
-    throw v3
-
     .line 153
+    .end local v0           #e:Ljava/io/IOException;
     :catch_6
     move-exception v0
 
@@ -225,7 +226,7 @@
     .restart local v0       #e:Ljava/io/IOException;
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto :goto_5
+    goto :goto_0
 
     .line 159
     .end local v0           #e:Ljava/io/IOException;
@@ -235,16 +236,10 @@
     .line 160
     .restart local v0       #e:Ljava/io/IOException;
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_d
-    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_1
+    :try_end_b
+    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_1
 
-    goto :goto_6
-
-    .line 172
-    .end local v0           #e:Ljava/io/IOException;
-    .end local v2           #io:Ljava/lang/Object;,"TS;"
-    :cond_0
-    return-void
+    goto :goto_1
 .end method
 
 .method public static process(Lcom/android/server/analytics/data/collection/utils/IOExceptionHandler$IOProcessor;Z)V

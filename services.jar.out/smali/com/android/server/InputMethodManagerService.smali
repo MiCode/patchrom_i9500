@@ -14720,7 +14720,7 @@
     .line 1569
     const-string v1, "KOR"
 
-    const-string v2, ""
+    const-string v2, "CHN"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

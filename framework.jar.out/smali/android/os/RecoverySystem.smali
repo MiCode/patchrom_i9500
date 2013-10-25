@@ -620,7 +620,7 @@
     .parameter "filename"
 
     .prologue
-    const-string/jumbo v0, "storage/emulated"
+    const-string v0, "storage/emulated"
 
     const-string v1, "data/media"
 
@@ -628,9 +628,9 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "storage/extSdCard"
+    const-string v0, "storage/extSdCard"
 
-    const-string/jumbo v1, "sdcard"
+    const-string v1, "sdcard"
 
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
@@ -711,6 +711,7 @@
 
     move-result-object v4
 
+    .line 361
     .local v4, filename:Ljava/lang/String;
     invoke-static {v4}, Landroid/os/RecoverySystem;->fixOtaPath(Ljava/lang/String;)Ljava/lang/String;
 

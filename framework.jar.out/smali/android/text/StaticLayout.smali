@@ -2581,7 +2581,7 @@
     .local v82, DEFAULT_DIR:I
     const-string v5, "JPN"
 
-    const-string v7, ""
+    const-string v7, "CHN"
 
     invoke-virtual {v5, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

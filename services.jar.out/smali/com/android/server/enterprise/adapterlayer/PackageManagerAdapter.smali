@@ -552,7 +552,7 @@
     .line 793
     invoke-static/range {v15 .. v16}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 763
+    .line 794
     monitor-exit v18
 
     goto :goto_0
@@ -638,7 +638,7 @@
     .line 793
     invoke-static/range {v15 .. v16}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 768
+    .line 794
     monitor-exit v18
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
@@ -806,7 +806,7 @@
     .line 793
     invoke-static/range {v15 .. v16}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 783
+    .line 794
     monitor-exit v18
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
@@ -857,7 +857,7 @@
     .line 793
     invoke-static/range {v15 .. v16}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 786
+    .line 794
     monitor-exit v18
 
     goto/16 :goto_0
@@ -890,7 +890,7 @@
     .line 793
     invoke-static/range {v15 .. v16}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 789
+    .line 794
     throw v2
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_0
@@ -1730,7 +1730,6 @@
     .line 509
     iget-object v1, v0, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$PkgSizeObserver;->mPkgStats:Landroid/content/pm/PackageStats;
 
-    .line 507
     :cond_2
     throw v4
 .end method
@@ -2632,11 +2631,11 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     .line 627
-    .end local v0           #e:Ljava/lang/Exception;
-    :cond_2
     invoke-static {v9, v10}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     .line 630
+    .end local v0           #e:Ljava/lang/Exception;
+    :goto_2
     const-string v11, "PackageManagerAdapter"
 
     const-string v12, "readAppSizeInfo end"
@@ -2676,6 +2675,13 @@
     invoke-static {v9, v10}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     throw v11
+
+    .restart local v1       #i$:Ljava/util/Iterator;
+    .restart local v5       #lPkgSizeObserver:Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$PkgSizeObserver;
+    :cond_2
+    invoke-static {v9, v10}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_2
 .end method
 
 .method public restoreApplicationData(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)I
@@ -2840,7 +2846,7 @@
     .line 731
     invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 710
+    .line 732
     monitor-exit v9
 
     goto :goto_0
@@ -2914,7 +2920,7 @@
     .line 731
     invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 714
+    .line 732
     monitor-exit v9
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
@@ -3006,7 +3012,7 @@
     .line 731
     invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 722
+    .line 732
     monitor-exit v9
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
@@ -3052,7 +3058,7 @@
     .line 731
     invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 725
+    .line 732
     monitor-exit v9
 
     goto/16 :goto_0
@@ -3083,7 +3089,7 @@
     .line 731
     invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 727
+    .line 732
     throw v7
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_0

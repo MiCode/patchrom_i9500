@@ -545,7 +545,7 @@
 
     move-result v2
 
-    const v1, 0x10203f5
+    const v1, 0x10203f7
 
     if-ne v0, v1, :cond_0
 
@@ -912,7 +912,7 @@
     :goto_4
     iget-object v1, v9, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    const v2, 0x10203f4
+    const v2, 0x10203f6
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1137,7 +1137,7 @@
     invoke-virtual {v10, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     .line 252
-    const v1, 0x10203f5
+    const v1, 0x10203f7
 
     invoke-virtual {v10, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1148,7 +1148,7 @@
     iput-object v1, p0, Lcom/android/internal/app/ResolverActivity;->mAlwaysButton:Landroid/widget/Button;
 
     .line 253
-    const v1, 0x10203f6
+    const v1, 0x10203f8
 
     invoke-virtual {v10, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

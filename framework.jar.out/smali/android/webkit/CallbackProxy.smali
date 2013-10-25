@@ -3217,7 +3217,7 @@
 
     iget-object v4, v0, Landroid/webkit/CallbackProxy;->mContext:Landroid/content/Context;
 
-    const v10, 0x10408d6
+    const v10, 0x10408d7
 
     invoke-virtual {v4, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

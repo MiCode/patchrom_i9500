@@ -1166,7 +1166,7 @@
     :cond_1
     const-string v0, "KOR"
 
-    const-string v1, ""
+    const-string v1, "CHN"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1774,7 +1774,7 @@
     .local v3, bOrg:Z
     const-string v6, "KOR"
 
-    const-string v7, ""
+    const-string v7, "CHN"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2109,7 +2109,7 @@
     .line 457
     const-string v2, "KOR"
 
-    const-string v3, ""
+    const-string v3, "CHN"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

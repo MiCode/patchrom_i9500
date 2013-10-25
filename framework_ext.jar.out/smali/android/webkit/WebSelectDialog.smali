@@ -411,7 +411,7 @@
     if-eq v2, v3, :cond_0
 
     .line 283
-    const v2, 0x1020485
+    const v2, 0x1020487
 
     invoke-virtual {p0, v2}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -486,7 +486,7 @@
 
     .line 201
     .local v5, theWindow:Landroid/view/Window;
-    const v6, 0x1020482
+    const v6, 0x1020484
 
     invoke-virtual {p0, v6}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -563,7 +563,7 @@
     iput-object v0, p0, Landroid/webkit/WebSelectDialog;->mNextButton:Landroid/view/View;
 
     .line 234
-    const v6, 0x1020481
+    const v6, 0x1020483
 
     invoke-virtual {p0, v6}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -601,7 +601,7 @@
     iput-object v0, p0, Landroid/webkit/WebSelectDialog;->mPrevButton:Landroid/view/View;
 
     .line 245
-    const v6, 0x1020484
+    const v6, 0x1020486
 
     invoke-virtual {p0, v6}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -644,7 +644,7 @@
     if-eqz v6, :cond_1
 
     .line 257
-    const v6, 0x1020486
+    const v6, 0x1020488
 
     invoke-virtual {p0, v6}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -836,7 +836,7 @@
     if-eqz v1, :cond_0
 
     .line 128
-    const v1, 0x1020486
+    const v1, 0x1020488
 
     invoke-virtual {p0, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 

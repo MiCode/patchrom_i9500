@@ -35,25 +35,25 @@
     .parameter "_delayMillis"
 
     .prologue
-    .line 7494
+    .line 7521
     iput-object p1, p0, Lcom/android/server/am/ActivityStack$DelayedRotationRequest;->this$0:Lcom/android/server/am/ActivityStack;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7495
+    .line 7522
     iput-object p2, p0, Lcom/android/server/am/ActivityStack$DelayedRotationRequest;->requestor:Lcom/android/server/am/ActivityRecord;
 
-    .line 7496
+    .line 7523
     iput-object p3, p0, Lcom/android/server/am/ActivityStack$DelayedRotationRequest;->next:Lcom/android/server/am/ActivityRecord;
 
-    .line 7497
+    .line 7524
     iput p4, p0, Lcom/android/server/am/ActivityStack$DelayedRotationRequest;->delayMillis:I
 
-    .line 7498
+    .line 7525
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/server/am/ActivityStack$DelayedRotationRequest;->requested:Z
 
-    .line 7499
+    .line 7526
     return-void
 .end method

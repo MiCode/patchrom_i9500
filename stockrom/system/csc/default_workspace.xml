@@ -21,7 +21,9 @@
     <home>
 
         <!-- Screen 0 -->
-        <sactivitywidget
+
+ 
+       	<sactivitywidget
             launcher:packageName="com.samsung.android.widgetapp.briefing4x2"
             launcher:className="com.samsung.android.widgetapp.briefing4x2.BriefingWidget"
             launcher:screen="0" 
@@ -29,32 +31,38 @@
             launcher:y="0" 
             launcher:spanX="4" 
             launcher:spanY="2" />
-        <favorite 
+	    
+        <favorite
+            launcher:className="com.sec.chaton.HomeActivity"
             launcher:packageName="com.sec.chaton" 
-            launcher:className="com.sec.chaton.HomeActivity" 
-            launcher:screen="0" 
-            launcher:x="0" 
-            launcher:y="3" />
-        <favorite 
-            launcher:packageName="com.samsung.groupcast" 
-            launcher:className="com.samsung.groupcast.start.StartActivity" 
-            launcher:screen="0" 
-            launcher:x="1" 
-            launcher:y="3" />
-        <favorite 
-            launcher:packageName="tv.peel.samsung.app" 
-            launcher:className="com.peel.main.Main" 
-            launcher:screen="0" 
-            launcher:x="2" 
-            launcher:y="3" />
-        <favorite 
-            launcher:packageName="com.dropbox.android" 
-            launcher:className="com.dropbox.android.activity.DropboxBrowser" 
-            launcher:screen="0" 
-            launcher:x="3" 
+            launcher:screen="0"
+            launcher:x="0"
             launcher:y="3" />
 
-        <!-- Screen 1 -->
+        <favorite
+            launcher:className="com.samsung.groupcast.start.StartActivity"
+            launcher:packageName="com.samsung.groupcast"
+            launcher:screen="0"
+            launcher:x="1"
+            launcher:y="3" />
+
+        <favorite
+	    launcher:className="com.peel.main.Main"
+	    launcher:packageName="tv.peel.samsung.app"
+            launcher:screen="0"
+            launcher:x="2"
+            launcher:y="3" />
+
+       <favorite
+            launcher:className="com.baidu.netdisk.ui.Navigate"
+            launcher:packageName="com.baidu.netdisk_ss"
+            launcher:screen="0"
+            launcher:x="3"
+            launcher:y="3" />
+
+	    
+           <!-- Screen 1 -->
+	   
         <sactivitywidget
             launcher:className="com.samsung.android.tripwidget.TravelSurfaceWidget"
             launcher:packageName="com.samsung.android.tripwidget"
@@ -63,60 +71,61 @@
             launcher:spanY="2"
             launcher:x="0"
             launcher:y="0" />
-
-        <appwidget
-            launcher:packageName="flipboard.app" 
-            launcher:className="flipboard.widget.FlipboardWidgetMedium" 
-            launcher:screen="1"
-            launcher:spanX="4"
-            launcher:spanY="2"
-            launcher:x="0"
-            launcher:y="2" />
-
-        <!-- Screen 2 -->
-        <sactivitywidget
-            launcher:className="com.sec.android.widgetapp.ap.hero.accuweather.SurfaceWidgetWeather"
-            launcher:packageName="com.sec.android.widgetapp.ap.hero.accuweather"
-            launcher:screen="2"
-            launcher:spanX="4"
-            launcher:spanY="2"
-            launcher:themeName="Accuweather2013"
-            launcher:x="0"
-            launcher:y="0" />
-
-        <appwidget 
-            launcher:packageName="android.googleSearch.googleSearchWidget" 
-            launcher:className="android.googleSearch.googleSearchWidget.GoogleSearchProvider" 
-            launcher:screen="2" 
+	    
+         <appwidget
+            launcher:className="flipboard.widget.FlipboardWidgetMedium"
+	    launcher:packageName="flipboard.cn"
+            launcher:screen="1" 
             launcher:x="0" 
             launcher:y="2" 
             launcher:spanX="4" 
-            launcher:spanY="1" />
-        <favorite 
-            launcher:packageName="com.android.email" 
+            launcher:spanY="2" />   
+	    
+ 	    
+        <!-- Screen 2 -->
+
+        <sactivitywidget
+            launcher:className="com.sec.android.widgetapp.ap.hero.cmaweather.SurfaceWidgetWeather"
+            launcher:packageName="com.sec.android.widgetapp.ap.hero.cmaweather"
+            launcher:screen="2"
+            launcher:spanX="4"
+            launcher:spanY="2"
+            launcher:x="0"
+            launcher:y="0" />
+       
+        <search
+            launcher:screen="2"
+            launcher:x="0"
+            launcher:y="2" />         
+
+        <favorite
             launcher:className="com.android.email.activity.Welcome" 
-            launcher:screen="2" 
-            launcher:x="0" 
-            launcher:y="3" />
-        <favorite 
-            launcher:packageName="com.sec.android.app.camera" 
-            launcher:className="com.sec.android.app.camera.Camera" 
-            launcher:screen="2" 
-            launcher:x="1" 
-            launcher:y="3" />
-        <favorite 
-            launcher:packageName="com.sec.android.app.samsungapps" 
-            launcher:className="com.sec.android.app.samsungapps.Main" 
-            launcher:screen="2" 
-            launcher:x="2" 
-            launcher:y="3" />
-        <favorite 
-            launcher:packageName="com.android.vending" 
-            launcher:className="com.android.vending.AssetBrowserActivity" 
-            launcher:screen="2" 
-            launcher:x="3" 
+            launcher:packageName="com.android.email"
+            launcher:screen="2"
+            launcher:x="0"
             launcher:y="3" />
 
+        <favorite
+            launcher:className="com.sec.android.app.camera.Camera" 
+            launcher:packageName="com.sec.android.app.camera" 	
+            launcher:screen="2"
+            launcher:x="1"
+            launcher:y="3" />
+
+        <favorite
+	    launcher:className="com.sec.android.gallery3d.app.Gallery"
+            launcher:packageName="com.sec.android.gallery3d"
+            launcher:screen="2"
+            launcher:x="2"
+            launcher:y="3" />
+
+        <favorite
+            launcher:className="com.sec.android.app.samsungapps.Main"
+            launcher:packageName="com.sec.android.app.samsungapps"
+            launcher:screen="2"
+            launcher:x="3"
+            launcher:y="3" />
+	    
         <!-- Screen 3 -->
         <sactivitywidget
             launcher:className="com.samsung.android.app.storyalbumwidget.StoryAlbumWidget"
@@ -135,8 +144,8 @@
             launcher:spanY="1"
             launcher:x="0"
             launcher:y="3" />
-
-        <!-- Screen 4 -->
+	    
+        <!-- Screen 4 samsung hub  -->
         <appwidget
             launcher:className="com.sec.everglades.widget.EvergladesWidgetProvider"
             launcher:packageName="com.sec.everglades"
@@ -145,6 +154,7 @@
             launcher:spanY="4"
             launcher:x="0"
             launcher:y="0" />
+
     </home>
 
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->

@@ -336,7 +336,7 @@
     invoke-virtual {v1, v2, v3, v4}, Landroid/widget/RemoteViews;->setInt(ILjava/lang/String;I)V
 
     .line 1699
-    const v2, 0x10203c6
+    const v2, 0x10203c8
 
     const-string/jumbo v3, "setBackgroundResource"
 
@@ -410,7 +410,7 @@
     if-eqz v2, :cond_7
 
     .line 1716
-    const v2, 0x10203ca
+    const v2, 0x10203cc
 
     move-object/from16 v0, p0
 
@@ -419,7 +419,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     .line 1717
-    const v2, 0x10203ca
+    const v2, 0x10203cc
 
     const/4 v3, 0x0
 
@@ -509,7 +509,7 @@
     .end local v8           #res:Landroid/content/res/Resources;
     .end local v12           #subTextSize:F
     :cond_4
-    const v2, 0x10203c7
+    const v2, 0x10203c9
 
     const/4 v3, 0x0
 
@@ -547,14 +547,14 @@
     if-eqz v2, :cond_e
 
     .line 1770
-    const v2, 0x10203c8
+    const v2, 0x10203ca
 
     const/4 v3, 0x0
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
     .line 1771
-    const v2, 0x10203c8
+    const v2, 0x10203ca
 
     const-string/jumbo v3, "setBase"
 
@@ -577,7 +577,7 @@
     invoke-virtual {v1, v2, v3, v4, v5}, Landroid/widget/RemoteViews;->setLong(ILjava/lang/String;J)V
 
     .line 1773
-    const v2, 0x10203c8
+    const v2, 0x10203ca
 
     const-string/jumbo v3, "setStarted"
 
@@ -587,7 +587,7 @@
 
     .line 1782
     :goto_3
-    const v3, 0x10203c9
+    const v3, 0x10203cb
 
     if-eqz v10, :cond_10
 
@@ -597,7 +597,7 @@
     invoke-virtual {v1, v3, v2}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
     .line 1783
-    const v3, 0x10203ce
+    const v3, 0x10203d0
 
     if-eqz v10, :cond_11
 
@@ -649,7 +649,7 @@
     if-le v2, v13, :cond_8
 
     .line 1723
-    const v2, 0x10203ca
+    const v2, 0x10203cc
 
     move-object/from16 v0, p0
 
@@ -669,7 +669,7 @@
 
     .line 1729
     :goto_6
-    const v2, 0x10203ca
+    const v2, 0x10203cc
 
     const/4 v3, 0x0
 
@@ -689,7 +689,7 @@
 
     .line 1727
     .local v7, f:Ljava/text/NumberFormat;
-    const v2, 0x10203ca
+    const v2, 0x10203cc
 
     move-object/from16 v0, p0
 
@@ -709,7 +709,7 @@
     .end local v7           #f:Ljava/text/NumberFormat;
     .end local v13           #tooBig:I
     :cond_9
-    const v2, 0x10203ca
+    const v2, 0x10203cc
 
     const/16 v3, 0x8
 
@@ -837,7 +837,7 @@
     .parameter "layoutId"
 
     .prologue
-    const v6, 0x10203c3
+    const v6, 0x10203c5
 
     const/4 v5, 0x0
 
@@ -862,7 +862,7 @@
     invoke-virtual {v1, v6, v5}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
     .line 1794
-    const v4, 0x10203cc
+    const v4, 0x10203ce
 
     invoke-virtual {v1, v4, v5}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
@@ -1199,7 +1199,7 @@
     .parameter "action"
 
     .prologue
-    const v1, 0x10203c2
+    const v1, 0x10203c4
 
     const/4 v3, 0x0
 

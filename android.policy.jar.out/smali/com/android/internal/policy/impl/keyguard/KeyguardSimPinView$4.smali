@@ -93,7 +93,7 @@
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardSimPinView$4;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardSimPinView;
 
-    const v6, 0x1020447
+    const v6, 0x1020449
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

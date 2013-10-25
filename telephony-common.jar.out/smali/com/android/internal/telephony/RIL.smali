@@ -950,7 +950,7 @@
     const/4 v5, 0x0
 
     :goto_2
-    if-ge v5, v2, :cond_4
+    if-ge v5, v2, :cond_2
 
     .line 1706
     iget-object v7, p1, Lcom/android/internal/telephony/RILRequest;->mp:Landroid/os/Parcel;
@@ -962,24 +962,77 @@
     invoke-virtual {v7, v8}, Landroid/os/Parcel;->writeByte(B)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 1705
     add-int/lit8 v5, v5, 0x1
 
     goto :goto_2
 
-    .line 1708
+    .line 1713
+    :cond_2
+    if-eqz v3, :cond_3
+
+    :try_start_1
+    invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 1719
     .end local v0           #address_nbr_of_digits:I
     .end local v2           #bearerDataLength:I
     .end local v5           #i:I
     .end local v6           #subaddr_nbr_of_digits:I
+    :cond_3
+    :goto_3
+    return-void
+
+    .line 1715
+    .restart local v0       #address_nbr_of_digits:I
+    .restart local v2       #bearerDataLength:I
+    .restart local v5       #i:I
+    .restart local v6       #subaddr_nbr_of_digits:I
     :catch_0
+    move-exception v4
+
+    .line 1716
+    .local v4, ex:Ljava/lang/Exception;
+    const-string v7, "RILJ"
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v9, "createFromPdu: conversion from byte array to object failed: "
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_3
+
+    .line 1708
+    .end local v0           #address_nbr_of_digits:I
+    .end local v2           #bearerDataLength:I
+    .end local v4           #ex:Ljava/lang/Exception;
+    .end local v5           #i:I
+    .end local v6           #subaddr_nbr_of_digits:I
+    :catch_1
     move-exception v4
 
     .line 1709
     .local v4, ex:Ljava/io/IOException;
-    :try_start_1
+    :try_start_2
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -999,26 +1052,8 @@
     move-result-object v7
 
     invoke-direct {p0, v7}, Lcom/android/internal/telephony/RIL;->riljLog(Ljava/lang/String;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 1713
-    if-eqz v3, :cond_2
-
-    :try_start_2
-    invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 1719
-    .end local v4           #ex:Ljava/io/IOException;
-    :cond_2
-    :goto_3
-    return-void
-
-    .line 1712
-    :catchall_0
-    move-exception v7
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 1713
     if-eqz v3, :cond_3
@@ -1026,45 +1061,11 @@
     :try_start_3
     invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
     :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 1712
-    :cond_3
-    :goto_4
-    throw v7
+    goto :goto_3
 
     .line 1715
-    :catch_1
-    move-exception v4
-
-    .line 1716
-    .local v4, ex:Ljava/lang/Exception;
-    const-string v8, "RILJ"
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v10, "createFromPdu: conversion from byte array to object failed: "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_4
-
-    .line 1715
-    .local v4, ex:Ljava/io/IOException;
     :catch_2
     move-exception v4
 
@@ -1090,26 +1091,27 @@
 
     move-result-object v8
 
-    :goto_5
     invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_3
 
-    .line 1713
+    .line 1712
     .end local v4           #ex:Ljava/lang/Exception;
-    .restart local v0       #address_nbr_of_digits:I
-    .restart local v2       #bearerDataLength:I
-    .restart local v5       #i:I
-    .restart local v6       #subaddr_nbr_of_digits:I
-    :cond_4
-    if-eqz v3, :cond_2
+    :catchall_0
+    move-exception v7
+
+    .line 1713
+    if-eqz v3, :cond_4
 
     :try_start_4
     invoke-virtual {v3}, Ljava/io/FilterInputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    goto :goto_3
+    .line 1717
+    :cond_4
+    :goto_4
+    throw v7
 
     .line 1715
     :catch_3
@@ -1117,27 +1119,29 @@
 
     .line 1716
     .restart local v4       #ex:Ljava/lang/Exception;
-    const-string v7, "RILJ"
+    const-string v8, "RILJ"
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "createFromPdu: conversion from byte array to object failed: "
+    const-string v10, "createFromPdu: conversion from byte array to object failed: "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    goto :goto_5
+    invoke-static {v8, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_4
 .end method
 
 .method private constructGsmSendSmsRilRequest(Lcom/android/internal/telephony/RILRequest;Ljava/lang/String;Ljava/lang/String;)V
@@ -10151,7 +10155,7 @@
 .end method
 
 .method private responseOperatorInfos(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 14
+    .locals 10
     .parameter "p"
 
     .prologue
@@ -10162,26 +10166,13 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    move-object v13, v0
+    move-object v9, v0
 
-    check-cast v13, [Ljava/lang/String;
-
-    .line 4276
-    .local v13, strings:[Ljava/lang/String;
-    invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
-
-    move-result-object v0
-
-    const-string v1, "CscFeature_RIL_ShowRatInNetworkList"
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/CscFeature;->getEnableStatus(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
+    check-cast v9, [Ljava/lang/String;
 
     .line 4278
-    array-length v0, v13
+    .local v9, strings:[Ljava/lang/String;
+    array-length v0, v9
 
     rem-int/lit8 v0, v0, 0x6
 
@@ -10200,7 +10191,7 @@
 
     move-result-object v1
 
-    array-length v2, v13
+    array-length v2, v9
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -10222,54 +10213,54 @@
 
     .line 4284
     :cond_0
-    new-instance v10, Ljava/util/ArrayList;
+    new-instance v8, Ljava/util/ArrayList;
 
-    array-length v0, v13
+    array-length v0, v9
 
     div-int/lit8 v0, v0, 0x6
 
-    invoke-direct {v10, v0}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v8, v0}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 4285
-    .local v10, ret:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/OperatorInfo;>;"
+    .local v8, ret:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/OperatorInfo;>;"
     const/4 v7, 0x0
 
     .local v7, i:I
     :goto_0
-    array-length v0, v13
+    array-length v0, v9
 
-    if-ge v7, v0, :cond_7
+    if-ge v7, v0, :cond_1
 
     .line 4286
     new-instance v0, Lcom/android/internal/telephony/OperatorInfo;
 
     add-int/lit8 v1, v7, 0x0
 
-    aget-object v1, v13, v1
+    aget-object v1, v9, v1
 
     add-int/lit8 v2, v7, 0x1
 
-    aget-object v2, v13, v2
+    aget-object v2, v9, v2
 
     add-int/lit8 v3, v7, 0x2
 
-    aget-object v3, v13, v3
+    aget-object v3, v9, v3
 
     add-int/lit8 v4, v7, 0x3
 
-    aget-object v4, v13, v4
+    aget-object v4, v9, v4
 
     add-int/lit8 v5, v7, 0x4
 
-    aget-object v5, v13, v5
+    aget-object v5, v9, v5
 
     add-int/lit8 v6, v7, 0x5
 
-    aget-object v6, v13, v6
+    aget-object v6, v9, v6
 
     invoke-direct/range {v0 .. v6}, Lcom/android/internal/telephony/OperatorInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v10, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 4295
     const-string v0, "RILJ"
@@ -10286,7 +10277,7 @@
 
     add-int/lit8 v2, v7, 0x0
 
-    aget-object v2, v13, v2
+    aget-object v2, v9, v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -10300,7 +10291,7 @@
 
     add-int/lit8 v2, v7, 0x1
 
-    aget-object v2, v13, v2
+    aget-object v2, v9, v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -10314,7 +10305,7 @@
 
     add-int/lit8 v2, v7, 0x2
 
-    aget-object v2, v13, v2
+    aget-object v2, v9, v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -10328,7 +10319,7 @@
 
     add-int/lit8 v2, v7, 0x3
 
-    aget-object v2, v13, v2
+    aget-object v2, v9, v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -10342,7 +10333,7 @@
 
     add-int/lit8 v2, v7, 0x4
 
-    aget-object v2, v13, v2
+    aget-object v2, v9, v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -10356,7 +10347,7 @@
 
     add-int/lit8 v2, v7, 0x5
 
-    aget-object v2, v13, v2
+    aget-object v2, v9, v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -10379,417 +10370,9 @@
 
     goto/16 :goto_0
 
-    .line 4299
-    .end local v7           #i:I
-    .end local v10           #ret:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/OperatorInfo;>;"
-    :cond_1
-    array-length v0, v13
-
-    rem-int/lit8 v0, v0, 0x6
-
-    if-eqz v0, :cond_2
-
-    .line 4300
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "RIL_REQUEST_QUERY_AVAILABLE_NETWORKS: invalid response. Got "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    array-length v2, v13
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " strings, expected multible of 6"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 4305
-    :cond_2
-    new-instance v10, Ljava/util/ArrayList;
-
-    array-length v0, v13
-
-    div-int/lit8 v0, v0, 0x6
-
-    invoke-direct {v10, v0}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 4307
-    .restart local v10       #ret:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/OperatorInfo;>;"
-    new-instance v9, Ljava/util/HashSet;
-
-    array-length v0, v13
-
-    div-int/lit8 v0, v0, 0x6
-
-    invoke-direct {v9, v0}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 4309
-    .local v9, mccmnc:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
-    const-string v0, "gsm.sim.operator.numeric"
-
-    const-string v1, ""
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v11
-
-    .line 4310
-    .local v11, sim_numeric:Ljava/lang/String;
-    const-string v0, "gsm.sim.operator.alpha"
-
-    const-string v1, ""
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v12
-
-    .line 4311
-    .local v12, spn:Ljava/lang/String;
-    const-string v0, "gsm.operator.isroaming"
-
-    const-string v1, ""
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 4313
-    .local v8, isRoaming:Ljava/lang/String;
-    const/4 v7, 0x0
-
-    .restart local v7       #i:I
-    :goto_1
-    array-length v0, v13
-
-    if-ge v7, v0, :cond_7
-
-    .line 4315
-    add-int/lit8 v0, v7, 0x2
-
-    aget-object v0, v13, v0
-
-    invoke-interface {v9, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 4313
-    :goto_2
-    add-int/lit8 v7, v7, 0x6
-
-    goto :goto_1
-
-    .line 4318
-    :cond_3
-    add-int/lit8 v0, v7, 0x2
-
-    aget-object v0, v13, v0
-
-    invoke-interface {v9, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
-    .line 4322
-    add-int/lit8 v0, v7, 0x2
-
-    aget-object v0, v13, v0
-
-    const-string v1, "45400"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    add-int/lit8 v0, v7, 0x2
-
-    aget-object v0, v13, v0
-
-    const-string v1, "45402"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    add-int/lit8 v0, v7, 0x2
-
-    aget-object v0, v13, v0
-
-    const-string v1, "45410"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    add-int/lit8 v0, v7, 0x2
-
-    aget-object v0, v13, v0
-
-    const-string v1, "45418"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    const-string v0, "false"
-
-    invoke-virtual {v8, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    .line 4324
-    :cond_4
-    const-string v0, "RILJ"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "CSL Network, SPN sholud be displayed instead of PLMN : "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, "SPN : "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 4325
-    const-string v0, "45400"
-
-    invoke-virtual {v11, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    const-string v0, "45402"
-
-    invoke-virtual {v11, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    const-string v0, "45410"
-
-    invoke-virtual {v11, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    const-string v0, "45418"
-
-    invoke-virtual {v11, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    .line 4326
-    :cond_5
-    add-int/lit8 v0, v7, 0x0
-
-    aput-object v12, v13, v0
-
-    .line 4327
-    add-int/lit8 v0, v7, 0x1
-
-    add-int/lit8 v1, v7, 0x0
-
-    aget-object v1, v13, v1
-
-    aput-object v1, v13, v0
-
-    .line 4331
-    :cond_6
-    new-instance v0, Lcom/android/internal/telephony/OperatorInfo;
-
-    add-int/lit8 v1, v7, 0x0
-
-    aget-object v1, v13, v1
-
-    add-int/lit8 v2, v7, 0x1
-
-    aget-object v2, v13, v2
-
-    add-int/lit8 v3, v7, 0x2
-
-    aget-object v3, v13, v3
-
-    add-int/lit8 v4, v7, 0x3
-
-    aget-object v4, v13, v4
-
-    add-int/lit8 v5, v7, 0x4
-
-    aget-object v5, v13, v5
-
-    add-int/lit8 v6, v7, 0x5
-
-    aget-object v6, v13, v6
-
-    invoke-direct/range {v0 .. v6}, Lcom/android/internal/telephony/OperatorInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v10, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 4340
-    const-string v0, "RILJ"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Add OperatorInfo is:"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    add-int/lit8 v2, v7, 0x0
-
-    aget-object v2, v13, v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    add-int/lit8 v2, v7, 0x1
-
-    aget-object v2, v13, v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    add-int/lit8 v2, v7, 0x2
-
-    aget-object v2, v13, v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    add-int/lit8 v2, v7, 0x3
-
-    aget-object v2, v13, v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    add-int/lit8 v2, v7, 0x4
-
-    aget-object v2, v13, v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    add-int/lit8 v2, v7, 0x5
-
-    aget-object v2, v13, v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_2
-
     .line 4346
-    .end local v8           #isRoaming:Ljava/lang/String;
-    .end local v9           #mccmnc:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
-    .end local v11           #sim_numeric:Ljava/lang/String;
-    .end local v12           #spn:Ljava/lang/String;
-    :cond_7
-    return-object v10
+    :cond_1
+    return-object v8
 .end method
 
 .method private responsePreferredNetworkList(Landroid/os/Parcel;)Ljava/lang/Object;

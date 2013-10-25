@@ -228,7 +228,7 @@
     invoke-direct {v6, v2}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 72
     .end local v5           #reader:Ljava/io/FileReader;
@@ -262,29 +262,43 @@
     :try_start_2
     invoke-virtual {v6}, Ljava/io/InputStreamReader;->close()V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    :goto_1
     move-object v5, v6
 
     .end local v0           #buf:[C
     .end local v6           #reader:Ljava/io/FileReader;
     .restart local v5       #reader:Ljava/io/FileReader;
-    :goto_2
+    :goto_1
     move-object v4, v3
 
     .line 86
     .restart local v4       #policies:Ljava/lang/Object;
     goto :goto_0
 
-    .line 77
+    .line 83
     .end local v4           #policies:Ljava/lang/Object;
+    .end local v5           #reader:Ljava/io/FileReader;
+    .restart local v0       #buf:[C
+    .restart local v6       #reader:Ljava/io/FileReader;
     :catch_0
+    move-exception v7
+
+    move-object v5, v6
+
+    .line 84
+    .end local v6           #reader:Ljava/io/FileReader;
+    .restart local v5       #reader:Ljava/io/FileReader;
+    goto :goto_1
+
+    .line 77
+    .end local v0           #buf:[C
+    :catch_1
     move-exception v1
 
     .line 78
     .local v1, e:Ljava/io/IOException;
-    :goto_3
+    :goto_2
     :try_start_3
     const-string v7, "IOException:: unable to get enc properties"
 
@@ -299,15 +313,15 @@
     :try_start_4
     invoke-virtual {v5}, Ljava/io/InputStreamReader;->close()V
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_2
 
-    goto :goto_2
+    goto :goto_1
 
     .line 83
-    :catch_1
+    :catch_2
     move-exception v7
 
-    goto :goto_2
+    goto :goto_1
 
     .line 81
     .end local v1           #e:Ljava/io/IOException;
@@ -315,32 +329,24 @@
     move-exception v7
 
     .line 82
-    :goto_4
+    :goto_3
     :try_start_5
     invoke-virtual {v5}, Ljava/io/InputStreamReader;->close()V
     :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
-
-    .line 81
-    :goto_5
-    throw v7
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
 
     .line 83
-    :catch_2
+    :goto_4
+    throw v7
+
+    :catch_3
     move-exception v8
 
-    goto :goto_5
-
-    .end local v5           #reader:Ljava/io/FileReader;
-    .restart local v0       #buf:[C
-    .restart local v6       #reader:Ljava/io/FileReader;
-    :catch_3
-    move-exception v7
-
-    goto :goto_1
+    goto :goto_4
 
     .line 81
-    .end local v0           #buf:[C
+    .end local v5           #reader:Ljava/io/FileReader;
+    .restart local v6       #reader:Ljava/io/FileReader;
     :catchall_1
     move-exception v7
 
@@ -348,7 +354,7 @@
 
     .end local v6           #reader:Ljava/io/FileReader;
     .restart local v5       #reader:Ljava/io/FileReader;
-    goto :goto_4
+    goto :goto_3
 
     .line 77
     .end local v5           #reader:Ljava/io/FileReader;
@@ -360,7 +366,7 @@
 
     .end local v6           #reader:Ljava/io/FileReader;
     .restart local v5       #reader:Ljava/io/FileReader;
-    goto :goto_3
+    goto :goto_2
 .end method
 
 .method public savePrefs(Landroid/dirEncryption/SDCardEncryptionPolicies;)Z
@@ -404,7 +410,7 @@
     invoke-direct {v4, v1}, Ljava/io/FileWriter;-><init>(Ljava/io/File;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 100
     .end local v3           #writer:Ljava/io/FileWriter;
@@ -426,24 +432,41 @@
     :try_start_2
     invoke-virtual {v4}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    :goto_0
     move-object v3, v4
 
     .line 113
     .end local v4           #writer:Ljava/io/FileWriter;
     .restart local v3       #writer:Ljava/io/FileWriter;
-    :goto_1
+    :goto_0
     return v2
 
-    .line 102
+    .line 109
+    .end local v3           #writer:Ljava/io/FileWriter;
+    .restart local v4       #writer:Ljava/io/FileWriter;
     :catch_0
+    move-exception v0
+
+    .line 110
+    .local v0, e:Ljava/lang/Exception;
+    const/4 v2, 0x0
+
+    move-object v3, v4
+
+    .line 112
+    .end local v4           #writer:Ljava/io/FileWriter;
+    .restart local v3       #writer:Ljava/io/FileWriter;
+    goto :goto_0
+
+    .line 102
+    .end local v0           #e:Ljava/lang/Exception;
+    :catch_1
     move-exception v0
 
     .line 103
     .local v0, e:Ljava/io/IOException;
-    :goto_2
+    :goto_1
     const/4 v2, 0x0
 
     .line 104
@@ -461,19 +484,20 @@
     :try_start_4
     invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_2
 
-    goto :goto_1
+    goto :goto_0
 
     .line 109
-    :catch_1
+    :catch_2
     move-exception v0
 
     .line 110
     .local v0, e:Ljava/lang/Exception;
     const/4 v2, 0x0
 
-    goto :goto_1
+    .line 112
+    goto :goto_0
 
     .line 107
     .end local v0           #e:Ljava/lang/Exception;
@@ -481,30 +505,17 @@
     move-exception v5
 
     .line 108
-    :goto_3
+    :goto_2
     :try_start_5
     invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
 
-    .line 107
-    :goto_4
+    .line 111
+    :goto_3
     throw v5
 
     .line 109
-    :catch_2
-    move-exception v0
-
-    .line 110
-    .restart local v0       #e:Ljava/lang/Exception;
-    const/4 v2, 0x0
-
-    goto :goto_4
-
-    .line 109
-    .end local v0           #e:Ljava/lang/Exception;
-    .end local v3           #writer:Ljava/io/FileWriter;
-    .restart local v4       #writer:Ljava/io/FileWriter;
     :catch_3
     move-exception v0
 
@@ -512,10 +523,12 @@
     .restart local v0       #e:Ljava/lang/Exception;
     const/4 v2, 0x0
 
-    goto :goto_0
+    goto :goto_3
 
     .line 107
     .end local v0           #e:Ljava/lang/Exception;
+    .end local v3           #writer:Ljava/io/FileWriter;
+    .restart local v4       #writer:Ljava/io/FileWriter;
     :catchall_1
     move-exception v5
 
@@ -523,7 +536,7 @@
 
     .end local v4           #writer:Ljava/io/FileWriter;
     .restart local v3       #writer:Ljava/io/FileWriter;
-    goto :goto_3
+    goto :goto_2
 
     .line 102
     .end local v3           #writer:Ljava/io/FileWriter;
@@ -535,5 +548,5 @@
 
     .end local v4           #writer:Ljava/io/FileWriter;
     .restart local v3       #writer:Ljava/io/FileWriter;
-    goto :goto_2
+    goto :goto_1
 .end method

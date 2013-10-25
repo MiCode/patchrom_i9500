@@ -1328,7 +1328,7 @@
     invoke-virtual {v0, v6, v4, v5}, Landroid/widget/RemoteViews;->setInt(ILjava/lang/String;I)V
 
     .line 1033
-    const v4, 0x10203c6
+    const v4, 0x10203c8
 
     const-string/jumbo v5, "setBackgroundResource"
 
@@ -1389,7 +1389,7 @@
 
     .line 1048
     .local v1, f:Ljava/text/NumberFormat;
-    const v4, 0x10203ca
+    const v4, 0x10203cc
 
     iget v5, p0, Landroid/app/Notification;->number:I
 

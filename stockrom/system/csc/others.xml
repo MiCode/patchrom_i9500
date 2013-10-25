@@ -1,42 +1,111 @@
-﻿<?xml  version="1.0" encoding="UTF-8" ?>
+<?xml  version="1.0" encoding="UTF-8" ?>
 <SamsungMobileFeauture>
-  <Version>ED002</Version>
-  <Country>TAIWAN</Country>
-  <CountryISO>TW</CountryISO>
-  <SalesCode>BRI</SalesCode>
+  <Version>ED001</Version>
+  <Country>CHINA</Country>
+  <CountryISO>CN</CountryISO>
+  <SalesCode>CHN</SalesCode>
   <FeatureSet>
+    <CscFeature_Framework_HyperLinkDigit>5</CscFeature_Framework_HyperLinkDigit>
+    <CscFeature_Common_DisablePhoneNumberFormatting>TRUE</CscFeature_Common_DisablePhoneNumberFormatting>
+    <CscFeature_SMemo_DisableMemoSync>TRUE</CscFeature_SMemo_DisableMemoSync>
+    <CscFeature_Clock_DisableAccWeatherInfo>TRUE</CscFeature_Clock_DisableAccWeatherInfo>
+    <CscFeature_Clock_DisableGoogleLocationInfo>TRUE</CscFeature_Clock_DisableGoogleLocationInfo>
+    <CscFeature_Clock_ReplaceNameTaiwanWithTaipei>TRUE</CscFeature_Clock_ReplaceNameTaiwanWithTaipei>
+    <CscFeature_Clock_EnablePinyinSortList>TRUE</CscFeature_Clock_EnablePinyinSortList>
+    <CscFeature_Clock_EnableAutoPowerOnOffMenu>TRUE</CscFeature_Clock_EnableAutoPowerOnOffMenu>
+    <CscFeature_MiniDiary_DisableAccWeatherInfo>TRUE</CscFeature_MiniDiary_DisableAccWeatherInfo>
+    <CscFeature_MiniDiary_DisableGoogleLocationInfo>TRUE</CscFeature_MiniDiary_DisableGoogleLocationInfo>
+    <CscFeature_MiniDiary_EnableLocalSns>China</CscFeature_MiniDiary_EnableLocalSns>
+    <CscFeature_Contact_DisableMergeWithGoogle>TRUE</CscFeature_Contact_DisableMergeWithGoogle>
+    <CscFeature_Contact_DisableGoogleMapIntegration>TRUE</CscFeature_Contact_DisableGoogleMapIntegration>
+    <CscFeature_Contact_DisableGoogleTalk>TRUE</CscFeature_Contact_DisableGoogleTalk>
+    <CscFeature_Contact_ImProviderFirstPostion_As>QQ</CscFeature_Contact_ImProviderFirstPostion_As>
     <CscFeature_Contact_ANRConfig>0</CscFeature_Contact_ANRConfig>
-    <CscFeature_Contact_EnableStrokeSortList>TRUE</CscFeature_Contact_EnableStrokeSortList>
-    <CscFeature_Contact_EnableBPMFSortList>TRUE</CscFeature_Contact_EnableBPMFSortList>
+    <CscFeature_Contact_UseUniNameField>TRUE</CscFeature_Contact_UseUniNameField>
+    <CscFeature_Contact_EnableIPCall>TRUE</CscFeature_Contact_EnableIPCall>
     <CscFeature_Contact_AddPreloadedSpeedDialAs>None,0,None,None</CscFeature_Contact_AddPreloadedSpeedDialAs>
     <CscFeature_Contact_EnableMenuStorageStatus>TRUE</CscFeature_Contact_EnableMenuStorageStatus>
+    <CscFeature_Contact_EnableDialerSearchList4China>TRUE</CscFeature_Contact_EnableDialerSearchList4China>
+    <CscFeature_Contact_EnablePuzzySearch>CHNGSM</CscFeature_Contact_EnablePuzzySearch>
+    <CscFeature_Contact_EnableMultiplePinyinSearch>TRUE</CscFeature_Contact_EnableMultiplePinyinSearch>
+    <CscFeature_Contact_SeparateLookupTable4ChinaDialerSearch>TRUE</CscFeature_Contact_SeparateLookupTable4ChinaDialerSearch>
+    <CscFeature_Contact_EnableCopyToDialer>TRUE</CscFeature_Contact_EnableCopyToDialer>
+    <CscFeature_Contact_DisableTriggerInternetCall>TRUE</CscFeature_Contact_DisableTriggerInternetCall>
+    <CscFeature_Contact_MaxCountVcardAttachment>20</CscFeature_Contact_MaxCountVcardAttachment>
+    <CscFeature_Contact_LimitNameLength>250</CscFeature_Contact_LimitNameLength>
     <CscFeature_Contact_CheckSimAlphaLength4UnicodeName>TRUE</CscFeature_Contact_CheckSimAlphaLength4UnicodeName>
     <CscFeature_Contact_DisableMenuNameOrder>TRUE</CscFeature_Contact_DisableMenuNameOrder>
-    <CscFeature_Setting_EditOption4ApnType>List</CscFeature_Setting_EditOption4ApnType>
-    <CscFeature_Calendar_EnableLocalHolidayDisplay>HKTW</CscFeature_Calendar_EnableLocalHolidayDisplay>
+    <CscFeature_Contact_FixedEngModeInListBrowsing>TRUE</CscFeature_Contact_FixedEngModeInListBrowsing>
+    <CscFeature_Setting_EnableMenuBlockCallMsg>TRUE</CscFeature_Setting_EnableMenuBlockCallMsg>
+    <CscFeature_Setting_UseDefaultTtsEngineAs>TRUE</CscFeature_Setting_UseDefaultTtsEngineAs>
+    <CscFeature_Launcher_DisableGoogleOption>TRUE</CscFeature_Launcher_DisableGoogleOption>
+    <CscFeature_Launcher_TotalPageCount>-1</CscFeature_Launcher_TotalPageCount>
+    <CscFeature_Launcher_DefaultPageNumber>-1</CscFeature_Launcher_DefaultPageNumber>
+    <CscFeature_Launcher_DisableFastScrollIndex>TRUE</CscFeature_Launcher_DisableFastScrollIndex>
+    <CscFeature_LiveWallpaper_TopicWallNewsCPName>sinanews</CscFeature_LiveWallpaper_TopicWallNewsCPName>
+    <CscFeature_LiveWallpaper_TopicWallStockCPName>sinastock</CscFeature_LiveWallpaper_TopicWallStockCPName>
+    <CscFeature_LiveWallpaper_WeatherWallCPName>Cmaweather</CscFeature_LiveWallpaper_WeatherWallCPName>
+    <CscFeature_Calendar_EnableLocalHolidayDisplay>CHINA</CscFeature_Calendar_EnableLocalHolidayDisplay>
     <CscFeature_Calendar_EnableLunar>TRUE</CscFeature_Calendar_EnableLunar>
+    <CscFeature_Calendar_EnableSDCardImport>TRUE</CscFeature_Calendar_EnableSDCardImport>
+    <CscFeature_Calendar_DisableGoogleMapIntegration>TRUE</CscFeature_Calendar_DisableGoogleMapIntegration>
     <CscFeature_Calendar_SetColorOfDays>XXXXXBR</CscFeature_Calendar_SetColorOfDays>
-    <CscFeature_Message_MinSlideDuration>5</CscFeature_Message_MinSlideDuration>
+    <CscFeature_VoiceCall_EnableSeparateCallReject>TRUE</CscFeature_VoiceCall_EnableSeparateCallReject>
+    <CscFeature_VoiceCall_AddLogsItem4SearchApp>TRUE</CscFeature_VoiceCall_AddLogsItem4SearchApp>
     <CscFeature_Message_DisableMenuSmsInputMode>TRUE</CscFeature_Message_DisableMenuSmsInputMode>
-    <CscFeature_Message_SmsMaxByte>0</CscFeature_Message_SmsMaxByte>
-    <CscFeature_Message_EnableStageFlightLib>TRUE</CscFeature_Message_EnableStageFlightLib>
-    <CscFeature_Message_EnableTextFieldColor>TRUE</CscFeature_Message_EnableTextFieldColor>
-    <CscFeature_Message_MmsModeCaptureVideoBitRate>0</CscFeature_Message_MmsModeCaptureVideoBitRate>
-    <CscFeature_Message_MmsModeCaptureVideoMaxDuration>0</CscFeature_Message_MmsModeCaptureVideoMaxDuration>
-    <CscFeature_Message_UserAgent>Android-Mms/2.0</CscFeature_Message_UserAgent>
-    <CscFeature_Message_MMSMaxCharPerSlide>2000</CscFeature_Message_MMSMaxCharPerSlide>
+    <CscFeature_Message_EnableScheduledMessage>TRUE</CscFeature_Message_EnableScheduledMessage>
+    <CscFeature_Message_DisableOptionAttachLocation>TRUE</CscFeature_Message_DisableOptionAttachLocation>
+    <CscFeature_Message_EnableSaveVMessage>TRUE</CscFeature_Message_EnableSaveVMessage>
+    <CscFeature_Message_EnableTextTemplateButton>TRUE</CscFeature_Message_EnableTextTemplateButton>
+    <CscFeature_Message_EnableBlackList>TRUE</CscFeature_Message_EnableBlackList>
+    <CscFeature_Message_DisableMenuCBChannel>TRUE</CscFeature_Message_DisableMenuCBChannel>
+    <CscFeature_Message_DisableMenuCBLanguage>TRUE</CscFeature_Message_DisableMenuCBLanguage>
+    <CscFeature_Message_EnableMmsOnePageViewer>TRUE</CscFeature_Message_EnableMmsOnePageViewer>
+    <CscFeature_Message_AddSendOptionInComposer>TRUE</CscFeature_Message_AddSendOptionInComposer>
+    <CscFeature_Message_EnableMMSReadreportV10>TRUE</CscFeature_Message_EnableMMSReadreportV10>
     <CscFeature_Message_EnablePhoneNumberFormattingInMsg>FALSE</CscFeature_Message_EnablePhoneNumberFormattingInMsg>
+    <CscFeature_Message_EmbeddedTextTemplateType>csc</CscFeature_Message_EmbeddedTextTemplateType>
+    <CscFeature_Message_EnableAllContextMenuInMsgViewer>TRUE</CscFeature_Message_EnableAllContextMenuInMsgViewer>
+    <CscFeature_Message_DisableLeftAttachButtonUI>TRUE</CscFeature_Message_DisableLeftAttachButtonUI>
+    <CscFeature_Message_EnableMenuVideoCallInConvList>TRUE</CscFeature_Message_EnableMenuVideoCallInConvList>
+    <CscFeature_Message_MmsPageStyleInBubble>1page</CscFeature_Message_MmsPageStyleInBubble>
+    <CscFeature_Message_EnablePinyinSearch>TRUE</CscFeature_Message_EnablePinyinSearch>
     <CscFeature_Email_UseFixedSmtpPortAs>25</CscFeature_Email_UseFixedSmtpPortAs>
-    <CscFeature_Camera_CameraFlicker>60hz</CscFeature_Camera_CameraFlicker>
-    <CscFeature_Camera_EnableCameraDuringCall>TRUE</CscFeature_Camera_EnableCameraDuringCall>
+    <CscFeature_Camera_ShutterSoundMenu>FALSE</CscFeature_Camera_ShutterSoundMenu>
+    <CscFeature_Camera_CameraFlicker>50hz</CscFeature_Camera_CameraFlicker>
+    <CscFeature_Camera_EnableCameraDuringCall>FALSE</CscFeature_Camera_EnableCameraDuringCall>
+    <CscFeature_Music_SupportPinyinSort>TRUE</CscFeature_Music_SupportPinyinSort>
+    <CscFeature_Music_DisableFindTag>TRUE</CscFeature_Music_DisableFindTag>
+    <CscFeature_Music_SupportChinaMusicHub>TRUE</CscFeature_Music_SupportChinaMusicHub>
     <CscFeature_MyFiles_SupportRmvbFileFormat>TRUE</CscFeature_MyFiles_SupportRmvbFileFormat>
-    <CscFeature_MediaScanner_FixLocaleTo>TW</CscFeature_MediaScanner_FixLocaleTo>
+    <CscFeature_MyFiles_ProtectDataFolder>FALSE</CscFeature_MyFiles_ProtectDataFolder>
+    <CscFeature_MyFiles_EnablePinyinSort>TRUE</CscFeature_MyFiles_EnablePinyinSort>
+    <CscFeature_Gallery_DisableLocationInfo>TRUE</CscFeature_Gallery_DisableLocationInfo>
+    <CscFeature_Gallery_ReplaceMenuAutoNavi>TRUE</CscFeature_Gallery_ReplaceMenuAutoNavi>
+    <CscFeature_Gallery_DisableMenuMakeAvailOffline>TRUE</CscFeature_Gallery_DisableMenuMakeAvailOffline>
+    <CscFeature_MediaScanner_FixLocaleTo>CHINA</CscFeature_MediaScanner_FixLocaleTo>
     <CscFeature_MediaScanner_SkipFolder4>/storage/emulated/0/autonavidata50/,/storage/emulated/0/DioDict3B/</CscFeature_MediaScanner_SkipFolder4>
+    <CscFeature_Streaming_ReduceTimeSwitchingTcp4>OPEN</CscFeature_Streaming_ReduceTimeSwitchingTcp4>
     <CscFeature_FMRadio_DisableRTPlusInfo>TRUE</CscFeature_FMRadio_DisableRTPlusInfo>
-    <CscFeature_Web_EnableAutoSimHomeUrlInProfile>FALSE</CscFeature_Web_EnableAutoSimHomeUrlInProfile>
+    <CscFeature_FMRadio_DisableMenuAf>TRUE</CscFeature_FMRadio_DisableMenuAf>
+    <CscFeature_FMRadio_DisableMenuRds>TRUE</CscFeature_FMRadio_DisableMenuRds>
+    <CscFeature_Web_DisableGoogleInBrowserSearchEngine>TRUE</CscFeature_Web_DisableGoogleInBrowserSearchEngine>
+    <CscFeature_Web_DisableVoiceSearch>TRUE</CscFeature_Web_DisableVoiceSearch>
+    <CscFeature_Web_EnableOptionEditTextDuringFullHwr>TRUE</CscFeature_Web_EnableOptionEditTextDuringFullHwr>
+    <CscFeature_Web_DisableRSS>TRUE</CscFeature_Web_DisableRSS>
+    <CscFeature_Web_DisableRedirectionChooser>TRUE</CscFeature_Web_DisableRedirectionChooser>
+    <CscFeature_Web_SetHomepageURL>about:blank</CscFeature_Web_SetHomepageURL>
+    <CscFeature_Web_SetTcpConnTimeoutAs>60</CscFeature_Web_SetTcpConnTimeoutAs>
+    <CscFeature_Web_RecognizeTelNumber>4</CscFeature_Web_RecognizeTelNumber>
     <CscFeature_Web_bool_EnablePriorityUserBookmark>FALSE</CscFeature_Web_bool_EnablePriorityUserBookmark>
     <CscFeature_Web_EnableDeleteAllBookmarks>TRUE</CscFeature_Web_EnableDeleteAllBookmarks>
-    <CscFeature_Launcher_DisableFastScrollIndex>TRUE</CscFeature_Launcher_DisableFastScrollIndex>
-    <CscFeature_Setting_UseDefaultTtsEngineAs>TRUE</CscFeature_Setting_UseDefaultTtsEngineAs>
+    <CscFeature_Wifi_UseDefaultSecurityAs>NONE</CscFeature_Wifi_UseDefaultSecurityAs>
+    <CscFeature_RIL_CallerIdMatchingDigit>11</CscFeature_RIL_CallerIdMatchingDigit>
+    <CscFeature_RIL_ForceConnectMMS>TRUE</CscFeature_RIL_ForceConnectMMS>
+    <CscFeature_Always_CardConfig>-profile_music,-profile_video,-profile_vimeo</CscFeature_Always_CardConfig>
+    <CscFeature_Always_CPConfig>weather:cma,stock:sina,news:sina,social:qzone,visit:daodao</CscFeature_Always_CPConfig>
+    <CscFeature_Briefing_CPConfig>weather:cma,stock:sina,news:sina,social:qzone,visit:daodao</CscFeature_Briefing_CPConfig>
+    <CscFeature_Sip_ExcludeSamsungKeypad>TRUE</CscFeature_Sip_ExcludeSamsungKeypad>
+    <CscFeature_StoryAlbum_CPConfig>map:baidu,checkin:qzone,print:netease,visit:daodao,cloud:baidu,weather:cma</CscFeature_StoryAlbum_CPConfig>
   </FeatureSet>
 </SamsungMobileFeauture>

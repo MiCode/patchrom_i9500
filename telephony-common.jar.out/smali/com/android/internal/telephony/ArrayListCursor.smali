@@ -290,7 +290,6 @@
     move-exception v6
 
     .line 129
-    :goto_3
     invoke-virtual {p2}, Landroid/database/sqlite/SQLiteClosable;->releaseReference()V
 
     goto :goto_0
@@ -372,7 +371,10 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_0
 
-    goto :goto_3
+    .line 129
+    invoke-virtual {p2}, Landroid/database/sqlite/SQLiteClosable;->releaseReference()V
+
+    goto :goto_0
 .end method
 
 .method public getBlob(I)[B

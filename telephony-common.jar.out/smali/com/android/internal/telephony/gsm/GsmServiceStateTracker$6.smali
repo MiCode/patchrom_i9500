@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 3744
+    .line 3743
     iput-object p1, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker$6;->this$0:Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,20 +44,20 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 3746
+    .line 3745
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 3748
+    .line 3747
     packed-switch p2, :pswitch_data_0
 
-    .line 3762
+    .line 3761
     :goto_0
     invoke-static {v5}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->access$302(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
-    .line 3763
+    .line 3762
     return-void
 
-    .line 3750
+    .line 3749
     :pswitch_0
     new-instance v0, Landroid/content/Intent;
 
@@ -65,7 +65,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 3751
+    .line 3750
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "com.android.phone"
 
@@ -73,19 +73,19 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3752
+    .line 3751
     const/high16 v1, 0x1000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 3753
+    .line 3752
     const-string v1, "search-type"
 
     const-string v2, "manual"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3754
+    .line 3753
     iget-object v1, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker$6;->this$0:Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;
 
     iget-object v1, v1, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->phone:Lcom/android/internal/telephony/gsm/GSMPhone;
@@ -98,7 +98,7 @@
 
     goto :goto_0
 
-    .line 3758
+    .line 3757
     .end local v0           #intent:Landroid/content/Intent;
     :pswitch_1
     const-string v1, "ManualSelectionReceiver"
@@ -107,7 +107,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3759
+    .line 3758
     iget-object v1, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker$6;->this$0:Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;
 
     iget-object v2, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker$6;->this$0:Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;
@@ -124,7 +124,7 @@
 
     goto :goto_0
 
-    .line 3748
+    .line 3747
     :pswitch_data_0
     .packed-switch -0x2
         :pswitch_1

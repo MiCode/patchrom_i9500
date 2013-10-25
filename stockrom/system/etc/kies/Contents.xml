@@ -534,7 +534,6 @@
 						<MaxChannel value="2" />
 					</Audio>
 				</WebM>
-				
 	      <TS>
 					<MaxFileSize value="4294967296" />
 					<Video>

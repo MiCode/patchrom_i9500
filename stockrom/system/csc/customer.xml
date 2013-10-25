@@ -1,84 +1,58 @@
 ﻿<?xml  version="1.0" encoding="UTF-8" ?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED004</CSCEdition>
-    <Country>Taiwan</Country>
-    <CountryISO>TW</CountryISO>
+    <CSCEdition>ED002</CSCEdition>
+    <Country>China</Country>
+    <CountryISO>CN</CountryISO>
     <Region>CHN</Region>
-    <SalesCode>BRI</SalesCode>
-    <NbNetworkInfo>7</NbNetworkInfo>
+    <SalesCode>CHN</SalesCode>
+    <NbNetworkInfo>4</NbNetworkInfo>
     <NetworkInfo>
-      <MCCMNC>46692</MCCMNC>
-      <NetworkName>Chunghwa</NetworkName>
-      <SPName>Chunghwa</SPName>
+      <MCCMNC>46001</MCCMNC>
+      <NetworkName>中国联通</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>46601</MCCMNC>
-      <NetworkName>FarEasTone</NetworkName>
-      <SPName>FarEasTone</SPName>
+      <MCCMNC>46000</MCCMNC>
+      <NetworkName>中国移动</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>46688</MCCMNC>
-      <NetworkName>KGT</NetworkName>
-      <SPName>KGT-ONLINE</SPName>
+      <MCCMNC>46002</MCCMNC>
+      <NetworkName>中国移动</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>46697</MCCMNC>
-      <NetworkName>TW Mobile</NetworkName>
-      <SPName>TW Mobile</SPName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>46699</MCCMNC>
-      <NetworkName>TW Mobile</NetworkName>
-      <SPName>TW Mobile</SPName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>46693</MCCMNC>
-      <NetworkName>TW Mobile</NetworkName>
-      <SPName>TW Mobile</SPName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>46689</MCCMNC>
-      <NetworkName>VIBO</NetworkName>
-      <SPName>VIBO</SPName>
+      <MCCMNC>46007</MCCMNC>
+      <NetworkName>中国移动</NetworkName>
     </NetworkInfo>
   </GeneralInfo>
   <Settings>
     <Main>
       <Network>
-        <NbWbAmr>1</NbWbAmr>
-        <WbAmr>
-          <NetworkName>Chunghwa</NetworkName>
-          <WbAmrCodec>on</WbAmrCodec>
-        </WbAmr>
-        <NbSOSNumber>4</NbSOSNumber>
-        <SOSNumber>112</SOSNumber>
-        <SOSNumber>911</SOSNumber>
-        <SOSNumber>119</SOSNumber>
+        <NbSOSNumber>10</NbSOSNumber>
+        <SOSNumber>08</SOSNumber>
+        <SOSNumber>000</SOSNumber>
         <SOSNumber>110</SOSNumber>
-        <NbSOSNumberNoSIM>8</NbSOSNumberNoSIM>
-        <SOSNumberNoSIM>112</SOSNumberNoSIM>
-        <SOSNumberNoSIM>911</SOSNumberNoSIM>
+        <SOSNumber>112</SOSNumber>
+        <SOSNumber>118</SOSNumber>
+        <SOSNumber>119</SOSNumber>
+        <SOSNumber>120</SOSNumber>
+        <SOSNumber>122</SOSNumber>
+        <SOSNumber>911</SOSNumber>
+        <SOSNumber>999</SOSNumber>
+        <NbSOSNumberNoSIM>10</NbSOSNumberNoSIM>
         <SOSNumberNoSIM>08</SOSNumberNoSIM>
         <SOSNumberNoSIM>000</SOSNumberNoSIM>
         <SOSNumberNoSIM>110</SOSNumberNoSIM>
-        <SOSNumberNoSIM>999</SOSNumberNoSIM>
+        <SOSNumberNoSIM>112</SOSNumberNoSIM>
         <SOSNumberNoSIM>118</SOSNumberNoSIM>
         <SOSNumberNoSIM>119</SOSNumberNoSIM>
-        <AutoProfile>on</AutoProfile>
-        <AutoVoicemail>off</AutoVoicemail>
-        <AutoEmailAccount>off</AutoEmailAccount>
-        <AutoBookmark>off</AutoBookmark>
-        <AutoLink>off</AutoLink>
-        <AutoSyncML>off</AutoSyncML>
-        <AutoFastDormancy>off</AutoFastDormancy>
-        <AutoWbAmr>on</AutoWbAmr>
-        <AutoFOTA>off</AutoFOTA>
+        <SOSNumberNoSIM>120</SOSNumberNoSIM>
+        <SOSNumberNoSIM>122</SOSNumberNoSIM>
+        <SOSNumberNoSIM>911</SOSNumberNoSIM>
+        <SOSNumberNoSIM>999</SOSNumberNoSIM>
       </Network>
       <Phone>
-        <DefLanguage>chinese_traditional_taiwan</DefLanguage>
-        <DefLanguageNoSIM>chinese_traditional_taiwan</DefLanguageNoSIM>
-        <T9Enabling>enable</T9Enabling>
+        <DefLanguage>chinese_simplified</DefLanguage>
+        <DefLanguageNoSIM>chinese_simplified</DefLanguageNoSIM>
         <DateTimeFormat>
           <DateFormat>yyyymmdd</DateFormat>
           <TimeFormat>24h</TimeFormat>
@@ -90,14 +64,41 @@
     <Messages>
       <SMS>
         <DeliveryReport>off</DeliveryReport>
+        <MsgTypeThreshold>
+          <ThresholdValue>10</ThresholdValue>
+          <ThresholdType>pagecount</ThresholdType>
+        </MsgTypeThreshold>
         <MaxRecipient>100</MaxRecipient>
         <CharSupport>automatic</CharSupport>
         <SSMS>off</SSMS>
+        <NbTextTemplate>20</NbTextTemplate>
+        <TextTemplate>我现在有事情，一会儿再联系你。</TextTemplate>
+        <TextTemplate>我很快就到，请稍微等一会儿。</TextTemplate>
+        <TextTemplate>有急事，请尽快与我联系，谢谢！</TextTemplate>
+        <TextTemplate>现在接电话方便吗？</TextTemplate>
+        <TextTemplate>我正在开车，稍后联系你。</TextTemplate>
+        <TextTemplate>我会发邮件给你。</TextTemplate>
+        <TextTemplate>路上堵车，晚点到。</TextTemplate>
+        <TextTemplate>先吃吧，不要等我。</TextTemplate>
+        <TextTemplate>我现在很忙，今天晚些回去。</TextTemplate>
+        <TextTemplate>你最近在忙什么呢？</TextTemplate>
+        <TextTemplate>你现在在哪里？</TextTemplate>
+        <TextTemplate>好久没联系了，有空聚聚吧！</TextTemplate>
+        <TextTemplate>天气转冷了，多加件衣服吧！</TextTemplate>
+        <TextTemplate>祝节日快乐！</TextTemplate>
+        <TextTemplate>新年快乐！阖家幸福！</TextTemplate>
+        <TextTemplate>身体健康！万事如意！</TextTemplate>
+        <TextTemplate>财源广进！恭喜发财！</TextTemplate>
+        <TextTemplate>福星高照！步步高升！</TextTemplate>
+        <TextTemplate>新婚快乐！早生贵子！</TextTemplate>
+        <TextTemplate>生日快乐！心想事成！</TextTemplate>
       </SMS>
       <MMS>
+        <SlideMaxCount>20</SlideMaxCount>
         <MmsSending>
           <ReqDeliveryRep>off</ReqDeliveryRep>
           <ReqReadRep>off</ReqReadRep>
+          <CreationMode>free</CreationMode>
           <MaxRecipientMMS>100</MaxRecipientMMS>
         </MmsSending>
         <MmsReceiving>
@@ -107,23 +108,41 @@
       </MMS>
     </Messages>
     <Browser>
-      <NbBookmark>3</NbBookmark>
+      <NbBookmark>6</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
-        <BookmarkName>Samsung</BookmarkName>
-        <URL>http://m.samsung.com/tw</URL>
+        <BookmarkName>人民网</BookmarkName>
+        <URL>http://wap.people.com.cn/</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
-        <BookmarkName>Yahoo!</BookmarkName>
-        <URL>http://m.yahoo.com?tsrc=samsungbm</URL>
+        <BookmarkName>百度</BookmarkName>
+        <URL>http://m5.baidu.com/s?from=124n</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
-        <BookmarkName>Bing</BookmarkName>
+        <BookmarkName>新浪网</BookmarkName>
+        <URL>http://sina.cn/</URL>
+      </Bookmark>
+      <Bookmark>
+        <NetworkName>default</NetworkName>
+        <Editable>yes</Editable>
+        <BookmarkName>搜狐网</BookmarkName>
+        <URL>http://wap.sohu.com/</URL>
+      </Bookmark>
+      <Bookmark>
+        <NetworkName>default</NetworkName>
+        <Editable>yes</Editable>
+        <BookmarkName>凤凰网</BookmarkName>
+        <URL>http://3g.ifeng.com/</URL>
+      </Bookmark>
+      <Bookmark>
+        <NetworkName>default</NetworkName>
+        <Editable>yes</Editable>
+        <BookmarkName>必应</BookmarkName>
         <URL>http://www.bing.com/?PC=SMSM&amp;FORM=MBDPB</URL>
       </Bookmark>
       <eManual>
@@ -131,205 +150,108 @@
       </eManual>
     </Browser>
     <Connections>
-      <NbProfileHandle>8</NbProfileHandle>
+      <NbProfileHandle>4</NbProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Chunghwa</NetworkName>
-        <ProfBrowser>CHT Internet</ProfBrowser>
-        <ProfMMS>CHT MMS</ProfMMS>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>TW Mobile</NetworkName>
-        <ProfBrowser>Internet</ProfBrowser>
-        <ProfMMS>TWM MMS</ProfMMS>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>FarEasTone</NetworkName>
-        <ProfBrowser>FarEasTone Internet</ProfBrowser>
-        <ProfMMS>FarEasTone MMS</ProfMMS>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>KGT</NetworkName>
-        <ProfBrowser>KGT GPRS</ProfBrowser>
-        <ProfMMS>KGT MMS</ProfMMS>
+        <NetworkName>中国联通</NetworkName>
+        <ProfBrowser>沃3G连接互联网</ProfBrowser>
+        <ProfMMS>联通彩信</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>1</NbNetProfile>
-        <NetworkName>KGT</NetworkName>
-        <ProfBrowser>KGT Internet</ProfBrowser>
+        <NetworkName>中国联通</NetworkName>
+        <ProfBrowser>沃3G手机上网</ProfBrowser>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>VIBO</NetworkName>
-        <ProfBrowser>VIBO-vibo</ProfBrowser>
-        <ProfMMS>VIBO-MMS</ProfMMS>
+        <NetworkName>中国移动</NetworkName>
+        <ProfBrowser>CMNET</ProfBrowser>
+        <ProfMMS>CMMMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>VIBO</NetworkName>
-        <ProfBrowser>VIBO-internet</ProfBrowser>
-        <ProfMMS>VIBO-MMS</ProfMMS>
+        <NbNetProfile>1</NbNetProfile>
+        <NetworkName>中国移动</NetworkName>
+        <ProfBrowser>CMWAP</ProfBrowser>
       </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>VIBO</NetworkName>
-        <ProfBrowser>VIBOONE</ProfBrowser>
-        <ProfMMS>VIBO-MMS</ProfMMS>
-      </ProfileHandle>
-      <NbProfile>13</NbProfile>
+      <NbProfile>6</NbProfile>
       <Profile>
-        <NetworkName>Chunghwa</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>CHT Internet</ProfileName>
+        <NetworkName>中国联通</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>沃3G连接互联网</ProfileName>
         <MTUSize>1400</MTUSize>
         <PSparam>
-          <APN>internet</APN>
+          <APN>3gnet</APN>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Chunghwa</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>CHT MMS</ProfileName>
-        <URL>http://mms.emome.net:8002</URL>
+        <NetworkName>中国联通</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>联通彩信</ProfileName>
+        <URL>http://mmsc.myuni.com.cn</URL>
+        <Protocol>http</Protocol>
         <MTUSize>1400</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>10.1.1.1</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>emome</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>TW Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Internet</ProfileName>
-        <MTUSize>1400</MTUSize>
-        <PSparam>
-          <APN>internet</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>TW Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>TWM MMS</ProfileName>
-        <URL>http://mms.catch.net.tw/</URL>
-        <MTUSize>1400</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.1.1.2</ServAddr>
+          <ServAddr>10.0.0.172</ServAddr>
           <Port>80</Port>
         </Proxy>
         <PSparam>
-          <APN>mms</APN>
+          <APN>3gwap</APN>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>FarEasTone</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>FarEasTone Internet</ProfileName>
-        <MTUSize>1400</MTUSize>
-        <PSparam>
-          <APN>internet</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>FarEasTone</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>FarEasTone MMS</ProfileName>
-        <URL>http://mms</URL>
+        <NetworkName>中国联通</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>沃3G手机上网</ProfileName>
         <MTUSize>1400</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>210.241.199.199</ServAddr>
-          <Port>9201</Port>
+          <ServAddr>10.0.0.172</ServAddr>
+          <Port>80</Port>
         </Proxy>
         <PSparam>
-          <APN>fetnet01</APN>
+          <APN>3gwap</APN>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>KGT</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>KGT GPRS</ProfileName>
+        <NetworkName>中国移动</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>CMNET</ProfileName>
+        <Protocol>http</Protocol>
+        <MTUSize>1400</MTUSize>
+        <PSparam>
+          <APN>cmnet</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>中国移动</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>CMMMS</ProfileName>
+        <URL>http://mmsc.monternet.com</URL>
+        <Protocol>http</Protocol>
         <MTUSize>1400</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>210.241.199.199</ServAddr>
-          <Port>9201</Port>
+          <ServAddr>10.0.0.172</ServAddr>
+          <Port>80</Port>
         </Proxy>
         <PSparam>
-          <APN>fetnet01</APN>
+          <APN>cmwap</APN>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>KGT</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>KGT MMS</ProfileName>
-        <URL>http://mms.kgtmms.net.tw/mms/wapenc</URL>
+        <NetworkName>中国移动</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>CMWAP</ProfileName>
+        <Protocol>http</Protocol>
         <MTUSize>1400</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>172.28.33.5</ServAddr>
-          <Port>8080</Port>
+          <ServAddr>10.0.0.172</ServAddr>
+          <Port>80</Port>
         </Proxy>
         <PSparam>
-          <APN>kgtmms</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>KGT</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>KGT Internet</ProfileName>
-        <MTUSize>1400</MTUSize>
-        <PSparam>
-          <APN>internet</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>VIBO</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>VIBO-vibo</ProfileName>
-        <MTUSize>1400</MTUSize>
-        <PSparam>
-          <APN>vibo</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>VIBO</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>VIBO-MMS</ProfileName>
-        <URL>http://mms</URL>
-        <MTUSize>1400</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>172.24.128.36</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>vibo</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>VIBO</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>VIBO-internet</ProfileName>
-        <MTUSize>1400</MTUSize>
-        <PSparam>
-          <APN>internet</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>VIBO</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>VIBOONE</ProfileName>
-        <MTUSize>1400</MTUSize>
-        <PSparam>
-          <APN>viboone</APN>
+          <APN>cmwap</APN>
         </PSparam>
       </Profile>
     </Connections>

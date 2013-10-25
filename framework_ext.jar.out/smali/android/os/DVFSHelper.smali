@@ -379,7 +379,7 @@
     .line 686
     sput-object v5, Landroid/os/DVFSHelper;->mCPUCoreTable:[I
 
-    .line 751
+    .line 752
     sput-object v5, Landroid/os/DVFSHelper;->mRotationCPUCoreNumBooster:Landroid/os/DVFSHelper;
 
     return-void
@@ -891,42 +891,42 @@
     .parameter "enable"
 
     .prologue
-    .line 742
+    .line 743
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 743
+    .line 744
     .local v0, benchmarkIntent:Landroid/content/Intent;
     const-string v1, "com.sec.android.intent.action.SSRM_REQUEST"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 744
+    .line 745
     const-string v1, "SSRM_STATUS_NAME"
 
     const-string v2, "BenchmarkBooster"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 745
+    .line 746
     const-string v1, "SSRM_STATUS_VALUE"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 746
+    .line 747
     const-string v1, "PackageName"
 
     const-string v2, "com.sec.android.app.camera.Camera.DvfsHelperProxy"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 747
+    .line 748
     iget-object v1, p0, Landroid/os/DVFSHelper;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 748
+    .line 749
     return-void
 .end method
 
@@ -2783,7 +2783,7 @@
     .line 689
     if-nez p2, :cond_1
 
-    .line 739
+    .line 740
     :cond_0
     :goto_0
     return-void
@@ -2830,7 +2830,7 @@
     .line 698
     sget-object v0, Landroid/os/DVFSHelper;->mCPUFrequencyTable:[I
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
     .line 699
     sget-object v0, Landroid/os/DVFSHelper;->mCameraCPUBooster:Landroid/os/DVFSHelper;
@@ -2881,7 +2881,7 @@
     .line 709
     sget-object v0, Landroid/os/DVFSHelper;->mCPUCoreTable:[I
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     .line 710
     sget-object v0, Landroid/os/DVFSHelper;->mCameraCPUCoreNumBooster:Landroid/os/DVFSHelper;
@@ -2925,7 +2925,17 @@
     :cond_5
     const-string v0, "KOR"
 
-    const-string v1, ""
+    const-string v1, "CHN"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    const-string v0, "CHN"
+
+    const-string v1, "CHN"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2933,6 +2943,17 @@
 
     if-eqz v0, :cond_0
 
+    const-string v0, "ja"
+
+    const-string v1, "ja"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    :cond_6
     const-string v0, "com.sec.android.app.camera.Camera"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2941,7 +2962,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 726
+    .line 727
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Landroid/os/DVFSHelper$1;
@@ -2955,7 +2976,7 @@
     goto/16 :goto_0
 
     .line 701
-    :cond_6
+    :cond_7
     const-string v0, "DVFSHelper"
 
     const-string v1, "onAppLaunchEvent:: mCPUFrequencyTable is null"
@@ -2965,7 +2986,7 @@
     goto :goto_1
 
     .line 712
-    :cond_7
+    :cond_8
     const-string v0, "DVFSHelper"
 
     const-string v1, "onAppLaunchEvent:: mCPUCoreTable is null"
@@ -2981,12 +3002,12 @@
     .parameter "packageName"
 
     .prologue
-    .line 754
+    .line 755
     sget-object v1, Landroid/os/DVFSHelper;->mRotationCPUCoreNumBooster:Landroid/os/DVFSHelper;
 
     if-nez v1, :cond_0
 
-    .line 755
+    .line 756
     new-instance v1, Landroid/os/DVFSHelper;
 
     const/16 v2, 0xe
@@ -2995,18 +3016,18 @@
 
     sput-object v1, Landroid/os/DVFSHelper;->mRotationCPUCoreNumBooster:Landroid/os/DVFSHelper;
 
-    .line 756
+    .line 757
     sget-object v1, Landroid/os/DVFSHelper;->mRotationCPUCoreNumBooster:Landroid/os/DVFSHelper;
 
     invoke-virtual {v1}, Landroid/os/DVFSHelper;->getSupportedCPUCoreNum()[I
 
     move-result-object v0
 
-    .line 757
+    .line 758
     .local v0, coreTable:[I
     if-eqz v0, :cond_2
 
-    .line 758
+    .line 759
     sget-object v1, Landroid/os/DVFSHelper;->mRotationCPUCoreNumBooster:Landroid/os/DVFSHelper;
 
     const-string v2, "CORE_NUM"
@@ -3019,7 +3040,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/os/DVFSHelper;->addExtraOption(Ljava/lang/String;J)V
 
-    .line 763
+    .line 764
     .end local v0           #coreTable:[I
     :cond_0
     :goto_0
@@ -3027,18 +3048,18 @@
 
     if-eqz v1, :cond_1
 
-    .line 764
+    .line 765
     sget-object v1, Landroid/os/DVFSHelper;->mRotationCPUCoreNumBooster:Landroid/os/DVFSHelper;
 
     const/16 v2, 0x1f4
 
     invoke-virtual {v1, v2}, Landroid/os/DVFSHelper;->acquire(I)V
 
-    .line 766
+    .line 767
     :cond_1
     return-void
 
-    .line 760
+    .line 761
     .restart local v0       #coreTable:[I
     :cond_2
     const-string v1, "DVFSHelper"

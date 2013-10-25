@@ -9,7 +9,6 @@
 		<ImageLinkSupport value="TRUE">
 		</ImageLinkSupport>
 	    	<SupportMultiLocalCalendar accessibility="all" value = "TRUE" />
-	    	<SupportTodoGroup accessibility="all" value="FALSE" /> 
 		<SyncHistory value="TRUE" />
 		<SupportRecurrenceException value="TRUE" />
 		<AvailableWithoutAccount value="TRUE" />
@@ -18,7 +17,7 @@
 			<MaxScheduleCount>
 				<Appointment value="0" />
 			</MaxScheduleCount>
-
+			<SupportLunar value="true" />
 			<Enums>
 				<Enum name="COMMON_TYPE">
 					<Element name="Appointment" />
@@ -243,6 +242,8 @@
 					</Alarm>
 					<Recurrence type="RECURRENCE_TYPE_APPOINTMENT_ANDROID" />
 					<Content type="String" charset="utf-16" maxLength="2000" />
+					<RecurrenceUntilDateLunar value="true"/>
+					<SupportLunar value="true" />
 				</DataField>
 			</Appointment>
 		</Schedule>
