@@ -2385,9 +2385,10 @@
 
     invoke-direct {v1, p0, v7}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 
-    .line 233
     .local v1, context:Landroid/content/Context;
     :goto_1
+    move-object v1, p0
+
     new-instance v2, Ljava/lang/Exception;
 
     const-string v7, "It is not an exception!! just save the trace for process which called shutdown thread!! ShutdownThread.shutdown"
