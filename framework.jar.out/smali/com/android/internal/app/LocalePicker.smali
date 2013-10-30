@@ -151,7 +151,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/res/AssetManager;->getLocales()[Ljava/lang/String;
+    invoke-static/range {v27 .. v27}, Lcom/android/internal/app/LocalePicker;->getMiuiSupportLocale(Landroid/content/res/Resources;)[Ljava/lang/String;
 
     move-result-object v22
 
@@ -679,6 +679,20 @@
     move-result-object v2
 
     goto :goto_1
+.end method
+
+.method private static getMiuiSupportLocale(Landroid/content/res/Resources;)[Ljava/lang/String;
+    .locals 1
+    .parameter "resources"
+
+    .prologue
+    const v0, 0x6060011
+
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method private static toTitleCase(Ljava/lang/String;)Ljava/lang/String;
