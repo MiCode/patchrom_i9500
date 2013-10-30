@@ -322,7 +322,10 @@
     .parameter "inputSpell"
 
     .prologue
-    .line 605
+    const/4 v1, -0x1
+
+    return v1
+
     const/4 v0, 0x0
 
     .line 608
