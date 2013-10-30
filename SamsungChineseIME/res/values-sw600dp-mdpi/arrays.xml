@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_list_preference">
+        <item>SCH-TCH switch off</item>
+        <item>TCH to SCH</item>
+        <item>SCH to TCH</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="array_handwrite_line_value">
+        <item>2 pixel</item>
+        <item>3 pixel</item>
+        <item>5 pixel</item>
+        <item>7 pixel</item>
+        <item>9 pixel</item>
+    </string-array>
+    <string-array name="array_handwrite_speed">
+        <item>0.1 sec</item>
+        <item>0.3 sec</item>
+        <item>0.5 sec</item>
+        <item>0.7 sec</item>
+        <item>1 sec</item>
+    </string-array>
+    <string-array name="array_handwrite_speed_value">
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>700</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference">
+        <item>Qwerty Keypad</item>
+        <item>3*4 Keypad</item>
+        <item>Handwriting</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="array_handwrite_type">
+        <item>Character</item>
+        <item>String</item>
+        <item>Text</item>
+    </string-array>
+    <string-array name="array_handwrite_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="array_space_key_type">
+        <item>Input first candidate</item>
+        <item>Input first association</item>
+    </string-array>
+    <string-array name="array_space_key_type_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tab_editlist_title">
+        <item>Pinyin 3X4</item>
+        <item>Pinyin Qwerty</item>
+        <item>Stroke</item>
+        <item>Korean</item>
+        <item>Clipboard</item>
+        <item>Emoticon</item>
+        <item>English</item>
+        <item>123 ＆ symbol</item>
+    </string-array>
+    <string-array name="tab_titles_def_checked">
+        <item>ABC</item>
+        <item>123?#</item>
+    </string-array>
+    <string-array name="currency_popup_window_value">
+        <item>$</item>
+        <item>¥</item>
+        <item>₩</item>
+        <item>£</item>
+        <item>€</item>
+    </string-array>
+</resources>

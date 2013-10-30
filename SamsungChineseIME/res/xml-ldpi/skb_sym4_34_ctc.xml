@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="33.333%p" height="20%p" key_type="10" repeat="false" balloon="true">
+    <row>
+        <key label="《">
+            <toggle_state state_id="@string/toggle_language_cn" label="《" />
+            <toggle_state state_id="@string/toggle_language_en" label="&lt;" />
+        </key>
+        <key label="》">
+            <toggle_state state_id="@string/toggle_language_cn" label="》" />
+            <toggle_state state_id="@string/toggle_language_en" label=">" />
+        </key>
+        <key label="｛">
+            <toggle_state state_id="@string/toggle_language_cn" label="｛" />
+            <toggle_state state_id="@string/toggle_language_en" label="{" />
+        </key>
+    </row>
+    <row>
+        <key label="｝">
+            <toggle_state state_id="@string/toggle_language_cn" label="[" />
+            <toggle_state state_id="@string/toggle_language_en" label="[" />
+        </key>
+        <key label="[">
+            <toggle_state state_id="@string/toggle_language_cn" label="]" />
+            <toggle_state state_id="@string/toggle_language_en" label="]" />
+        </key>
+        <key label="]">
+            <toggle_state state_id="@string/toggle_language_cn" label="｝" />
+            <toggle_state state_id="@string/toggle_language_en" label="}" />
+        </key>
+    </row>
+    <row>
+        <key label="＜">
+            <toggle_state state_id="@string/toggle_language_cn" label="/" />
+            <toggle_state state_id="@string/toggle_language_en" label="/" />
+        </key>
+        <key label="＞">
+            <toggle_state state_id="@string/toggle_language_cn" label="|" />
+            <toggle_state state_id="@string/toggle_language_en" label="|" />
+        </key>
+        <key label="「">
+            <toggle_state state_id="@string/toggle_language_cn" label="‘" />
+            <toggle_state state_id="@string/toggle_language_en" label="ˋ" />
+        </key>
+    </row>
+    <row>
+        <unite label="4/7" key_type="1">
+            <key code="-8" icon="@drawable/page_arrow_01_l" width="33.333%p" hlicon="@drawable/page_arrow_01_l_p" balloon="false" key_type="5" />
+            <key code="-9" icon="@drawable/page_arrow_01_r" width="33.333%p" hlicon="@drawable/page_arrow_01_r_p" balloon="false" key_type="6" />
+        </unite>
+        <key label="」">
+            <toggle_state state_id="@string/toggle_language_cn" label="’" />
+            <toggle_state state_id="@string/toggle_language_en" label="ˊ" />
+        </key>
+    </row>
+    <row width="16.666%p" start_pos_y="80%p">
+        <key id="42" />
+        <key id="12" />
+        <key id="13" />
+        <key id="19" />
+        <key id="11" start_pos_x="69.39%p" start_pos_y="80%p" width="14.06%p" />
+        <key id="14" />
+    </row>
+</keyboard>

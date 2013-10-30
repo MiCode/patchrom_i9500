@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">Ιαν</string>
+    <string name="month_medium_february">Φεβ</string>
+    <string name="month_medium_march">Μαρ</string>
+    <string name="month_medium_april">Απρ</string>
+    <string name="month_medium_may">Μαϊ</string>
+    <string name="month_medium_june">Ιουν</string>
+    <string name="month_medium_july">Ιουλ</string>
+    <string name="month_medium_august">Αυγ</string>
+    <string name="month_medium_september">Σεπ</string>
+    <string name="month_medium_october">Οκτ</string>
+    <string name="month_medium_november">Νοε</string>
+    <string name="month_medium_december">Δεκ</string>
+</resources>

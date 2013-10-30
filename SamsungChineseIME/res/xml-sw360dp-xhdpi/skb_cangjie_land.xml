@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="8.438%p" height="20.915%p" key_type="0" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true">
+    <row>
+        <key label="手" long_label="1" code="45" key_type="4" start_pos_x="1.407%p" key_bottommargin="4.575%p" />
+        <key label="田" long_label="2" code="51" key_type="4" start_pos_x="11.251%p" key_bottommargin="4.575%p" />
+        <key label="水" long_label="3" code="33" key_type="4" start_pos_x="21.095%p" key_bottommargin="4.575%p" />
+        <key label="口" long_label="4" code="46" key_type="4" start_pos_x="30.939%p" key_bottommargin="4.575%p" />
+        <key label="廿" long_label="5" code="48" key_type="4" start_pos_x="40.783%p" key_bottommargin="4.575%p" />
+        <key label="卜" long_label="6" code="53" key_type="4" start_pos_x="50.627%p" key_bottommargin="4.575%p" />
+        <key label="山" long_label="7" code="49" key_type="4" start_pos_x="60.471%p" key_bottommargin="4.575%p" />
+        <key label="戈" long_label="8" code="37" key_type="4" start_pos_x="70.315%p" key_bottommargin="4.575%p" />
+        <key label="人" long_label="9" code="43" key_type="4" start_pos_x="80.159%p" key_bottommargin="4.575%p" />
+        <key label="心" long_label="0" code="44" key_type="4" start_pos_x="90.003%p" key_bottommargin="4.575%p" />
+    </row>
+    <row start_pos_y="25.490%p">
+        <key label="日" code="29" start_pos_x="6.407%p" key_bottommargin="4.575%p" />
+        <key label="尸" code="47" start_pos_x="16.251%p" key_bottommargin="4.575%p" />
+        <key label="木" code="32" start_pos_x="26.095%p" key_bottommargin="4.575%p" />
+        <key label="火" code="34" start_pos_x="35.939%p" key_bottommargin="4.575%p" />
+        <key label="土" code="35" start_pos_x="45.783%p" key_bottommargin="4.575%p" />
+        <key label="竹" code="36" start_pos_x="55.627%p" key_bottommargin="4.575%p" />
+        <key label="十" code="38" start_pos_x="65.471%p" key_bottommargin="4.575%p" />
+        <key label="大" code="39" start_pos_x="75.315%p" key_bottommargin="4.575%p" />
+        <key label="中" code="40" start_pos_x="85.159%p" key_bottommargin="4.575%p" />
+    </row>
+    <row start_pos_y="50.98%p">
+        <key start_pos_x="1.407%p" width="10.938%p" start_pos_y="50.98%p" height="20.915%p" repeat="false" balloon="false" code="-22" label="@string/toggle_cangjie_qw_value" icon="@drawable/qwerty_icon_switch_off_h">
+            <toggle_state state_id="@string/toggle_language_cn_qk_hk" label="@string/toggle_cangjie_qw_value" icon="@drawable/qwerty_icon_switch_on_h" balloon="false" code="-22" />
+        </key>
+        <key label="，" start_pos_x="16.251%p" key_bottommargin="4.575%p" />
+        <key label="難" code="52" start_pos_x="26.095%p" key_bottommargin="4.575%p" />
+        <key label="金" code="31" start_pos_x="35.939%p" key_bottommargin="4.575%p" />
+        <key label="女" code="50" start_pos_x="45.783%p" key_bottommargin="4.575%p" />
+        <key label="月" code="30" start_pos_x="55.627%p" key_bottommargin="4.575%p" />
+        <key label="弓" code="42" start_pos_x="65.471%p" key_bottommargin="4.575%p" />
+        <key label="一" code="41" start_pos_x="75.315%p" key_bottommargin="4.575%p" />
+        <key id="1" start_pos_x="87.5%p" width="10.938%p" start_pos_y="50.98%p" height="20.915%p" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="76.47%p">
+        <key id="5" start_pos_x="1.407%p" width="10.938%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="150" start_pos_x="13.75%p" width="8.438%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="83" start_pos_x="26.094%p" width="37.969%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="7" start_pos_x="67.813%p" width="8.438%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="6" start_pos_x="77.657%p" width="8.438%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="4" start_pos_x="87.5%p" width="10.938%p" start_pos_y="76.47%p" height="20.915%p" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_cn_hk" start_pos_y="75%p">
+        <key id="5" />
+        <key id="150" />
+        <key start_pos_x="27.8%p" start_pos_y="75%p" width="11.4%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key id="3" start_pos_x="39.2%p" width="21.6%p" />
+        <key id="7" />
+        <key id="6" />
+        <key id="4" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_email" start_pos_y="76.47%p">
+        <key id="5" start_pos_x="1.407%p" width="10.938%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="150" start_pos_x="13.75%p" width="8.438%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key label="\@" start_pos_x="23.594%p" width="8.438%p" balloon="true" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="63" start_pos_x="35.938%p" width="16.719%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key label="." start_pos_x="56.407%p" width="8.438%p" key_type="0" repeat="true" balloon="true" start_pos_y="76.47%p" height="20.915%p" extra_icon="@drawable/sip_button_longpress_question" extra_hlicon="@drawable/sip_button_longpress_question" code="56">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="8" start_pos_x="66.25%p" width="10%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="6" start_pos_x="77.657%p" width="8.438%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="4" start_pos_x="87.5%p" width="10.938%p" start_pos_y="76.47%p" height="20.915%p" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_url" start_pos_y="76.47%p">
+        <key id="5" start_pos_x="1.407%p" width="10.938%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="150" start_pos_x="13.75%p" width="8.438%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key label="/" start_pos_x="23.594%p" width="8.438%p" balloon="true" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="63" start_pos_x="35.938%p" width="16.719%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key label="." start_pos_x="56.407%p" width="8.438%p" key_type="0" repeat="true" balloon="true" start_pos_y="76.47%p" height="20.915%p" extra_icon="@drawable/sip_button_longpress_question" extra_hlicon="@drawable/sip_button_longpress_question" code="56">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="8" start_pos_x="66.25%p" width="10%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="6" start_pos_x="77.657%p" width="8.438%p" start_pos_y="76.47%p" height="20.915%p" />
+        <key id="4" start_pos_x="87.5%p" width="10.938%p" start_pos_y="76.47%p" height="20.915%p" />
+    </row>
+</keyboard>

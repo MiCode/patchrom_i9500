@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="8.75%p" height="18.5%p" key_type="0" repeat="false" balloon="true">
+    <row start_pos_y="0.5%p" key_type="4">
+        <key label="ㄅ" long_label="1" code="8" start_pos_x="0.625%p" width="8.125%p" />
+        <key label="ㄉ" long_label="2" code="9" start_pos_x="9.6875%p" width="8.125%p" />
+        <key label="ˇ" long_label="3" code="10" start_pos_x="18.75%p" width="8.125%p" />
+        <key label="ˋ" long_label="4" code="11" start_pos_x="27.8125%p" width="8.125%p" />
+        <key label="ㄓ" long_label="5" code="12" start_pos_x="36.875%p" width="8.125%p" />
+        <key label="ˊ" long_label="6" code="13" start_pos_x="45.9375%p" width="8.125%p" />
+        <key label="˙" long_label="7" code="14" start_pos_x="55%p" width="8.125%p" />
+        <key label="ㄚ" long_label="8" code="15" start_pos_x="64.0625%p" width="8.125%p" />
+        <key label="ㄞ" long_label="9" code="16" start_pos_x="73.125%p" width="8.125%p" />
+        <key label="ㄢ" long_label="0" code="7" start_pos_x="82.1875%p" width="8.125%p" />
+        <key label="ㄦ" long_label="-" code="69" start_pos_x="91.25%p" width="8.125%p" />
+    </row>
+    <row start_pos_y="19.5%p">
+        <key label="ㄆ" code="45" start_pos_x="0.625%p" />
+        <key label="ㄊ" code="51" start_pos_x="10.625%p" />
+        <key label="ㄍ" code="33" start_pos_x="20.625%p" />
+        <key label="ㄐ" code="46" start_pos_x="30.625%p" />
+        <key label="ㄔ" code="48" start_pos_x="40.625%p" />
+        <key label="ㄗ" code="53" start_pos_x="50.625%p" />
+        <key label="ㄧ" code="49" start_pos_x="60.625%p" />
+        <key label="ㄛ" code="37" start_pos_x="70.625%p" />
+        <key label="ㄟ" code="43" start_pos_x="80.625%p" />
+        <key label="ㄣ" code="44" start_pos_x="90.625%p" />
+    </row>
+    <row start_pos_y="38.5%p">
+        <key label="ㄇ" code="29" start_pos_x="0.625%p" />
+        <key label="ㄋ" code="47" start_pos_x="10.625%p" />
+        <key label="ㄎ" code="32" start_pos_x="20.625%p" />
+        <key label="ㄑ" code="34" start_pos_x="30.625%p" />
+        <key label="ㄕ" code="35" start_pos_x="40.625%p" />
+        <key label="ㄘ" code="36" start_pos_x="50.625%p" />
+        <key label="ㄨ" code="38" start_pos_x="60.625%p" />
+        <key label="ㄜ" code="39" start_pos_x="70.625%p" />
+        <key label="ㄠ" code="40" start_pos_x="80.625%p" />
+        <key label="ㄤ" code="74" start_pos_x="90.625%p" />
+    </row>
+    <row start_pos_y="57.5%p">
+        <key label="ㄈ" code="54" start_pos_x="0.625%p" />
+        <key label="ㄌ" code="52" start_pos_x="10.625%p" />
+        <key label="ㄏ" code="31" start_pos_x="20.625%p" />
+        <key label="ㄒ" code="50" start_pos_x="30.625%p" />
+        <key label="ㄖ" code="30" start_pos_x="40.625%p" />
+        <key label="ㄙ" code="42" start_pos_x="50.625%p" />
+        <key label="ㄩ" code="41" start_pos_x="60.625%p" />
+        <key label="ㄝ" code="55" start_pos_x="70.625%p" />
+        <key label="ㄡ" code="56" start_pos_x="80.625%p" />
+        <key label="ㄥ" code="76" start_pos_x="90.625%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice">
+        <key id="45" />
+        <key id="150" />
+        <key id="3" start_pos_x="27.1875%p" width="25.625%p" />
+        <key start_pos_x="55.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="0" repeat="true" balloon="true" label="." code="200">
+            <toggle_state state_id="@string/toggle_language_cn_tw" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="200" />
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="6" start_pos_x="65.625%p" width="8.75%p" />
+        <key start_pos_x="75.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_del_zhuyin" hlicon="@drawable/qwerty_icon_del_zhuyin_p" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" />
+        <key id="4" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw">
+        <key start_pos_x="0%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="8" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3" />
+        <key start_pos_x="12%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" repeat="true" balloon="false" code="-2" hlicon="@drawable/qwerty_icon_setting_p" />
+        <key start_pos_x="24%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key start_pos_x="36%p" start_pos_y="80%p" width="16%p" height="20%p" key_type="0" repeat="false" balloon="true" icon="@drawable/qwerty_icon_space" hlicon="@drawable/qwerty_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+        <key start_pos_x="52%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="0" repeat="true" balloon="true" label="." code="200">
+            <toggle_state state_id="@string/toggle_language_cn_tw" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="200" />
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key start_pos_x="64%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="8" repeat="false" balloon="false" code="-12" label="@string/word_cn" long_label="@string/word_cn_tw" />
+        <key start_pos_x="76%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="true" balloon="true" icon="@drawable/keypad_icon_del" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" hlicon="@drawable/keypad_icon_del_p" />
+        <key start_pos_x="88%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_enter" hlicon="@drawable/qwerty_icon_enter_p" icon_popup="@drawable/qwerty_icon_enter_bubble" code="66">
+            <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" />
+            <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" />
+            <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" />
+            <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" />
+            <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" />
+        </key>
+    </row>
+    <row row_id="@string/toggle_row_url">
+        <key id="45" />
+        <key id="150" start_pos_x="15%p" />
+        <key label="/" start_pos_x="24.375%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" />
+        <key start_pos_x="35.3125%p" start_pos_y="76.5%p" width="8.125%p" height="21.5%p" key_type="0" repeat="false" balloon="false" icon="@drawable/qwerty_icon_space_zhuyin_email" hlicon="@drawable/qwerty_icon_space_zhuyin_email_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+        <key label="." start_pos_x="45.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="0" repeat="true" balloon="true" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="200">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="8" start_pos_x="55%p" width="11.25%p" />
+        <key id="6" start_pos_x="66.875%p" />
+        <key start_pos_x="76.25%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_del_zhuyin" hlicon="@drawable/qwerty_icon_del_zhuyin_p" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" />
+        <key id="4" />
+    </row>
+    <row row_id="@string/toggle_row_email">
+        <key id="45" />
+        <key id="150" start_pos_x="15%p" />
+        <key label="\@" start_pos_x="24.375%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" />
+        <key start_pos_x="35.3125%p" start_pos_y="76.5%p" width="8.125%p" height="21.5%p" key_type="0" repeat="false" balloon="false" icon="@drawable/qwerty_icon_space_zhuyin_email" hlicon="@drawable/qwerty_icon_space_zhuyin_email_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+        <key label="." start_pos_x="45.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="0" repeat="true" balloon="true" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="200">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="8" start_pos_x="55%p" width="11.25%p" />
+        <key id="6" start_pos_x="66.875%p" />
+        <key start_pos_x="76.25%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_del_zhuyin" hlicon="@drawable/qwerty_icon_del_zhuyin_p" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" />
+        <key id="4" />
+    </row>
+</keyboard>

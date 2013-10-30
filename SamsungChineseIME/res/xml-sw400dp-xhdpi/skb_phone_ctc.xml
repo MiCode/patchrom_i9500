@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.625%p" key_ymargin="1.5625%p" width="25%p" height="25%p" key_type="0" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="false">
+    <row>
+        <key icon="@drawable/keypad_dial_num01" code="8">
+            <toggle_state state_id="@string/toggle_phone_sym" label="(" />
+        </key>
+        <key icon="@drawable/keypad_dial_num02" code="9">
+            <toggle_state state_id="@string/toggle_phone_sym" label="/" />
+        </key>
+        <key icon="@drawable/keypad_dial_num03" code="10">
+            <toggle_state state_id="@string/toggle_phone_sym" label=")" />
+        </key>
+        <key id="31" start_pos_x="75%p" start_pos_y="0%p" width="25%p" />
+    </row>
+    <row>
+        <key icon="@drawable/keypad_dial_num04" code="11">
+            <toggle_state state_id="@string/toggle_phone_sym" label="N" />
+        </key>
+        <key icon="@drawable/keypad_dial_num05" code="12">
+            <toggle_state state_id="@string/toggle_phone_sym" label="T(,)" code="55" />
+        </key>
+        <key icon="@drawable/keypad_dial_num06" code="13">
+            <toggle_state state_id="@string/toggle_phone_sym" label="." />
+        </key>
+        <key id="34" start_pos_x="75%p" start_pos_y="25%p" width="25%p" />
+    </row>
+    <row>
+        <key icon="@drawable/keypad_dial_num07" code="14">
+            <toggle_state state_id="@string/toggle_phone_sym" label="*" />
+        </key>
+        <key icon="@drawable/keypad_dial_num08" code="15">
+            <toggle_state state_id="@string/toggle_phone_sym" label="P(;)" code="74" />
+        </key>
+        <key icon="@drawable/keypad_dial_num09" code="16">
+            <toggle_state state_id="@string/toggle_phone_sym" label="\#" />
+        </key>
+        <key key_type="1" label="\?#*" code="-4" repeat="true">
+            <toggle_state state_id="@string/toggle_phone_sym" key_type="1" label="123" code="-4" />
+        </key>
+    </row>
+    <row>
+        <key icon="@drawable/keypad_dial_num10" hlicon="@drawable/keypad_dial_num10_p" code="17">
+            <toggle_state state_id="@string/toggle_phone_sym" label="" balloon="false" />
+        </key>
+        <key icon="@drawable/keypad_dial_num00" code="7" long_label="+">
+            <toggle_state state_id="@string/toggle_phone_sym" label="+" />
+        </key>
+        <key icon="@drawable/keypad_dial_num11" hlicon="@drawable/keypad_dial_num11_p" code="18">
+            <toggle_state state_id="@string/toggle_phone_sym" icon="@drawable/keypad_icon_space" hlicon="@drawable/keypad_icon_space_p" code="62" />
+        </key>
+        <key key_type="1" label="-" />
+    </row>
+</keyboard>

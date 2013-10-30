@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="1004" android:versionName="5.0.0" package="com.samsung.inputmethod" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application android:label="@string/ime_name" android:icon="@drawable/app_icon">
+        <receiver android:name=".dbmanager.autoupdate.SimeAutoUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".dbmanager.autoupdate.SimeDbAutoUpdateService" />
+        <service android:name=".service.xt9.SimeDecoderService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.samsung.inputmethod.Decoder_Service" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.voiceime.ServiceHelper" android:permission="android.permission.BIND_INPUT_METHOD" android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:label="@string/ime_name" android:name=".SamsungIME" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter android:priority="1">
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        <activity android:label="@string/ime_settings_activity_name" android:name=".setting.SimeSettingActivity" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ime_settings_activity_name" android:name=".setting.SimeTabtabSettingActivity" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="com.google.android.voiceime.ActivityHelper">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/setting_fuzzy_pinyin_input_title" android:name=".setting.SimeSettingsFuzzy" android:excludeFromRecents="true" />
+        <activity android:label="@string/setting_handwrite" android:name=".setting.SimeSettingsHandwrite" android:excludeFromRecents="true" />
+        <activity android:label="@string/setting_advanced" android:name=".setting.SimeSettingsAdvanced" android:excludeFromRecents="true" />
+        <activity android:label="@string/setting_db_update_title" android:name=".setting.dbmanager.SimeDbUpdateSettingsActivity" android:excludeFromRecents="true" android:configChanges="orientation|screenSize" />
+        <activity android:name=".setting.SimeSelfDefActivity" />
+        <activity android:name=".setting.SimeSelfDefDialog" />
+        <activity android:theme="@style/Theme.TransParentDialog" android:name=".setting.SimeHelp" android:taskAffinity="com.samsung.inputmethod.tutorial" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".setting.SimeSwiftkeySettingsLanguage" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".setting.SimeSettingsLanguage" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.touchtype.personalizer.PersonalizerSettingsActivity" />
+        <activity android:name="com.touchtype.personalizer.PersonalizerActivity" />
+        <service android:name="com.touchtype.personalizer.PersonalizerService" />
+        <service android:name="com.nuance.swype.connect.ConnectClient" android:enabled="true" android:exported="false" android:process=":LanguageInstaller">
+            <intent-filter>
+                <action android:name="com.nuance.swype.connect.ConnectClient" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.80%p" key_ymargin="1.30%p" width="22.4%p" height="25%p" key_type="3" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="false">
+    <row>
+        <key label="，" key_type="0" width="16.4%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="/" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="\@" />
+        </key>
+        <keys splitter="|" labels="ㄅㄆㄇㄈ  |ㄉㄊㄋㄌ|ㄍㄎㄏㄐ" long_labels="1|2|3" codes="8|9|10" />
+        <key id="11" />
+    </row>
+    <row>
+        <key label="？" key_type="0" width="16.4%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="-" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="-" />
+        </key>
+        <keys splitter="|" labels="ㄑㄒㄓㄔ |ㄕㄖㄗㄘ|ㄙ一ㄨㄩ  " long_labels="4|5|6" codes="11|12|13" />
+        <key id="71" />
+    </row>
+    <row>
+        <key label="！" key_type="0" width="16.4%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="_" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="_" />
+        </key>
+        <keys splitter="|" labels="ㄚㄛㄜㄝ|ㄞㄟㄠㄡㄢ|ㄣㄤㄥㄦ" long_labels="7|8|9" codes="14|15|16" />
+        <key id="80" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice">
+        <key id="70" />
+        <key id="152" />
+        <key id="13" />
+        <key start_pos_x="61.2%p" start_pos_y="75%p" width="11.2%p" height="25%p" key_type="0" repeat="true" balloon="true" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56">
+            <toggle_state state_id="@string/toggle_tone" icon="@drawable/keypad_icon_tones" hlicon="@drawable/keypad_icon_tones_p" code="18" key_type="13" balloon="false" />
+        </key>
+        <key id="16" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw">
+        <key id="70" />
+        <key id="152" />
+        <key start_pos_x="27.6%p" start_pos_y="75%p" width="11.2%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key id="13" start_pos_x="38.8%p" width="22.4%p" />
+        <key start_pos_x="61.2%p" start_pos_y="75%p" width="11.2%p" height="25%p" key_type="0" balloon="true" repeat="true" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56">
+            <toggle_state state_id="@string/toggle_tone" icon="@drawable/keypad_icon_tones" hlicon="@drawable/keypad_icon_tones_p" code="18" key_type="13" balloon="false" />
+        </key>
+        <key id="16" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_url" width="10%p" start_pos_y="75%p">
+        <key id="70" />
+        <key id="152" />
+        <key id="18" start_pos_x="27.6%p" width="16.4%p" />
+        <key id="13" start_pos_x="44%p" width="17.2%p" />
+        <key start_pos_x="61.2%p" width="11.2%p" key_type="0" repeat="true" balloon="true" label="." code="56" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p">
+            <toggle_state state_id="@string/toggle_tone" icon="@drawable/keypad_icon_tones" hlicon="@drawable/keypad_icon_tones_p" code="18" key_type="13" balloon="false" />
+        </key>
+        <key id="16" />
+        <key id="14" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_email" start_pos_y="75%p">
+        <key id="70" />
+        <key id="152" />
+        <key id="18" start_pos_x="27.6%p" width="16.4%p" />
+        <key id="13" start_pos_x="44%p" width="17.2%p" />
+        <key start_pos_x="61.2%p" width="11.2%p" key_type="0" repeat="true" balloon="true" label="." code="56" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p">
+            <toggle_state state_id="@string/toggle_tone" icon="@drawable/keypad_icon_tones" hlicon="@drawable/keypad_icon_tones_p" code="18" key_type="13" balloon="false" />
+        </key>
+        <key id="16" />
+        <key id="14" />
+    </row>
+</keyboard>

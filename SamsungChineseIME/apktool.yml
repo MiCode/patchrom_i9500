@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: SamsungChineseIME.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '16'
+packageInfo:
+  cur_package: com.samsung.inputmethod
+  orig_package: com.samsung.inputmethod
+compressionType: false

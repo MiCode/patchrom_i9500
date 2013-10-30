@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.candidate.SimeToolBarPage android:orientation="horizontal" android:id="@id/tool_bar_page" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tool_bar_page_main" android:layout_width="@dimen/toolbar_symbols_width" android:layout_height="fill_parent">
+        <ImageButton android:gravity="center" android:id="@id/toolbar_icon" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/toolbar_image_width" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:scaleType="centerInside" />
+        <TextView android:textSize="@dimen/toolbar_titles_text_size" android:textColor="@color/color1" android:gravity="center" android:id="@id/toolbar_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+    <View android:id="@id/toolbar_separator" android:background="@drawable/tw_divider_ab_holo_dark" android:layout_width="@dimen/toolbar_separator_width" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+</com.samsung.inputmethod.candidate.SimeToolBarPage>

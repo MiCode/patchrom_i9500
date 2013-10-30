@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.52%p" key_ymargin="1.875%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="10%p" height="25%p" key_type="0" repeat="false" balloon="true">
+    <row>
+        <keys splitter="|" labels="手|田|水|口|廿|卜|山|戈|人|心" long_labels="1|2|3|4|5|6|7|8|9|0" codes="45|51|33|46|48|53|49|37|43|44" key_type="4" />
+    </row>
+    <row start_pos_x="5%p" width="10%p">
+        <keys splitter="|" labels="日|尸|木|火|土|竹|十|大|中" codes="29|47|32|34|35|36|38|39|40" />
+    </row>
+    <row>
+        <key start_pos_y="50%p" height="25%p" repeat="false" balloon="true" code="-22" label="@string/toggle_cangjie_qw_value" width="14%p">
+            <toggle_state state_id="@string/toggle_language_cn_qk_hk" label="速" code="-22" />
+        </key>
+        <key label="，" start_pos_x="15%p" />
+        <keys splitter="|" labels="難|金|女|月|弓|一" codes="52|31|50|30|42|41" />
+        <key id="1" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_cn_hk" start_pos_y="75%p">
+        <key id="2" />
+        <key id="5" start_pos_x="10%p" start_pos_y="75%p" width="12%p" height="25%p" key_type="8" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3" />
+        <key start_pos_x="22%p" start_pos_y="75%p" width="12%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key start_pos_x="34.65%p" width="25.95%p" key_type="0" repeat="false" balloon="true" icon="@drawable/qwerty_icon_space" hlicon="@drawable/qwerty_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+        <key start_pos_x="60.39%p" start_pos_y="75%p" width="10%p" height="25%p" key_type="0" repeat="true" balloon="true" code="56" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" />
+        <key start_pos_x="70.8%p" start_pos_y="75%p" width="13.2%p" height="25%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_hk" code="-12" />
+        <key id="4" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_url" start_pos_y="75%p">
+        <key id="2" start_pos_x="0%p" width="10%p" />
+        <key id="5" start_pos_x="10%p" width="15%p" />
+        <key label="/" start_pos_x="25%p" width="10%p" balloon="true" />
+        <key id="63" start_pos_x="35%p" width="15%p" />
+        <key label="." start_pos_x="50%p" width="10%p" key_type="0" repeat="true" balloon="true" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="8" start_pos_x="60%p" width="13.94%p" />
+        <key start_pos_x="73.94%p" width="12%p" height="25%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_hk" code="-12" />
+        <key id="4" start_pos_x="85.94%p" width="14.06%p" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="75%p">
+        <key id="2" />
+        <key id="5" />
+        <key id="3" />
+        <key id="7" />
+        <key start_pos_x="70.8%p" start_pos_y="75%p" width="13.2%p" height="25%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_hk" code="-12" />
+        <key id="4" />
+    </row>
+</keyboard>

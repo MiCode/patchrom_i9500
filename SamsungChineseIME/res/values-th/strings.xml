@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">ม.ค.</string>
+    <string name="month_medium_february">ก.พ.</string>
+    <string name="month_medium_march">มี.ค.</string>
+    <string name="month_medium_april">เม.ย.</string>
+    <string name="month_medium_may">พ.ค.</string>
+    <string name="month_medium_june">มิ.ย.</string>
+    <string name="month_medium_july">ก.ค.</string>
+    <string name="month_medium_august">ส.ค.</string>
+    <string name="month_medium_september">ก.ย.</string>
+    <string name="month_medium_october">ต.ค.</string>
+    <string name="month_medium_november">พ.ย.</string>
+    <string name="month_medium_december">ธ.ค.</string>
+</resources>

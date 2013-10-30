@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.5625%p" key_ymargin="1.44%p" width="21.375%p" height="25%p" key_type="3" repeat="false" balloon="false">
+    <row>
+        <key label="、" width="14.5%p" key_type="0">
+            <toggle_state state_id="@string/toggle_url_symbol" label="-" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="-" />
+        </key>
+        <key label="，" long_label="1" code="8" />
+        <keys splitter="|" labels="  日月金  |  木水火  " long_labels="2|3" codes="9|10" />
+        <key id="11" start_pos_x="78.625%p" width="21.375%p" />
+    </row>
+    <row>
+        <key label="？" width="14.5%p" key_type="0">
+            <toggle_state state_id="@string/toggle_url_symbol" label="_" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="_" />
+        </key>
+        <keys splitter="|" labels="  土竹戈  |  十大中  |  一弓人  " long_labels="4|5|6" codes="11|12|13" />
+        <key id="71" start_pos_x="78.625%p" width="21.375%p" />
+    </row>
+    <row>
+        <key label="！" width="14.5%p" key_type="0">
+            <toggle_state state_id="@string/toggle_url_symbol" label="\?" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="\?" />
+        </key>
+        <keys splitter="|" labels="心手口尸|  廿山女  |  田難卜  " long_labels="7|8|9" codes="14|15|16" />
+        <key id="40" start_pos_x="78.625%p" width="21.375%p" />
+    </row>
+    <row width="11.98%p" row_id="@string/toggle_row_cn_hk" start_pos_y="75%p">
+        <key id="70" start_pos_x="0%p" width="14.5%p" />
+        <key id="152" start_pos_x="14.5%p" width="10.375%p" />
+        <key start_pos_x="24.875%p" start_pos_y="75%p" width="11%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key id="13" start_pos_x="35.875%p" width="21.375%p" />
+        <key start_pos_x="57.25%p" start_pos_y="75%p" width="10.5%p" height="25%p" key_type="0" repeat="true" balloon="true" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <key start_pos_x="67.75%p" start_pos_y="75%p" width="16.125%p" height="25%p" key_type="8" repeat="true" balloon="false" label="@string/word_cn" long_label="@string/word_cn_hk" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <key id="14" start_pos_x="83.875%p" width="16.125%p" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="75%p">
+        <key id="70" width="14.5%p" />
+        <key id="152" start_pos_x="14.5%p" width="10.6875%p" />
+        <key id="13" start_pos_x="25.1875%p" width="32.0625%p" long_label="0" />
+        <key start_pos_x="57.25%p" start_pos_y="75%p" width="10.5%p" height="25%p" key_type="0" repeat="true" balloon="true" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <key start_pos_x="67.75%p" start_pos_y="75%p" width="16.125%p" height="25%p" key_type="8" repeat="true" balloon="false" label="@string/word_cn" long_label="@string/word_cn_hk" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <key id="14" start_pos_x="83.875%p" width="16.125%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" width="11.98%p" start_pos_y="75%p">
+        <key id="70" start_pos_x="0" width="14.5%p" />
+        <key id="152" start_pos_x="14.5%p" width="11.375%p" />
+        <key label="/" start_pos_x="25.875%p" width="10%p" balloon="true" key_type="0" />
+        <key id="13" start_pos_x="35.875%p" width="14.125%p" />
+        <key start_pos_x="50%p" width="10%p" key_type="0" repeat="true" balloon="true" label="." code="56" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" />
+        <key id="18" start_pos_x="60%p" width="13.94%p" />
+        <key id="16" start_pos_x="73.94%p" width="12%p" />
+        <key id="14" start_pos_x="85.94%p" width="14.06%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" width="11.98%p" start_pos_y="75%p">
+        <key id="70" start_pos_x="0" width="14.5%p" />
+        <key id="152" start_pos_x="14.5%p" width="11.375%p" />
+        <key label="\@" start_pos_x="25.875%p" width="10%p" balloon="true" key_type="0" />
+        <key id="13" start_pos_x="35.875%p" width="14.125%p" />
+        <key start_pos_x="50%p" width="10%p" key_type="0" repeat="true" balloon="true" label="." code="56" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" />
+        <key id="18" start_pos_x="60%p" width="13.94%p" />
+        <key id="16" start_pos_x="73.94%p" width="12%p" />
+        <key id="14" start_pos_x="85.94%p" width="14.06%p" />
+    </row>
+</keyboard>

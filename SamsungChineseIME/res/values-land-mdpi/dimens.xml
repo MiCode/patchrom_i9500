@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cand_margin_left_right">13.0dip</dimen>
+    <dimen name="qwerty_key_horizontal_gap">2.0dip</dimen>
+    <dimen name="qwerty_key_vertical_gap">2.0dip</dimen>
+    <dimen name="handwrite_dialog_text_width_land">276.0dip</dimen>
+    <dimen name="skb_padding_top">0.0dip</dimen>
+    <dimen name="skb_padding_bottom">0.0dip</dimen>
+    <dimen name="skb_padding_left">0.0dip</dimen>
+    <dimen name="skb_padding_right">0.0dip</dimen>
+</resources>

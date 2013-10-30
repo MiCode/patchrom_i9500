@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.softkeyboard.SimeSkbMiniPopView android:orientation="vertical" android:id="@id/mini_popup_container" android:background="@drawable/alternative_character_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:orientation="vertical" android:id="@id/table_main" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/right_position" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/table_main">
+        <ImageButton android:id="@id/rihgt_btn" android:background="@drawable/sip_popup_cancel_xml" android:visibility="visible" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_position" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/table_main">
+        <ImageButton android:id="@id/bottom_btn" android:background="@drawable/sip_popup_cancel_xml" android:visibility="visible" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+</com.samsung.inputmethod.softkeyboard.SimeSkbMiniPopView>

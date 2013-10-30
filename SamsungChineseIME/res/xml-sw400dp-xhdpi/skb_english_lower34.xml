@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.80%p" key_ymargin="1.30%p" width="22.4%p" height="25%p" key_type="3" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="false">
+    <row>
+        <key label="," key_type="0" width="16.4%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="/" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="\@" />
+        </key>
+        <key id="43" long_label="1" />
+        <key code="9" label="abc" long_label="2" />
+        <key code="10" label="def" long_label="3" />
+        <key id="11" />
+    </row>
+    <row>
+        <key label="\?" key_type="0" width="16.4%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="-" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="-" />
+        </key>
+        <key code="11" label="ghi" long_label="4" />
+        <key code="12" label="jkl" long_label="5" />
+        <key code="13" label="mno" long_label="6" />
+        <key id="71" />
+    </row>
+    <row>
+        <key label="!" key_type="0" width="16.4%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="_" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="_" />
+        </key>
+        <key code="14" label="pqrs" long_label="7" />
+        <key code="15" label="tuv" long_label="8" />
+        <key code="16" label="wxyz" long_label="9" />
+        <key id="10" start_pos_x="83.6%p" width="16.4%p" start_pos_y="50%p" height="25%p" />
+    </row>
+    <row row_id="@string/toggle_row_en" start_pos_y="75%p">
+        <key id="70" />
+        <key id="152" />
+        <key start_pos_x="27.6%p" start_pos_y="75%p" width="11.2%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key id="13" start_pos_x="38.8%p" width="22.4%p" key_type="3" long_label="0" />
+        <key id="17" />
+        <key id="16" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_en_no_voice" start_pos_y="75%p">
+        <key id="70" />
+        <key id="152" />
+        <key id="13" key_type="3" long_label="0" />
+        <key id="17" />
+        <key id="16" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="75%p" height="25%p">
+        <key id="70" />
+        <key id="152" />
+        <key id="18" start_pos_x="27.6%p" width="16.4%p" />
+        <key id="13" start_pos_x="44%p" width="17.2%p" />
+        <key id="17" start_pos_x="61.2%p" width="11.2%p" />
+        <key id="16" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="75%p">
+        <key id="70" />
+        <key id="152" />
+        <key id="18" start_pos_x="27.6%p" width="16.4%p" />
+        <key id="13" start_pos_x="44%p" width="17.2%p" />
+        <key start_pos_x="61.2%p" width="11.2%p" key_type="0" repeat="true" balloon="true" label="." code="56" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" />
+        <key id="16" />
+        <key id="14" />
+    </row>
+</keyboard>

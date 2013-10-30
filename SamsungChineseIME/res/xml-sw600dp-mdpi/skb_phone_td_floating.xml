@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0.8621%p" width="17.5%p" height="25%p" key_type="17" repeat="false" balloon="true">
+    <row start_pos_x="14.1667%p">
+        <keys splitter="|" labels="1|2|3" long_labels=" |ABC|DEF" codes="8|9|10" />
+        <key id="11" start_pos_x="66.6667%p" width="19.1667%p" />
+    </row>
+    <row start_pos_x="14.1667%p">
+        <keys splitter="|" labels="4|5|6" long_labels="GHI|JKL|MNO" codes="11|12|13" />
+        <key id="14" start_pos_x="66.6667%p" width="19.1667%p" />
+    </row>
+    <row start_pos_x="14.1667%p">
+        <keys splitter="|" labels="7|8|9" long_labels="PQRS|TUV|WXYZ" codes="14|15|16" />
+        <key label="P(,)" balloon="false" code="55" key_type="1" start_pos_x="66.6667%p" width="19.1667%p" />
+    </row>
+    <row start_pos_x="14.1667%p">
+        <key label="*" key_type="4" />
+        <key label="0" long_label="+" code="7" />
+        <key label="\#" key_type="4" />
+        <key label="W(;)" balloon="false" code="74" start_pos_x="66.6667%p" width="9.58335%p" key_type="1" />
+        <key label="N" balloon="false" start_pos_x="76.25005%p" width="9.58335%p" key_type="1" />
+    </row>
+</keyboard>

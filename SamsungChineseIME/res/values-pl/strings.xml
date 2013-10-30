@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">sty</string>
+    <string name="month_medium_february">lut</string>
+    <string name="month_medium_march">mar</string>
+    <string name="month_medium_april">kwi</string>
+    <string name="month_medium_may">maj</string>
+    <string name="month_medium_june">cze</string>
+    <string name="month_medium_july">lip</string>
+    <string name="month_medium_august">sie</string>
+    <string name="month_medium_september">wrz</string>
+    <string name="month_medium_october">paź</string>
+    <string name="month_medium_november">lis</string>
+    <string name="month_medium_december">gru</string>
+</resources>

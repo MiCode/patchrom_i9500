@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.46875%p" key_ymargin="1.25%p" width="25%p" height="25%p" key_type="3" skb_bg="@drawable/sip_tab_bg" repeat="false" balloon="false">
+    <row>
+        <key label="-" key_type="1" />
+        <keys splitter="|" labels="1|2|3" />
+    </row>
+    <row>
+        <key label="_" key_type="1" />
+        <keys splitter="|" labels="4|5|6" />
+    </row>
+    <row>
+        <key label="." key_type="1" />
+        <keys splitter="|" labels="7|8|9" />
+    </row>
+    <row>
+        <key label="/" key_type="1" />
+        <keys splitter="|" labels="*|0|#" />
+    </row>
+</keyboard>

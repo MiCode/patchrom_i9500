@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="label_color">#ff171717</color>
+    <color name="label_color_p">#ff171717</color>
+    <color name="candidate_color">#ffffffff</color>
+    <color name="active_candidate_color">#ff46b5ff</color>
+    <color name="footnote_color">#ff969696</color>
+    <color name="mini_popup_text_color">#ff000000</color>
+    <color name="active_mini_popup_text_color">#ffffffff</color>
+    <color name="tab_title_active_color">#ff000000</color>
+    <color name="tab_title_normal_color">#ffcacaca</color>
+    <color name="tab_title_shadow_normal_color">#ff000000</color>
+    <color name="tab_title_shadow_active_color">#ffffffff</color>
+    <color name="longlabel_color">#ff555555</color>
+    <color name="longlabel_color_p">#ff555555</color>
+    <color name="function_key_color">#ff111111</color>
+    <color name="function_key_color_p">#ff111111</color>
+    <color name="balloon_font_color">#ff2d5a8c</color>
+    <color name="numberic_text_color_extra">#ff626262</color>
+</resources>

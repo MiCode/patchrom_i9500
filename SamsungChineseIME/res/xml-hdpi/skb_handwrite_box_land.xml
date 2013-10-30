@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_bg="@drawable/handwritng_panel_bg01_h" skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" height="20%p" width="100%p" key_type="0" repeat="false" balloon="false">
+    <row row_id="@string/toggle_row_cn_no_voice" start_pos_y="0%p">
+        <key id="55" start_pos_x="1.126%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="151" start_pos_x="11.07%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="89" start_pos_x="21.014%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="23" start_pos_x="30.957%p" width="33.584%p" start_pos_y="0%p" height="19%p" />
+        <key id="27" start_pos_x="66.042%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="26" start_pos_x="75.985%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="24" start_pos_x="85.929%p" start_pos_y="0%p" width="12.946%p" height="19%p" />
+    </row>
+    <row row_id="@string/toggle_row_en_no_voice" start_pos_y="0%p">
+        <key id="55" start_pos_x="1.126%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="151" start_pos_x="11.07%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="89" start_pos_x="21.014%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="23" start_pos_x="30.957%p" width="33.584%p" start_pos_y="0%p" height="19%p" />
+        <key id="27" start_pos_x="66.042%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="26" start_pos_x="75.985%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="24" start_pos_x="85.929%p" start_pos_y="0%p" width="12.946%p" height="19%p" />
+    </row>
+    <row row_id="@string/toggle_row_ko_no_voice" start_pos_y="0%p">
+        <key id="55" start_pos_x="1.126%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="151" start_pos_x="11.07%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="89" start_pos_x="21.014%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="23" start_pos_x="30.957%p" width="33.584%p" start_pos_y="0%p" height="19%p" />
+        <key id="27" start_pos_x="66.042%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="26" start_pos_x="75.985%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="24" start_pos_x="85.929%p" start_pos_y="0%p" width="12.946%p" height="19%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice" start_pos_y="0%p">
+        <key id="55" start_pos_x="1.126%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="151" start_pos_x="11.07%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="89" start_pos_x="21.014%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="23" start_pos_x="30.957%p" width="33.584%p" start_pos_y="0%p" height="19%p" />
+        <key id="27" start_pos_x="66.042%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="26" start_pos_x="75.985%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="24" start_pos_x="85.929%p" start_pos_y="0%p" width="12.946%p" height="19%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="0%p">
+        <key id="55" start_pos_x="1.126%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="151" start_pos_x="11.07%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="89" start_pos_x="21.014%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="23" start_pos_x="30.957%p" start_pos_y="0%p" width="33.584%p" height="19%p" />
+        <key id="27" start_pos_x="66.042%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="26" start_pos_x="75.985%p" start_pos_y="0%p" width="8.443%p" height="19%p" />
+        <key id="24" start_pos_x="85.929%p" start_pos_y="0%p" width="12.946%p" height="19%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="0%p">
+        <key id="55" start_pos_x="1.126%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="151" start_pos_x="11.07%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="89" start_pos_x="21.014%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key label="\@" start_pos_x="30.957%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="23" start_pos_x="40.901%p" width="13.321%p" start_pos_y="0%p" height="19%p" />
+        <key start_pos_x="55.723%p" width="8.443%p" start_pos_y="0%p" height="19%p" key_type="0" repeat="true" balloon="true" label="." code="56" extra_icon="@drawable/sip_button_longpress_question" extra_hlicon="@drawable/sip_button_longpress_question">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="28" start_pos_x="66.042%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="26" start_pos_x="75.985%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="24" start_pos_x="85.929%p" width="12.946%p" start_pos_y="0%p" height="19%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="0%p">
+        <key id="55" start_pos_x="1.126%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="151" start_pos_x="11.07%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="89" start_pos_x="21.014%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key label="/" start_pos_x="30.957%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="23" start_pos_x="40.901%p" width="13.321%p" start_pos_y="0%p" height="19%p" />
+        <key id="27" start_pos_x="55.723%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="28" start_pos_x="66.042%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="26" start_pos_x="75.985%p" width="8.443%p" start_pos_y="0%p" height="19%p" />
+        <key id="24" start_pos_x="85.929%p" width="12.946%p" start_pos_y="0%p" height="19%p" />
+    </row>
+    <row>
+        <key id="21" start_pos_x="85.929%p" start_pos_y="23.271%p" width="12.946%p" height="18.239%p" key_type="0" repeat="false" />
+    </row>
+    <row>
+        <key label="." start_pos_x="85.929%p" start_pos_y="42.139%p" width="12.946%p" height="18.239%p" key_type="0" repeat="false">
+            <toggle_state state_id="@string/toggle_language_cn" label="、" />
+            <toggle_state state_id="@string/toggle_language_cn_hk" label="、" />
+            <toggle_state state_id="@string/toggle_language_cn_tw" label="、" />
+            <toggle_state state_id="@string/toggle_email_symbol" label=":" />
+            <toggle_state state_id="@string/toggle_url_symbol" label=":" />
+        </key>
+    </row>
+    <row>
+        <key label="/" start_pos_x="85.929%p" start_pos_y="61.007%p" width="12.946%p" height="18.239%p" key_type="0" repeat="false">
+            <toggle_state state_id="@string/toggle_language_cn" label="-" />
+            <toggle_state state_id="@string/toggle_language_cn_hk" label="-" />
+            <toggle_state state_id="@string/toggle_language_cn_tw" label="-" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="-" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="-" />
+        </key>
+    </row>
+    <row>
+        <key label="\?" start_pos_x="85.929%p" start_pos_y="79.875%p" width="12.946%p" height="18.239%p" key_type="0" repeat="false">
+            <toggle_state state_id="@string/toggle_language_cn" label="_" />
+            <toggle_state state_id="@string/toggle_language_cn_hk" label="_" />
+            <toggle_state state_id="@string/toggle_language_cn_tw" label="_" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="_" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="_" />
+        </key>
+    </row>
+</keyboard>

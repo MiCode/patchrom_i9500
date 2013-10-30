@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/setting_handwrite" android:key="@string/setting_handwrite_summary_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/array_handwriting_style" android:title="@string/setting_handwriting_style_titile" android:key="@string/setting_handwriting_style_key" android:widgetLayout="@layout/settings_layout_more_button" android:entryValues="@array/array_handwriting_style_value" />
+    <com.samsung.inputmethod.setting.SimeWidthPickerPreference android:title="@string/setting_handwrite_line_titile" android:key="@string/setting_handwrite_line_key" android:widgetLayout="@layout/settings_layout_more_button" android:dialogTitle="@string/setting_handwrite_line_titile" android:negativeButtonText="cancel" />
+    <ListPreference android:entries="@array/array_handwrite_speed" android:title="@string/setting_handwrite_speed_titile" android:key="@string/setting_handwrite_speed_key" android:summary="@string/setting_handwrite_speed_titile" android:widgetLayout="@layout/settings_layout_more_button" android:entryValues="@array/array_handwrite_speed_value" />
+    <com.samsung.inputmethod.setting.SimeColorPickerPreference android:title="@string/setting_handwrite_color_titile" android:key="@string/setting_handwrite_color_key" android:widgetLayout="@layout/settings_layout_more_button" android:dialogTitle="@string/setting_handwrite_color_titile" android:negativeButtonText="cancel" />
+    <ListPreference android:entries="@array/entries_list_preference" android:title="@string/setting_convert_title" android:key="@string/setting_convert_key" android:summary="@string/setting_simple" android:widgetLayout="@layout/settings_layout_more_button" android:dialogTitle="@string/dialog_title_list_preference" android:entryValues="@array/entryvalues_list_preference" />
+</PreferenceScreen>

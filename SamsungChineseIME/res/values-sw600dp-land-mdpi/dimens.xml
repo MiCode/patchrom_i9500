@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_keypad_normal">24.0dip</dimen>
+    <dimen name="label_symbol_34">30.0dip</dimen>
+    <dimen name="cand_margin_left_right">30.0dip</dimen>
+    <dimen name="composing_height">24.0dip</dimen>
+    <dimen name="tab_indicator_width">36.0dip</dimen>
+    <dimen name="skb_padding_top">5.0dip</dimen>
+    <dimen name="skb_padding_bottom">0.0dip</dimen>
+    <dimen name="skb_padding_left">0.0dip</dimen>
+    <dimen name="skb_padding_right">0.0dip</dimen>
+    <dimen name="label_keypad_normal_hktw">15.0dip</dimen>
+    <dimen name="cand_arrow_up_down_width">78.0dip</dimen>
+    <dimen name="expand_cand_row_height">65.0dip</dimen>
+    <dimen name="composing_view_padding_top">14.0dip</dimen>
+    <dimen name="composing_view_padding_bottom">14.0dip</dimen>
+    <dimen name="composing_view_padding_left">21.0dip</dimen>
+    <dimen name="composing_view_padding_right">21.0dip</dimen>
+    <dimen name="handwrit_box_marge_left">88.0dip</dimen>
+</resources>

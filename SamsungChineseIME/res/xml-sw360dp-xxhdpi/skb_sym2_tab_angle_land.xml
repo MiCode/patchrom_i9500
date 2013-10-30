@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0%p" key_ymargin="0%p" width="12.917%p" height="23.125%p" key_type="10" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true" balloon_width="16.094%p" balloon_height="41.539%p">
+    <row start_pos_y="3.933%p" height="22.472%p">
+        <key label="＊" start_pos_x="1.09%p" width="12.96875%p" />
+        <key label="\#" start_pos_x="15%p" width="12.96875%p" />
+        <key label="%" start_pos_x="28.91%p" width="12.96875%p" />
+        <key label="+" start_pos_x="42.81%p" width="12.96875%p" />
+        <key label="-" start_pos_x="56.72%p" width="12.96875%p" />
+        <key label="＿" start_pos_x="70.63%p" width="12.96875%p" />
+        <key id="11" start_pos_x="84.6875%p" width="14.375%p" start_pos_y="3.933%p" height="22.472%p" />
+    </row>
+    <row start_pos_y="27.528%p" height="22.472%p">
+        <key label="=" start_pos_x="1.09%p" width="12.96875%p" />
+        <key label="/" start_pos_x="15%p" width="12.96875%p" />
+        <key label="·" start_pos_x="28.91%p" width="12.96875%p" />
+        <key label="¥" start_pos_x="42.81%p" width="12.96875%p" />
+        <key label="$" start_pos_x="56.72%p" width="12.96875%p" />
+        <key label="₩" start_pos_x="70.63%p" width="12.96875%p" />
+        <unite label="2/3" key_type="1" start_pos_x="84.6875%p" start_pos_y="27.529%p" width="14.375%p" height="46.067%p">
+            <key code="-8" start_pos_x="84.6875%p" width="14.375%p" start_pos_y="27.529%p" height="23.0335%p" icon="@drawable/keypad_arrow_up" hlicon="@drawable/keypad_arrow_up_p" balloon="false" key_type="5" />
+            <key code="-9" start_pos_x="84.6875%p" width="14.375%p" start_pos_y="50.562%p" height="23.0335%p" icon="@drawable/keypad_arrow_down" hlicon="@drawable/keypad_arrow_down_p" balloon="false" key_type="6" />
+        </unite>
+    </row>
+    <row start_pos_y="51.124%p" height="22.472%p">
+        <key label="£" start_pos_x="1.09%p" width="12.96875%p" />
+        <key label="€" start_pos_x="15%p" width="12.96875%p" />
+        <key label="※" start_pos_x="28.91%p" width="12.96875%p" />
+        <key label="×" start_pos_x="42.81%p" width="12.96875%p" />
+        <key label="÷" start_pos_x="56.72%p" width="12.96875%p" />
+        <key label="°" start_pos_x="70.63%p" width="12.96875%p" />
+    </row>
+    <row start_pos_y="74.719%p">
+        <key id="51" start_pos_x="1.09%p" start_pos_y="74.72%p" width="26.875%p" height="22.472%p" />
+        <key id="33" start_pos_x="28.91%p" start_pos_y="74.72%p" width="40.78125%p" height="22.472%p" />
+        <key id="53" start_pos_x="70.63%p" start_pos_y="74.72%p" width="12.96875%p" height="22.472%p" />
+        <key id="14" start_pos_x="84.6875%p" start_pos_y="74.72%p" width="14.375%p" height="22.472%p" />
+    </row>
+</keyboard>

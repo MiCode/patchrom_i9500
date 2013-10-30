@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.candidate.SimeCandExpdContainer android:orientation="vertical" android:id="@id/expand_candidates_container" android:background="@drawable/pedictive_popup_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/expand_candidates_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/candidates_list_main" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</com.samsung.inputmethod.candidate.SimeCandExpdContainer>

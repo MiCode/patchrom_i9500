@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="25%p" height="25%p" key_type="10" repeat="false" balloon="true">
+    <row>
+        <key label="＜">
+            <toggle_state state_id="@string/toggle_language_cn" label="×" />
+            <toggle_state state_id="@string/toggle_language_en" label="×" />
+        </key>
+        <key label="＞">
+            <toggle_state state_id="@string/toggle_language_cn" label="÷" />
+            <toggle_state state_id="@string/toggle_language_en" label="÷" />
+        </key>
+        <key label="•">
+            <toggle_state state_id="@string/toggle_language_cn" label="—" />
+            <toggle_state state_id="@string/toggle_language_en" label="–" />
+        </key>
+        <key label="‘">
+            <toggle_state state_id="@string/toggle_language_cn" label="±" />
+            <toggle_state state_id="@string/toggle_language_en" label="±" />
+        </key>
+    </row>
+    <row>
+        <key label="’">
+            <toggle_state state_id="@string/toggle_language_cn" label="²" />
+            <toggle_state state_id="@string/toggle_language_en" label="²" />
+        </key>
+        <key label="°">
+            <toggle_state state_id="@string/toggle_language_cn" label="³" />
+            <toggle_state state_id="@string/toggle_language_en" label="³" />
+        </key>
+        <keys splitter="|" labels=":-)|:-(" />
+    </row>
+    <row>
+        <unite label="5/7" key_type="1">
+            <key code="-8" icon="@drawable/page_arrow_01_l" width="25%p" hlicon="@drawable/page_arrow_01_l_p" balloon="false" key_type="5" />
+            <key code="-9" icon="@drawable/page_arrow_01_r" width="25%p" hlicon="@drawable/page_arrow_01_r_p" balloon="false" key_type="6" />
+        </unite>
+        <keys splitter="|" labels=";-)|:-P" />
+    </row>
+    <row>
+        <key id="42" start_pos_y="75%p" height="25%p" />
+        <key id="12" start_pos_y="75%p" height="25%p" />
+        <key id="13" start_pos_y="75%p" height="25%p" />
+        <key id="19" start_pos_y="75%p" height="25%p" />
+        <key id="11" start_pos_x="69.39%p" start_pos_y="75%p" width="14.06%p" height="25%p" />
+        <key id="14" start_pos_y="75%p" height="25%p" />
+    </row>
+</keyboard>

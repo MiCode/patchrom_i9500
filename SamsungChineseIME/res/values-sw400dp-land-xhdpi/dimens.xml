@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_size">26.0dip</dimen>
+    <dimen name="label_fun_size">19.0dip</dimen>
+    <dimen name="cand_margin_left_right">17.0dip</dimen>
+    <dimen name="skb_padding_top">4.5dip</dimen>
+    <dimen name="skb_padding_bottom">2.0dip</dimen>
+    <dimen name="skb_padding_left">1.5dip</dimen>
+    <dimen name="skb_padding_right">1.5dip</dimen>
+    <dimen name="balloon_normal_key_width_plus">12.0dip</dimen>
+    <dimen name="balloon_normal_key_height_plus">42.0dip</dimen>
+    <dimen name="balloon_function_key_width_plus">12.0dip</dimen>
+    <dimen name="balloon_function_key_height_plus">42.0dip</dimen>
+</resources>

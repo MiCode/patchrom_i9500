@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="33.333%p" height="20%p" key_type="1" repeat="false" balloon="false">
+    <row balloon="true">
+        <keys splitter="|" labels="＊|＠|＆" long_lables="1|2|3" key_type="5" />
+    </row>
+    <row balloon="true">
+        <keys splitter="|" labels="＃|‘|’" long_lables="4|5|6" key_type="5" />
+    </row>
+    <row balloon="true">
+        <keys splitter="|" labels="｜|％|＾" long_lables="7|8|9" key_type="5" />
+    </row>
+    <row>
+        <key code="-7" icon="@drawable/textinput_keypad_arrow_left" balloon="false" />
+        <key code="-11" icon="@drawable/textinput_keypad_full_symbol" long_label="0" balloon="false" key_type="9" />
+        <key code="-8" icon="@drawable/textinput_keypad_arrow_right" balloon="false" />
+    </row>
+    <row width="25%p" row_id="@string/toggle_toolbar_input_language_chn" start_pos_y="80%p">
+        <key code="-2" balloon="false" icon="@drawable/textinput_keypad_virtual_keypad" repeat="true" />
+        <key code="-91" label="@string/word_pinyin_ab">
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_normal" label="@string/word_stroke_ab" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_normal" label="@string/word_pinyin_ab" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_hl" label="@string/word_stroke_ab" key_type="6" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_hl" label="@string/word_pinyin_ab" key_type="6" />
+        </key>
+        <key code="-92" label="@string/word_abc_lower">
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_normal" label="@string/word_abc_lower" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_normal" label="@string/word_abc_tempupper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_normal" label="@string/word_abc_upper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_hl" label="@string/word_abc_lower" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_hl" label="@string/word_abc_tempupper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_hl" label="@string/word_abc_upper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_normal" label="@string/word_eng_lower" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_normal" label="@string/word_eng_tempupper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_normal" label="@string/word_eng_upper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_hl" label="@string/word_eng_lower" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_hl" label="@string/word_eng_tempupper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_hl" label="@string/word_eng_upper" key_type="6" />
+        </key>
+        <key code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_normal" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" label="@string/word_number" key_type="6" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_hl" label="@string/word_symbol" key_type="6" />
+        </key>
+    </row>
+    <row width="25%p" row_id="@string/toggle_toolbar_input_language_kor" start_pos_y="80%p">
+        <key code="-2" balloon="false" icon="@drawable/textinput_keypad_virtual_keypad" repeat="true" />
+        <key code="-93" label="@string/word_kor">
+            <toggle_state code="-93" state_id="@string/toggle_toolbar_kor_hl" label="@string/word_kor" key_type="6" />
+        </key>
+        <key code="-92" label="@string/word_abc_lower">
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_normal" label="@string/word_abc_lower" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_normal" label="@string/word_abc_tempupper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_normal" label="@string/word_abc_upper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_hl" label="@string/word_abc_lower" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_hl" label="@string/word_abc_tempupper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_hl" label="@string/word_abc_upper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_normal" label="@string/word_eng_lower" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_normal" label="@string/word_eng_tempupper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_normal" label="@string/word_eng_upper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_hl" label="@string/word_eng_lower" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_hl" label="@string/word_eng_tempupper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_hl" label="@string/word_eng_upper" key_type="6" />
+        </key>
+        <key code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_normal" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" label="@string/word_number" key_type="6" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_hl" label="@string/word_symbol" key_type="6" />
+        </key>
+    </row>
+    <row width="20%p" row_id="@string/toggle_toolbar_input_language_both" start_pos_y="80%p">
+        <key code="-2" balloon="false" icon="@drawable/textinput_keypad_virtual_keypad" repeat="true" />
+        <key code="-91" label="@string/word_pinyin_ab">
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_normal" label="@string/word_stroke_ab" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_normal" label="@string/word_pinyin_ab" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_hl" label="@string/word_stroke_ab" key_type="6" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_hl" label="@string/word_pinyin_ab" key_type="6" />
+        </key>
+        <key code="-93" label="@string/word_kor">
+            <toggle_state code="-93" state_id="@string/toggle_toolbar_kor_hl" label="@string/word_kor" key_type="6" />
+        </key>
+        <key code="-92" label="@string/word_abc_lower">
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_normal" label="@string/word_abc_lower" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_normal" label="@string/word_abc_tempupper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_normal" label="@string/word_abc_upper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_hl" label="@string/word_abc_lower" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_hl" label="@string/word_abc_tempupper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_hl" label="@string/word_abc_upper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_normal" label="@string/word_eng_lower" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_normal" label="@string/word_eng_tempupper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_normal" label="@string/word_eng_upper" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_hl" label="@string/word_eng_lower" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_hl" label="@string/word_eng_tempupper" key_type="6" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_hl" label="@string/word_eng_upper" key_type="6" />
+        </key>
+        <key code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_normal" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" label="@string/word_number" key_type="6" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_hl" label="@string/word_symbol" key_type="6" />
+        </key>
+    </row>
+</keyboard>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.tabmode.SimeTabContainer android:orientation="horizontal" android:id="@id/tab_inputmode_container" android:background="@drawable/sip_tab_more_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tab_arrow_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" layout="@layout/tabarrow" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_mode_edit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <View android:id="@id/tab_mode_edit_seperator" android:background="@drawable/sip_tab_edit_line" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <ImageButton android:gravity="center" android:id="@id/tab_mode_edit_icon" android:background="@drawable/arrow_bg" android:clickable="true" android:layout_width="@dimen/tab_editmore_width" android:layout_height="fill_parent" android:src="@drawable/sip_tab_icon_add" />
+    </LinearLayout>
+    <include android:id="@id/tab_arrow_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/tab_mode_edit" layout="@layout/tabarrow" />
+    <HorizontalScrollView android:id="@id/tabs_bar_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/tab_arrow_right" android:layout_toRightOf="@id/tab_arrow_left">
+        <com.samsung.inputmethod.tabmode.SimeTabBar android:orientation="horizontal" android:id="@id/tabs_bar_main" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+    <TextView android:textSize="22.0sp" android:gravity="center" android:id="@id/dim_tabbar_bg" android:background="#a0000000" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.samsung.inputmethod.tabmode.SimeTabContainer>

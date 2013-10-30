@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="8.75%p" height="21.5%p" key_type="0" repeat="false" balloon="true">
+    <row start_pos_y="1.5%p">
+        <key label="ㅂ" code="45" long_label="1" key_type="4" start_pos_x="0.625%p">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅂ" code="45" long_label="1" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅃ" code="45" long_label="1" />
+        </key>
+        <key label="ㅈ" code="51" long_label="2" key_type="4" start_pos_x="10.625%p">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅈ" code="51" long_label="2" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅉ" code="51" long_label="2" />
+        </key>
+        <key label="ㄷ" code="33" long_label="3" key_type="4" start_pos_x="20.625%p">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㄷ" code="33" long_label="3" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㄸ" code="33" long_label="3" />
+        </key>
+        <key label="ㄱ" code="46" long_label="4" key_type="4" start_pos_x="30.625%p">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㄱ" code="46" long_label="4" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㄲ" code="46" long_label="4" />
+        </key>
+        <key label="ㅅ" code="48" long_label="5" key_type="4" start_pos_x="40.625%p">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅅ" code="48" long_label="5" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅆ" code="48" long_label="5" />
+        </key>
+        <key label="ㅛ" code="53" long_label="6" key_type="4" start_pos_x="50.625%p" />
+        <key label="ㅕ" code="49" long_label="7" key_type="4" start_pos_x="60.625%p" />
+        <key label="ㅑ" code="37" long_label="8" key_type="4" start_pos_x="70.625%p" />
+        <key label="ㅐ" code="43" long_label="9" key_type="4" start_pos_x="80.625%p">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅐ" code="43" long_label="9" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅒ" code="43" long_label="9" />
+        </key>
+        <key label="ㅔ" code="44" long_label="0" key_type="4" start_pos_x="90.625%p">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅔ" code="44" long_label="0" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅖ" code="44" long_label="0" />
+        </key>
+    </row>
+    <row start_pos_y="26.51%p">
+        <key label="ㅁ" start_pos_x="5.9375%p" code="29" />
+        <key label="ㄴ" start_pos_x="15.9375%p" code="47" />
+        <key label="ㅇ" start_pos_x="25.9375%p" code="32" />
+        <key label="ㄹ" start_pos_x="35.9375%p" code="34" />
+        <key label="ㅎ" start_pos_x="45.9375%p" code="35" />
+        <key label="ㅗ" start_pos_x="55.9375%p" code="36" />
+        <key label="ㅓ" start_pos_x="65.9375%p" code="38" />
+        <key label="ㅏ" start_pos_x="75.9375%p" code="39" />
+        <key label="ㅣ" start_pos_x="85.9375%p" code="40" />
+    </row>
+    <row start_pos_y="51.5%p">
+        <key id="0" />
+        <key label="ㅋ" start_pos_x="15.625%p" code="54" />
+        <key label="ㅌ" start_pos_x="25.625%p" code="52" />
+        <key label="ㅊ" start_pos_x="35.625%p" code="31" />
+        <key label="ㅍ" start_pos_x="45.625%p" code="50" />
+        <key label="ㅠ" start_pos_x="55.625%p" code="30" />
+        <key label="ㅜ" start_pos_x="65.625%p" code="42" />
+        <key label="ㅡ" start_pos_x="75.625%p" code="41" />
+        <key id="1" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_ko" start_pos_y="75%p">
+        <key id="5" />
+        <key id="150" />
+        <key start_pos_x="22%p" start_pos_y="75%p" width="12%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key id="3" />
+        <key id="7" />
+        <key id="6" />
+        <key id="4" />
+    </row>
+    <row row_id="@string/toggle_row_ko_no_voice">
+        <key id="45" />
+        <key id="150" />
+        <key id="3" />
+        <key id="7" />
+        <key id="6" />
+        <key id="4" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="76.5%p">
+        <key id="45" />
+        <key id="150" />
+        <key label="\@" start_pos_x="25.625%p" width="8.75%p" />
+        <key id="63" />
+        <key id="7" start_pos_x="53.75%p" width="8.75%p" />
+        <key id="8" />
+        <key id="6" start_pos_x="77.1875%p" />
+        <key id="4" start_pos_x="87.1875%p" width="12.1875%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="76.5%p">
+        <key id="45" />
+        <key id="150" />
+        <key label="/" start_pos_x="25.625%p" width="8.75%p" />
+        <key id="63" />
+        <key id="7" start_pos_x="53.75%p" width="8.75%p" />
+        <key id="8" />
+        <key id="6" start_pos_x="77.1875%p" />
+        <key id="4" start_pos_x="87.1875%p" width="12.1875%p" />
+    </row>
+</keyboard>

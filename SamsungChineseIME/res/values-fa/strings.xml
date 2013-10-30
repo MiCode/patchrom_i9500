@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">ژانویهٔ</string>
+    <string name="month_medium_february">فوریهٔ</string>
+    <string name="month_medium_march">مارس</string>
+    <string name="month_medium_april">آوریل</string>
+    <string name="month_medium_may">مهٔ</string>
+    <string name="month_medium_june">ژوئن</string>
+    <string name="month_medium_july">ژوئیهٔ</string>
+    <string name="month_medium_august">اوت</string>
+    <string name="month_medium_september">سپتامبر</string>
+    <string name="month_medium_october">اکتبر</string>
+    <string name="month_medium_november">نوامبر</string>
+    <string name="month_medium_december">دسامبر</string>
+</resources>

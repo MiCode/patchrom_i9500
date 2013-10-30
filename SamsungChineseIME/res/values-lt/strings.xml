@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">Sau</string>
+    <string name="month_medium_february">Vas</string>
+    <string name="month_medium_march">Kov</string>
+    <string name="month_medium_april">Bal</string>
+    <string name="month_medium_may">Geg</string>
+    <string name="month_medium_june">Bir</string>
+    <string name="month_medium_july">Lie</string>
+    <string name="month_medium_august">Rgp</string>
+    <string name="month_medium_september">Rgs</string>
+    <string name="month_medium_october">Spl</string>
+    <string name="month_medium_november">Lap</string>
+    <string name="month_medium_december">Grd</string>
+</resources>

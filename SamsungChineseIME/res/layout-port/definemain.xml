@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:text="@string/setting_define_content_titile" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/commonphrase">
+        <RadioButton android:id="@id/commonphrase" android:text="@string/commonphrase" />
+        <RadioButton android:id="@id/operationcommand" android:text="@string/operationcommand" />
+    </RadioGroup>
+    <TextView android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/commonphrase" />
+    <Spinner android:id="@id/spinner1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:drawSelectorOnTop="true" android:prompt="@string/commonphrase" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:text="@string/track" />
+        <com.samsung.inputmethod.DefinePaint android:id="@id/ViewLeft" android:background="#ffffffff" android:visibility="visible" android:layout_width="200.0sp" android:layout_height="150.0sp" android:layout_marginLeft="15.0sp" android:layout_marginTop="15.0sp" />
+        <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_vertical" android:id="@id/DefineEditButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0sp" android:layout_marginTop="10.0sp" android:text="@string/edit" android:width="80.0sp" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/DefineDeleteButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0sp" android:layout_marginTop="10.0sp" android:text="@string/delete" android:width="80.0sp" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/DefineAddButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0sp" android:layout_marginTop="10.0sp" android:text="@string/add" android:width="80.0sp" />
+    </LinearLayout>
+</LinearLayout>

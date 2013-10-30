@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.46875%p" key_ymargin="1.25%p" width="25%p" height="25%p" key_type="3" skb_bg="@drawable/sip_tab_bg" repeat="false" balloon="false">
+    <row>
+        <key label="，" key_type="1">
+            <toggle_state state_id="@string/toggle_language_ko" label="," />
+            <toggle_state state_id="@string/toggle_url_symbol" label="." />
+            <toggle_state state_id="@string/toggle_email_symbol" label="." />
+        </key>
+        <key code="29" label="ㅣ" long_label="1" />
+        <key code="30" label="•" long_label="2" />
+        <key code="31" label="ㅡ" long_label="3" />
+    </row>
+    <row>
+        <key label="." key_type="1">
+            <toggle_state state_id="@string/toggle_language_ko" label="." />
+            <toggle_state state_id="@string/toggle_url_symbol" label="/" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="_" />
+        </key>
+        <key code="32" label="ㄱㅋ " long_label="4" />
+        <key code="33" label="ㄴㄹ" long_label="5" />
+        <key code="34" label="ㄷㅌ" long_label="6" />
+    </row>
+    <row>
+        <key label="？" key_type="1">
+            <toggle_state state_id="@string/toggle_language_ko" label="\?" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="www." />
+            <toggle_state state_id="@string/toggle_email_symbol" label="\@" />
+        </key>
+        <key code="35" label="ㅂㅍ" long_label="7" />
+        <key code="36" label="ㅅㅎ" long_label="8" />
+        <key code="37" label="ㅈㅊ" long_label="9" />
+    </row>
+    <row>
+        <key id="18" start_pos_x="0%p" width="25%p" />
+        <key id="13" start_pos_x="25%p" width="50%p" />
+        <key code="39" label="ㅇㅁ" />
+    </row>
+</keyboard>

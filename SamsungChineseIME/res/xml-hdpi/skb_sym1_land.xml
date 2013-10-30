@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="8.631%p" height="21.429%p" key_type="18" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true">
+    <row>
+        <key label="1" start_pos_x="0.94%p" />
+        <key label="2" start_pos_x="10.882%p" />
+        <key label="3" start_pos_x="20.826%p" />
+        <key label="4" start_pos_x="30.77%p" />
+        <key label="5" start_pos_x="40.713%p" />
+        <key label="6" start_pos_x="50.657%p" />
+        <key label="7" start_pos_x="60.601%p" />
+        <key label="8" start_pos_x="70.545%p" />
+        <key label="9" start_pos_x="80.488%p" />
+        <key label="0" start_pos_x="90.432%p" />
+    </row>
+    <row start_pos_y="25.715%p">
+        <key label="，" start_pos_x="0.94%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="，" />
+            <toggle_state state_id="@string/toggle_language_en" label="," />
+        </key>
+        <key label="。" start_pos_x="10.882%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="。" />
+            <toggle_state state_id="@string/toggle_language_en" label="." />
+        </key>
+        <key label="、" start_pos_x="20.826%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="、" />
+            <toggle_state state_id="@string/toggle_language_en" label="/" />
+        </key>
+        <key label="……" start_pos_x="30.77%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="……" />
+            <toggle_state state_id="@string/toggle_language_en" label="…" />
+        </key>
+        <key label="：" start_pos_x="40.713%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="：" />
+            <toggle_state state_id="@string/toggle_language_en" label=":" />
+        </key>
+        <key label="；" start_pos_x="50.657%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="；" />
+            <toggle_state state_id="@string/toggle_language_en" label=";" />
+        </key>
+        <key label="？" start_pos_x="60.601%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="？" />
+            <toggle_state state_id="@string/toggle_language_en" label="\?" />
+        </key>
+        <key label="！" start_pos_x="70.545%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="！" />
+            <toggle_state state_id="@string/toggle_language_en" label="!" />
+        </key>
+        <key label="“" start_pos_x="80.488%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="“" />
+            <toggle_state state_id="@string/toggle_language_en" label="'" />
+        </key>
+        <key label="”" start_pos_x="90.432%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="”" />
+            <toggle_state state_id="@string/toggle_language_en" label="&quot;" />
+        </key>
+    </row>
+    <row start_pos_y="51.429%p">
+        <unite label="1/4" key_type="11" start_pos_x="0.94%p">
+            <key code="-8" icon="@drawable/qwerty_arrow_l" hlicon="@drawable/qwerty_arrow_l_p" width="9.288%p" start_pos_x="0.94%p" balloon="false" key_type="5" />
+            <key code="-9" icon="@drawable/qwerty_arrow_r" hlicon="@drawable/qwerty_arrow_r_p" width="9.288%p" balloon="false" key_type="6" />
+        </unite>
+        <key label="＠" start_pos_x="20.826%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="\@" />
+            <toggle_state state_id="@string/toggle_language_en" label="\@" />
+        </key>
+        <key label="＆" start_pos_x="30.77%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="&amp;" />
+            <toggle_state state_id="@string/toggle_language_en" label="&amp;" />
+        </key>
+        <key label="＾" start_pos_x="40.713%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="^" />
+            <toggle_state state_id="@string/toggle_language_en" label="^" />
+        </key>
+        <key label="～" start_pos_x="50.657%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="~" />
+            <toggle_state state_id="@string/toggle_language_en" label="~" />
+        </key>
+        <key code="71" label="（" start_pos_x="60.601%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="（" long_label="（）" code="71" />
+            <toggle_state state_id="@string/toggle_language_en" label="(" long_label="()" code="71" />
+        </key>
+        <key code="72" label="）" start_pos_x="70.545%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="）" long_label="（）" code="72" />
+            <toggle_state state_id="@string/toggle_language_en" label=")" long_label="()" code="72" />
+        </key>
+        <key label="＊" start_pos_x="80.488%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="*" />
+            <toggle_state state_id="@string/toggle_language_en" label="*" />
+        </key>
+        <key label="\#" start_pos_x="90.432%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="\#" />
+            <toggle_state state_id="@string/toggle_language_en" label="\#" />
+        </key>
+    </row>
+    <row start_pos_y="77.143%p">
+        <key id="41" start_pos_x="0.94%p" start_pos_y="77.143%p" width="12.008%p" height="21.429%p" />
+        <key id="53" start_pos_x="14.259%p" start_pos_y="77.143%p" width="8.631%p" height="21.429%p" />
+        <key id="3" start_pos_x="25.704%p" start_pos_y="77.143%p" width="38.462%p" height="21.429%p" />
+        <key id="9" start_pos_x="67.167%p" start_pos_y="77.143%p" width="8.631%p" height="21.429%p" />
+        <key id="1" start_pos_x="77.111%p" start_pos_y="77.143%p" width="8.631%p" height="21.429%p" />
+        <key id="4" start_pos_x="87.055%p" start_pos_y="77.143%p" width="12.008%p" height="21.429%p" />
+    </row>
+</keyboard>

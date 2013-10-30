@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0%p" key_ymargin="0%p" width="25.9375%p" height="24%p" key_type="10" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true" balloon_width="16.667%p" balloon_height="29.835%p">
+    <row start_pos_y="2.439%p" height="22.764%p">
+        <key label="《》" start_pos_x="1.11%p" width="12.78%p" />
+        <key label="《" start_pos_x="15%p" width="12.78%p" />
+        <key label="》" start_pos_x="28.89%p" width="12.78%p" />
+        <key label="｛｝" start_pos_x="42.78%p" width="12.78%p" />
+        <key label="｛" start_pos_x="56.67%p" width="12.78%p" />
+        <key label="｝" start_pos_x="70.56%p" width="12.78%p" />
+        <key id="11" start_pos_x="83.889%p" width="15%p" start_pos_y="2.44%p" height="22.764%p" />
+    </row>
+    <row start_pos_y="26.829%p">
+        <key label="【】" start_pos_x="1.11%p" width="12.78%p" height="22.764%p" />
+        <key label="【" start_pos_x="15%p" width="12.78%p" height="22.764%p" />
+        <key label="】" start_pos_x="28.89%p" width="12.78%p" height="22.764%p" />
+        <key label="＜＞" start_pos_x="42.78%p" width="12.78%p" height="22.764%p" />
+        <key label="＜" start_pos_x="56.67%p" width="12.78%p" height="22.764%p" />
+        <key label="＞" start_pos_x="70.56%p" width="12.78%p" height="22.764%p" />
+        <unite label="3/3" key_type="1" start_pos_x="83.889%p" width="15%p" start_pos_y="26.83%p" height="47.154%p">
+            <key code="-8" start_pos_x="83.889%p" width="15%p" start_pos_y="26.83%p" height="23.577%p" icon="@drawable/keypad_arrow_up" hlicon="@drawable/keypad_arrow_up_p" balloon="false" key_type="5" />
+            <key code="-9" start_pos_x="83.889%p" width="15%p" start_pos_y="50.407%p" height="23.577%p" icon="@drawable/keypad_arrow_down" hlicon="@drawable/keypad_arrow_down_p" balloon="false" key_type="6" />
+        </unite>
+    </row>
+    <row start_pos_y="51.220%p" height="22.764%p">
+        <key label="「」" start_pos_x="1.11%p" width="12.78%p" height="22.764%p" />
+        <key label="「" start_pos_x="15%p" width="12.78%p" height="22.764%p" />
+        <key label="」" start_pos_x="28.89%p" width="12.78%p" height="22.764%p" />
+        <key label="‘’" start_pos_x="42.78%p" width="12.78%p" height="22.764%p" />
+        <key label="‘" start_pos_x="56.67%p" width="12.78%p" height="22.764%p" />
+        <key label="’" start_pos_x="70.56%p" width="12.78%p" height="22.764%p" />
+    </row>
+    <row start_pos_y="75.610%p">
+        <key id="51" start_pos_x="1.11%p" start_pos_y="75.61%p" width="26.67%p" height="22.764%p" />
+        <key id="33" start_pos_x="28.89%p" start_pos_y="75.61%p" width="40.56%p" height="22.764%p" />
+        <key id="53" start_pos_x="70.56%p" start_pos_y="75.61%p" width="12.78%p" height="22.764%p" />
+        <key id="14" start_pos_x="83.889%p" width="15%p" start_pos_y="75.61%p" height="22.764%p" />
+    </row>
+</keyboard>

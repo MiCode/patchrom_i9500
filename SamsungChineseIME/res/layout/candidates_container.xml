@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.candidate.SimeCandHorContainer android:orientation="horizontal" android:id="@id/candidates_container" android:background="@drawable/textinput_predictive_popup_bg" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/arrow_left_btn" android:background="@drawable/textinput_predictive_popup_more_left" android:visibility="gone" android:clickable="true" android:layout_width="13.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/arrow_right_position" android:paddingLeft="@dimen/cand_expand_button_padding_left" android:paddingTop="@dimen/cand_expand_button_padding_top" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/arrow_up_btn" android:background="@drawable/arrow_bg" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/cand_expand_button_width" android:layout_height="fill_parent" android:src="@drawable/arrow_up" />
+        <ImageButton android:id="@id/arrow_down_btn" android:background="@drawable/arrow_bg" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/cand_expand_button_width" android:layout_height="fill_parent" android:src="@drawable/arrow_down" />
+    </LinearLayout>
+    <ImageButton android:id="@id/arrow_right_btn" android:background="@drawable/textinput_predictive_popup_more_right" android:visibility="gone" android:clickable="true" android:layout_width="13.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/arrow_right_position" />
+    <ViewFlipper android:id="@id/candidate_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/arrow_right_position">
+        <view android:id="@id/candidate_view1" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.samsung.inputmethod.candidate.SimeCandHorView" />
+        <view android:id="@id/candidate_view2" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.samsung.inputmethod.candidate.SimeCandHorView" />
+    </ViewFlipper>
+</com.samsung.inputmethod.candidate.SimeCandHorContainer>

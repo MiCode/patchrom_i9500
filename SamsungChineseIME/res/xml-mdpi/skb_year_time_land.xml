@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="15.834%p" height="42.046%p" key_type="10" repeat="false" balloon="false">
+    <row start_pos_y="9.091%p">
+        <key label="1" code="8" key_type="20" start_pos_x="1.4584%p" />
+        <key label="2" code="9" key_type="20" start_pos_x="17.709%p" />
+        <key label="3" code="10" key_type="20" start_pos_x="33.959%p" />
+        <key label="4" code="11" key_type="20" start_pos_x="50.209%p" />
+        <key label="5" code="12" key_type="20" start_pos_x="66.459%p" />
+        <key id="31" start_pos_x="82.709%p" start_pos_y="9.091%p" width="15.834%p" height="42.046%p" />
+    </row>
+    <row start_pos_y="52.273%p">
+        <key label="6" code="13" key_type="20" start_pos_x="1.4584%p" />
+        <key label="7" code="14" key_type="20" start_pos_x="17.709%p" />
+        <key label="8" code="15" key_type="20" start_pos_x="33.959%p" />
+        <key label="9" code="16" key_type="20" start_pos_x="50.209%p" />
+        <key label="0" code="7" key_type="20" start_pos_x="66.459%p" />
+        <key id="34" start_pos_x="82.709%p" start_pos_y="52.273%p" width="15.834%p" height="42.046%p" />
+    </row>
+</keyboard>

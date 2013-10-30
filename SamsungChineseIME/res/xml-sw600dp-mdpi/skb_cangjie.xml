@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="8%p" height="19.921%p" key_type="0" repeat="false" balloon="true">
+    <row>
+        <key label="手" long_label="1" code="45" key_type="4" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="3.1873%p" />
+        <key label="田" long_label="2" code="51" key_type="4" start_pos_x="10%p" key_bottommargin="3.1873%p" />
+        <key label="水" long_label="3" code="33" key_type="4" start_pos_x="19%p" key_bottommargin="3.1873%p" />
+        <key label="口" long_label="4" code="46" key_type="4" start_pos_x="28%p" key_bottommargin="3.1873%p" />
+        <key label="廿" long_label="5" code="48" key_type="4" start_pos_x="37%p" key_bottommargin="3.1873%p" />
+        <key label="卜" long_label="6" code="53" key_type="4" start_pos_x="46%p" key_bottommargin="3.1873%p" />
+        <key label="山" long_label="7" code="49" key_type="4" start_pos_x="55%p" key_bottommargin="3.1873p" />
+        <key label="戈" long_label="8" code="37" key_type="4" start_pos_x="64%p" key_bottommargin="3.1873%p" />
+        <key label="人" long_label="9" code="43" key_type="4" start_pos_x="73%p" key_bottommargin="3.1873%p" />
+        <key label="心" long_label="0" code="44" key_type="4" start_pos_x="82%p" key_bottommargin="3.1873%p" />
+        <key id="1" start_pos_x="91%p" width="8%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="3.1873%p" />
+    </row>
+    <row start_pos_y="23.1076%p" key_type="21">
+        <key label="日" code="29" start_pos_x="4.8334%p" key_leftmargin="4.8334%p" key_bottommargin="3.1873%p" />
+        <key label="尸" code="47" start_pos_x="13.8334%p" key_bottommargin="3.1873%p" />
+        <key label="木" code="32" start_pos_x="22.8334%p" key_bottommargin="3.1873%p" />
+        <key label="火" code="34" start_pos_x="31.8334%p" key_bottommargin="3.1873%p" />
+        <key label="土" code="35" start_pos_x="40.8334%p" key_bottommargin="3.1873%p" />
+        <key label="竹" code="36" start_pos_x="49.8334%p" key_bottommargin="3.1873%p" />
+        <key label="十" code="38" start_pos_x="58.8334%p" key_bottommargin="3.1873%p" />
+        <key label="大" code="39" start_pos_x="67.8334%p" key_bottommargin="3.1873%p" />
+        <key label="中" code="40" start_pos_x="76.8334%p" key_bottommargin="3.1873%p" />
+        <key id="4" start_pos_x="85.8334%p" start_pos_y="23.1076%p" width="13.1667%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="3.1873%p" />
+    </row>
+    <row start_pos_y="46.2152%p">
+        <key start_pos_y="46.2152%p" height="19.921%p" repeat="false" balloon="false" code="-22" icon="@drawable/keypad_icon_quick_cangjie_off" key_type="16" width="11.3334%p" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="3.1873%p">
+            <toggle_state state_id="@string/toggle_language_cn_qk_hk" key_type="16" icon="@drawable/keypad_icon_quick_cangjie_on" code="-22" />
+        </key>
+        <key label="、" start_pos_x="13.1667%p" key_bottommargin="3.1873%p" />
+        <key label="難" code="52" start_pos_x="22.1667%p" key_bottommargin="3.1873%p" />
+        <key label="金" code="31" start_pos_x="31.1667%p" key_bottommargin="3.1873%p" />
+        <key label="女" code="50" start_pos_x="40.1667%p" key_bottommargin="3.1873%p" />
+        <key label="月" code="30" start_pos_x="49.1667%p" key_bottommargin="3.1873%p" />
+        <key label="弓" code="42" start_pos_x="58.1667%p" key_bottommargin="3.1873%p" />
+        <key label="一" code="41" start_pos_x="67.1667%p" key_bottommargin="3.1873%p" />
+        <key label="'" width="11.3334%p" key_type="16" code="75" start_pos_x="76%p" key_bottommargin="3.1873%p" />
+        <key id="12" start_pos_x="87.6667%p" start_pos_y="46.2152%p" width="11.3334%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="3.1873%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk" start_pos_y="69.3228%p">
+        <key label="！" width="11.3334%p" key_type="16" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="10.757%p" />
+        <key label="，" width="11.3334%p" key_type="16" start_pos_x="12.6667%p" key_bottommargin="10.757%p" />
+        <key id="3" start_pos_x="24.3334%p" start_pos_y="69.3228%p" width="39.6667%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key label="。" width="11.3334%p" key_type="16" start_pos_x="64.3334%p" key_bottommargin="10.757%p" />
+        <key label="？" width="11.3334%p" key_type="16" start_pos_x="76%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.6667%p" start_pos_y="69.3228%p" width="11.3334%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="69.3228%p">
+        <key label="！" width="11.3334%p" key_type="16" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="10.757%p" />
+        <key label="，" width="11.3334%p" key_type="16" start_pos_x="12.6667%p" key_bottommargin="10.757%p" />
+        <key id="3" start_pos_x="24.3334%p" start_pos_y="69.3228%p" width="39.6667%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key label="。" width="11.3334%p" key_type="16" start_pos_x="64.3334%p" key_bottommargin="10.757%p" />
+        <key label="？" width="11.3334%p" key_type="16" start_pos_x="76%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.6667%p" start_pos_y="69.3228%p" width="11.3334%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="69.3228%p">
+        <key label="-" width="11.3334%p" key_type="16" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="10.757%p" />
+        <key label="_" width="11.3334%p" key_type="16" start_pos_x="12.6667%p" key_bottommargin="10.757%p" />
+        <key label="/" width="11.3334%p" key_type="16" start_pos_x="24.3334%p" key_bottommargin="10.757%p" />
+        <key id="3" start_pos_x="36%p" start_pos_y="69.3228%p" width="28%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key label="." width="11.3334%p" key_type="16" start_pos_x="64.3334%p" key_bottommargin="10.757%p" />
+        <key id="28" width="11.3334%p" height="19.921%p" key_type="16" start_pos_x="76%p" start_pos_y="69.3228%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.6667%p" start_pos_y="69.3228%p" width="11.3334%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_url_no_voice" start_pos_y="69.3228%p">
+        <key label="-" width="11.3334%p" key_type="16" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="10.757%p" />
+        <key label="_" width="11.3334%p" key_type="16" start_pos_x="12.6667%p" key_bottommargin="10.757%p" />
+        <key label="/" width="11.3334%p" key_type="16" start_pos_x="24.3334%p" key_bottommargin="10.757%p" />
+        <key id="3" start_pos_x="36%p" start_pos_y="69.3228%p" width="28%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key label="." width="11.3334%p" key_type="16" start_pos_x="64.3334%p" key_bottommargin="10.757%p" />
+        <key id="28" width="11.3334%p" height="19.921%p" key_type="16" start_pos_x="76%p" start_pos_y="69.3228%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.6667%p" start_pos_y="69.3228%p" width="11.3334%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="69.3228%p">
+        <key label="-" width="11.3334%p" key_type="16" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="10.757%p" />
+        <key label="_" width="11.3334%p" key_type="16" start_pos_x="12.6667%p" key_bottommargin="10.757%p" />
+        <key label="\@" width="11.3334%p" key_type="16" start_pos_x="24.3334%p" key_bottommargin="10.757%p" />
+        <key id="3" start_pos_x="36%p" start_pos_y="69.3228%p" width="28%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key label="." width="11.3334%p" key_type="16" start_pos_x="64.3334%p" key_bottommargin="10.757%p" />
+        <key id="28" width="11.3334%p" height="19.921%p" key_type="16" start_pos_x="76%p" start_pos_y="69.3228%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.6667%p" start_pos_y="69.3228%p" width="11.3334%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_email_no_voice" start_pos_y="69.3228%p">
+        <key label="-" width="11.3334%p" key_type="16" start_pos_x="1%p" key_leftmargin="1%p" key_bottommargin="10.757%p" />
+        <key label="_" width="11.3334%p" key_type="16" start_pos_x="12.6667%p" key_bottommargin="10.757%p" />
+        <key label="\@" width="11.3334%p" key_type="16" start_pos_x="24.3334%p" key_bottommargin="10.757%p" />
+        <key id="3" start_pos_x="36%p" start_pos_y="69.3228%p" width="28%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key label="." width="11.3334%p" key_type="16" start_pos_x="64.3334%p" key_bottommargin="10.757%p" />
+        <key id="28" width="11.3334%p" height="19.921%p" key_type="16" start_pos_x="76%p" start_pos_y="69.3228%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.6667%p" start_pos_y="69.3228%p" width="11.3334%p" height="19.921%p" key_rightmargin="1%p" key_bottommargin="10.757%p" />
+    </row>
+</keyboard>

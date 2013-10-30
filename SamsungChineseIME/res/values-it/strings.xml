@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="s_month_1">1 gen</string>
+    <string name="s_month_10">10 ott</string>
+    <string name="s_month_11">11 nov</string>
+    <string name="s_month_12">12 dic</string>
+    <string name="s_month_2">2 feb</string>
+    <string name="s_month_3">3 mar</string>
+    <string name="s_month_4">4 apr</string>
+    <string name="s_month_5">5 mag</string>
+    <string name="s_month_6">6 giu</string>
+    <string name="s_month_7">7 lug</string>
+    <string name="s_month_8">8 ago</string>
+    <string name="s_month_9">9 set</string>
+    <string name="month_medium_january">gen</string>
+    <string name="month_medium_february">feb</string>
+    <string name="month_medium_march">mar</string>
+    <string name="month_medium_april">apr</string>
+    <string name="month_medium_may">mag</string>
+    <string name="month_medium_june">giu</string>
+    <string name="month_medium_july">lug</string>
+    <string name="month_medium_august">ago</string>
+    <string name="month_medium_september">set</string>
+    <string name="month_medium_october">ott</string>
+    <string name="month_medium_november">nov</string>
+    <string name="month_medium_december">dic</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.52%p" key_ymargin="1.075%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="10%p" height="20%p" key_type="0" repeat="false" balloon="true">
+    <row width="9.09%p">
+        <keys splitter="|" labels="ㄅ|ㄉ|ˇ|ˋ|ㄓ|ˊ|˙|ㄚ|ㄞ|ㄢ|ㄦ" codes="8|9|10|11|12|13|14|15|16|7|69" />
+    </row>
+    <row>
+        <keys splitter="|" labels="ㄆ|ㄊ|ㄍ|ㄐ|ㄔ|ㄗ|ㄧ|ㄛ|ㄟ|ㄣ" codes="45|51|33|46|48|53|49|37|43|44" />
+    </row>
+    <row>
+        <keys splitter="|" labels="ㄇ|ㄋ|ㄎ|ㄑ|ㄕ|ㄘ|ㄨ|ㄜ|ㄠ|ㄤ" codes="29|47|32|34|35|36|38|39|40|74" />
+    </row>
+    <row>
+        <keys splitter="|" labels="ㄈ|ㄌ|ㄏ|ㄒ|ㄖ|ㄙ|ㄩ|ㄝ|ㄡ|ㄥ" codes="54|52|31|50|30|42|41|55|56|76" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice">
+        <key start_pos_x="0%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" repeat="true" balloon="false" code="-2" hlicon="@drawable/qwerty_icon_setting_p" />
+        <key start_pos_x="12%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="8" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3" />
+        <key start_pos_x="24%p" start_pos_y="80%p" width="28%p" height="20%p" key_type="0" repeat="false" balloon="true" icon="@drawable/qwerty_icon_space" hlicon="@drawable/qwerty_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+        <key start_pos_x="52%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="0" repeat="true" balloon="true" label="." code="200">
+            <toggle_state state_id="@string/toggle_language_cn_tw" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="200" />
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key start_pos_x="64%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="8" repeat="false" balloon="false" code="-12" label="@string/word_cn" long_label="@string/word_cn_tw" />
+        <key start_pos_x="76%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="true" balloon="true" icon="@drawable/keypad_icon_del" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" hlicon="@drawable/keypad_icon_del_p" />
+        <key start_pos_x="88%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_enter" hlicon="@drawable/qwerty_icon_enter_p" icon_popup="@drawable/qwerty_icon_enter_bubble" code="66">
+            <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" />
+            <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" />
+            <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" />
+            <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" />
+            <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" />
+        </key>
+    </row>
+    <row row_id="@string/toggle_row_cn_tw">
+        <key start_pos_x="0%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" repeat="true" balloon="false" code="-2" hlicon="@drawable/qwerty_icon_setting_p" />
+        <key start_pos_x="12%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="8" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3" />
+        <key start_pos_x="24%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key start_pos_x="36%p" start_pos_y="80%p" width="16%p" height="20%p" key_type="0" repeat="false" balloon="true" icon="@drawable/qwerty_icon_space" hlicon="@drawable/qwerty_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+        <key start_pos_x="52%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="0" repeat="true" balloon="true" label="." code="200">
+            <toggle_state state_id="@string/toggle_language_cn_tw" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="200" />
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key start_pos_x="64%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="8" repeat="false" balloon="false" code="-12" label="@string/word_cn" long_label="@string/word_cn_tw" />
+        <key start_pos_x="76%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="true" balloon="true" icon="@drawable/keypad_icon_del" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" hlicon="@drawable/keypad_icon_del_p" />
+        <key start_pos_x="88%p" start_pos_y="80%p" width="12%p" height="20%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_enter" hlicon="@drawable/qwerty_icon_enter_p" icon_popup="@drawable/qwerty_icon_enter_bubble" code="66">
+            <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" />
+            <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" />
+            <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" />
+            <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" />
+            <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" />
+        </key>
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="80%p" width="11%p">
+        <key start_pos_x="0%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" repeat="true" balloon="false" code="-2" hlicon="@drawable/qwerty_icon_setting_p" />
+        <key start_pos_x="11%p" key_type="8" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3" />
+        <key label="/" />
+        <key start_pos_x="33%p" width="12%p" icon="@drawable/qwerty_icon_space" hlicon="@drawable/qwerty_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" />
+        <key label="." start_pos_x="45%p" key_type="0" repeat="true" balloon="true" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="200">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key start_pos_x="56%p" key_type="1" repeat="true" balloon="true" label=".com" icon="@drawable/qwerty_icon_long_press" code="-6">
+            <toggle_state state_id="@string/toggle_url_prefix" label="www." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-5" />
+            <toggle_state state_id="@string/toggle_url_suffix" label=".com" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-6" />
+        </key>
+        <key start_pos_x="67%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_tw" code="-12" />
+        <key start_pos_x="78%p" key_type="1" repeat="true" balloon="true" icon="@drawable/keypad_icon_del" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" hlicon="@drawable/keypad_icon_del_p" />
+        <key start_pos_x="89%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_enter" hlicon="@drawable/qwerty_icon_enter_p" icon_popup="@drawable/qwerty_icon_enter_bubble" code="66">
+            <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" />
+            <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" />
+            <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" />
+            <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" />
+            <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" />
+        </key>
+    </row>
+</keyboard>

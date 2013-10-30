@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auto_update_frequency_list_preference">
+        <item>자동 업데이트 꺼짐</item>
+        <item>주마다</item>
+        <item>격주로</item>
+        <item>달마다</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>SCH-TCH 전환 꺼짐</item>
+        <item>TCH 에 SCH</item>
+        <item>SCH 에 TCH</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries_handwriting_mode">
+        <item>전체 필기</item>
+        <item>부분 필기</item>
+    </string-array>
+    <string-array name="entryvalues_handwriting_mode">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="array_handwrite_line_value">
+        <item>1 픽셀</item>
+        <item>3 픽셀</item>
+        <item>5 픽셀</item>
+        <item>7 픽셀</item>
+        <item>9 픽셀</item>
+    </string-array>
+    <string-array name="array_handwrite_color_value">
+        <item>빨강</item>
+        <item>파랑</item>
+        <item>초록</item>
+        <item>갈색</item>
+    </string-array>
+    <string-array name="array_handwrite_speed">
+        <item>0.1 초</item>
+        <item>0.3 초</item>
+        <item>0.5 초</item>
+        <item>0.7 초</item>
+        <item>1 초</item>
+    </string-array>
+    <string-array name="array_handwrite_speed_value">
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>700</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference">
+        <item>Qwerty 키보드</item>
+        <item>3*4 키보드</item>
+        <item>전체 필기</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_1">
+        <item>Qwerty 키보드</item>
+        <item>3*4 키보드</item>
+        <item>전체 필기</item>
+        <item>부분 필기</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value_1">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_2">
+        <item>Qwerty 키보드</item>
+        <item>3*4 키보드</item>
+        <item>부분 필기</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value_2">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_3">
+        <item>Qwerty 키보드</item>
+        <item>3*4 키보드</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value_3">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="array_language_dis_summary">
+        <item>영어</item>
+        <item>중국어</item>
+        <item>한국어</item>
+        <item>중국어(대만)</item>
+        <item>중국어(홍콩)</item>
+    </string-array>
+    <string-array name="array_handwriting_style">
+        <item>기본</item>
+        <item>휘종체</item>
+        <item>황정견체</item>
+        <item>왕희지체</item>
+        <item>회소체</item>
+        <item>초서연면체</item>
+    </string-array>
+    <string-array name="array_handwriting_style_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="keyboard_swipe_type_list_preference">
+        <item>포인팅 키보드와 키보드 모드 변경</item>
+        <item>포인팅 키보드</item>
+        <item>키보드 모드 변경</item>
+        <item>동작 없음</item>
+    </string-array>
+    <string-array name="keyboard_swipe_type_list_summary">
+        <item>손가락을 움직여 커서를 이동하고 키보드 입력 모드를 변경할수 있습니다.</item>
+        <item>키보드에서 손가락을 움직여 커서를 이동시키세요</item>
+        <item>키보드를 밀어 입력모드를 3X4 키보드, Qwerty 키보드, 필기 모드로 변경 할 수 있습니다</item>
+        <item>동작 없음</item>
+    </string-array>
+    <string-array name="keyboard_swipe_type_list_preference_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

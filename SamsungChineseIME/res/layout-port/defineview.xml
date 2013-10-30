@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/TextContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0sp" android:text="@string/inputString" />
+    <EditText android:enabled="true" android:id="@id/InputContent" android:layout_width="300.0sp" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="15.0sp" android:singleLine="true" android:maxLength="15" />
+    <Spinner android:id="@id/spinnerorder" android:layout_width="300.0sp" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="15.0sp" android:drawSelectorOnTop="true" android:prompt="@string/commonphrase" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="15.0sp" android:text="@string/compare" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.samsung.inputmethod.DefinePaint android:id="@id/LeftView" android:layout_width="200.0sp" android:layout_height="150.0sp" android:layout_marginLeft="20.0sp" android:layout_marginTop="15.0sp" />
+        <Button android:textSize="15.0sp" android:id="@id/DeleteButtonLeft" android:layout_width="80.0sp" android:layout_height="wrap_content" android:layout_marginLeft="15.0sp" android:layout_marginTop="64.0sp" android:text="@string/delete" />
+    </LinearLayout>
+    <Button android:textSize="15.0sp" android:id="@id/SaveButton" android:layout_width="110.0sp" android:layout_height="wrap_content" android:layout_marginLeft="110.0sp" android:layout_marginTop="10.0sp" android:text="@string/saveadd" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">січ.</string>
+    <string name="month_medium_february">лют.</string>
+    <string name="month_medium_march">бер.</string>
+    <string name="month_medium_april">квіт.</string>
+    <string name="month_medium_may">трав.</string>
+    <string name="month_medium_june">черв.</string>
+    <string name="month_medium_july">лип.</string>
+    <string name="month_medium_august">серп.</string>
+    <string name="month_medium_september">вер.</string>
+    <string name="month_medium_october">жовт.</string>
+    <string name="month_medium_november">лист.</string>
+    <string name="month_medium_december">груд.</string>
+</resources>

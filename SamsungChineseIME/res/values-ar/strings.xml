@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="s_month_1">1 يناير</string>
+    <string name="s_month_10">10 أكتوبر</string>
+    <string name="s_month_11">11 نوفمبر</string>
+    <string name="s_month_12">12 ديسمبر</string>
+    <string name="s_month_2">2 فبراير</string>
+    <string name="s_month_3">3 مارس</string>
+    <string name="s_month_4">4 أبريل</string>
+    <string name="s_month_5">5 مايو</string>
+    <string name="s_month_6">6 يونيو</string>
+    <string name="s_month_7">7 يوليو</string>
+    <string name="s_month_8">8 أغسطس</string>
+    <string name="s_month_9">9 سبتمبر</string>
+    <string name="month_medium_january">يناير</string>
+    <string name="month_medium_february">فبراير</string>
+    <string name="month_medium_march">مارس</string>
+    <string name="month_medium_april">أبريل</string>
+    <string name="month_medium_may">مايو</string>
+    <string name="month_medium_june">يونيو</string>
+    <string name="month_medium_july">يوليو</string>
+    <string name="month_medium_august">أغسطس</string>
+    <string name="month_medium_september">سبتمبر</string>
+    <string name="month_medium_october">أكتوبر</string>
+    <string name="month_medium_november">نوفمبر</string>
+    <string name="month_medium_december">ديسمبر</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.56%p" key_ymargin="0.87%p" width="25%p" height="25%p" key_type="16" repeat="false" balloon="false">
+    <row>
+        <key label="1" code="8">
+            <toggle_state state_id="@string/toggle_phone_sym" label="(" key_type="0" />
+        </key>
+        <key label="2" long_label="ABC" code="9">
+            <toggle_state state_id="@string/toggle_phone_sym" label="/" key_type="0" />
+        </key>
+        <key label="3" long_label="DEF" code="10">
+            <toggle_state state_id="@string/toggle_phone_sym" label=")" key_type="0" />
+        </key>
+        <key id="31" start_pos_x="75%p" start_pos_y="0%p" width="25%p" />
+    </row>
+    <row>
+        <key label="4" long_label="GHI" code="11">
+            <toggle_state state_id="@string/toggle_phone_sym" label="N" key_type="0" />
+        </key>
+        <key label="5" long_label="JKL" code="12">
+            <toggle_state state_id="@string/toggle_phone_sym" label="@string/word_phone_sym_pause" code="55" key_type="0" />
+        </key>
+        <key label="6" long_label="MNO" code="13">
+            <toggle_state state_id="@string/toggle_phone_sym" label="." key_type="0" />
+        </key>
+        <key id="34" start_pos_x="75%p" start_pos_y="25%p" width="25%p" />
+    </row>
+    <row>
+        <key label="7" long_label="PQRS" code="14">
+            <toggle_state state_id="@string/toggle_phone_sym" label="*" key_type="0" />
+        </key>
+        <key label="8" long_label="TUV" code="15">
+            <toggle_state state_id="@string/toggle_phone_sym" label="@string/word_phone_sym_wait" code="74" key_type="0" />
+        </key>
+        <key label="9" long_label="WXYZ" code="16">
+            <toggle_state state_id="@string/toggle_phone_sym" label="\#" key_type="0" />
+        </key>
+        <key key_type="1" label="\?#*" code="-4" repeat="true">
+            <toggle_state state_id="@string/toggle_phone_sym" key_type="1" label="123" code="-4" />
+        </key>
+    </row>
+    <row>
+        <key label="*" code="17">
+            <toggle_state state_id="@string/toggle_phone_sym" label="" key_type="14" disable="true" />
+        </key>
+        <key label="0" long_label="+" code="7">
+            <toggle_state state_id="@string/toggle_phone_sym" label="+" key_type="0" />
+        </key>
+        <key label="\#" code="18">
+            <toggle_state state_id="@string/toggle_phone_sym" icon="@drawable/keypad_icon_space" hlicon="@drawable/keypad_icon_space_p" code="62" key_type="0" />
+        </key>
+        <key key_type="1" label="-" />
+    </row>
+</keyboard>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0%p" key_ymargin="0%p" width="21.25%p" height="23.125%p" key_type="0" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true">
+    <row start_pos_y="3.125%p">
+        <key label="+" key_type="0" start_pos_x="1.25%p" width="15.209%p" />
+        <key label="1" start_pos_x="17.292%p" />
+        <key label="2" start_pos_x="39.375%p" />
+        <key label="3" start_pos_x="61.459%p" />
+        <key id="11" start_pos_x="83.542%p" start_pos_y="3.125%p" width="15.209%p" height="23.125%p" />
+    </row>
+    <row start_pos_y="26.875%p">
+        <key label="-" key_type="0" start_pos_x="1.25%p" width="15.209%p" />
+        <key label="4" start_pos_x="17.292%p" />
+        <key label="5" start_pos_x="39.375%p" />
+        <key label="6" start_pos_x="61.459%p" />
+        <key id="41" start_pos_x="83.542%p" start_pos_y="26.875%p" width="15.209%p" height="23.125%p" />
+    </row>
+    <row start_pos_y="50.625%p">
+        <key label="%" key_type="0" start_pos_x="1.25%p" width="15.209%p" />
+        <key label="7" start_pos_x="17.292%p" />
+        <key label="8" start_pos_x="39.375%p" />
+        <key label="9" start_pos_x="61.459%p" />
+        <key label="." key_type="1" start_pos_x="83.542%p" start_pos_y="50.625%p" width="15.209%p" height="23.125%p" />
+    </row>
+    <row start_pos_y="74.375%p">
+        <key id="70" start_pos_x="1.25%p" start_pos_y="74.375%p" width="15.209%p" height="23.125%p" />
+        <key label=":" key_type="0" start_pos_x="17.292%p" />
+        <key label="0" start_pos_x="39.375%p" />
+        <key id="33" ket_type="1" start_pos_x="61.459%p" start_pos_y="74.375%p" width="21.25%p" height="23.125%p" />
+        <key id="14" start_pos_x="83.542%p" start_pos_y="74.375%p" width="15.209%p" height="23.125%p" />
+    </row>
+</keyboard>

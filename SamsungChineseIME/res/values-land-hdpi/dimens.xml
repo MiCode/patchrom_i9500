@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_size">20.0dip</dimen>
+    <dimen name="cand_margin_left_right">15.0dip</dimen>
+    <dimen name="qwerty_key_horizontal_gap">7.0dip</dimen>
+    <dimen name="qwerty_key_vertical_gap">6.0dip</dimen>
+    <dimen name="handwrite_dialog_text_width_land">376.0dip</dimen>
+</resources>

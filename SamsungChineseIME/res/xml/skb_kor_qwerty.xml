@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.52%p" key_ymargin="1.875%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="10%p" height="25%p" key_type="0" repeat="false" balloon="true">
+    <row>
+        <key label="ㅂ" code="45" long_label="1" key_type="4">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅂ" code="45" long_label="1" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅃ" code="45" long_label="1" />
+        </key>
+        <key label="ㅈ" code="51" long_label="2" key_type="4">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅈ" code="51" long_label="2" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅉ" code="51" long_label="2" />
+        </key>
+        <key label="ㄷ" code="33" long_label="3" key_type="4">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㄷ" code="33" long_label="3" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㄸ" code="33" long_label="3" />
+        </key>
+        <key label="ㄱ" code="46" long_label="4" key_type="4">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㄱ" code="46" long_label="4" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㄲ" code="46" long_label="4" />
+        </key>
+        <key label="ㅅ" code="48" long_label="5" key_type="4">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅅ" code="48" long_label="5" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅆ" code="48" long_label="5" />
+        </key>
+        <keys splitter="|" labels="ㅛ|ㅕ|ㅑ" long_labels="6|7|8" key_type="4" codes="53|49|37" />
+        <key label="ㅐ" code="43" long_label="9" key_type="4">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅐ" code="43" long_label="9" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅒ" code="43" long_label="9" />
+        </key>
+        <key label="ㅔ" code="44" long_label="0" key_type="4">
+            <toggle_state state_id="@string/toggle_lowercase" label="ㅔ" code="44" long_label="0" />
+            <toggle_state state_id="@string/toggle_templowercase" label="ㅖ" code="44" long_label="0" />
+        </key>
+    </row>
+    <row start_pos_x="5%p" width="10%p">
+        <keys splitter="|" labels="ㅁ|ㄴ|ㅇ|ㄹ|ㅎ|ㅗ|ㅓ|ㅏ|ㅣ" codes="29|47|32|34|35|36|38|39|40" />
+    </row>
+    <row>
+        <key id="0" />
+        <key label="ㅋ" start_pos_x="15%p" code="54" />
+        <keys splitter="|" labels="ㅌ|ㅊ|ㅍ|ㅠ|ㅜ|ㅡ" codes="52|31|50|30|42|41" />
+        <key id="1" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_ko" start_pos_y="75%p">
+        <key id="2" />
+        <key id="5" />
+        <key id="3" />
+        <key id="7" />
+        <key id="6" />
+        <key id="4" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_url" start_pos_y="75%p">
+        <key id="2" start_pos_x="0%p" width="10%p" />
+        <key id="5" start_pos_x="10%p" width="15%p" />
+        <key label="/" start_pos_x="25%p" width="10%p" balloon="true" />
+        <key id="3" start_pos_x="35%p" width="15%p" />
+        <key id="7" start_pos_x="50%p" width="10%p" key_type="0" repeat="true" balloon="true" />
+        <key id="8" start_pos_x="60%p" width="13.94%p" />
+        <key id="6" start_pos_x="73.94%p" width="12%p" />
+        <key id="4" start_pos_x="85.94%p" width="14.06%p" />
+    </row>
+</keyboard>

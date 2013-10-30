@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">ינו</string>
+    <string name="month_medium_february">פבר</string>
+    <string name="month_medium_march">מרס</string>
+    <string name="month_medium_april">אפר</string>
+    <string name="month_medium_may">מאי</string>
+    <string name="month_medium_june">יונ</string>
+    <string name="month_medium_july">יול</string>
+    <string name="month_medium_august">אוג</string>
+    <string name="month_medium_september">ספט</string>
+    <string name="month_medium_october">אוק</string>
+    <string name="month_medium_november">נוב</string>
+    <string name="month_medium_december">דצמ</string>
+</resources>

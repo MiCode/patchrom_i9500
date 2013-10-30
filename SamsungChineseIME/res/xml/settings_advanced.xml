@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/setting_advanced" android:key="setting_advanced_swiftkey_summary_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="true" android:title="@string/setting_space_input_title" android:key="@string/setting_space_input_key" android:summaryOn="@string/setting_enabled" android:summaryOff="@string/setting_disabled" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/setting_qwerty_correct_title" android:key="@string/setting_qwerty_correct_error_key" android:summary="@string/setting_qwerty_correct_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/setting_auto_capitalization_title" android:key="@string/setting_auto_capitalization_key" android:summary="@string/setting_auto_capitalization_summary" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/setting_auto_fullstop_title" android:key="@string/setting_auto_fullstop_key" android:summaryOn="@string/setting_auto_fullstop_summary" android:summaryOff="@string/setting_auto_fullstop_summary" />
+    <Preference android:title="@string/setting_fuzzy_pinyin_input_title" android:key="setting_fuzzy_pinyin_input_key"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <PreferenceCategory android:title="@string/setting_feedback_title" android:key="@string/setting_feedback_Category_key">
+        <CheckBoxPreference android:persistent="true" android:title="@string/setting_char_preview_title" android:key="@string/setting_char_preview_key" android:summaryOn="@string/setting_enabled" android:summaryOff="@string/setting_disabled" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/setting_vibrate_keypress_title" android:key="@string/setting_vibrate_keypress_key" android:summaryOn="@string/setting_enabled" android:summaryOff="@string/setting_disabled" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/setting_sound_keypress_title" android:key="@string/setting_sound_keypress_key" android:summaryOn="@string/setting_enabled" android:summaryOff="@string/setting_disabled" />
+    </PreferenceCategory>
+</PreferenceScreen>

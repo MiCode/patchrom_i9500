@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.382%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="10.9554%p" height="24.184%p" key_type="0" repeat="false" balloon="true">
+    <row key_type="34" key_bottommargin="0.6536%p">
+        <key label=":-)" />
+        <key label=":-))" />
+        <key label=":->" />
+        <key label=":-]" />
+        <key label=":-D" />
+        <key label=":-((" />
+        <key label=":-(" />
+        <key label=":-&lt;" />
+        <key id="1" start_pos_x="87.516%p" width="12.484%p" height="24.184%p" key_bottommargin="0.6536%p" />
+    </row>
+    <row key_type="34" start_pos_y="24.8366%p" key_bottommargin="0.6536%p">
+        <key label=":-[" />
+        <key label=":-C" />
+        <key label=":'-(" />
+        <key label=":(" />
+        <key label=":&lt;" />
+        <key label=">:-(" />
+        <key label=":-Q" />
+        <key label=":-S" />
+        <key id="4" start_pos_x="87.516%p" start_pos_y="24.8366%p" width="12.484%p" height="24.184%p" key_bottommargin="0.6536%p" />
+    </row>
+    <row start_pos_y="49.674%p" key_bottommargin="0.6536%p">
+        <key label="8-o" />
+        <key label=":-/" />
+        <key label=":-|" />
+        <key label=";-)" />
+        <key label="XD" />
+        <key label=":-y" />
+        <key label=":-*" />
+        <key label=":-X" />
+        <key id="12" start_pos_x="87.516%p" start_pos_y="49.674%p" width="12.484%p" height="24.184%p" key_bottommargin="0.6536%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_cn" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="72" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_cn_no_voice" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_cn_hk" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_cn_tw" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_cn_tw_no_voice" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_en" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="72" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_en_no_voice" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_ko" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="72" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_ko_no_voice" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_email" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="72" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_email_no_voice" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_url" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="72" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+    <row key_type="35" row_id="@string/toggle_row_url_no_voice" start_pos_y="74.51%p" key_bottommargin="1.3072%p">
+        <key label=":-9" />
+        <key label=":-d" />
+        <key label=":-O" />
+        <key label=":-()" />
+        <key label=":-V" />
+        <key label=":-@" />
+        <key id="3" start_pos_x="65.6052%p" start_pos_y="74.51%p" width="21.9108%p" height="24.184%p" key_bottommargin="1.3072%p" />
+        <key id="77" start_pos_x="87.516%p" start_pos_y="74.51%p" width="12.484%p" height="24.184%p" key_bottommargin="1.3072%p" />
+    </row>
+</keyboard>

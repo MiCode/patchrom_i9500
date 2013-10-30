@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" width="23.75%p" height="23.125%p" key_type="0" repeat="false" balloon="false">
+    <row start_pos_y="3.125%p">
+        <key icon="@drawable/keypad_dial_num01_h" hlicon="@drawable/keypad_dial_num01_h_p" code="8" start_pos_x="1.25%p" />
+        <key icon="@drawable/keypad_dial_num02_h" hlicon="@drawable/keypad_dial_num02_h_p" code="9" start_pos_x="25.834%p" />
+        <key icon="@drawable/keypad_dial_num03_h" hlicon="@drawable/keypad_dial_num03_h_p" code="10" start_pos_x="50.417%p" />
+        <key id="31" start_pos_x="75%p" start_pos_y="3.125%p" width="23.75%p" height="23.125%p" />
+    </row>
+    <row start_pos_y="26.875%p">
+        <key icon="@drawable/keypad_dial_num04_h" hlicon="@drawable/keypad_dial_num04_h_p" code="11" start_pos_x="1.25%p" />
+        <key icon="@drawable/keypad_dial_num05_h" hlicon="@drawable/keypad_dial_num05_h_p" code="12" start_pos_x="25.834%p" />
+        <key icon="@drawable/keypad_dial_num06_h" hlicon="@drawable/keypad_dial_num06_h_p" code="13" start_pos_x="50.417%p" />
+        <key id="34" start_pos_x="75%p" start_pos_y="26.875%p" width="23.75%p" height="23.125%p" />
+    </row>
+    <row start_pos_y="50.625%p">
+        <key icon="@drawable/keypad_dial_num07_h" hlicon="@drawable/keypad_dial_num07_h_p" code="14" start_pos_x="1.25%p" />
+        <key icon="@drawable/keypad_dial_num08_h" hlicon="@drawable/keypad_dial_num08_h_p" code="15" start_pos_x="25.834%p" />
+        <key icon="@drawable/keypad_dial_num09_h" hlicon="@drawable/keypad_dial_num09_h_p" code="16" start_pos_x="50.417%p" />
+        <key label="P(,)" code="55" key_type="1" start_pos_x="75%p" />
+    </row>
+    <row start_pos_y="74.375%p">
+        <key icon="@drawable/keypad_dial_num10_h" hlicon="@drawable/keypad_dial_num10_h_p" code="17" start_pos_x="1.25%p" />
+        <key icon="@drawable/keypad_dial_num00_h" hlicon="@drawable/keypad_dial_num00_h_p" code="7" long_label="+" start_pos_x="25.834%p" />
+        <key icon="@drawable/keypad_dial_num11_h" hlicon="@drawable/keypad_dial_num11_h_p" code="18" start_pos_x="50.417%p" />
+        <key label="W(;)" code="74" key_type="1" start_pos_x="75%p" width="11.459%p" />
+        <key label="N" key_type="1" start_pos_x="87.292%p" width="11.459%p" />
+    </row>
+</keyboard>

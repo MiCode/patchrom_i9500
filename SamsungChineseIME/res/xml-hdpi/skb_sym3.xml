@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="18.75%p" height="18.23%p" key_type="0" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true">
+    <row start_pos_y="4.926%p">
+        <key label=":-)" start_pos_x="0.625%p" />
+        <key label=":-(" start_pos_x="20.625%p" />
+        <key label=";-)" start_pos_x="40.625%p" />
+        <key label=":-P" start_pos_x="60.625%p" />
+        <key label="=-O" start_pos_x="80.625%p" />
+    </row>
+    <row start_pos_y="29.556%p">
+        <key label=":-*" start_pos_x="0.625%p" />
+        <key label=":O" start_pos_x="20.625%p" />
+        <key label="B-)" start_pos_x="40.625%p" />
+        <key label=":-$" start_pos_x="60.625%p" />
+        <key label=":-!" start_pos_x="80.625%p" />
+    </row>
+    <row start_pos_y="54.188%p">
+        <unite label="3/4" key_type="11" start_pos_x="0.625%p">
+            <key code="-8" icon="@drawable/qwerty_arrow_l" hlicon="@drawable/qwerty_arrow_l_p" width="9.75%p" balloon="false" key_type="5" />
+            <key code="-9" icon="@drawable/qwerty_arrow_r" hlicon="@drawable/qwerty_arrow_r_p" width="9.75%p" balloon="false" key_type="6" />
+        </unite>
+        <key label=":-[" start_pos_x="20.625%p" />
+        <key label="O:-)" start_pos_x="40.625%p" />
+        <key label=":-\\" start_pos_x="60.625%p" />
+        <key label=":'(" start_pos_x="80.625%p" />
+    </row>
+    <row width="16.666%p" start_pos_y="78.818%p">
+        <key id="41" start_pos_x="0.625%p" start_pos_y="78.818%p" width="13.75%p" height="18.23%p" />
+        <key id="53" start_pos_x="15.625%p" start_pos_y="78.818%p" width="8.75%p" height="18.23%p" />
+        <key id="3" />
+        <key id="9" />
+        <key id="1" start_pos_x="75.625%p" start_pos_y="78.818%p" width="8.75%p" height="18.23%p" />
+        <key id="4" />
+    </row>
+</keyboard>

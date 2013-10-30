@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="33.333%p" height="20%p" key_type="10" repeat="false" balloon="true">
+    <row>
+        <keys splitter="|" labels=":-X|:-D|o_O" />
+    </row>
+    <row>
+        <keys splitter=" " labels=":-/ X-( :-|" />
+    </row>
+    <row>
+        <keys splitter="|" labels="&lt;3|:-V|:-C" />
+    </row>
+    <row>
+        <unite label="7/7" key_type="1">
+            <key code="-8" icon="@drawable/page_arrow_01_l" width="33.333%p" hlicon="@drawable/page_arrow_01_l_p" balloon="false" key_type="5" />
+            <key code="-9" icon="@drawable/page_arrow_01_r" width="33.333%p" hlicon="@drawable/page_arrow_01_r_p" balloon="false" key_type="6" />
+        </unite>
+        <keys splitter="|" labels=":-Q|" />
+    </row>
+    <row width="16.666%p" start_pos_y="80%p">
+        <key id="42" />
+        <key id="12" />
+        <key id="13" />
+        <key id="19" />
+        <key id="11" start_pos_x="69.39%p" start_pos_y="80%p" width="14.06%p" />
+        <key id="14" />
+    </row>
+</keyboard>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/row_candidates_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/row_for_cells" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.samsung.inputmethod.candidate.SimeCandSepView android:id="@id/row_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

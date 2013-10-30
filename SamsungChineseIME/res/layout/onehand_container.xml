@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.softkeyboard.SimeOneHandContainer android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/one_hand_layout" android:background="@drawable/textinput_panel_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/right_layout" android:visibility="visible" android:layout_width="@dimen/onehand_skbcontainer_padding_left" android:layout_height="fill_parent">
+            <Button android:id="@id/right_button" android:background="@drawable/textinput_onehand_arrow_left_n" android:visibility="visible" android:layout_width="38.0dip" android:layout_height="26.0dip" android:layout_marginRight="@dimen/onehand_button_margin_right" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/left_layout" android:visibility="invisible" android:layout_width="@dimen/onehand_skbcontainer_padding_left" android:layout_height="fill_parent">
+            <Button android:id="@id/left_button" android:background="@drawable/textinput_onehand_arrow_right_n" android:visibility="invisible" android:layout_width="38.0dip" android:layout_height="26.0dip" android:layout_marginLeft="@dimen/onehand_button_margin_left" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/normal_layout" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.samsung.inputmethod.softkeyboard.SimeOneHandContainer>

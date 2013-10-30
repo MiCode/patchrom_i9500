@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.83%p" key_ymargin="1.41%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="33.3%p" height="25%p" key_type="10" repeat="false" balloon="false">
+    <row>
+        <keys splitter="|" labels="1|2|3" codes="8|9|10" />
+    </row>
+    <row>
+        <keys splitter="|" labels="4|5|6" codes="11|12|13" />
+    </row>
+    <row>
+        <keys splitter="|" labels="7|8|9" codes="14|15|16" />
+    </row>
+    <row>
+        <key id="31" start_pos_x="0%p" start_pos_y="75%p" width="33.333%p" />
+        <key label="0" code="7" />
+        <key id="34" start_pos_x="66.667%p" start_pos_y="75%p" width="33.333%p" />
+    </row>
+</keyboard>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.56%p" key_ymargin="0.87%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="33.3%p" height="25%p" key_type="0" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="false">
+    <row>
+        <key icon="@drawable/keypad_num1" hlicon="@drawable/keypad_num1_p" code="8" />
+        <key icon="@drawable/keypad_num2" hlicon="@drawable/keypad_num2_p" code="9" />
+        <key icon="@drawable/keypad_num3" hlicon="@drawable/keypad_num3_p" code="10" />
+    </row>
+    <row>
+        <key icon="@drawable/keypad_num4" hlicon="@drawable/keypad_num4_p" code="11" />
+        <key icon="@drawable/keypad_num5" hlicon="@drawable/keypad_num5_p" code="12" />
+        <key icon="@drawable/keypad_num6" hlicon="@drawable/keypad_num6_p" code="13" />
+    </row>
+    <row>
+        <key icon="@drawable/keypad_num7" hlicon="@drawable/keypad_num7_p" code="14" />
+        <key icon="@drawable/keypad_num8" hlicon="@drawable/keypad_num8_p" code="15" />
+        <key icon="@drawable/keypad_num9" hlicon="@drawable/keypad_num9_p" code="16" />
+    </row>
+    <row>
+        <key id="31" start_pos_x="0%p" start_pos_y="75%p" width="33.333%p" />
+        <key icon="@drawable/keypad_num0" hlicon="@drawable/keypad_num0_p" code="7" />
+        <key id="34" start_pos_x="66.667%p" start_pos_y="75%p" width="33.333%p" />
+    </row>
+</keyboard>

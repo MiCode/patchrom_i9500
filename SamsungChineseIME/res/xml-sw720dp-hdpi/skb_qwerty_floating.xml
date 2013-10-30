@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="8.125%p" height="21.7822%p" key_type="0" repeat="false" balloon="true">
+    <row>
+        <key label="q" long_label="1" code="45" key_type="4" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="q" long_label="1" icon_popup="@drawable/sip_icon_bubble_p_01_01" />
+            <toggle_state state_id="@string/toggle_lowercase" label="q" long_label="1" icon_popup="@drawable/sip_icon_bubble_p_01_01" />
+            <toggle_state state_id="@string/toggle_templowercase" label="q" long_label="1" icon_popup="@drawable/sip_icon_bubble_p_02_01" />
+            <toggle_state state_id="@string/toggle_uppercase" label="q" long_label="1" icon_popup="@drawable/sip_icon_bubble_p_02_01" />
+        </key>
+        <key label="w" long_label="2" code="51" key_type="4" start_pos_x="10.125%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="w" long_label="2" icon_popup="@drawable/sip_icon_bubble_p_01_02" />
+            <toggle_state state_id="@string/toggle_lowercase" label="w" long_label="2" icon_popup="@drawable/sip_icon_bubble_p_01_02" />
+            <toggle_state state_id="@string/toggle_templowercase" label="w" long_label="2" icon_popup="@drawable/sip_icon_bubble_p_02_02" />
+            <toggle_state state_id="@string/toggle_uppercase" label="w" long_label="2" icon_popup="@drawable/sip_icon_bubble_p_02_02" />
+        </key>
+        <key label="e" long_label="3" code="33" key_type="4" start_pos_x="19%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="e" long_label="3" icon_popup="@drawable/sip_icon_bubble_p_01_03" />
+            <toggle_state state_id="@string/toggle_lowercase" label="e" long_label="3" icon_popup="@drawable/sip_icon_bubble_p_01_03" />
+            <toggle_state state_id="@string/toggle_templowercase" label="e" long_label="3" icon_popup="@drawable/sip_icon_bubble_p_02_03" />
+            <toggle_state state_id="@string/toggle_uppercase" label="e" long_label="3" icon_popup="@drawable/sip_icon_bubble_p_02_03" />
+        </key>
+        <key label="r" long_label="4" code="46" key_type="4" start_pos_x="27.875%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="r" long_label="4" icon_popup="@drawable/sip_icon_bubble_p_01_04" />
+            <toggle_state state_id="@string/toggle_lowercase" label="r" long_label="4" icon_popup="@drawable/sip_icon_bubble_p_01_04" />
+            <toggle_state state_id="@string/toggle_templowercase" label="r" long_label="4" icon_popup="@drawable/sip_icon_bubble_p_02_04" />
+            <toggle_state state_id="@string/toggle_uppercase" label="r" long_label="4" icon_popup="@drawable/sip_icon_bubble_p_02_04" />
+        </key>
+        <key label="t" long_label="5" code="48" key_type="4" start_pos_x="36.75%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="t" long_label="5" icon_popup="@drawable/sip_icon_bubble_p_01_05" />
+            <toggle_state state_id="@string/toggle_lowercase" label="t" long_label="5" icon_popup="@drawable/sip_icon_bubble_p_01_05" />
+            <toggle_state state_id="@string/toggle_templowercase" label="t" long_label="5" icon_popup="@drawable/sip_icon_bubble_p_02_05" />
+            <toggle_state state_id="@string/toggle_uppercase" label="t" long_label="5" icon_popup="@drawable/sip_icon_bubble_p_02_05" />
+        </key>
+        <key label="y" long_label="6" code="53" key_type="4" start_pos_x="45.625%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="y" long_label="6" icon_popup="@drawable/sip_icon_bubble_p_01_06" />
+            <toggle_state state_id="@string/toggle_lowercase" label="y" long_label="6" icon_popup="@drawable/sip_icon_bubble_p_01_06" />
+            <toggle_state state_id="@string/toggle_templowercase" label="y" long_label="6" icon_popup="@drawable/sip_icon_bubble_p_02_06" />
+            <toggle_state state_id="@string/toggle_uppercase" label="y" long_label="6" icon_popup="@drawable/sip_icon_bubble_p_02_06" />
+        </key>
+        <key label="u" long_label="7" code="49" key_type="4" start_pos_x="54.5%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="u" long_label="7" icon_popup="@drawable/sip_icon_bubble_p_01_07" />
+            <toggle_state state_id="@string/toggle_lowercase" label="u" long_label="7" icon_popup="@drawable/sip_icon_bubble_p_01_07" />
+            <toggle_state state_id="@string/toggle_templowercase" label="u" long_label="7" icon_popup="@drawable/sip_icon_bubble_p_02_07" />
+            <toggle_state state_id="@string/toggle_uppercase" label="u" long_label="7" icon_popup="@drawable/sip_icon_bubble_p_02_07" />
+        </key>
+        <key label="i" long_label="8" code="37" key_type="4" start_pos_x="63.375%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="i" long_label="8" icon_popup="@drawable/sip_icon_bubble_p_01_08" />
+            <toggle_state state_id="@string/toggle_lowercase" label="i" long_label="8" icon_popup="@drawable/sip_icon_bubble_p_01_08" />
+            <toggle_state state_id="@string/toggle_templowercase" label="i" long_label="8" icon_popup="@drawable/sip_icon_bubble_p_02_08" />
+            <toggle_state state_id="@string/toggle_uppercase" label="i" long_label="8" icon_popup="@drawable/sip_icon_bubble_p_02_08" />
+        </key>
+        <key label="o" long_label="9" code="43" key_type="4" start_pos_x="72.25%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="o" long_label="9" icon_popup="@drawable/sip_icon_bubble_p_01_09" />
+            <toggle_state state_id="@string/toggle_lowercase" label="o" long_label="9" icon_popup="@drawable/sip_icon_bubble_p_01_09" />
+            <toggle_state state_id="@string/toggle_templowercase" label="o" long_label="9" icon_popup="@drawable/sip_icon_bubble_p_02_09" />
+            <toggle_state state_id="@string/toggle_uppercase" label="o" long_label="9" icon_popup="@drawable/sip_icon_bubble_p_02_09" />
+        </key>
+        <key label="p" long_label="0" code="44" key_type="4" start_pos_x="81.125%p" key_bottommargin="1.9802%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="p" long_label="0" icon_popup="@drawable/sip_icon_bubble_p_01_00" />
+            <toggle_state state_id="@string/toggle_lowercase" label="p" long_label="0" icon_popup="@drawable/sip_icon_bubble_p_01_00" />
+            <toggle_state state_id="@string/toggle_templowercase" label="p" long_label="0" icon_popup="@drawable/sip_icon_bubble_p_02_00" />
+            <toggle_state state_id="@string/toggle_uppercase" label="p" long_label="0" icon_popup="@drawable/sip_icon_bubble_p_02_00" />
+        </key>
+        <key id="1" start_pos_x="90%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_botttommargin="1.9802%p" />
+    </row>
+    <row key_type="21" start_pos_y="23.7624%p">
+        <key label="a" code="29" start_pos_x="5.625%p" key_leftmargin="5.625%p" key_bottommargin="1.9802%p" />
+        <key label="s" code="47" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="d" code="32" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="f" code="34" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="g" code="35" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="h" code="36" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="j" code="38" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="k" code="39" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key label="l" code="40" start_pos_x="76.625%p" key_rightmargin="4.875%p" key_bottommargin="1.9802%p" />
+        <key id="4" start_pos_x="90%p" start_pos_y="23.7624%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn" start_pos_y="47.5247%p">
+        <key label="'" width="12.5%p" key_type="16" code="75" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key label="，" width="12.5%p" key_type="16" start_pos_x="76.625%p" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_no_voice" start_pos_y="47.5247%p">
+        <key label="'" width="12.5%p" key_type="16" code="75" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key label="，" width="12.5%p" key_type="16" start_pos_x="76.625%p" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_en" start_pos_y="47.5247%p">
+        <key id="10" start_pos_x="1.25%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key id="10" start_pos_x="76.625%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_en_no_voice" start_pos_y="47.5247%p">
+        <key id="10" start_pos_x="1.25%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key id="10" start_pos_x="76.625%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="47.5247%p">
+        <key id="0" start_pos_x="1.25%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key id="20" start_pos_x="76.625%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_email_no_voice" start_pos_y="47.5247%p">
+        <key id="0" start_pos_x="1.25%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key id="20" start_pos_x="76.625%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="47.5247%p">
+        <key id="0" start_pos_x="1.25%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key id="20" start_pos_x="76.625%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_url_no_voice" start_pos_y="47.5247%p">
+        <key id="0" start_pos_x="1.25%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_leftmargin="1.25%p" key_bottommargin="1.9802%p" />
+        <key label="z" code="54" start_pos_x="14.5%p" key_bottommargin="1.9802%p" />
+        <key label="x" code="52" start_pos_x="23.375%p" key_bottommargin="1.9802%p" />
+        <key label="c" code="31" start_pos_x="32.25%p" key_bottommargin="1.9802%p" />
+        <key label="v" code="50" start_pos_x="41.125%p" key_bottommargin="1.9802%p" />
+        <key label="b" code="30" start_pos_x="50%p" key_bottommargin="1.9802%p" />
+        <key label="n" code="42" start_pos_x="58.875%p" key_bottommargin="1.9802%p" />
+        <key label="m" code="41" start_pos_x="67.75%p" key_bottommargin="1.9802%p" />
+        <key id="20" start_pos_x="76.625%p" start_pos_y="47.5247%p" width="12.5%p" height="21.7822%p" key_type="14" key_bottommargin="1.9802%p" />
+        <key id="12" start_pos_x="90%p" start_pos_y="47.5247%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="1.9802%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn" start_pos_y="71.2871%p">
+        <key label="！" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="，" width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="27.875%p" start_pos_y="71.2871%p" width="34.875%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="。" width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key label="？" width="12.5%p" key_type="16" start_pos_x="76.625%p" key_bottommargin="6.9307%p" />
+        <key id="72" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_no_voice" start_pos_y="71.2871%p">
+        <key label="！" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="，" width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="27.875%p" start_pos_y="71.2871%p" width="34.875%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="。" width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key label="？" width="12.5%p" key_type="16" start_pos_x="76.625%p" key_bottommargin="6.9307%p" />
+        <key id="77" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+    <row row_id="@string/toggle_row_en" start_pos_y="71.2871%p">
+        <key label="!" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="," width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="27.875%p" start_pos_y="71.2871%p" width="34.875%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="." width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key label="\?" width="12.5%p" key_type="16" start_pos_x="76.625%p" key_bottommargin="6.9307%p" />
+        <key id="72" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+    <row row_id="@string/toggle_row_en_no_voice" start_pos_y="71.2871%p">
+        <key label="!" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="," width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="27.875%p" start_pos_y="71.2871%p" width="34.875%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="." width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key label="\?" width="12.5%p" key_type="16" start_pos_x="76.625%p" key_bottommargin="6.9307%p" />
+        <key id="77" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="71.2871%p">
+        <key label="-" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="_" width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key label="\@" width="12.5%p" key_type="16" start_pos_x="27.875%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="41.125%p" start_pos_y="71.2871%p" width="21.625%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="." width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key id="28" width="12.5%p" height="21.7822%p" key_type="16" start_pos_x="76.625%p" start_pos_y="71.2871%p" key_bottommargin="6.9307%p" />
+        <key id="72" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+    <row row_id="@string/toggle_row_email_no_voice" start_pos_y="71.2871%p">
+        <key label="-" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="_" width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key label="\@" width="12.5%p" key_type="16" start_pos_x="27.875%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="41.125%p" start_pos_y="71.2871%p" width="21.625%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="." width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key id="28" width="12.5%p" height="21.7822%p" key_type="16" start_pos_x="76.625%p" start_pos_y="71.2871%p" key_bottommargin="6.9307%p" />
+        <key id="77" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="71.2871%p">
+        <key label="-" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="_" width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key label="/" width="12.5%p" key_type="16" start_pos_x="27.875%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="41.125%p" start_pos_y="71.2871%p" width="21.625%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="." width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key id="28" width="12.5%p" height="21.7822%p" key_type="16" start_pos_x="76.625%p" start_pos_y="71.2871%p" key_bottommargin="6.9307%p" />
+        <key id="72" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+    <row row_id="@string/toggle_row_url_no_voice" start_pos_y="71.2871%p">
+        <key label="-" width="12.5%p" key_type="16" start_pos_x="1.25%p" key_leftmargin="1.25%p" key_bottommargin="6.9307%p" />
+        <key label="_" width="12.5%p" key_type="16" start_pos_x="14.5%p" key_bottommargin="6.9307%p" />
+        <key label="/" width="12.5%p" key_type="16" start_pos_x="27.875%p" key_bottommargin="6.9307%p" />
+        <key id="3" start_pos_x="41.125%p" start_pos_y="71.2871%p" width="21.625%p" height="21.7822%p" key_bottommargin="6.9307%p" />
+        <key label="." width="12.5%p" key_type="16" start_pos_x="63.375%p" key_bottommargin="6.9307%p" />
+        <key id="28" width="12.5%p" height="21.7822%p" key_type="16" start_pos_x="76.625%p" start_pos_y="71.2871%p" key_bottommargin="6.9307%p" />
+        <key id="77" start_pos_x="90%p" start_pos_y="71.2871%p" width="8.75%p" height="21.7822%p" key_rightmargin="1.25%p" key_bottommargin="6.9307%p" />
+    </row>
+</keyboard>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">Oca</string>
+    <string name="month_medium_february">Şub</string>
+    <string name="month_medium_march">Mar</string>
+    <string name="month_medium_april">Nis</string>
+    <string name="month_medium_may">May</string>
+    <string name="month_medium_june">Haz</string>
+    <string name="month_medium_july">Tem</string>
+    <string name="month_medium_august">Ağu</string>
+    <string name="month_medium_september">Eyl</string>
+    <string name="month_medium_october">Eki</string>
+    <string name="month_medium_november">Kas</string>
+    <string name="month_medium_december">Ara</string>
+</resources>

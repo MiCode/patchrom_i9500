@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.candidate.SimeCandVerContainer android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/previous_btn" android:background="@drawable/textinput_predictive_popup_previous" android:clickable="true" android:layout_width="fill_parent" android:layout_height="13.0dip" android:layout_alignParentTop="true" />
+    <ImageButton android:id="@id/next_btn" android:background="@drawable/textinput_predictive_popup_next" android:clickable="true" android:layout_width="fill_parent" android:layout_height="13.0dip" android:layout_alignParentBottom="true" />
+    <ViewFlipper android:id="@id/candidate_flipper_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <view android:id="@id/candidate_view1" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.samsung.inputmethod.candidate.SimeCandVerView" />
+        <view android:id="@id/candidate_view2" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.samsung.inputmethod.candidate.SimeCandVerView" />
+    </ViewFlipper>
+</com.samsung.inputmethod.candidate.SimeCandVerContainer>

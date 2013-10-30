@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.candidate.SimeToolBarContainer android:orientation="horizontal" android:id="@id/toolbar_container" android:background="@drawable/toolbar_background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/tool_bar_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.inputmethod.candidate.SimeToolBarView android:orientation="horizontal" android:id="@id/tool_bar_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+</com.samsung.inputmethod.candidate.SimeToolBarContainer>

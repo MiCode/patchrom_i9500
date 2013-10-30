@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">thg 1</string>
+    <string name="month_medium_february">thg 2</string>
+    <string name="month_medium_march">thg 3</string>
+    <string name="month_medium_april">thg 4</string>
+    <string name="month_medium_may">thg 5</string>
+    <string name="month_medium_june">thg 6</string>
+    <string name="month_medium_july">thg 7</string>
+    <string name="month_medium_august">thg 8</string>
+    <string name="month_medium_september">thg 9</string>
+    <string name="month_medium_october">thg 10</string>
+    <string name="month_medium_november">thg 11</string>
+    <string name="month_medium_december">thg 12</string>
+</resources>

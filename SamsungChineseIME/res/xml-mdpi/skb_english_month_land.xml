@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="15.834%p" height="42.046%p" key_type="10" repeat="false" balloon="false">
+    <row start_pos_y="9.091%p">
+        <key label="@string/s_month_1" code="29" start_pos_x="1.4584%p" />
+        <key label="@string/s_month_2" code="30" start_pos_x="17.709%p" />
+        <key label="@string/s_month_3" code="31" start_pos_x="33.959%p" />
+        <key label="@string/s_month_4" code="32" start_pos_x="50.209%p" />
+        <key label="@string/s_month_5" code="33" start_pos_x="66.459%p" />
+        <key label="@string/s_month_6" code="34" start_pos_x="82.709%p" />
+    </row>
+    <row start_pos_y="52.273%p">
+        <key label="@string/s_month_7" code="35" start_pos_x="1.4584%p" />
+        <key label="@string/s_month_8" code="36" start_pos_x="17.709%p" />
+        <key label="@string/s_month_9" code="37" start_pos_x="33.959%p" />
+        <key label="@string/s_month_10" code="38" start_pos_x="50.209%p" />
+        <key label="@string/s_month_11" code="39" start_pos_x="66.459%p" />
+        <key label="@string/s_month_12" code="40" start_pos_x="82.709%p" />
+    </row>
+</keyboard>

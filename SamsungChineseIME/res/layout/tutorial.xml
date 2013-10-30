@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="21.0dip" android:textColor="@color/composing_color" android:layout_gravity="center" android:id="@id/toturial_slidingandflick" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="8.0dip" android:text="@string/toturial_sliding_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/tutorial_move_keyboard_imageview" android:background="@drawable/keyboard_move" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <CheckBox android:textSize="21.0dip" android:textColor="@color/composing_color" android:id="@id/confirmbox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="13.0dip" android:layout_marginBottom="12.0dip" android:text="@string/checkbox_string" />
+    </LinearLayout>
+</ScrollView>

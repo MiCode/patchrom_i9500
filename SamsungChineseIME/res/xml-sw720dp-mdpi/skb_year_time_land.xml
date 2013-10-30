@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.2381%p" key_ymargin="1.2195%p" width="10.5555%p" height="25%p" key_type="17" repeat="false" balloon="false">
+    <row start_pos_x="29.375%p">
+        <keys splitter="|" labels="1|2|3" long_labels=" |ABC|DEF" codes="8|9|10" />
+        <key id="11" start_pos_x="61.0415%p" width="10.7143%p" />
+    </row>
+    <row start_pos_x="29.375%p">
+        <keys splitter="|" labels="4|5|6" long_labels="GHI|JKL|MNO" codes="11|12|13" />
+        <key label="-" disable="true" key_type="20" start_pos_x="61.0415%p" width="10.7143%p" />
+    </row>
+    <row start_pos_x="29.375%p">
+        <keys splitter="|" labels="7|8|9" long_labels="PQRS|TUV|WXYZ" codes="14|15|16" />
+        <key label="\?#*" code="-4" disable="true" key_type="20" start_pos_x="61.0415%p" width="10.7143%p" />
+    </row>
+    <row start_pos_x="29.375%p">
+        <key label="*" key_type="20" disable="true" />
+        <key label="0" long_label="+" code="7" />
+        <key label="\#" key_type="20" disable="true" />
+        <key id="14" start_pos_x="61.0415%p" start_pos_y="75%p" width="10.7143%p" />
+    </row>
+</keyboard>

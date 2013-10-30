@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0%p" key_ymargin="0%p" width="20.625%p" height="24%p" key_type="3" repeat="false" balloon="false">
+    <row start_pos_y="1%p">
+        <key label="、" width="15.625%p" key_type="0" start_pos_x="2.1875%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="-" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="-" />
+        </key>
+        <key label="，" long_label="1" code="8" start_pos_x="18.4375%p" />
+        <key code="9" label="  日月金  " long_label="2" start_pos_x="39.6875%p" />
+        <key code="10" label="  木水火  " long_label="3" start_pos_x="60.9375%p" />
+        <key id="11" />
+    </row>
+    <row start_pos_y="25.5%p">
+        <key label="？" width="15.625%p" key_type="0" start_pos_x="2.1875%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="_" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="_" />
+        </key>
+        <key code="11" label="  土竹戈" long_label="4" start_pos_x="18.4375%p" />
+        <key code="12" label="  十大中  " long_label="5" start_pos_x="39.6875%p" />
+        <key code="13" label="  一弓人  " long_label="6" start_pos_x="60.9375%p" />
+        <key id="71" />
+    </row>
+    <row start_pos_y="50%p">
+        <key label="！" width="15.625%p" key_type="0" start_pos_x="2.1875%p">
+            <toggle_state state_id="@string/toggle_url_symbol" label="\?" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="\?" />
+        </key>
+        <key code="14" label="心手口尸" long_label="7" start_pos_x="18.4375%p" />
+        <key code="15" label="  廿山女  " long_label="8" start_pos_x="39.6875%p" />
+        <key code="16" label="  田難卜 " long_label="9" start_pos_x="60.9375%p" />
+        <key id="80" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk" start_pos_y="74.5%p">
+        <key id="70" />
+        <key id="12" />
+        <key start_pos_x="29.0625%p" start_pos_y="74.5%p" width="10%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key id="13" start_pos_x="39.6875%p" width="20.625%p" />
+        <key id="17" />
+        <key start_pos_x="71.5625%p" start_pos_y="74.5%p" width="10%p" height="24%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_hk" code="-12" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_url" width="10%p" start_pos_y="74.5%p">
+        <key id="70" />
+        <key id="152" width="8.75%p" />
+        <key label="/" start_pos_x="27.8125%p" width="8.75%p" balloon="false" key_type="0" />
+        <key id="13" start_pos_x="37.1875%p" width="12.5%p" />
+        <key start_pos_x="50.3125%p" width="8.75%p" key_type="0" repeat="true" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="18" />
+        <key id="16" start_pos_x="72.8125%p" width="8.75%p" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk_no_voice">
+        <key id="70" />
+        <key id="152" />
+        <key id="13" />
+        <key id="17" />
+        <key id="16" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_email" width="10%p" start_pos_y="74.5%p">
+        <key id="70" />
+        <key id="152" width="8.75%p" />
+        <key label="\@" start_pos_x="27.8125%p" width="8.75%p" balloon="false" key_type="0" />
+        <key id="13" start_pos_x="37.1875%p" width="12.5%p" />
+        <key start_pos_x="50.3125%p" width="8.75%p" key_type="0" repeat="true" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56">
+            <toggle_state state_id="@string/toggle_cn_cand" label="'" code="75" />
+        </key>
+        <key id="18" />
+        <key id="16" start_pos_x="72.8125%p" width="8.75%p" />
+        <key id="14" />
+    </row>
+</keyboard>

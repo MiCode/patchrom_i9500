@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">tammikuuta</string>
+    <string name="month_medium_february">helmikuuta</string>
+    <string name="month_medium_march">maaliskuuta</string>
+    <string name="month_medium_april">huhtikuuta</string>
+    <string name="month_medium_may">toukokuuta</string>
+    <string name="month_medium_june">kesäkuuta</string>
+    <string name="month_medium_july">heinäkuuta</string>
+    <string name="month_medium_august">elokuuta</string>
+    <string name="month_medium_september">syyskuuta</string>
+    <string name="month_medium_october">lokakuuta</string>
+    <string name="month_medium_november">marraskuuta</string>
+    <string name="month_medium_december">joulukuuta</string>
+</resources>

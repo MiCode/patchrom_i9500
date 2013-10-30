@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="8.612%p" height="16.261%p" key_type="18" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true">
+    <row start_pos_y="2.033%p">
+        <key label="1" code="8" key_type="12" height="13.098%p" start_pos_x="0.556%p" key_leftmargin="0.556%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p" />
+        <key label="2" code="9" key_type="12" height="13.098%p" start_pos_x="10.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p" />
+        <key label="3" code="10" key_type="12" height="13.098%p" start_pos_x="20.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p" />
+        <key label="4" code="11" key_type="12" height="13.098%p" start_pos_x="30.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p" />
+        <key label="5" code="12" key_type="12" height="13.098%p" start_pos_x="40.556%p" key_leftmargin="0%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p" />
+        <key label="6" code="13" key_type="12" height="13.098%p" start_pos_x="50.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p" />
+        <key label="7" code="14" key_type="12" height="13.098%p" start_pos_x="60.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p" />
+        <key label="8" code="15" key_type="12" height="13.098%p" start_pos_x="70.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p" />
+        <key label="9" code="16" key_type="12" height="13.098%p" start_pos_x="80.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p" />
+        <key label="0" code="7" key_type="12" height="13.098%p" start_pos_x="90.556%p" key_leftmargin="0.834%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p" />
+    </row>
+    <row start_pos_y="19.513%p">
+        <key label="，" start_pos_x="0.556%p" key_leftmargin="0.556%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="，" />
+            <toggle_state state_id="@string/toggle_language_en" label="," />
+        </key>
+        <key label="。" start_pos_x="10.625%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="。" />
+            <toggle_state state_id="@string/toggle_language_en" label="." />
+        </key>
+        <key label="、" start_pos_x="20.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="、" />
+            <toggle_state state_id="@string/toggle_language_en" label="\\" />
+        </key>
+        <key label="……" start_pos_x="30.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="……" />
+            <toggle_state state_id="@string/toggle_language_en" label="…" />
+        </key>
+        <key label="：" start_pos_x="40.556%p" key_leftmargin="0%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="：" />
+            <toggle_state state_id="@string/toggle_language_en" label=":" />
+        </key>
+        <key label="；" start_pos_x="50.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="；" />
+            <toggle_state state_id="@string/toggle_language_en" label=";" />
+        </key>
+        <key label="？" start_pos_x="60.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="？" />
+            <toggle_state state_id="@string/toggle_language_en" label="\?" />
+        </key>
+        <key label="！" start_pos_x="70.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="！" />
+            <toggle_state state_id="@string/toggle_language_en" label="!" />
+        </key>
+        <key label="“" start_pos_x="80.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="“" />
+            <toggle_state state_id="@string/toggle_language_en" label="“" />
+        </key>
+        <key label="”" start_pos_x="90.556%p" key_leftmargin="0.834%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="”" />
+            <toggle_state state_id="@string/toggle_language_en" label="”" />
+        </key>
+    </row>
+    <row start_pos_y="40.244%p">
+        <key label="＠" start_pos_x="0.556%p" key_leftmargin="0.556%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="\@" />
+            <toggle_state state_id="@string/toggle_language_en" label="\@" />
+        </key>
+        <key label="＆" start_pos_x="10.625%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="＆" />
+            <toggle_state state_id="@string/toggle_language_en" label="&amp;" />
+        </key>
+        <key label="＾" start_pos_x="20.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="＾" />
+            <toggle_state state_id="@string/toggle_language_en" label="^" />
+        </key>
+        <key label="～" start_pos_x="30.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="～" />
+            <toggle_state state_id="@string/toggle_language_en" label="~" />
+        </key>
+        <key code="71" label="（" start_pos_x="40.556%p" key_leftmargin="0%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="（" long_label="（）" code="71" />
+            <toggle_state state_id="@string/toggle_language_en" label="(" long_label="()" code="71" />
+        </key>
+        <key code="72" label="）" start_pos_x="50.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="）" long_label="（）" code="72" />
+            <toggle_state state_id="@string/toggle_language_en" label=")" long_label="()" code="72" />
+        </key>
+        <key label="＊" start_pos_x="60.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="＊" />
+            <toggle_state state_id="@string/toggle_language_en" label="*" />
+        </key>
+        <key label="\#" start_pos_x="70.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="\#" />
+            <toggle_state state_id="@string/toggle_language_en" label="\#" />
+        </key>
+        <key label="%" start_pos_x="80.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="%" />
+            <toggle_state state_id="@string/toggle_language_en" label="%" />
+        </key>
+        <key label="+" start_pos_x="90.556%p" key_leftmargin="0.834%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="+" />
+            <toggle_state state_id="@string/toggle_language_en" label="+" />
+        </key>
+    </row>
+    <row start_pos_y="60.976%p">
+        <unite label="1/2" key_type="11" start_pos_x="0.556%p" width="18.334%p">
+            <key code="-8" icon="@drawable/page_arrow_pre" hlicon="@drawable/page_arrow_pre_p" start_pos_x="0.556%p" width="9.167%p" balloon="false" key_type="5" />
+            <key code="-9" icon="@drawable/page_arrow_next" hlicon="@drawable/page_arrow_next_p" start_pos_x="10.625%p" width="9.167%p" balloon="false" key_type="6" />
+        </unite>
+        <key label="-" start_pos_x="20.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="-" />
+            <toggle_state state_id="@string/toggle_language_en" label="-" />
+        </key>
+        <key label="_" start_pos_x="30.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="＿" />
+            <toggle_state state_id="@string/toggle_language_en" label="_" />
+        </key>
+        <key label="=" start_pos_x="40.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="=" />
+            <toggle_state state_id="@string/toggle_language_en" label="=" />
+        </key>
+        <key label="/" start_pos_x="50.556%p" key_leftmargin="0%p" key_rightmargin="1.389%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="/" />
+            <toggle_state state_id="@string/toggle_language_en" label="/" />
+        </key>
+        <key label="$" start_pos_x="60.556%p" key_leftmargin="0%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="$" />
+            <toggle_state state_id="@string/toggle_language_en" label="$" />
+        </key>
+        <key label="¥" start_pos_x="70.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="¥" />
+            <toggle_state state_id="@string/toggle_language_en" label="¥" />
+        </key>
+        <key label="£" start_pos_x="80.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="£" />
+            <toggle_state state_id="@string/toggle_language_en" label="£" />
+        </key>
+        <key label="€" start_pos_x="90.556%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p">
+            <toggle_state state_id="@string/toggle_language_cn" label="€" />
+            <toggle_state state_id="@string/toggle_language_en" label="€" />
+        </key>
+    </row>
+    <row start_pos_y="81.708%p">
+        <key id="41" start_pos_x="0.556%p" width="13.612%p" start_pos_y="81.708%p" height="16.261%p" key_leftmargin="0.556%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p" />
+        <key id="53" start_pos_x="15.625%p" width="8.612%p" start_pos_y="81.708%p" height="16.261%p" key_leftmargin="0.556%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p" />
+        <key id="3" start_pos_x="27.223%p" width="35.278%p" start_pos_y="81.708%p" height="16.261%p" key_leftmargin="2.223%p" key_rightmargin="2.223%p" key_bottommargin="4.231%p" />
+        <key id="9" start_pos_x="65.556%p" width="8.612%p" start_pos_y="81.708%p" height="16.261%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p" />
+        <key id="1" start_pos_x="75.556%p" width="8.612%p" start_pos_y="81.708%p" height="16.261%p" key_leftmargin="0.834%p" key_rightmargin="0.556%p" key_bottommargin="4.231%p" />
+        <key id="4" start_pos_x="85.556%p" width="13.612%p" start_pos_y="81.708%p" height="16.261%p" key_leftmargin="0.834%p" key_rightmargin="0.834%p" key_bottommargin="4.231%p" />
+    </row>
+</keyboard>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.46875%p" key_ymargin="1.25%p" width="25%p" height="25%p" key_type="3" skb_bg="@drawable/sip_tab_bg" repeat="false" balloon="false">
+    <row>
+        <key label="，" key_type="1">
+            <toggle_state state_id="@string/toggle_language_en" label="," />
+            <toggle_state state_id="@string/toggle_url_symbol" label="." />
+            <toggle_state state_id="@string/toggle_email_symbol" label="." />
+        </key>
+        <key label="1" key_type="0" />
+        <keys splitter="|" labels="ABC|DEF" long_labels="2|3" codes="9|10" />
+    </row>
+    <row>
+        <key label="." key_type="1">
+            <toggle_state state_id="@string/toggle_language_en" label="." />
+            <toggle_state state_id="@string/toggle_url_symbol" label="/" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="_" />
+        </key>
+        <keys splitter="|" labels="GHI|JKL|MNO" long_labels="4|5|6" codes="11|12|13" />
+    </row>
+    <row>
+        <key label="？" key_type="1">
+            <toggle_state state_id="@string/toggle_language_en" label="\?" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="www." />
+            <toggle_state state_id="@string/toggle_email_symbol" label="\@" />
+        </key>
+        <keys splitter="|" labels="PQRS|TUV|WXYZ" long_labels="7|8|9" codes="14|15|16" />
+    </row>
+    <row>
+        <key id="18" label="!" key_type="1" />
+        <key id="43" start_pos_x="25%p" start_pos_y="75%p" width="25%p" />
+        <key id="13" start_pos_x="50%p" width="25%p" />
+        <key id="10" start_pos_x="75%p" start_pos_y="75%p" width="25%p" />
+    </row>
+</keyboard>

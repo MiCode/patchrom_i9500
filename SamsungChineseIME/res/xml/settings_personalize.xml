@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/predictive_text_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchtype="http://schemas.android.com/apk/res/com.touchtype">
+    <CheckBoxPreference android:persistent="true" android:title="@string/personalize_use_personalised_data_title" android:key="@string/personalize_use_personalised_data_key" android:summary="@string/personalize_use_personalised_data_summary" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/personalization_title" android:key="@string/pref_personalize_sources_category_key">
+        <com.touchtype.personalizer.PersonalizerPreference android:id="@id/weibo" android:title="@string/personalize_weibo_title" android:key="@string/pref_personalize_weibo" android:summary="@string/personalize_weibo_subtitle" android:dependency="personalize_use_personalised_data_key" style="?android:attr/dialogPreferenceStyle" />
+        <com.touchtype.personalizer.PersonalizerPreference android:id="@id/gmail" android:title="@string/personalize_gmail_title" android:key="@string/pref_personalize_gmail" android:summary="@string/personalize_gmail_subtitle" android:dependency="personalize_use_personalised_data_key" style="?android:attr/dialogPreferenceStyle" />
+        <com.touchtype.personalizer.PersonalizerPreference android:id="@id/facebook" android:title="@string/personalize_facebook_title" android:key="@string/pref_personalize_facebook" android:summary="@string/personalize_facebook_subtitle" android:dependency="personalize_use_personalised_data_key" style="?android:attr/dialogPreferenceStyle" />
+        <com.touchtype.personalizer.PersonalizerPreference android:id="@id/twitter" android:title="@string/personalize_twitter_title" android:key="@string/pref_personalize_twitter" android:summary="@string/personalize_twitter_subtitle" android:dependency="personalize_use_personalised_data_key" style="?android:attr/dialogPreferenceStyle" />
+        <com.touchtype.personalizer.DeleteDynamicLanguageModelDialog android:title="@string/pref_clear_personalised_data_title" android:key="@string/pref_clear_personalised_data_key" android:summary="@string/pref_clear_personalised_data_summary" android:dependency="personalize_use_personalised_data_key" android:dialogMessage="@string/pref_clear_personalised_data_dialog_msg" style="?android:attr/dialogPreferenceStyle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/personalize_privacy_preference_title">
+        <com.touchtype.personalizer.PrivacyPreference android:layout="@layout/personalize_privacy_preference_layout" />
+    </PreferenceCategory>
+</PreferenceScreen>

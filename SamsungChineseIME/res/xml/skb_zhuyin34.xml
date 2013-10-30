@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.53%p" key_ymargin="1.5625%p" width="21.6%p" height="25%p" key_type="3" repeat="false" balloon="false">
+    <row>
+        <key label="、" width="17.6%p" key_type="0" />
+        <keys splitter="|" labels="  ㄅㄉㄚ  |ㄍㄐㄞㄧ|ㄓㄗㄢㄦ" long_labels="1|2|3" codes="8|9|10" />
+        <key id="11" start_pos_x="82.4%p" width="17.6%p" />
+    </row>
+    <row>
+        <key label="？" width="17.6%p" key_type="0" />
+        <keys splitter="|" labels="  ㄆㄊㄛ  |ㄎㄑㄟㄨ|  ㄔㄘㄣ  " long_labels="4|5|6" codes="11|12|13" />
+        <key id="71" start_pos_x="82.4%p" width="17.6%p" />
+    </row>
+    <row>
+        <key label="！" width="17.6%p" key_type="0" />
+        <keys splitter="|" labels="ㄇㄋㄜㄝ|ㄏㄒㄠㄩ|ㄕㄙㄤㄥ" long_labels="7|8|9" codes="14|15|16" />
+        <key id="80" start_pos_x="82.4%p" width="17.6%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice">
+        <key id="12" start_pos_x="0%p" width="14.6%p" />
+        <key label="\?#+" width="13.6%p" code="-14" key_type="1" />
+        <key start_pos_y="75%p" width="11%p" height="25%p" key_type="13" repeat="false" balloon="false" label="ㄈㄌ" long_label="ㄡㄖ" code="7" />
+        <key id="13" start_pos_x="39.2%p" width="21.6%p" />
+        <key start_pos_x="60.8%p" start_pos_y="75%p" width="10.8%p" height="25%p" key_type="13" repeat="false" balloon="false" label="ˇˋ" long_label="ˊ˙" code="18" />
+        <key start_pos_x="71.6%p" start_pos_y="75%p" width="14.2%p" height="25%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_tw" code="-12" />
+        <key id="14" start_pos_x="85.8%p" width="14.2%p" />
+    </row>
+    <row width="10%p" row_id="@string/toggle_row_cn_tw" start_pos_y="75%p">
+        <key id="12" start_pos_x="0%p" width="11%p" />
+        <key label="\?#+" start_pos_x="11%p" width="11%p" code="-14" key_type="1" />
+        <key start_pos_x="22%p" start_pos_y="75%p" width="11%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_voice" hlicon="@drawable/keypad_icon_voice_p" code="-20" />
+        <key start_pos_x="33%p" start_pos_y="75%p" width="11%p" height="25%p" key_type="13" repeat="false" balloon="false" label="ㄈㄌ" long_label="ㄡㄖ" code="7" />
+        <key id="13" start_pos_x="44%p" width="16%p" />
+        <key start_pos_x="60%p" start_pos_y="75%p" width="10.8%p" height="25%p" key_type="13" repeat="false" balloon="false" label="ˇˋ" long_label="ˊ˙" code="18" />
+        <key start_pos_x="70.8%p" start_pos_y="75%p" width="14.6%p" height="25%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_tw" code="-12" />
+        <key id="14" />
+    </row>
+    <row row_id="@string/toggle_row_url" width="10%p" start_pos_y="75%p">
+        <key id="12" start_pos_x="0%p" width="10%p" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" />
+        <key label="\?#+" start_pos_x="10%p" width="10%p" code="-14" key_type="1" />
+        <key label="/" start_pos_x="20%p" width="10%p" balloon="true" key_type="0" />
+        <key id="13" start_pos_x="30%p" width="15%p" />
+        <key start_pos_x="45%p" width="10%p" key_type="0" repeat="true" balloon="true" label="." code="56" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" />
+        <key id="18" start_pos_x="55%p" width="15%p" />
+        <key start_pos_x="70%p" start_pos_y="75%p" width="15%p" height="25%p" key_type="8" repeat="false" balloon="false" label="@string/word_cn" long_label="@string/word_cn_tw" code="-12" />
+        <key id="14" start_pos_x="85%p" width="15%p" />
+    </row>
+</keyboard>

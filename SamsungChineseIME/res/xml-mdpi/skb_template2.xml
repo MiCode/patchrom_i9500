@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skb_template skb_bg="@drawable/textinput_panel_bg" key_xmargin="0.50%p" key_ymargin="0.44%p" balloon_bg="@drawable/sip_qwerty_bubble" popup_bg="@drawable/miniskb_bg" color="@color/label_color" color_highlight="@color/label_color_p" color_balloon="@color/balloon_font_color">
+    <key_type id="0" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="1" balloon="false" color="@color/function_key_color" bg="@drawable/sip_button_right_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="2" bg="@drawable/qwerty_icon_shift_shift_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="3" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="4" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="5" color="@color/function_key_color" />
+    <key_type id="6" color="@color/function_key_color" />
+    <key_type id="7" balloon="false" bg="@drawable/sip_button_right_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="8" balloon="false" color="@color/function_key_color" bg="@drawable/sip_button_right_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="9" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="10" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="11" balloon="false" color="@color/function_key_color" bg="@drawable/sip_button_right_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="12" balloon="false" color="@color/function_key_color" bg="@drawable/sip_button_right_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="13" balloon="false" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="14" balloon="false" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_n" />
+    <key_type id="15" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="16" balloon="false" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="17" balloon="false" color="@color/mm_mini_popup_text_color" bg="@drawable/sip_key_bg_invisible" hlbg="@drawable/popup_key_bg_pressed" />
+    <key_type id="18" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="19" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="20" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" /> >
+<key_type id="21" balloon="false" color="@color/balloon_font_color" bg="@drawable/sip_button_right_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="22" balloon="false" bg="@drawable/sip_button_right_bg" hlbg="@drawable/sip_button_p" />
+    <key_type id="23" balloon="false" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_p" />
+    <key_type id="24" balloon="false" bg="@drawable/sip_button_n" hlbg="@drawable/sip_button_right_bg" />
+    <key_type id="25" balloon="false" bg="@drawable/sip_key_bg_invisible" hlbg="@drawable/sip_key_bg_invisible" />
+    <key id="0" start_pos_x="0.625%p" start_pos_y="51.5%p" width="12.1875%p" height="21.5%p" key_type="1" repeat="false" balloon="true" label="，" code="55">
+        <toggle_state state_id="@string/toggle_language_cn" key_type="0" label="'" code="75" start_pos_x="5%p" width="10%p" />
+        <toggle_state state_id="@string/toggle_lowercase" key_type="1" icon="@drawable/qwerty_icon_shift" icon_popup="@drawable/qwerty_icon_shift_bubble" code="-1" repeat="true" />
+        <toggle_state state_id="@string/toggle_templowercase" key_type="1" icon="@drawable/qwerty_icon_shift_p" icon_popup="@drawable/qwerty_icon_shift_bubble" code="-1" repeat="true" />
+        <toggle_state state_id="@string/toggle_uppercase" key_type="2" icon="@drawable/qwerty_icon_shift_shift" icon_popup="@drawable/qwerty_icon_shift_bubble" code="-1" repeat="true" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" key_type="4" label="仓" start_pos_x="5%p" width="10%p" />
+        <toggle_state state_id="@string/toggle_language_cn_qk_hk" key_type="4" label="速" start_pos_x="5%p" width="10%p" />
+        <toggle_state state_id="@string/toggle_language_cn_tw" key_type="4" label="声调" start_pos_x="5%p" width="10%p" />
+    </key>
+    <key id="10" start_pos_x="82.1875%p" start_pos_y="50%p" width="15.625%p" height="24%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_shift" code="-1">
+        <toggle_state state_id="@string/toggle_lowercase" key_type="1" icon="@drawable/qwerty_icon_shift" icon_popup="@drawable/qwerty_icon_shift_bubble" code="-1" />
+        <toggle_state state_id="@string/toggle_templowercase" key_type="1" icon="@drawable/qwerty_icon_shift_p" icon_popup="@drawable/qwerty_icon_shift_bubble" code="-1" />
+        <toggle_state state_id="@string/toggle_uppercase" key_type="2" icon="@drawable/qwerty_icon_shift_shift" icon_popup="@drawable/qwerty_icon_shift_bubble" code="-1" />
+    </key>
+    <key id="53" start_pos_x="15.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" repeat="false" balloon="false" icon="@drawable/qwerty_icon_lock" code="-16">
+        <toggle_state state_id="@string/toggle_symbol_lock" icon="@drawable/qwerty_icon_lock" balloon="false" code="-16" />
+        <toggle_state state_id="@string/toggle_symbol_unlock" icon="@drawable/qwerty_icon_unlock" balloon="false" code="-16" />
+    </key>
+    <key id="1" start_pos_x="87.1875%p" start_pos_y="51.5%p" width="12.1875%p" height="21.5%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_del" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" />
+    <key id="11" start_pos_x="82.1875%p" start_pos_y="1%p" width="15.625%p" height="24%p" key_type="1" repeat="true" balloon="false" icon="@drawable/keypad_icon_del" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" />
+    <key id="21" start_pos_x="86.5625%p" start_pos_y="1.021%p" width="13.125%p" height="43.877%p" key_type="1" repeat="true" balloon="true" icon="@drawable/qwerty_icon_del" icon_popup="@drawable/qwerty_icon_del_bubble" code="67" hlicon="@drawable/qwerty_icon_del_p" />
+    <key id="31" start_pos_x="86%p" start_pos_y="25%p" width="14%p" height="25%p" key_type="1" repeat="true" balloon="false" icon="@drawable/qwerty_icon_del" code="67" hlicon="@drawable/qwerty_icon_del_p" />
+    <key id="2" start_pos_x="15.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" repeat="true" balloon="false" code="-2" hlicon="@drawable/qwerty_icon_setting_p" />
+    <key id="12" start_pos_x="18.4375%p" start_pos_y="74.5%p" width="10%p" height="24%p" key_type="1" icon="@drawable/keypad_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" repeat="true" balloon="false" code="-2" extra_hlicon="@drawable/qwerty_icon_long_press_p" />
+    <key id="22" start_pos_x="11%p" start_pos_y="50%p" width="9%p" height="50%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" repeat="true" balloon="false" code="-2" extra_hlicon="@drawable/qwerty_icon_long_press_p" hlicon="@drawable/qwerty_icon_setting_p" />
+    <key id="3" start_pos_x="26.875%p" start_pos_y="76.5%p" width="35.625%p" height="21.5%p" key_type="0" repeat="false" balloon="false" icon="@drawable/qwerty_icon_space" hlicon="@drawable/qwerty_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+    <key id="13" start_pos_x="29.0625%p" start_pos_y="74.5%p" width="31.25%p" height="24%p" key_type="3" long_label="0" repeat="false" balloon="false" icon="@drawable/keypad_icon_space" hlicon="@drawable/keypad_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+    <key id="23" start_pos_x="36.25%p" start_pos_y="53.062%p" width="27.5%p" height="43.877%p" key_type="0" repeat="false" balloon="false" icon="@drawable/qwerty_icon_space" hlicon="@drawable/qwerty_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+    <key id="33" start_pos_x="39.2%p" width="21.6%p" start_pos_y="75%p" height="25%p" repeat="false" balloon="false" icon="@drawable/keypad_icon_space" hlicon="@drawable/keypad_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+    <key id="83" start_pos_x="82.1875%p" width="15.625%p" start_pos_y="50%p" height="24%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_space_p" hlicon="@drawable/keypad_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+    <key id="63" start_pos_x="35.625%p" start_pos_y="76.5%p" width="16.975%p" height="21.5%p" repeat="false" balloon="false" icon="@drawable/keypad_icon_space" hlicon="@drawable/keypad_icon_space_p" icon_popup="@drawable/qwerty_icon_space_bubble" code="62" />
+    <key id="4" start_pos_x="85.625%p" start_pos_y="76.5%p" width="13.75%p" height="21.5%p" key_type="1" repeat="false" balloon="true" icon="@drawable/qwerty_icon_enter" hlicon="@drawable/qwerty_icon_enter_p" icon_popup="@drawable/qwerty_icon_enter_bubble" code="66">
+        <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" balloon="false" />
+    </key>
+    <key id="14" start_pos_x="82.1875%p" start_pos_y="74.5%p" width="15.625%p" height="24%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_enter" icon_popup="@drawable/keyboard_icon_enter" code="66">
+        <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" balloon="false" />
+    </key>
+    <key id="24" start_pos_x="86.5625%p" start_pos_y="53.062%p" width="13.125%p" height="43.877%p" key_type="1" repeat="false" balloon="true" icon="@drawable/qwerty_icon_enter" hlicon="@drawable/qwerty_icon_enter_p" icon_popup="@drawable/qwerty_icon_enter_bubble" code="66">
+        <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" balloon="false" />
+        <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" balloon="false" />
+    </key>
+    <key id="34" start_pos_x="84%p" start_pos_y="75%p" width="16%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/qwerty_icon_enter" hlicon="@drawable/qwerty_icon_enter_p" code="66">
+        <toggle_state state_id="@string/toggle_enter_go" label="@string/word_enter_go" code="66" />
+        <toggle_state state_id="@string/toggle_enter_search" icon="@drawable/search_icon" code="66" />
+        <toggle_state state_id="@string/toggle_enter_send" label="@string/word_enter_send" code="66" />
+        <toggle_state state_id="@string/toggle_enter_next" label="@string/word_enter_next" code="66" />
+        <toggle_state state_id="@string/toggle_enter_done" label="@string/word_enter_done" code="66" />
+    </key>
+    <key id="5" start_pos_x="0.625%p" start_pos_y="76.5%p" width="13.75%p" height="21.5%p" key_type="8" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3">
+        <toggle_state state_id="@string/toggle_123_sym_one_line" label="123 ?#*" code="-3" key_type="11" />
+    </key>
+    <key id="15" start_pos_x="0%p" start_pos_y="80%p" width="20%p" height="20%p" key_type="7" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3" />
+    <key id="25" start_pos_x="0.3125%p" start_pos_y="53.062%p" width="13.1251%p" height="43.877%p" key_type="8" repeat="false" balloon="false" label="123" long_label="\?#*" code="-3" />
+    <key id="35" start_pos_x="0%p" start_pos_y="80%p" width="20%p" height="20%p" key_type="7" repeat="false" balloon="false" label="\?#*" long_label="@string/word_pinyin" code="-3">
+        <toggle_state state_id="@string/toggle_symbol_pinyin" label="\?#*" long_label="@string/word_pinyin" key_type="7" code="-3" balloon="false" />
+        <toggle_state state_id="@string/toggle_symbol_stroke" label="\?#*" long_label="@string/word_stroke" key_type="7" code="-3" balloon="false" />
+        <toggle_state state_id="@string/toggle_symbol_english" label="\?#*" long_label="ABC" key_type="7" code="-3" balloon="false" />
+        <toggle_state state_id="@string/toggle_symbol_korean" label="\?#*" long_label="ㄱㄴㄷ" key_type="7" code="-3" balloon="false" />
+    </key>
+    <key id="45" start_pos_x="0.625%p" start_pos_y="76.5%p" width="13.75%p" height="21.5%p" key_type="1" repeat="false" balloon="false" label="\?#*" code="-3" />
+    <key id="55" start_pos_x="0.3125%p" start_pos_y="53.062%p" width="13.1251%p" height="43.877%p" key_type="1" repeat="false" balloon="false" label="\?#*" code="-3" />
+    <key id="6" start_pos_x="75.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" repeat="true" balloon="false" label="*" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12">
+        <toggle_state state_id="@string/toggle_language_cn" label="@string/word_cn" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_en" label="@string/word_en" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_ko" label="@string/word_ko" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_tw" label="@string/word_cn" long_label="@string/word_cn_tw" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" label="@string/word_cn" long_label="@string/word_cn_hk" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_qk_hk" label="@string/word_cn" long_label="@string/word_cn_hk" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+    </key>
+    <key id="16" start_pos_x="71.5625%p" start_pos_y="74.5%p" width="10%p" height="24%p" key_type="1" repeat="true" balloon="false" label="*" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12">
+        <toggle_state state_id="@string/toggle_language_cn" label="@string/word_cn" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_en" label="@string/word_en" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_ko" label="@string/word_ko" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_tw" label="@string/word_cn" long_label="@string/word_cn_tw" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" label="@string/word_cn" long_label="@string/word_cn_hk" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+    </key>
+    <key id="26" start_pos_x="76.5625%p" start_pos_y="53.062%p" width="8.75%p" height="43.877%p" key_type="1" repeat="true" balloon="false" label="*" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12">
+        <toggle_state state_id="@string/toggle_language_cn" label="@string/word_cn" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_en" label="@string/word_en" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_ko" label="@string/word_ko" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_tw" label="@string/word_cn" long_label="@string/word_cn_tw" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" label="@string/word_cn" long_label="@string/word_cn_hk" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_qk_hk" label="@string/word_cn" long_label="@string/word_cn_hk" key_type="8" balloon="false" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-12" />
+    </key>
+    <key id="36" start_pos_x="57.82%p" start_pos_y="50%p" width="14.06%p" height="50%p" key_type="8" repeat="false" balloon="false" label="*" code="-12">
+        <toggle_state state_id="@string/toggle_language_cn_tw" label="@string/word_cn" long_label="@string/word_cn_tw" balloon="false" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" label="@string/word_cn" long_label="@string/word_cn_hk" balloon="false" code="-12" />
+        <toggle_state state_id="@string/toggle_language_cn_qk_hk" label="@string/word_cn_hk" balloon="false" code="-12" />
+    </key>
+    <key id="7" start_pos_x="65.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="0" repeat="true" balloon="true" label="." code="56">
+        <toggle_state state_id="@string/toggle_language_cn" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_en" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_ko" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_cn_tw" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+    </key>
+    <key id="17" start_pos_x="60.9375%p" start_pos_y="74.5%p" width="10%p" height="24%p" key_type="0" extra_icon="@drawable/qwerty_icon_long_press" repeat="true" balloon="false" label="." code="56">
+        <toggle_state state_id="@string/toggle_language_cn" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_en" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_ko" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_cn_tw" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+    </key>
+    <key id="27" start_pos_x="66.5625%p" start_pos_y="53.062%p" width="8.751%p" height="43.877%p" key_type="0" repeat="true" balloon="true" label="." code="56">
+        <toggle_state state_id="@string/toggle_language_cn" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_en" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_ko" label="." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_cn_tw" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+        <toggle_state state_id="@string/toggle_language_cn_hk" label="。" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="56" />
+    </key>
+    <key id="37" start_pos_x="59.39%p" start_pos_y="80%p" width="10%p" height="20%p" key_type="0" repeat="false" balloon="true" label="." code="56" />
+    <key id="8" start_pos_x="63.75%p" start_pos_y="76.5%p" width="12.1875%p" height="21.5%p" key_type="1" repeat="true" balloon="true" label=".com" icon="@drawable/qwerty_icon_long_press" code="-6">
+        <toggle_state state_id="@string/toggle_url_prefix" label="www." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-5" />
+        <toggle_state state_id="@string/toggle_url_suffix" label=".com" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-6" />
+    </key>
+    <key id="18" start_pos_x="59.6875%p" start_pos_y="74.5%p" width="12.5%p" height="24%p" key_type="1" repeat="true" balloon="false" label=".com" extra_icon="@drawable/qwerty_icon_long_press" code="-6">
+        <toggle_state state_id="@string/toggle_url_prefix" label="www." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-5" />
+        <toggle_state state_id="@string/toggle_url_suffix" label=".com" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-6" />
+    </key>
+    <key id="28" start_pos_x="65.9375%p" start_pos_y="53.062%p" width="11.5625%p" height="43.877%p" key_type="1" repeat="true" balloon="true" label=".com" extra_icon="@drawable/qwerty_icon_long_press" code="-6">
+        <toggle_state state_id="@string/toggle_url_prefix" label="www." extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-5" />
+        <toggle_state state_id="@string/toggle_url_suffix" label=".com" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-6" />
+    </key>
+    <key id="9" start_pos_x="62.1875%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" repeat="false" balloon="false" icon="@drawable/qwerty_icon_toggle" code="-11">
+        <toggle_state state_id="@string/toggle_language_cn" icon="@drawable/qwerty_icon_toggle" hlicon="@drawable/qwerty_icon_toggle_p" balloon="false" code="-11" />
+        <toggle_state state_id="@string/toggle_language_en" icon="@drawable/qwerty_icon_toggle_ke" hlicon="@drawable/qwerty_icon_toggle_ke_p" balloon="false" code="-11" />
+    </key>
+    <key id="19" start_pos_x="59.39%p" start_pos_y="80%p" width="10%p" height="20%p" key_type="1" repeat="false" balloon="false" icon="@drawable/keypad_icon_toggle" code="-11">
+        <toggle_state state_id="@string/toggle_language_cn" icon="@drawable/keypad_icon_toggle" hlicon="@drawable/keypad_icon_toggle_p" balloon="false" code="-11" />
+        <toggle_state state_id="@string/toggle_language_en" icon="@drawable/keypad_icon_toggle_ke" hlicon="@drawable/keypad_icon_toggle_ke_p" balloon="false" code="-11" />
+    </key>
+    <key id="40" start_pos_x="82.1875%p" start_pos_y="50%p" width="15.625%p" height="24%p" key_type="1" repeat="false" balloon="false" label="@string/word_pinyin" code="-13">
+        <toggle_state state_id="@string/toggle_pinyin_34" label="@string/word_pinyin" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_stroke_34" label="@string/word_stroke" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_cangjie_34" label="@string/toggle_cangjie_stroke_34_value" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_cangjie_stroke_34" label="@string/toggle_cangjie_34_value" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_zhuyin_34" label="@string/toggle_zhuyin_stroke_34_value" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_zhuyin_stroke_34" label="@string/toggle_zhuyin_34_value" balloon="false" code="-13" />
+    </key>
+    <key id="41" start_pos_x="0.625%p" start_pos_y="76.5%p" width="13.75%p" height="21.5%p" key_type="1" repeat="false" balloon="false" label="" code="-18" icon="@drawable/qwerty_icon_return" hlicon="@drawable/qwerty_icon_return_p" />
+    <key id="51" start_pos_x="16.47%p" start_pos_y="75%p" width="12.98%p" height="25%p" key_type="1" repeat="false" balloon="false" label="" code="-18" icon="@drawable/keypad_icon_return" hlicon="@drawable/keypad_icon_return_p" />
+    <key id="42" start_pos_x="0%p" start_pos_y="80%p" width="20%p" height="20%p" key_type="7" repeat="false" balloon="false" label="@string/word_pinyin" long_label="\?#*" code="-3">
+        <toggle_state state_id="@string/toggle_symbol_pinyin" label="@string/word_pinyin" long_label="\?#*" balloon="false" code="-3" />
+        <toggle_state state_id="@string/toggle_symbol_stroke" label="@string/word_stroke" long_label="\?#*" balloon="false" code="-3" />
+        <toggle_state state_id="@string/toggle_symbol_english" label="ABC" long_label="\?#*" balloon="false" code="-3" />
+        <toggle_state state_id="@string/toggle_symbol_korean" label="ㄱㄴㄷ" long_label="\?#*" balloon="false" code="-3" />
+    </key>
+    <key id="43" start_pos_x="18.4375%p" start_pos_y="1%p" width="20.625%p" height="24%p" key_type="3" label="@string/word_word_think" repeat="false" balloon="false" icon="@drawable/keypad_icon_shift_off" long_label="1" code="-10">
+        <toggle_state state_id="@string/toggle_t9" label="@string/word_word_think" key_type="3" icon="@drawable/keypad_icon_shift_on" long_label="1" balloon="false" code="-10" />
+    </key>
+    <key id="80" start_pos_x="82.1875%p" start_pos_y="50%p" width="15.625%p" height="24%p" key_type="12" repeat="false" balloon="false" label="@string/word_pinyin" code="-13">
+        <toggle_state state_id="@string/toggle_pinyin_34" label="@string/word_pinyin" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_stroke_34" label="@string/word_stroke" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_cangjie_34" label="@string/toggle_cangjie_stroke_34_value" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_cangjie_stroke_34" label="@string/toggle_cangjie_34_value" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_zhuyin_34" label="@string/toggle_zhuyin_stroke_34_value" balloon="false" code="-13" />
+        <toggle_state state_id="@string/toggle_zhuyin_stroke_34" label="@string/toggle_zhuyin_34_value" balloon="false" code="-13" />
+    </key>
+    <key id="70" start_pos_x="2.1875%p" start_pos_y="74.5%p" width="15.625%p" height="24%p" key_type="1" label="\?#*" repeat="false" balloon="false" code="-14" />
+    <key id="71" start_pos_x="82.1875%p" start_pos_y="25.5%p" width="15.625%p" height="24%p" key_type="1" label="123" repeat="false" balloon="false" code="-15" />
+    <key id="72" start_pos_x="70.8%p" start_pos_y="75%p" width="14.6%p" height="25%p" key_type="1" repeat="false" balloon="false" icon="@drawable/voice_input_icon" hlicon="@drawable/voice_input_icon_p" code="-20" />
+    <key id="73" start_pos_x="0%p" start_pos_y="60%p" width="33.34%p" height="20%p" key_type="1" repeat="false" balloon="false" label="@string/word_pinyin" code="-21">
+        <toggle_state state_id="@string/toggle_cangjie_34" label="@string/toggle_cangjie_34_value" balloon="false" code="-21" />
+        <toggle_state state_id="@string/toggle_cangjie_stroke_34" label="@string/toggle_cangjie_stroke_34" balloon="false" code="-21" />
+        <toggle_state state_id="@string/toggle_zhuyin_34" label="@string/toggle_zhuyin_34_value" balloon="false" code="-21" />
+        <toggle_state state_id="@string/toggle_zhuyin_stroke_34" label="@string/toggle_zhuyin_stroke_34_value" balloon="false" code="-21" />
+    </key>
+    <key id="74" start_pos_x="66.66%p" start_pos_y="60%p" width="33.34%p" height="20%p" key_type="1" repeat="true" balloon="false" icon="@drawable/qwerty_icon_del" code="67" hlicon="@drawable/qwerty_icon_del_p" />
+    <key id="150" start_pos_x="15.625%p" start_pos_y="76.5%p" width="8.75%p" height="21.5%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" popup_skb="@xml/skb_cm" extra_hlicon="@drawable/qwerty_icon_long_press_p" repeat="false" balloon="false" code="-117" hlicon="@drawable/qwerty_icon_setting_p">
+        <toggle_state state_id="@string/toggle_mm_voice" icon="@drawable/qwerty_key_icon_voice" hlicon="@drawable/qwerty_key_icon_voice_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_setting" icon="@drawable/qwerty_key_icon_settings" hlicon="@drawable/qwerty_key_icon_settings_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_clipboard" icon="@drawable/qwerty_key_icon_clipboard" hlicon="@drawable/qwerty_key_icon_clipboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_handwriting" icon="@drawable/qwerty_key_icon_hwr" hlicon="@drawable/qwerty_key_icon_hwr_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_comma" label="," extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_question" label="\?" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_exclamation" label="!" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_quotation" label="'" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_setting_voice" icon="@drawable/qwerty_key_icon_settings" hlicon="@drawable/qwerty_key_icon_settings_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_clipboard_voice" icon="@drawable/qwerty_key_icon_clipboard" hlicon="@drawable/qwerty_key_icon_clipboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_handwriting_voice" icon="@drawable/qwerty_key_icon_hwr" hlicon="@drawable/qwerty_key_icon_hwr_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_comma_voice" label="," extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_question_voice" label="\?" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_exclamation_voice" label="!" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_quotation_voice" label="'" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+    </key>
+    <key id="151" start_pos_x="14.6875%p" start_pos_y="53.062%p" width="8.75%p" height="43.877%p" key_type="1" icon="@drawable/qwerty_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" popup_skb="@xml/skb_cm" repeat="false" balloon="false" code="-117" extra_hlicon="@drawable/qwerty_icon_long_press_p" hlicon="@drawable/qwerty_icon_setting_p">
+        <toggle_state state_id="@string/toggle_mm_voice" icon="@drawable/qwerty_key_icon_voice" hlicon="@drawable/qwerty_key_icon_voice_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_setting" icon="@drawable/qwerty_key_icon_settings" hlicon="@drawable/qwerty_key_icon_settings_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_clipboard" icon="@drawable/qwerty_key_icon_clipboard" hlicon="@drawable/qwerty_key_icon_clipboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_handwriting" icon="@drawable/qwerty_key_icon_keyboard" hlicon="@drawable/qwerty_key_icon_keyboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_comma" label="," extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_question" label="\?" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_exclamation" label="!" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_quotation" label="'" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_setting_voice" icon="@drawable/qwerty_key_icon_settings" hlicon="@drawable/qwerty_key_icon_settings_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_clipboard_voice" icon="@drawable/qwerty_key_icon_clipboard" hlicon="@drawable/qwerty_key_icon_clipboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_handwriting_voice" icon="@drawable/qwerty_key_icon_keyboard" hlicon="@drawable/qwerty_key_icon_keyboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_comma_voice" label="," extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_question_voice" label="\?" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_exclamation_voice" label="!" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_quotation_voice" label="'" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+    </key>
+    <key id="152" start_pos_x="18.4375%p" start_pos_y="74.5%p" width="10%p" height="24%p" key_type="1" icon="@drawable/keypad_icon_setting" extra_icon="@drawable/qwerty_icon_long_press" popup_skb="@xml/skb_cm" repeat="false" balloon="false" code="-117" hlicon="@drawable/keypad_icon_setting_p" extra_hlicon="@drawable/qwerty_icon_long_press_p">
+        <toggle_state state_id="@string/toggle_mm_voice" icon="@drawable/qwerty_key_icon_voice" hlicon="@drawable/qwerty_key_icon_voice_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_setting" icon="@drawable/qwerty_key_icon_settings" hlicon="@drawable/qwerty_key_icon_settings_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_clipboard" icon="@drawable/qwerty_key_icon_clipboard" hlicon="@drawable/qwerty_key_icon_clipboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_handwriting" icon="@drawable/qwerty_key_icon_hwr" hlicon="@drawable/qwerty_key_icon_hwr_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press_p" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_comma" label="," extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_question" label="\?" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_exclamation" label="!" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_quotation" label="'" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_setting_voice" icon="@drawable/qwerty_key_icon_settings" hlicon="@drawable/qwerty_key_icon_settings_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_clipboard_voice" icon="@drawable/qwerty_key_icon_clipboard" hlicon="@drawable/qwerty_key_icon_clipboard_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_handwriting_voice" icon="@drawable/qwerty_key_icon_hwr" hlicon="@drawable/qwerty_key_icon_hwr_pressed" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_comma_voice" label="," extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_question_voice" label="\?" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_exclamation_voice" label="!" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+        <toggle_state state_id="@string/toggle_mm_quotation_voice" label="'" extra_icon="@drawable/qwerty_icon_long_press" extra_hlicon="@drawable/qwerty_icon_long_press" key_type="0" code="-117" />
+    </key>
+    <key id="89" start_pos_x="24.6875%p" start_pos_y="53.062%p" width="8.75%p" height="43.877%p" repeat="false" balloon="false" label="123" code="-23">
+        <toggle_state state_id="@string/toggle_handwrite_abc_mode" icon="@drawable/keypad_icon_handwriting_abc" hlicon="@drawable/keypad_icon_handwriting_abc_press" balloon="false" code="-23" key_type="11" />
+        <toggle_state state_id="@string/toggle_handwrite_kor_mode" icon="@drawable/keypad_icon_handwriting_korean" hlicon="@drawable/keypad_icon_handwriting_korean_press" balloon="false" code="-23" key_type="11" />
+        <toggle_state state_id="@string/toggle_handwrite_chn_mode" icon="@drawable/keypad_icon_handwriting_china" hlicon="@drawable/keypad_icon_handwriting_china_press" balloon="false" code="-23" key_type="11" />
+        <toggle_state state_id="@string/toggle_handwrite_hk_mode" icon="@drawable/keypad_icon_handwriting_china" hlicon="@drawable/keypad_icon_handwriting_china_press" balloon="false" code="-23" key_type="11" />
+        <toggle_state state_id="@string/toggle_handwrite_tw_mode" icon="@drawable/keypad_icon_handwriting_china" hlicon="@drawable/keypad_icon_handwriting_china_press" balloon="false" code="-23" key_type="11" />
+        <toggle_state state_id="@string/toggle_123mode_on" icon="@drawable/keypad_icon_handwriting_number" hlicon="@drawable/keypad_icon_handwriting_number_press" balloon="false" code="-23" key_type="21" />
+    </key>
+</skb_template>

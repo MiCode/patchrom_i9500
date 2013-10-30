@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="qwerty_key_horizontal_gap">9.0dip</dimen>
+    <dimen name="qwerty_key_vertical_gap">4.0dip</dimen>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="33.333%p" height="20%p" key_type="1" repeat="false" balloon="false">
+    <row width="100%p" height="75%p" start_pos_x="0%p" start_pos_y="0%p">
+        <key code="-38" balloon="false" label="@string/word_pinyin_ab" icon="@drawable/textinput_panel_bg_sym" repeat="false" key_type="23" />
+    </row>
+    <row width="20%p" height="23.25%p" row_id="@string/toggle_toolbar_input_language_chn" start_pos_y="75%p">
+        <key code="-2" balloon="false" icon="@drawable/qwerty_icon_setting" repeat="true" />
+        <key code="-91" label="@string/word_pinyin_ab">
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_normal" label="@string/word_stroke_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_normal" label="@string/word_pinyin_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_hl" label="@string/word_stroke_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_hl" label="@string/word_pinyin_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+        </key>
+        <key code="-92" label="@string/word_abc_lower">
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_normal" label="@string/word_abc_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_normal" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_normal" label="@string/word_abc_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_hl" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_upper" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_normal" label="@string/word_eng_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_normal" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_normal" label="@string/word_eng_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_eng_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_hl" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_eng_upper" key_type="14" />
+        </key>
+        <key code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" label="@string/word_number" key_type="14" />
+        </key>
+        <key code="-95" label="@string/word_symbol">
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_normal" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_hl" label="@string/word_symbol" key_type="14" />
+        </key>
+    </row>
+    <row width="20%p" height="23.25%p" row_id="@string/toggle_toolbar_input_language_kor" start_pos_y="75%p">
+        <key code="-2" balloon="false" icon="@drawable/qwerty_icon_setting" repeat="true" />
+        <key code="-93" label="@string/word_kor">
+            <toggle_state code="-93" state_id="@string/toggle_toolbar_kor_hl" label="@string/word_kor" key_type="14" />
+        </key>
+        <key code="-92" label="@string/word_abc_lower">
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_normal" label="@string/word_abc_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_normal" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_normal" label="@string/word_abc_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_hl" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_upper" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_normal" label="@string/word_eng_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_normal" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_normal" label="@string/word_eng_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_eng_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_hl" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_eng_upper" key_type="14" />
+        </key>
+        <key code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" label="@string/word_number" key_type="14" />
+        </key>
+        <key code="-95" label="@string/word_symbol">
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_normal" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_hl" label="@string/word_symbol" key_type="14" />
+        </key>
+    </row>
+    <row width="20%p" height="23.25%p" row_id="@string/toggle_toolbar_input_language_both" start_pos_y="75%p">
+        <key code="-2" balloon="false" icon="@drawable/qwerty_icon_setting" repeat="true" />
+        <key code="-91" label="@string/word_pinyin_ab">
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_normal" label="@string/word_stroke_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_normal" label="@string/word_pinyin_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_stroke_hl" label="@string/word_stroke_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-91" state_id="@string/toggle_toolbar_chn_pinyin_hl" label="@string/word_pinyin_ab" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+        </key>
+        <key code="-93" label="@string/word_kor">
+            <toggle_state code="-93" state_id="@string/toggle_toolbar_kor_hl" label="@string/word_kor" key_type="14" />
+        </key>
+        <key code="-92" label="@string/word_abc_lower">
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_normal" label="@string/word_abc_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_normal" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_normal" label="@string/word_abc_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_hl" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_upper" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_normal" label="@string/word_eng_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_normal" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_normal" label="@string/word_eng_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_eng_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_hl" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_hl" label="@string/word_eng_upper" key_type="14" />
+        </key>
+        <key code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_normal" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_number" key_type="14" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_sym_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_symbol" key_type="14" />
+        </key>
+    </row>
+    <row width="25%p" height="23.25%p" row_id="@string/toggle_toolbar_input_eng_only" start_pos_y="75%p">
+        <key code="-2" balloon="false" icon="@drawable/qwerty_icon_setting" repeat="true" />
+        <key code="-92" label="@string/word_abc_lower">
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_normal" label="@string/word_abc_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_normal" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_normal" label="@string/word_abc_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_tempupper_hl" label="@string/word_abc_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_abc_upper_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_abc_upper" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_normal" label="@string/word_eng_lower" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_normal" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_normal" label="@string/word_eng_upper" icon="@drawable/keypad_icon_shift_toolbar" key_type="1" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_lower_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_eng_lower" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_tempupper_hl" label="@string/word_eng_tempupper" icon="@drawable/keypad_icon_shift_toolbar" key_type="14" />
+            <toggle_state code="-92" state_id="@string/toggle_toolbar_en_upper_hl" icon="@drawable/keypad_icon_shift_toolbar" label="@string/word_eng_upper" key_type="14" />
+        </key>
+        <key code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" label="@string/word_number" key_type="14" />
+        </key>
+        <key code="-95" label="@string/word_symbol">
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_normal" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_hl" label="@string/word_symbol" key_type="14" />
+        </key>
+    </row>
+    <row width="25%p" height="23.25%p" row_id="@string/toggle_toolbar_input_numsym_only" start_pos_y="75%p">
+        <key code="-2" balloon="false" icon="@drawable/qwerty_icon_setting" repeat="true" />
+        <key width="37.5%p" code="-94" label="@string/word_number">
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_normal" label="@string/word_number" key_type="1" />
+            <toggle_state code="-94" state_id="@string/toggle_toolbar_num_hl" label="@string/word_number" key_type="14" />
+        </key>
+        <key width="37.5%p" code="-95" label="@string/word_symbol">
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_normal" label="@string/word_symbol" key_type="1" />
+            <toggle_state code="-95" state_id="@string/toggle_toolbar_sym_hl" label="@string/word_symbol" key_type="14" />
+        </key>
+    </row>
+</keyboard>

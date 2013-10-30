@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">tam</string>
+    <string name="month_medium_february">hel</string>
+    <string name="month_medium_march">maa</string>
+    <string name="month_medium_april">huh</string>
+    <string name="month_medium_may">tou</string>
+    <string name="month_medium_june">kes</string>
+    <string name="month_medium_july">hei</string>
+    <string name="month_medium_august">elo</string>
+    <string name="month_medium_september">syy</string>
+    <string name="month_medium_october">lok</string>
+    <string name="month_medium_november">mar</string>
+    <string name="month_medium_december">jou</string>
+</resources>

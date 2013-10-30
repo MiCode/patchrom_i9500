@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.625%p" key_ymargin="1.5625%p" width="25%p" height="25%p" key_type="10" repeat="false" balloon="false">
+    <row>
+        <key label="1" code="8" />
+        <key label="2" code="9" />
+        <key label="3" code="10" />
+        <key id="31" start_pos_x="75%p" start_pos_y="0%p" width="25%p" height="50%p" />
+    </row>
+    <row>
+        <key label="4" code="11" />
+        <key label="5" code="12" />
+        <key label="6" code="13" />
+    </row>
+    <row>
+        <key label="7" code="14" />
+        <key label="8" code="15" />
+        <key label="9" code="16" />
+        <key id="34" start_pos_x="75%p" start_pos_y="50%p" width="25%p" height="50%p" />
+    </row>
+    <row>
+        <key label="." />
+        <key label="0" code="7" />
+        <key label="" key_type="14" disable="true" />
+    </row>
+</keyboard>

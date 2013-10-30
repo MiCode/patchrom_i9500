@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_size">25.0dip</dimen>
+    <dimen name="label_fun_size">18.0dip</dimen>
+    <dimen name="cand_margin_left_right">17.0dip</dimen>
+    <dimen name="skb_padding_top">4.5dip</dimen>
+    <dimen name="skb_padding_bottom">2.0dip</dimen>
+    <dimen name="skb_padding_left">1.5dip</dimen>
+    <dimen name="skb_padding_right">1.5dip</dimen>
+</resources>

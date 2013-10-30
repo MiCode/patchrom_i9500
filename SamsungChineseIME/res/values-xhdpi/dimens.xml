@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_size">27.0sp</dimen>
+    <dimen name="label_size_small">12.0sp</dimen>
+    <dimen name="label_size_big">29.0sp</dimen>
+    <dimen name="label_fun_size">24.0sp</dimen>
+    <dimen name="label_fun_size_small">18.0sp</dimen>
+    <dimen name="label_fun_size_big">29.0sp</dimen>
+    <dimen name="label_size_extra">16.0sp</dimen>
+    <dimen name="label_keypad_normal">24.0sp</dimen>
+    <dimen name="cand_text_size">27.0sp</dimen>
+    <dimen name="min_cand_width">27.0dip</dimen>
+    <dimen name="cand_text_size_vertical">22.0sp</dimen>
+    <dimen name="min_cand_height">50.0dip</dimen>
+    <dimen name="cand_margin_left_right">12.0dip</dimen>
+    <dimen name="cand_expand_button_width">53.0dip</dimen>
+    <dimen name="cand_expand_button_padding_top">0.0dip</dimen>
+    <dimen name="cand_expand_button_padding_left">0.0dip</dimen>
+    <dimen name="composing_height">21.0dip</dimen>
+    <dimen name="skb_key_height_portrait">65.0dip</dimen>
+    <dimen name="skb_key_height_land">49.0dip</dimen>
+    <dimen name="cand_area_height_portrait">53.0dip</dimen>
+    <dimen name="cand_area_height_land">53.0dip</dimen>
+    <dimen name="skb_padding_top">10.0dip</dimen>
+    <dimen name="skb_padding_bottom">4.0dip</dimen>
+    <dimen name="skb_padding_left">2.5dip</dimen>
+    <dimen name="skb_padding_right">2.5dip</dimen>
+    <dimen name="handwrit_box_margin_top">73.0dip</dimen>
+    <dimen name="handwrit_box_margin_bottom">3.0dip</dimen>
+    <dimen name="handwrit_box_margin_left">3.0dip</dimen>
+    <dimen name="handwrit_box_margin_right">3.0dip</dimen>
+    <dimen name="handwrit_box_land_margin_top">66.0dip</dimen>
+    <dimen name="handwrit_box_land_margin_bottom">3.0dip</dimen>
+    <dimen name="handwrit_box_land_margin_left">3.0dip</dimen>
+    <dimen name="handwrit_box_land_margin_right">3.0dip</dimen>
+</resources>

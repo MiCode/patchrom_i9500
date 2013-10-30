@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0%p" key_ymargin="0%p" width="19.375%p" height="24%p" key_type="0" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="true">
+    <row start_pos_y="1%p">
+        <key label=":-X" start_pos_x="2.1875%p" />
+        <key label=":-D" start_pos_x="22.1875%p" />
+        <key label="o_O" start_pos_x="42.1875%p" />
+        <key label=":-/" start_pos_x="62.1875%p" />
+        <key id="11" start_pos_x="82.1875%p" width="15.625%p" />
+    </row>
+    <row start_pos_y="25.5%p">
+        <key label="x-(" start_pos_x="2.1875%p" />
+        <key label=":-I" start_pos_x="22.1875%p" />
+        <key label="&lt;3" start_pos_x="42.1875%p" />
+        <key label=":-V" start_pos_x="62.1875%p" />
+        <unite label="6/6" key_type="1" start_pos_x="82.1875%p" width="15.625%p" start_pos_y="25.5%p" height="48.5%p">
+            <key code="-8" start_pos_x="82.1875%p" width="15.625%p" start_pos_y="25.5%p" height="24.25%p" icon="@drawable/keypad_arrow_up" balloon="false" key_type="5" />
+            <key code="-9" start_pos_x="82.1875%p" width="15.625%p" start_pos_y="49.75%p" height="24.25%p" icon="@drawable/keypad_arrow_down" balloon="false" key_type="6" />
+        </unite>
+    </row>
+    <row start_pos_y="50%p">
+        <key label=":-C" start_pos_x="2.1875%p" />
+        <key label=">:-(" start_pos_x="22.1875%p" />
+        <key label=":-Q" start_pos_x="42.1875%p" />
+        <key label=":-@" start_pos_x="62.1875%p" />
+    </row>
+    <row start_pos_y="74.5%p">
+        <key id="41" start_pos_x="2.1875%p" width="15.625%p" start_pos_y="74.5%p" height="24%p" />
+        <key id="53" start_pos_x="18.4375%p" width="10%p" start_pos_y="74.5%p" height="24%p" />
+        <key id="33" start_pos_x="29.0625%p" width="41.875%p" start_pos_y="74.5%p" height="24%p" />
+        <key id="19" start_pos_x="71.5625%p" width="10%p" start_pos_y="74.5%p" height="24%p" />
+        <key id="14" start_pos_x="82.1875%p" width="15.625%p" start_pos_y="74.5%p" height="24%p" />
+    </row>
+</keyboard>

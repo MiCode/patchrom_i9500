@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" key_xmargin="0.513%p" key_ymargin="0.3289%p" width="8.9187%p" height="25%p" key_type="3" skb_bg="@drawable/sip_tab_bg" repeat="false" balloon="true">
+    <row>
+        <keys splitter="|" labels="*|#|‘" key_type="14" />
+        <key label="." key_type="14">
+            <toggle_state state_id="@string/toggle_language_cn" label="." />
+            <toggle_state state_id="@string/toggle_url_symbol" label="，" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="，" />
+        </key>
+        <key label="、" key_type="14" />
+        <key label="······" key_type="14" />
+        <key label="，" key_type="14">
+            <toggle_state state_id="@string/toggle_language_cn" label="，" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="." />
+            <toggle_state state_id="@string/toggle_email_symbol" label="." />
+        </key>
+        <keys splitter="|" labels="ㄅㄆㄇㄈ  |ㄉㄊㄋㄌ|ㄍㄎㄏㄐ" long_labels="1|2|3" codes="8|9|10" balloon="false" />
+        <key id="1" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row>
+        <keys splitter="|" labels="：|；|”|%|^|₩" key_type="14" />
+        <key label="。" key_type="14">
+            <toggle_state state_id="@string/toggle_language_cn" label="。" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="/" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="\@" />
+        </key>
+        <keys splitter="|" labels="ㄑㄒㄓㄔ |ㄕㄖㄗㄘ|ㄙ一ㄨㄩ " long_labels="4|5|6" codes="11|12|13" balloon="false" />
+        <key id="4" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row key_type="23">
+        <key label="+" key_type="14" />
+        <key label="-" key_type="14">
+            <toggle_state state_id="@string/toggle_language_cn" label="-" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="！" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="！" />
+        </key>
+        <keys splitter="|" labels="=|[|]" key_type="14" />
+        <key label="/" key_type="14">
+            <toggle_state state_id="@string/toggle_language_cn" label="/" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="？" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="/" />
+        </key>
+        <key label="？" key_type="14">
+            <toggle_state state_id="@string/toggle_language_cn" label="？" />
+            <toggle_state state_id="@string/toggle_url_symbol" label="-" />
+            <toggle_state state_id="@string/toggle_email_symbol" label="-" />
+        </key>
+        <keys splitter="|" labels="ㄚㄛㄜㄝ|ㄞㄟㄠㄡㄢ|ㄣㄤㄥㄦ" long_labels="7|8|9" codes="14|15|16" balloon="false" />
+        <key id="12" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw" start_pos_y="75%p">
+        <keys splitter="|" labels="＠|＆|～|（|）|_|！" key_type="14" />
+        <key id="13" start_pos_x="62.4309%p" width="20.5998%p" />
+        <key start_pos_x="83.0307%p" width="6.1563%p" icon="@drawable/sip_icon_tones_toggle_key_dim" disable="true" key_type="20" balloon="false">
+            <toggle_state state_id="@string/toggle_tone" disable="false" icon="@drawable/sip_icon_tones_toggle_key" hlicon="@drawable/sip_icon_tones_toggle_key_press" code="18" key_type="3" />
+        </key>
+        <key id="72" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice" start_pos_y="75%p">
+        <keys splitter="|" labels="＠|＆|～|（|）|_|！" key_type="14" />
+        <key id="13" start_pos_x="62.4309%p" width="20.5998%p" />
+        <key start_pos_x="83.0307%p" width="6.1563%p" icon="@drawable/sip_icon_tones_toggle_key_dim" disable="true" key_type="20" balloon="false">
+            <toggle_state state_id="@string/toggle_tone" disable="false" icon="@drawable/sip_icon_tones_toggle_key" hlicon="@drawable/sip_icon_tones_toggle_key_press" code="18" key_type="3" />
+        </key>
+        <key id="77" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="75%p">
+        <keys splitter="|" labels="＠|＆|～|（|）|_" key_type="14" />
+        <key id="28" start_pos_x="53.5122%p" width="8.9187%p" />
+        <key id="13" start_pos_x="62.4309%p" width="20.5998%p" />
+        <key start_pos_x="83.0307%p" width="6.1563%p" icon="@drawable/sip_icon_tones_toggle_key_dim" disable="true" key_type="20" balloon="false">
+            <toggle_state state_id="@string/toggle_tone" disable="false" icon="@drawable/sip_icon_tones_toggle_key" hlicon="@drawable/sip_icon_tones_toggle_key_press" code="18" key_type="3" />
+        </key>
+        <key id="72" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row row_id="@string/toggle_row_url_no_voice" start_pos_y="75%p">
+        <keys splitter="|" labels="＠|＆|～|（|）|_" key_type="14" />
+        <key id="28" start_pos_x="53.5122%p" width="8.9187%p" />
+        <key id="13" start_pos_x="62.4309%p" width="20.5998%p" />
+        <key start_pos_x="83.0307%p" width="6.1563%p" icon="@drawable/sip_icon_tones_toggle_key_dim" disable="true" key_type="20" balloon="false">
+            <toggle_state state_id="@string/toggle_tone" disable="false" icon="@drawable/sip_icon_tones_toggle_key" hlicon="@drawable/sip_icon_tones_toggle_key_press" code="18" key_type="3" />
+        </key>
+        <key id="77" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="75%p">
+        <keys splitter="|" labels="？|＆|～|（|）|_" key_type="14" />
+        <key id="28" start_pos_x="53.5122%p" width="8.9187%p" />
+        <key id="13" start_pos_x="62.4309%p" width="20.5998%p" />
+        <key start_pos_x="83.0307%p" width="6.1563%p" icon="@drawable/sip_icon_tones_toggle_key_dim" disable="true" key_type="20" balloon="false">
+            <toggle_state state_id="@string/toggle_tone" disable="false" icon="@drawable/sip_icon_tones_toggle_key" hlicon="@drawable/sip_icon_tones_toggle_key_press" code="18" key_type="3" />
+        </key>
+        <key id="72" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+    <row row_id="@string/toggle_row_email_no_voice" start_pos_y="75%p">
+        <keys splitter="|" labels="？|＆|～|（|）|_" key_type="14" />
+        <key id="28" start_pos_x="53.5122%p" width="8.9187%p" />
+        <key id="13" start_pos_x="62.4309%p" width="20.5998%p" />
+        <key start_pos_x="83.0307%p" width="6.1563%p" icon="@drawable/sip_icon_tones_toggle_key_dim" disable="true" key_type="20" balloon="false">
+            <toggle_state state_id="@string/toggle_tone" disable="false" icon="@drawable/sip_icon_tones_toggle_key" hlicon="@drawable/sip_icon_tones_toggle_key_press" code="18" key_type="3" />
+        </key>
+        <key id="77" start_pos_x="88.7135%p" width="11.2865%p" />
+    </row>
+</keyboard>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.53%p" key_ymargin="2.53%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="14.285%p" height="100%p" key_type="0" repeat="false" balloon="false">
+    <row row_id="@string/toggle_row_cn" start_pos_y="0%p">
+        <key id="79" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="，" start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="。" start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="、" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="”" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="—" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="＿" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_en" start_pos_y="0%p">
+        <key id="79" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="," start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="." start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="'" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="&quot;" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="-" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="_" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_ko" start_pos_y="0%p">
+        <key id="79" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="," start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="." start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="'" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="&quot;" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="-" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="_" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw" start_pos_y="0%p">
+        <key id="79" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="，" start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="。" start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="、" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="”" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="—" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="＿" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk" start_pos_y="0%p">
+        <key id="79" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="，" start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="。" start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="、" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="”" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="—" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="＿" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_no_voice" start_pos_y="0%p">
+        <key id="78" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="，" start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="。" start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="、" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="”" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="—" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="＿" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_en_no_voice" start_pos_y="0%p">
+        <key id="78" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="," start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="." start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="'" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="&quot;" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="-" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="_" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_ko_no_voice" start_pos_y="0%p">
+        <key id="78" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="," start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="." start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="'" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="&quot;" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="-" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="_" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice" start_pos_y="0%p">
+        <key id="78" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="，" start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="。" start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="、" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="”" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="—" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="＿" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="0%p">
+        <key id="78" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="，" start_pos_x="20%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="。" start_pos_x="28%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="、" start_pos_x="36%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="23" start_pos_x="44%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key label="”" start_pos_x="56%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="—" start_pos_x="64%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key label="＿" start_pos_x="72%p" start_pos_y="0%p" width="8%p" height="100%p" />
+        <key id="14" start_pos_x="80%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="11" start_pos_x="90%p" start_pos_y="0%p" width="10%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="0%p">
+        <key id="79" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="." start_pos_x="20%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="\@" start_pos_x="30%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="38" start_pos_x="40%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="23" start_pos_x="50%p" start_pos_y="0%p" width="26%p" height="100%p" />
+        <key id="14" start_pos_x="76%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key id="11" start_pos_x="88%p" start_pos_y="0%p" width="12%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_email_no_voice" start_pos_y="0%p">
+        <key id="78" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="." start_pos_x="20%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="\@" start_pos_x="30%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="38" start_pos_x="40%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="23" start_pos_x="50%p" start_pos_y="0%p" width="26%p" height="100%p" />
+        <key id="14" start_pos_x="76%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key id="11" start_pos_x="88%p" start_pos_y="0%p" width="12%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="0%p">
+        <key id="79" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="." start_pos_x="20%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="/" start_pos_x="30%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="38" start_pos_x="40%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="23" start_pos_x="50%p" start_pos_y="0%p" width="26%p" height="100%p" />
+        <key id="14" start_pos_x="76%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key id="11" start_pos_x="88%p" start_pos_y="0%p" width="12%p" height="100%p" />
+    </row>
+    <row row_id="@string/toggle_row_url_no_voice" start_pos_y="0%p">
+        <key id="78" start_pos_x="0" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="12" start_pos_x="10%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="." start_pos_x="20%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key label="/" start_pos_x="30%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="38" start_pos_x="40%p" start_pos_y="0%p" width="10%p" height="100%p" />
+        <key id="23" start_pos_x="50%p" start_pos_y="0%p" width="26%p" height="100%p" />
+        <key id="14" start_pos_x="76%p" start_pos_y="0%p" width="12%p" height="100%p" />
+        <key id="11" start_pos_x="88%p" start_pos_y="0%p" width="12%p" height="100%p" />
+    </row>
+</keyboard>

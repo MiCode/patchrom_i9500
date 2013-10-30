@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" width="9.896%p" height="25%p" key_type="16" repeat="false" balloon="false">
+    <row>
+        <key label="1" long_label="" start_pos_x="29.428%p" code="8" />
+        <key label="2" long_label="ABC" start_pos_x="39.792%p" code="9" />
+        <key label="3" long_label="DEF" start_pos_x="50.157%p" code="10" />
+        <key id="11" start_pos_x="60.521%p" width="10.053%p" />
+    </row>
+    <row>
+        <key label="4" long_label="GHI" start_pos_x="29.428%p" code="11" />
+        <key label="5" long_label="JKL" start_pos_x="39.792%p" code="12" />
+        <key label="6" long_label="MNO" start_pos_x="50.157%p" code="13" />
+        <key label="-" disable="true" key_type="33" start_pos_x="60.521%p" width="10.053%p" />
+    </row>
+    <row>
+        <key label="7" long_label="PQRS" start_pos_x="29.428%p" code="14" />
+        <key label="8" long_label="TUV" start_pos_x="39.792%p" code="15" />
+        <key label="9" long_label="WXYZ" start_pos_x="50.157%p" code="16" />
+        <key label="\?#*" code="-4" disable="true" key_type="33" start_pos_x="60.521%p" width="10.053%p" />
+    </row>
+    <row start_pos_x="29.428%p">
+        <key label="*" key_type="33" start_pos_x="29.428%p" disable="true" />
+        <key label="0" long_label="+" start_pos_x="39.792%p" code="7" />
+        <key label="\#" key_type="33" start_pos_x="50.157%p" disable="true" />
+        <key id="14" start_pos_x="60.521%p" start_pos_y="75%p" width="10.053%p" />
+    </row>
+</keyboard>

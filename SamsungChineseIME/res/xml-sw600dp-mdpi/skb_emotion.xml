@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.5050%p" key_ymargin="0%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="10.9427%p" height="19.921%p" key_type="0" repeat="false" balloon="true">
+    <row key_type="21" key_bottommargin="3.1873%p">
+        <keys splitter="|" labels=":-)|:-))|:->|:-]|:-D|:-((|:-(|:-&lt;" />
+        <key id="1" start_pos_x="87.5421%p" width="12.4579%p" height="19.921%p" />
+    </row>
+    <row key_type="21" start_pos_y="23.1076%p" key_bottommargin="3.1873%p">
+        <keys splitter="|" labels=":-[|:-C|:'-(|:(|:&lt;|>:-(|:-Q|:-S" />
+        <key id="4" start_pos_x="87.5421%p" start_pos_y="23.1076%p" width="12.4579%p" height="19.921%p" />
+    </row>
+    <row start_pos_y="46.2152%p" key_bottommargin="3.1873%p">
+        <keys splitter="|" labels="8-o|:-/" />
+        <key label=":-|" />
+        <keys splitter="|" labels=";-)|XD|:-y|:-*|:-X" />
+        <key id="12" start_pos_x="87.5421%p" start_pos_y="46.2152%p" width="12.4579%p" height="19.921%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="21.8859%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_no_voice" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="21.8859%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_hk_no_voice" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="21.8859%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_cn_tw_no_voice" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_en" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_en_no_voice" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_ko" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_ko_no_voice" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_email" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_email_no_voice" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_url" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="72" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+    <row row_id="@string/toggle_row_url_no_voice" start_pos_y="69.3228%p" key_bottommargin="10.757%p" key_type="22">
+        <keys splitter="|" labels=":-9|:-d|:-O|:-()|:-V|:-@" />
+        <key id="3" start_pos_x="65.6562%p" start_pos_y="69.3228%p" width="22.0512%p" height="19.921%p" key_bottommargin="10.757%p" />
+        <key id="77" start_pos_x="87.5421%p" start_pos_y="69.3228%p" width="12.4579%p" height="19.921%p" key_bottommargin="10.757%p" />
+    </row>
+</keyboard>

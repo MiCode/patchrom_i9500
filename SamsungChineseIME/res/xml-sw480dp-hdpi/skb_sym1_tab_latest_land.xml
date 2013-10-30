@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard balloon="true" height="24%p" key_type="10" key_xmargin="0%p" key_ymargin="0%p" qwerty="true" qwerty_uppercase="true" repeat="false" skb_bg="@drawable/textinput_panel_bg" skb_cache_flag="true" skb_template="@xml/skb_template2" width="25.9375%p" balloon_width="16.094%p" balloon_height="41.539%p">
+    <row height="22.764%p" start_pos_y="2.439%p">
+        <keyview disable="true" height="69.663%p" label="," start_pos_x="1.09%p" start_pos_y="3.933%p" view_row_height="22.5%p" view_row_margin="1.154%p" view_text_margin="0.94125%p" view_text_width="12.96875%p" width="82.50875%p" />
+        <key id="11" height="22.472%p" start_pos_x="84.6875%p" start_pos_y="3.933%p" width="14.375%p" />
+    </row>
+    <row start_pos_y="26.829%p">
+        <unite height="46.067%p" key_type="1" label="1/3" start_pos_x="84.6875%p" start_pos_y="27.529%p" width="14.375%p">
+            <key balloon="false" code="-8" height="23.0335%p" hlicon="@drawable/keypad_arrow_up_p" icon="@drawable/keypad_arrow_up" key_type="5" start_pos_x="84.6875%p" start_pos_y="27.529%p" width="14.375%p" />
+            <key balloon="false" code="-9" height="23.0335%p" hlicon="@drawable/keypad_arrow_down_p" icon="@drawable/keypad_arrow_down" key_type="6" start_pos_x="84.6875%p" start_pos_y="50.562%p" width="14.375%p" />
+        </unite>
+    </row>
+    <row height="22.764%p" start_pos_y="51.220%p" />
+    <row start_pos_y="75.610%p">
+        <key id="51" height="22.472%p" start_pos_x="1.09%p" start_pos_y="74.72%p" width="26.875%p" />
+        <key id="33" height="22.472%p" start_pos_x="28.91%p" start_pos_y="74.72%p" width="40.78125%p" />
+        <key id="53" height="22.472%p" start_pos_x="70.63%p" start_pos_y="74.72%p" width="12.96875%p" />
+        <key id="14" height="22.472%p" start_pos_x="84.6875%p" start_pos_y="74.72%p" width="14.375%p" />
+    </row>
+</keyboard>

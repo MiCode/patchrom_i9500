@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auto_update_frequency_list_preference">
+        <item>關閉自動更新</item>
+        <item>每週</item>
+        <item>每兩週</item>
+        <item>每月</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>不使用簡繁轉換</item>
+        <item>使用寫繁得簡</item>
+        <item>使用寫簡得繁</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries_handwriting_mode">
+        <item>全螢幕手寫</item>
+        <item>手寫框</item>
+    </string-array>
+    <string-array name="entryvalues_handwriting_mode">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="array_handwrite_line_value">
+        <item>1 像素</item>
+        <item>3 像素</item>
+        <item>5 像素</item>
+        <item>7 像素</item>
+        <item>9 像素</item>
+    </string-array>
+    <string-array name="array_handwrite_color_value">
+        <item>紅色</item>
+        <item>藍色</item>
+        <item>綠色</item>
+        <item>棕色</item>
+    </string-array>
+    <string-array name="array_handwrite_speed">
+        <item>100 毫秒</item>
+        <item>300 毫秒</item>
+        <item>500 毫秒</item>
+        <item>700 毫秒</item>
+        <item>1000 毫秒</item>
+    </string-array>
+    <string-array name="array_handwrite_speed_value">
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>700</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference">
+        <item>Qwerty鍵盤</item>
+        <item>3*4鍵盤</item>
+        <item>全螢幕手寫</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_1">
+        <item>Qwerty鍵盤</item>
+        <item>3*4鍵盤</item>
+        <item>全螢幕手寫</item>
+        <item>手寫框</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value_1">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_2">
+        <item>Qwerty鍵盤</item>
+        <item>3*4鍵盤</item>
+        <item>手寫框</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value_2">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_3">
+        <item>Qwerty鍵盤</item>
+        <item>3*4鍵盤</item>
+    </string-array>
+    <string-array name="keypad_type_list_preference_value_3">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="keypad_type_list_summary_tw">
+        <item>注音</item>
+        <item>注音 /筆劃</item>
+        <item></item>
+    </string-array>
+    <string-array name="keypad_type_list_summary_hk">
+        <item>倉頡 /快速倉頡</item>
+        <item>倉頡 /筆劃</item>
+        <item></item>
+    </string-array>
+    <string-array name="array_language_dis_summary">
+        <item>英文</item>
+        <item>中文</item>
+        <item>韓文</item>
+        <item>中文(台灣)</item>
+        <item>中文(香港)</item>
+    </string-array>
+    <string-array name="array_handwriting_style">
+        <item>預設</item>
+        <item>徽宗</item>
+        <item>黃庭堅</item>
+        <item>王羲之</item>
+        <item>懷素</item>
+        <item>草書連綿</item>
+    </string-array>
+    <string-array name="array_handwriting_style_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="keyboard_swipe_type_list_preference">
+        <item>移動遊標和切換鍵盤</item>
+        <item>調整遊標位置</item>
+        <item>切換鍵盤類型</item>
+        <item>無回應</item>
+    </string-array>
+    <string-array name="keyboard_swipe_type_list_summary">
+        <item>在鍵盤上滑動來移動遊標和切換鍵盤</item>
+        <item>通過手指在鍵盤上滑動來移動遊標</item>
+        <item>在3X4,全鍵盤，手寫鍵盤間切換</item>
+        <item>無回應</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_medium_january">ian.</string>
+    <string name="month_medium_february">feb.</string>
+    <string name="month_medium_march">mar.</string>
+    <string name="month_medium_april">apr.</string>
+    <string name="month_medium_may">mai</string>
+    <string name="month_medium_june">iun.</string>
+    <string name="month_medium_july">iul.</string>
+    <string name="month_medium_august">aug.</string>
+    <string name="month_medium_september">sept.</string>
+    <string name="month_medium_october">oct.</string>
+    <string name="month_medium_november">nov.</string>
+    <string name="month_medium_december">dec.</string>
+</resources>

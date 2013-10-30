@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.83%p" key_ymargin="1.41%p" skb_cache_flag="true" qwerty="true" qwerty_uppercase="true" width="33.3%p" height="25%p" key_type="10" repeat="false" balloon="false">
+    <row>
+        <key label="@string/s_month_1" code="29" />
+        <key label="@string/s_month_2" code="30" />
+        <key label="@string/s_month_3" code="31" />
+    </row>
+    <row>
+        <key label="@string/s_month_4" code="32" />
+        <key label="@string/s_month_5" code="33" />
+        <key label="@string/s_month_6" code="34" />
+    </row>
+    <row>
+        <key label="@string/s_month_7" code="35" />
+        <key label="@string/s_month_8" code="36" />
+        <key label="@string/s_month_9" code="37" />
+    </row>
+    <row>
+        <key label="@string/s_month_10" code="38" />
+        <key label="@string/s_month_11" code="39" />
+        <key label="@string/s_month_12" code="40" />
+    </row>
+</keyboard>

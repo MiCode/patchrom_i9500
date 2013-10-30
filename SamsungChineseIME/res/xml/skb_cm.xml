@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0%p" key_ymargin="0%p" skb_cache_flag="true" width="50%p" height="50%p" key_type="3" skb_bg="@drawable/alternative_character_bg" skb_ver_linenum="3" skb_hor_linenum="1" repeat="false" balloon="true">
+    <row>
+        <key start_pos_x="0.0%p" start_pos_y="0%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" label="," code="-126" />
+        <key start_pos_x="25.0%p" start_pos_y="0%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" label="\?" code="-127" />
+        <key start_pos_x="50.0%p" start_pos_y="0%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" label="!" code="-128" />
+        <key start_pos_x="75.0%p" start_pos_y="0%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" label="'" code="-129" />
+    </row>
+    <row>
+        <key start_pos_x="0.0%p" start_pos_y="50%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" icon="@drawable/popup_key_icon_voice" hlicon="@drawable/popup_key_icon_voice_pressed" code="-120" icon_noresize="true" />
+        <key start_pos_x="25.0%p" start_pos_y="50%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" icon="@drawable/popup_key_icon_hwr" hlicon="@drawable/popup_key_icon_hwr_pressed" code="-119" icon_noresize="true" />
+        <key start_pos_x="50.0%p" start_pos_y="50%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" icon="@drawable/popup_key_icon_clipboard" hlicon="@drawable/popup_key_icon_clipboard_pressed" code="-125" icon_noresize="true" />
+        <key start_pos_x="75.0%p" start_pos_y="50%p" width="25%p" height="50%p" key_type="17" repeat="false" balloon="false" icon="@drawable/popup_key_icon_settings" hlicon="@drawable/popup_key_icon_settings_pressed" code="-121" icon_noresize="true" />
+    </row>
+</keyboard>

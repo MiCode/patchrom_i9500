@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template2" key_xmargin="0.625%p" key_ymargin="1.5625%p" width="25%p" height="25%p" key_type="0" skb_bg="@drawable/textinput_panel_bg" repeat="false" balloon="false">
+    <row>
+        <key icon="@drawable/keypad_dial_num01" hlicon="@drawable/keypad_dial_num01_p" code="8" />
+        <key icon="@drawable/keypad_dial_num02" hlicon="@drawable/keypad_dial_num02_p" code="9" />
+        <key icon="@drawable/keypad_dial_num03" hlicon="@drawable/keypad_dial_num03_p" code="10" />
+        <key id="31" start_pos_x="75%p" start_pos_y="0%p" width="25%p" />
+    </row>
+    <row>
+        <key icon="@drawable/keypad_dial_num04" hlicon="@drawable/keypad_dial_num04_p" code="11" />
+        <key icon="@drawable/keypad_dial_num05" hlicon="@drawable/keypad_dial_num05_p" code="12" />
+        <key icon="@drawable/keypad_dial_num06" hlicon="@drawable/keypad_dial_num06_p" code="13" />
+        <key id="34" start_pos_x="75%p" start_pos_y="25%p" width="25%p" />
+    </row>
+    <row>
+        <key icon="@drawable/keypad_dial_num07" hlicon="@drawable/keypad_dial_num07_p" code="14" />
+        <key icon="@drawable/keypad_dial_num08" hlicon="@drawable/keypad_dial_num08_p" code="15" />
+        <key icon="@drawable/keypad_dial_num09" hlicon="@drawable/keypad_dial_num09_p" code="16" />
+        <key label="P(,)" code="55" key_type="1" />
+    </row>
+    <row>
+        <key icon="@drawable/keypad_dial_num10" hlicon="@drawable/keypad_dial_num10_p" code="17" />
+        <key icon="@drawable/keypad_dial_num00" hlicon="@drawable/keypad_dial_num00_p" code="7" long_label="+" />
+        <key icon="@drawable/keypad_dial_num11" hlicon="@drawable/keypad_dial_num11_p" code="18" />
+        <key label="W(;)" code="74" key_type="1" />
+    </row>
+</keyboard>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.inputmethod.candidate.SimeCandExpdPYContainer android:orientation="vertical" android:id="@id/expand_candidates_container" android:background="@drawable/pedictive_popup_bg_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/expand_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.samsung.inputmethod.candidate.SimeSpellScrollView android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/spell_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_spell" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.samsung.inputmethod.candidate.SimeSpellScrollView>
+</com.samsung.inputmethod.candidate.SimeCandExpdPYContainer>
