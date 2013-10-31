@@ -16315,17 +16315,17 @@
 
     const/16 v3, 0x7db
 
-    if-eq v2, v3, :cond_15
+    #if-eq v2, v3, :cond_15
 
-    move-object/from16 v0, p2
+    #move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/view/WindowManager$LayoutParams;->type:I
+    #iget v2, v0, Landroid/view/WindowManager$LayoutParams;->type:I
 
-    const/16 v3, 0xbb6
+    #const/16 v3, 0xbb6
 
     if-ne v2, v3, :cond_16
 
-    :cond_15
+    #:cond_15
     invoke-interface/range {p1 .. p1}, Landroid/view/WindowManagerPolicy$WindowState;->isVisibleOrBehindKeyguardLw()Z
 
     move-result v2

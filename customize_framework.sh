@@ -83,11 +83,12 @@ then
     done
 
 	cp -rf "$BUILD_OUT/$SEP_FRAME/smali/android/widget"  "$BUILD_OUT/framework_ext/smali/android"
-	appendSmaliPart ${2/out\//}
+	overlaySmali "framework_ext"
+	appendSmaliPart "framework_ext"
 fi
 
 if [ $2 = "$BUILD_OUT/android.policy" ]
 then
-	applyPatch ${2/out\//}
+	applyPatch "android.policy"
 fi
 
