@@ -32,12 +32,12 @@ function applyPatch() {
 		cp $file out/
 		cd out
 		git.apply `basename $file`
-        cd ..
         for file2 in `find $2 -name *.rej`
         do
             echo "$file2 fail"
             exit 1
         done
+		cd ..
 	done
 }
 
