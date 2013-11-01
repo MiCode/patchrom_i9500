@@ -98,13 +98,13 @@
     iput-object v3, p0, Lcom/android/server/usb/UsbService;->mUsbNotificationHandler:Lcom/android/server/usb/UsbNotificationHandler;
 
     .line 82
-    new-instance v3, Lcom/android/server/usb/UsbStorageNotification;
+    #new-instance v3, Lcom/android/server/usb/UsbStorageNotification;
 
-    iget-object v4, p0, Lcom/android/server/usb/UsbService;->mUsbNotificationHandler:Lcom/android/server/usb/UsbNotificationHandler;
+    #iget-object v4, p0, Lcom/android/server/usb/UsbService;->mUsbNotificationHandler:Lcom/android/server/usb/UsbNotificationHandler;
 
-    invoke-direct {v3, p1, v4}, Lcom/android/server/usb/UsbStorageNotification;-><init>(Landroid/content/Context;Lcom/android/server/usb/UsbNotificationHandler;)V
+    #invoke-direct {v3, p1, v4}, Lcom/android/server/usb/UsbStorageNotification;-><init>(Landroid/content/Context;Lcom/android/server/usb/UsbNotificationHandler;)V
 
-    iput-object v3, p0, Lcom/android/server/usb/UsbService;->mUsbStorageNotification:Lcom/android/server/usb/UsbStorageNotification;
+    #iput-object v3, p0, Lcom/android/server/usb/UsbService;->mUsbStorageNotification:Lcom/android/server/usb/UsbStorageNotification;
 
     .line 84
     iget-object v3, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
