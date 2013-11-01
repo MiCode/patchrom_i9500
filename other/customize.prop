@@ -7,4 +7,5 @@ ro.config.notification_sound=FadeIn.ogg
 ro.config.alarm_alert=GoodMorning.ogg
 ro.config.sms_received_sound=FadeIn.ogg
 ro.config.sms_delivered_sound=MessageComplete.ogg
+ro.telephony.call_ring.multiple=false
 # end customize properties
