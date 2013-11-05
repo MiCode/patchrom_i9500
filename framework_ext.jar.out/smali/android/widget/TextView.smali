@@ -26499,7 +26499,7 @@
     .line 8957
     iget-object v1, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
-    invoke-virtual {v1}, Landroid/widget/Editor;->switchStartHandle()Z
+    #invoke-virtual {v1}, Landroid/widget/Editor;->switchStartHandle()Z
 
     .line 8960
     :cond_0
