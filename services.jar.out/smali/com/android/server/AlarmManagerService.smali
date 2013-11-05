@@ -3666,17 +3666,25 @@
     return-void
 
     :cond_0
-    move-wide/from16 v0, p2
+    iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
+ 
+    move v1, p1
+ 
+    move-wide/from16 v2, p2
+ 
+    move-wide/from16 v4, p4
 
-    invoke-static {p1, v0, v1}, Lcom/android/server/ExtraAlarmManagerService;->alignTriggerTime(IJ)J
+    invoke-static/range {v0 .. v5}, Lcom/android/server/ExtraAlarmManagerService;->alignAlarm(Landroid/content/Context;IJJ)[J
 
-    move-result-wide p2
+    move-result-object v2
 
-    move-wide/from16 v0, p4
+    const/4 v0, 0x0
 
-    invoke-static {p1, v0, v1}, Lcom/android/server/ExtraAlarmManagerService;->alignInterval(IJ)J
+    aget-wide p2, v2, v0
 
-    move-result-wide p4
+    const/4 v0, 0x1
+
+    aget-wide p4, v2, v0
 
     sget-boolean v8, Lcom/android/server/AlarmManagerService;->DEBUG:Z
 
