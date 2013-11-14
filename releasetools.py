@@ -24,8 +24,30 @@ def WritePolicyConfig(info):
   except KeyError:
     print "warning: file_context missing from target;"
 
+def InstallImage(img_name, img_file, partition, info):
+  common.ZipWriteStr(info.output_zip, img_name, img_file)
+  info.script.AppendExtra(('package_extract_file("' + img_name + '", "' + partition + '");'))
+
+def FullOTA_InstallRecovery(info):
+  img_file = info.input_zip.read("BOOTABLE_IMAGES/recovery.img")
+  info.script.Print("Writing recovery")
+  InstallImage("recovery.img", img_file, "/dev/block/mmcblk0p10", info)
+
+def IncrementalOTA_InstallRecovery(info):
+  try:
+    source_file = info.source_zip.read("BOOTABLE_IMAGES/recovery.img")
+    target_file = info.target_zip.read("BOOTABLE_IMAGES/recovery.img")
+    if source_file != target_file:
+      info.script.Print("Writing recovery")
+      InstallImage("recovery.img", target_file, "/dev/block/mmcblk0p10", info)
+    else:
+      print "recovery unchanged; skipping"
+  except KeyError:
+    print "warning: recovery missing from target"
 
 def FullOTA_InstallEnd(info):
-   RemoveDeviceAssert(info)
-   AddArgsForFormatSystem(info)
-   WritePolicyConfig(info)
+  AddArgsForFormatSystem(info)
+  FullOTA_InstallRecovery(info)
+
+def IncrementalOTA_InstallEnd(info):
+  IncrementalOTA_InstallRecovery(info)

@@ -630,7 +630,7 @@
 
     const-string v0, "storage/extSdCard"
 
-    const-string v1, "sdcard"
+    const-string v1, "external_sd"
 
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
