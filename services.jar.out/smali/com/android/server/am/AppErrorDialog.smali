@@ -105,7 +105,7 @@
     .local v1, dumpCmd:Ljava/lang/String;
     const-string v6, "-k -t -z -d -o /data/log/dumpstate_app_error"
 
-    invoke-static {v6}, Landroid/os/Debug;->saveDumpstate(Ljava/lang/String;)V
+    #invoke-static {v6}, Landroid/os/Debug;->saveDumpstate(Ljava/lang/String;)V
 
     .line 84
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
