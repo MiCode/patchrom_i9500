@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_Burst_shot_detection_item">Touch and hold the camera button to take burst shots</string>
+    <string name="burstshot_turn_on_helptext">"Touch and hold the camera button to take burst shots.
+
+Burst shots will always be saved to the device memory."</string>
+    <string name="help_tutorial_capture_2">Touch and hold the camera button to take burst shots</string>
+    <string name="help_tutorial_capture_3">Touch and hold a spot on the screen, then release to take a picture that is focused on that spot</string>
+    <string name="editableshortcut_helptext">Touch and hold icon, then drag it to edit position of shortcuts</string>
+</resources>

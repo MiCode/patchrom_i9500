@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="barge_in_commands">
+        <item>Сфотографировать</item>
+        <item>Снять</item>
+        <item>Улыбнитесь</item>
+        <item>Снимаю</item>
+    </string-array>
+    <string-array name="barge_in_commands_record">
+        <item>Запись видео</item>
+    </string-array>
+</resources>

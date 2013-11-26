@@ -14,7 +14,7 @@ local-miui-modified-apps := Phone MiuiHome
 
 local-miui-removed-apps := SettingsProvider MediaProvider
 
-local-modified-apps := SecSettingsProvider SamsungChineseIME
+local-modified-apps := SecSettingsProvider SamsungChineseIME SamsungCamera2
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:

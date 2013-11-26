@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="modemenu_columns">4</integer>
+    <integer name="modemenu_rows">3</integer>
+    <integer name="easycamera_modemenu_columns">3</integer>
+    <integer name="easycamera_modemenu_rows">2</integer>
+    <integer name="baseindicator_battery_indicator_display_under">20</integer>
+    <integer name="baseindicator_remain_counter_display_under">20</integer>
+    <integer name="zoom_velocity">112</integer>
+    <integer name="slidermenu_exposure_value_num_of_step">9</integer>
+    <integer name="slidermenu_exposure_value_offset">4</integer>
+    <integer name="slidermenu_zoom_num_of_step">31</integer>
+    <integer name="slidermenu_zoom_max_ratio">4</integer>
+    <integer name="iimage_thumbnail_target_size">320</integer>
+    <integer name="iimage_mini_thumb_target_size">96</integer>
+    <integer name="iimage_thumbnail_max_num_pixels">196608</integer>
+    <integer name="iimage_mini_thumb_max_num_pixels">16384</integer>
+    <integer name="guideline_width">2</integer>
+    <integer name="postview_blink_line_thick">7</integer>
+    <integer name="editableshortcut_columns">5</integer>
+    <integer name="editableshortcut_rows">3</integer>
+    <integer name="max_zoom_level">30</integer>
+    <integer name="max_zoom_ratio">400</integer>
+    <integer name="min_zoom_ratio">100</integer>
+    <integer name="nfc_connect_view_font_size">54</integer>
+    <integer name="nfc_connect_view_button_font_size">54</integer>
+</resources>

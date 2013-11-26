@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0sp" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/aquashot_key_select_text" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+            <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btnCamera" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/camera_key" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+            <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btnRecord" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/record_key" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+            <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btnCancel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

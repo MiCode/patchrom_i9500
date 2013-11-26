@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sidemenu_left_num_of_item">5</integer>
+    <integer name="guideline_bottom_interval">0</integer>
+    <integer name="quicksettingmenu_num_of_item">5</integer>
+    <integer name="easycamera_quicksettingmenu_num_of_item">3</integer>
+    <integer name="quicksettingmenu_shortcut_num_of_item">3</integer>
+    <integer name="mode_button_font_size">51</integer>
+    <integer name="mode_item_title_font_size">66</integer>
+    <integer name="mode_description_title_font_size">75</integer>
+    <integer name="mode_description_content_font_size">60</integer>
+    <integer name="mode_menu_text_size">45</integer>
+    <integer name="batteryindicator_font_size">30</integer>
+    <integer name="editableshortcut_helptext_size">45</integer>
+    <integer name="zoom_text_size">55</integer>
+    <integer name="item_thumbnail_type_font_size">42</integer>
+    <integer name="rec_indicator_text_font_size">60</integer>
+    <integer name="rec_size_text_font_size">54</integer>
+    <integer name="listtypemenu_title_text_size">57</integer>
+    <integer name="easycamera_mode_item_title_font_size">70</integer>
+    <integer name="zoom_value_text_font_size">228</integer>
+    <integer name="zoom_indicator_text_font_size">210</integer>
+    <integer name="item_list_type_text_font_size">55</integer>
+    <integer name="item_editableshortcut_type_font_size">32</integer>
+    <integer name="datatext_font_size">57</integer>
+    <integer name="contextmenu_edit_font_size">60</integer>
+    <integer name="dialogpopup_message_font_size">54</integer>
+    <integer name="dialogpopup_button_font_size">48</integer>
+    <integer name="setting_title_font_size">57</integer>
+    <integer name="slidermenu_zoom_value_text_font_size">48</integer>
+    <integer name="list_type_text_font_size">57</integer>
+    <integer name="profile_menu_title_font_size">53</integer>
+    <integer name="profile_name_font_size">45</integer>
+    <integer name="sel_pic_title_font_size">53</integer>
+    <integer name="sel_pic_item_text_font_size">53</integer>
+    <integer name="baseindicator_text_size">50</integer>
+    <integer name="capture_progressbar_text_size">50</integer>
+    <integer name="capture_help_text_size">45</integer>
+    <integer name="help_popup_title_text_size">60</integer>
+    <integer name="help_item_font_size">51</integer>
+    <integer name="progressing_title_size">57</integer>
+    <integer name="listtypemenu_menu_depth_title_text_size">51</integer>
+    <integer name="panorama_guide_text_size">45</integer>
+    <integer name="easycamera_rec_text_font_size">60</integer>
+    <integer name="easycamera_rec_time_text_font_size">66</integer>
+    <integer name="easycamera_shootingmode_text_size">50</integer>
+    <item type="integer" name="APKTOOL_DUMMY_0032">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0040">false</item>
+</resources>
