@@ -1,5 +1,0 @@
-4
-com.alipay.android.app
-com.xiaomi.shop
-com.miui.userbook
-com.miui.voicerecognizer.xunfei

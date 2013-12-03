@@ -33,18 +33,13 @@ local-pre-zip-misc:
 	rm -rf $(ZIP_DIR)/system/csc/BRI/system/app/*
 	rm -rf $(ZIP_DIR)/system/csc/TGY/system/app/*
 	rm -rf $(ZIP_DIR)/system/containers/*
+	cp -rf other/system $(ZIP_DIR)/
 	cp -f stockrom/system/bin/installd $(ZIP_DIR)/system/bin/installd
 	cp -rf stockrom/system/app/mcRegistry $(ZIP_DIR)/system/app/mcRegistry
 	cp -f stockrom/system/app/FFFFFFFF000000000000000000000001.drbin $(ZIP_DIR)/system/app/FFFFFFFF000000000000000000000001.drbin
-	cp -f other/premiui  $(ZIP_DIR)/system/bin/premiui
-	cp -f other/gpsd  $(ZIP_DIR)/system/bin/gpsd
 	mv $(ZIP_DIR)/system/framework/framework_ext.jar $(ZIP_DIR)/system/framework/framework2.jar &
-	cp -f other/libselinux.so $(ZIP_DIR)/system/lib/libselinux.so
 	sed -i '/# end build properties/r other/customize.prop' $(ZIP_DIR)/system/build.prop
-	cp -f other/mac_permissions.xml $(ZIP_DIR)/system/etc/security/mac_permissions.xml
-	cp -f other/system_fonts.xml $(ZIP_DIR)/system/etc/system_fonts.xml
 	rm -rf $(ZIP_DIR)/system/media/audio/ui/PowerOn.ogg
-	cp -f other/enforcecopyinglibpackages.txt $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
 
 %.sign-plat : out/%
 	java -jar $(TOOL_DIR)/signapk.jar $(PORT_ROOT)/build/security/platform.x509.pem $(PORT_ROOT)/build/security/platform.pk8  $< $<.signed
