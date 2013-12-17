@@ -34,7 +34,7 @@
 
 .field private mIsCoverOpen:Z
 
-.field private mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
+.field private mKeyguardMediator:Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;
 
 .field private mPMS:Landroid/os/IPowerManager;
 
@@ -48,7 +48,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardViewMediator;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;)V
     .locals 3
     .parameter "context"
     .parameter "keyguardViewMediator"
@@ -105,7 +105,7 @@
     iput-object p1, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mContext:Landroid/content/Context;
 
     .line 160
-    iput-object p2, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
+    iput-object p2, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;
 
     .line 162
     const-string v1, "power"
@@ -385,9 +385,9 @@
 
     .line 191
     .local v1, isAutoUnlock:I
-    iget-object v4, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
+    iget-object v4, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;
 
-    invoke-virtual {v4}, Lcom/android/internal/policy/impl/KeyguardViewMediator;->isSecure()Z
+    invoke-virtual {v4}, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->isSecure()Z
 
     move-result v2
 

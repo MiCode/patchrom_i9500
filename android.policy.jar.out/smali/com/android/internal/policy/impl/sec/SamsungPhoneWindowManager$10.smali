@@ -65,9 +65,9 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$10;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
-    iget-object v2, v2, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/KeyguardViewMediator;
+    iget-object v2, v2, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;
 
-    invoke-virtual {v1, v2}, Lcom/android/internal/policy/impl/DeviceUnLockService;->setKeyguardViewMediator(Lcom/android/internal/policy/impl/KeyguardViewMediator;)V
+    invoke-virtual {v1, v2}, Lcom/android/internal/policy/impl/DeviceUnLockService;->setKeyguardViewMediator(Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;)V
 
     .line 3221
     :goto_0
@@ -115,7 +115,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/DeviceUnLockService;->setKeyguardViewMediator(Lcom/android/internal/policy/impl/KeyguardViewMediator;)V
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/DeviceUnLockService;->setKeyguardViewMediator(Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;)V
 
     .line 3227
     :cond_0
