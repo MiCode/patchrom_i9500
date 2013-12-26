@@ -1,7 +1,7 @@
 
 local-phone-apps := ApplicationsProvider DefaultContainerService \
 					SecSettingsProvider SecMediaProvider \
-					UserDictionaryProvider SecLiveWallpapersPicker \
+					UserDictionaryProvider \
 					SamsungChineseIME SamsungIME \
 					DrmProvider MtpApplication \
 					SamsungCamera2 Bluetooth \
