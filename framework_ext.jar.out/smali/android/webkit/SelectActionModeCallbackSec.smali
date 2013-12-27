@@ -587,6 +587,141 @@
 .end method
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+    .locals 12
+    .parameter "mode"
+    .parameter "menu"
+
+    .prologue
+    const/4 v1, 0x0
+
+    const/4 v10, 0x1
+
+    invoke-virtual {p1}, Landroid/view/ActionMode;->getMenuInflater()Landroid/view/MenuInflater;
+
+    move-result-object v9
+
+    sget v11, Lcom/android/internal/R$menu;->webview_copy:I
+
+    invoke-virtual {v9, v11, p2}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
+
+    iget-object v9, p0, Landroid/webkit/SelectActionModeCallbackSec;->mWebView:Landroid/webkit/WebViewClassic;
+
+    invoke-virtual {v9}, Landroid/webkit/WebViewClassic;->getContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    .local v6, context:Landroid/content/Context;
+    const-string v9, "clipboard"
+
+    invoke-virtual {v6, v9}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Landroid/content/ClipboardManager;
+
+    move-object v5, v9
+
+    check-cast v5, Landroid/content/ClipboardManager;
+
+    .local v5, cm:Landroid/content/ClipboardManager;
+    invoke-virtual {p1}, Landroid/view/ActionMode;->isUiFocusable()Z
+
+    move-result v8
+
+    .local v8, isFocusable:Z
+    iget-object v9, p0, Landroid/webkit/SelectActionModeCallbackSec;->mWebView:Landroid/webkit/WebViewClassic;
+
+    invoke-virtual {v9}, Landroid/webkit/WebViewClassic;->focusCandidateIsEditableText()Z
+
+    move-result v7
+
+    .local v7, isEditable:Z
+    iget-boolean v9, p0, Landroid/webkit/SelectActionModeCallbackSec;->mRecreate:Z
+
+    if-nez v9, :cond_miui_0
+
+    iput-boolean v7, p0, Landroid/webkit/SelectActionModeCallbackSec;->mIsEditable:Z
+
+    :cond_miui_0
+    if-eqz v7, :cond_1
+
+    invoke-virtual {v5}, Landroid/content/ClipboardManager;->hasPrimaryClip()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_1
+
+    if-eqz v8, :cond_1
+
+    move v3, v10
+
+    .local v3, canPaste:Z
+    :goto_0
+    if-nez v7, :cond_2
+
+    if-eqz v8, :cond_2
+
+    move v2, v10
+
+    .local v2, canFind:Z
+    :goto_1
+    const/4 v1, 0x0
+
+    .local v1, canCut:Z
+    :cond_0
+    const/4 v0, 0x1
+
+    .local v0, canCopy:Z
+
+    const/4 v4, 0x1
+
+    .local v4, canWebSearch:Z
+    sget v9, Lcom/android/internal/R$id;->find:I
+
+    invoke-direct {p0, p2, v2, v9}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
+
+    sget v9, Lcom/android/internal/R$id;->paste:I
+
+    invoke-direct {p0, p2, v3, v9}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
+
+    sget v9, Lcom/android/internal/R$id;->cut:I
+
+    invoke-direct {p0, p2, v1, v9}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
+
+    sget v9, Lcom/android/internal/R$id;->copy:I
+
+    invoke-direct {p0, p2, v0, v9}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
+
+    sget v9, Lcom/android/internal/R$id;->websearch:I
+
+    invoke-direct {p0, p2, v4, v9}, Landroid/webkit/SelectActionModeCallbackSec;->setMenuVisibility(Landroid/view/Menu;ZI)V
+
+    iput-object p1, p0, Landroid/webkit/SelectActionModeCallbackSec;->mActionMode:Landroid/view/ActionMode;
+
+    const/4 v11, 0x0
+
+    iput-boolean v11, p0, Landroid/webkit/SelectActionModeCallbackSec;->mRecreate:Z
+
+    return v10
+
+    .end local v0           #canCopy:Z
+    .end local v1           #canCut:Z
+    .end local v2           #canFind:Z
+    .end local v3           #canPaste:Z
+    .end local v4           #canWebSearch:Z
+    :cond_1
+    move v3, v1
+
+    goto :goto_0
+
+    .restart local v3       #canPaste:Z
+    :cond_2
+    move v2, v1
+
+    goto :goto_1
+.end method
+
+.method public onCreateActionMode_old(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 13
     .parameter "mode"
     .parameter "menu"
