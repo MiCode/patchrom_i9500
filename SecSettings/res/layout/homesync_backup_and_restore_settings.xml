@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/all_details" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/backup_header" android:layout_marginTop="8.0dip" android:text="@string/homesync_backup" style="?android:attr/listSeparatorTextViewStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/backup_comment" android:paddingTop="-1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_below="@id/backup_header">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homesync_backup_summary" android:maxLines="1" android:paddingStart="6.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/backup_start_btn" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/homesync_backup_restore_start" android:layout_below="@id/backup_comment" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/restore_header" android:layout_marginTop="8.0dip" android:text="@string/homesync_restore" style="?android:attr/listSeparatorTextViewStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/restore_comment" android:paddingTop="-1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_below="@id/restore_header">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homesync_restore_summary" android:maxLines="1" android:paddingStart="6.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/restore_start_btn" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/homesync_backup_restore_start" android:layout_below="@id/restore_comment" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

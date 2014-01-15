@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_current_title" android:key="key_roaming_current" android:summary="@string/roaming_current" />
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_selection" android:key="key_roaming_selection" />
+    <CheckBoxPreference android:title="@string/roaming_use_data_roaming" android:key="key_roaming_use_data_roaming" />
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_auto_dial" android:key="key_roaming_auto_dial" />
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_guide" android:key="key_roaming_guide" android:summary="@string/roaming_guide" />
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_join_cancel" android:key="key_roaming_join_cancel" />
+</PreferenceScreen>

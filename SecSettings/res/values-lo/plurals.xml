@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">ປະຈຸບັນນີ້ທ່ານຍັງຢູ່ %d ຂັ້ນຕອນຈາກຜູ້ພັດທະນາ</item>
+        <item quantity="one">ປະຈຸບັນນີ້ທ່ານຍັງຢູ່ຫ່າງໄກຈາກ 1 ຂັ້ນຕອນຂອງການເປັນຜູ້ພັດທະນາ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ %d ຕົວອັກສອນ</item>
+        <item quantity="one">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວອັກສອນ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ %d ຕົວອັກສອນນ້ອຍ</item>
+        <item quantity="one">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວອັກສອນນ້ອຍ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ %d ຕົວອັກສອນໃຫຍ່</item>
+        <item quantity="one">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວອັກສອນໃຫຍ່</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ %d ຕົວເລກ</item>
+        <item quantity="one">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວເລກ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ %d ຕົວສັນຍາລັກ</item>
+        <item quantity="one">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວສັນຍາລັກ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ %d ຕົວເລກ ຫຼືຕົວສັນຍາລັກ</item>
+        <item quantity="one">ລະຫັດຈະຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວເລກ ແລະຕົວສັນຍາລັກ</item>
+    </plurals>
+    <plurals name="lock_timeout_minutes">
+        <item quantity="other">%d ນາທີ</item>
+        <item quantity="one">1 ນາທີ</item>
+    </plurals>
+    <plurals name="lock_timeout_seconds">
+        <item quantity="other">%d ວິນາທີ</item>
+        <item quantity="one">1 ວິນາທີ</item>
+    </plurals>
+</resources>

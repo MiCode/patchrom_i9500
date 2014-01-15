@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_panel_width">64.0dip</dimen>
+    <dimen name="notification_image_width">42.0dip</dimen>
+    <dimen name="notification_image_height">42.0dip</dimen>
+</resources>

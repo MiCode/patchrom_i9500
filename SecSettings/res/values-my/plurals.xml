@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">ဖြံ႔ၿဖိဳးေအာင္ ေဆာင္ရြက္သူတစ္ဦးအျဖစ္မွ %d ဆင့္အကြာတြင္ ယခုေရာက္ေနသည္</item>
+        <item quantity="one">ယခု သင္သည္ ဖြံ႔ၿဖိဳးေစသူ တစ္ဦးအျဖစ္မွ ၁ ဆင့္ လိုေသးသည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">စကားဝွက္သည္ အနည္းဆံုး စာလံုး %d လံုး ပါဝင္ရမည္</item>
+        <item quantity="one">စကားဝွက္သည္ အနည္းဆံုး စာ ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">စကားဝွက္သည္ အနည္းဆံုး စာလံုးေသး %d လံုး ပါဝင္ရမည္</item>
+        <item quantity="one">စကားဝွက္သည္ အနည္းဆံုး စာအေသး ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">စကားဝွက္သည္ အနည္းဆံုး စာလံုးၾကီး %d လံုး ပါဝင္ရမည္</item>
+        <item quantity="one">စကားဝွက္သည္ အနည္းဆံုး စာလံုးအၾကီး ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">စကားဝွက္သည္ အနည္းဆံုး ဂဏန္း %d လံုး ပါဝင္ရမည္</item>
+        <item quantity="one">စကားဝွက္သည္ အနည္းဆံုး ဂဏန္း ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">စကားဝွက္သည္ အနည္းဆံုး သေကၤတ %d ခု ပါဝင္ရမည္</item>
+        <item quantity="one">စကားဝွက္သည္ အနည္းဆံုး သေကၤတ ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">စကားဝွက္သည္ အနည္းဆံုး ဂဏန္း သို႔မဟုတ္ သေကၤတ %d ခု ပါဝင္ရမည္</item>
+        <item quantity="one">စကားဝွက္သည္ အနည္းဆံုး ဂဏန္း သို႔မဟုတ္ သေကၤတ ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lock_timeout_minutes">
+        <item quantity="other">%d မိနစ္</item>
+        <item quantity="one">၁ မိနစ္</item>
+    </plurals>
+    <plurals name="lock_timeout_seconds">
+        <item quantity="other">%d စကၠန္႔</item>
+        <item quantity="one">၁ စကၠန္႔</item>
+    </plurals>
+</resources>

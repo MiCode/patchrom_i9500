@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:id="@id/wireless_section" android:title="@string/header_category_network_connections" />
+    <header android:icon="@drawable/ic_settings_wireless" android:id="@id/wifi_settings" android:title="@string/wifi_settings_title" android:summary="@string/tap_to_configure" android:fragment="com.android.settings_ex.wifi.WifiSettings" />
+    <header android:icon="@drawable/ic_settings_sprint_hotspot" android:id="@id/wifi_sprinthotspot_settings" android:title="@string/wifi_tether_checkbox_text" android:fragment="com.android.settings_ex.wifi.mobileap.WifiApSettings" />
+    <header android:icon="@drawable/ic_settings_bluetooth2" android:id="@id/bluetooth_settings" android:title="@string/bluetooth_settings_title" android:summary="@string/tap_to_configure" android:fragment="com.android.settings_ex.bluetooth.BluetoothSettings" />
+    <header android:icon="@drawable/ic_settings_airplanemode" android:id="@id/airplane_mode" android:title="@string/airplane_mode" android:summary="@string/airplane_mode_menu_summary" />
+    <header android:icon="@drawable/ic_settings_data_usage" android:id="@id/data_usage_settings" android:title="@string/data_usage_summary_title" android:fragment="com.android.settings_ex.DataUsageSummary" />
+    <header android:icon="@drawable/APKTOOL_DUMMY_01f4" android:id="@id/dualSlot_settings" android:title="@string/dual_standby_management">
+        <intent android:action="settings.SIM_CARD_NETWORK" />
+    </header>
+    <header android:icon="@drawable/ic_settings_roaming" android:id="@id/global_roaming_settings" android:title="@string/lgt_service_global_auto_roaming" android:fragment="com.android.settings_ex.GlobalRoamingSettings" />
+    <header android:icon="@drawable/ic_settings_roaming" android:id="@id/t_roaming_settings" android:title="@string/troaming_activity_name" android:fragment="com.android.settings_ex.TRoamingSettings" />
+    <header android:icon="@drawable/ic_icon_roaming" android:id="@id/international_roaming_setting" android:title="@string/international_roaming_setting">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.InternationalRoamingSetting" />
+    </header>
+    <header android:icon="@drawable/ic_settings_more" android:id="@id/wireless_settings" android:title="@string/more_networks" android:fragment="com.android.settings_ex.WirelessSettings" android:breadCrumbTitle="@string/wireless_networks_settings_title" />
+    <header android:id="@id/share_section" android:title="@string/header_category_connect_share" />
+    <header android:icon="@drawable/ic_settings_nfc" android:id="@id/nfc_setting" android:title="@string/nfc_quick_toggle_title" android:summary="@string/nfc_quick_toggle_summary" android:fragment="com.android.settings_ex.nfc.NfcSettings" />
+    <header android:icon="@drawable/ic_settings_sbeam" android:id="@id/sbeam_setting" android:title="@string/s_beam_settings_title" android:summary="@string/sbeam_menu_summary" android:fragment="com.android.settings_ex.nfc.SBeam" />
+    <header android:icon="@drawable/setting_icon_dlna_settings" android:id="@id/nearby_setting" android:title="@string/allshare_nearby" android:summary="@string/allshare_title_summary" android:fragment="com.android.settings_ex.nearby.NearbySettings" />
+    <header android:icon="@drawable/allshare_cast" android:id="@id/allshare_cast_settings" android:title="@string/wfd_settings_title" android:summary="@string/wfd_settings_summary" android:fragment="com.android.settings_ex.wfd.WfdPickerActivity" />
+    <header android:icon="@drawable/ic_settings_list_kies_via_wifi" android:id="@id/kies_via_wifi" android:title="@string/kies_via_wifi" android:summary="@string/kies_via_wifi_summary">
+        <intent android:targetPackage="com.sec.android.app.kieswifi" android:action="android.intent.action.MAIN" android:targetClass="com.sec.android.app.kieswifi.ui.KiesLauncher" />
+    </header>
+</preference-headers>

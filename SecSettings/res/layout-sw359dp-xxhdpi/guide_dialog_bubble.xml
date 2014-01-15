@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff1e1e1e" android:gravity="center_vertical" android:id="@id/help_tap_bubble_summary" style="@style/help_bubble_with_button" />
+    <ImageButton android:id="@id/guide_tip_title_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/powersavingmode_help_edit_bubble_close_btn_margin_top" android:layout_marginRight="@dimen/powersavingmode_help_edit_bubble_close_btn_margin_right" android:src="@drawable/help_popup_close_btn" android:layout_alignTop="@id/help_tap_bubble_summary" android:layout_alignRight="@id/help_tap_bubble_summary" android:contentDescription="@string/guide_close_popup_icon" />
+</RelativeLayout>

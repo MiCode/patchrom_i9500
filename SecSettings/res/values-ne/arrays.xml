@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="touch_key_light_entries">
+        <item>1.5 सेकेन्ड</item>
+        <item>6 सेकेन्ड</item>
+        <item>सधैँ बन्द</item>
+        <item>सधैँ चालू</item>
+    </string-array>
+    <string-array name="clock_position_entries">
+        <item>शीर्ष</item>
+        <item>मध्यस्थित</item>
+        <item>बॉटम</item>
+    </string-array>
+    <string-array name="contents_type_entries">
+        <item>समाचार</item>
+        <item>स्टक</item>
+        <item>फेसबुक</item>
+    </string-array>
+    <string-array name="contents_type_entries_weibo">
+        <item>समाचार</item>
+        <item>स्टक</item>
+        <item>Weibo</item>
+    </string-array>
+    <string-array name="sliding_speed_entries">
+        <item>सुस्‍त</item>
+        <item>साधारण</item>
+        <item>तुरन्त</item>
+    </string-array>
+    <string-array name="facebook_auto_refresh_entries">
+        <item>शून्‍य</item>
+        <item>प्रत्येक 30 मिनेटमा</item>
+        <item>प्रत्येक 1 घण्टा</item>
+        <item>प्रत्येक 2 घण्टा</item>
+        <item>प्रत्येक 4 घण्टामा</item>
+    </string-array>
+    <string-array name="bluetooth_class_of_device_entries">
+        <item>हेड़सेट</item>
+        <item>PC</item>
+        <item>फोन</item>
+        <item>HID (कुञ्जीपाटी, माउस, इति.)</item>
+        <item>सबै यन्त्रहरू</item>
+    </string-array>
+    <string-array name="audio_output_entries">
+        <item>स्टेरियो</item>
+        <item>चारैतिर</item>
+    </string-array>
+</resources>

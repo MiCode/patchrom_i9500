@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/lock_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/safety_zone_notification_vibrate" android:key="vibrate" android:summary="@string/safety_zone_notification_vibrate_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

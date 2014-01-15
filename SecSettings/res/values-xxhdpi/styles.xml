@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="wifi_wps_dlg">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:gravity">left</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">17.0dip</item>
+        <item name="android:layout_marginEnd">17.0dip</item>
+    </style>
+    <style name="wifi_item_label">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_info_label">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff9eabb5</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_info_content">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DormantNoContactsTextAppearance">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>

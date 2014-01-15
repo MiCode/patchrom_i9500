@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">ਤੁਸੀਂ ਕਿਸੇ ਡਿਵੈਲਪਰ ਤੋਂ ਹੁਣ %d ਚਰਣ ਹੀ ਦੂਰ ਹੋ</item>
+        <item quantity="one">ਹੁਣ ਤੁਸੀਂ ਇੱਕ ਡੇਵਲਪਰ ਬਣਨ ਤੋਂ 1 ਕਦਮ ਦੂਰ ਹੋ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ %d ਅੱਖਰ ਹੋਣੇ ਜ਼ਰੂਰੀ ਹਨ</item>
+        <item quantity="one">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ 1 ਅੱਖਰ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ %d ਛੋਟੇ ਅੱਖਰ ਹੋਣੇ ਜ਼ਰੂਰੀ ਹਨ</item>
+        <item quantity="one">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ 1 ਛੋਟਾ ਅੱਖਰ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ %d ਵੱਡੇ ਅੱਖਰ ਹੋਣੇ ਜ਼ਰੂਰੀ ਹਨ</item>
+        <item quantity="one">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ 1 ਵੱਡਾ ਅੱਖਰ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ %d ਅੰਕ ਹੋਣੇ ਜ਼ਰੂਰੀ ਹਨ</item>
+        <item quantity="one">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ 1 ਅੰਕ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ %d ਚਿੰਨ੍ਹ ਹੋਣੇ ਜ਼ਰੂਰੀ ਹਨ</item>
+        <item quantity="one">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ 1 ਚਿੰਨ੍ਹ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹੈ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ %d ਨੰਬਰ ਜਾਂ ਚਿੰਨ੍ਹ ਹੋਣੇ ਜ਼ਰੂਰੀ ਹਨ</item>
+        <item quantity="one">ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟ ਤੋਂ ਘੱਟ 1 ਨੰਬਰ ਜਾਂ ਚਿੰਨ੍ਹ ਹੋਣਾ ਜ਼ਰੂਰੀ ਹਨ</item>
+    </plurals>
+    <plurals name="lock_timeout_minutes">
+        <item quantity="other">%d ਮਿੰਟ</item>
+        <item quantity="one">1 ਮਿੰਟ</item>
+    </plurals>
+    <plurals name="lock_timeout_seconds">
+        <item quantity="other">%d ਸੈਕੰਡ</item>
+        <item quantity="one">1 ਸੈਕੰਡ</item>
+    </plurals>
+</resources>

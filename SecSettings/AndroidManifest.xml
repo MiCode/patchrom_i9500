@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="17" android:versionName="4.2.2-I9500ZCUBMG1" package="com.android.settings_ex" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.android.settings_ex" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.SET_POINTER_SPEED" />
+    <uses-permission android:name="android.permission.SET_KEYBOARD_LAYOUT" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.COPY_PROTECTED_DATA" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.setting.permission.ALLSHARE_CAST_SERVICE" />
+    <uses-permission android:name="com.sec.android.app.twdvfs.DVFS_BOOSTER_PERMISSION" />
+    <uses-permission android:name="com.samsung.helphub.permission.HELP" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.sec.smartcard.pinservice.permission.SMARTCARD_PIN_ACCESS" />
+    <uses-permission android:name="com.sec.android.spc.account.READ_ACCOUNT_INFO" />
+    <uses-permission android:name="com.sec.android.spc.account.WRITE_ACCOUNT_INFO" />
+    <permission android:label="@string/wfd_settings_summary" android:name="com.android.setting.permission.ALLSHARE_CAST_SERVICE" android:protectionLevel="dangerous" android:permissionGroup="android.permission-group.PERSONAL_INFO" />
+    <application android:theme="@miui:style/V5.Theme" android:label="@string/settings_label" android:icon="@mipmap/ic_launcher_settings" android:taskAffinity="" android:hardwareAccelerated="@bool/hardwareAccelerated" android:largeHeap="true" android:uiOptions="splitActionBarWhenNarrow" android:supportsRtl="false">
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true" />
+        <uses-library android:name="touchwiz" />
+        <uses-library android:name="sechardware" />
+        <uses-library android:name="sec_platform_library" />
+        <uses-library android:name="com.broadcom.bt" />
+        <activity android:label="@string/smart_screen_title" android:name="Settings$SmartScreenSettingsActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.SMART_SCREEN_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings_ex.FRAGMENT_CLASS" android:value="com.android.settings_ex.smartscreen.SmartScreenSettings" />
+        </activity>
+        <activity android:label="@string/smart_scroll_title" android:name="Settings$SmartScrollAdvancedSettingsActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.SMART_SCROLL_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings_ex.FRAGMENT_CLASS" android:value="com.android.settings_ex.smartscreen.SmartScrollAdvancedSettings" />
+        </activity>
+<activity android:label="@string/display_settings" android:icon="@drawable/shortcut_display" android:name="Settings$DisplaySettingsActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings_ex.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings_ex.FRAGMENT_CLASS" android:value="com.android.settings_ex.DisplaySettings" />
+            <meta-data android:name="com.android.settings_ex.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+        </activity>
+        <activity-alias android:label="@string/display_settings" android:name="DisplaySettings" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize" android:targetActivity="Settings$DisplaySettingsActivity">
+            <meta-data android:name="com.android.settings_ex.FRAGMENT_CLASS" android:value="com.android.settings_ex.DisplaySettings" />
+            <meta-data android:name="com.android.settings_ex.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+        </activity-alias>
+        <activity android:label="@string/power_saving_mode_title" android:name="Settings$PowerSavingModeSettingsActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.PSM_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings_ex.FRAGMENT_CLASS" android:value="com.android.settings_ex.powersavingmode.MenuPowerSavingModeSettings" />
+            <meta-data android:name="com.android.settings_ex.TOP_LEVEL_HEADER_ID" android:resource="@id/power_saving_mode" />
+        </activity>
+        <receiver android:name=".powersavingmode.PowerNotiReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.settings.POWERSAVING_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/connectivity_and_location" android:name=".powersavingmode.ConnectivityLocationWidgetProvider" android:enabled="@bool/has_connectivity_widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED" />
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED_FROM_WIDGET" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+                <action android:name="android.intent.action.ANY_DATA_STATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/connectivitylocationwidget_info" />
+        </receiver>
+        <activity android:theme="@style/SettingsTheme.DialogWhenLarge" android:label="" android:name="ModePreview" android:uiOptions="none">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.settings_ex.ModePreview" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ChooseLockFaceWarning" />
+        <activity android:theme="@style/SettingsTheme.Dialog.Alert" android:label="" android:name="ModePreviewTablet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.settings_ex.ModePreviewTablet" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/SettingsTheme.DialogWhenLarge" android:label="" android:name="InkeffectPreview" android:configChanges="keyboardHidden|orientation|screenSize" android:uiOptions="none">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.settings_ex.InkeffectPreview" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/SettingsTheme.Dialog.Alert" android:label="" android:name="InkeffectPreviewTablet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.settings_ex.InkeffectPreviewTablet" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.DeviceDefault.Dialog.Alert" android:name=".AskUSBMode" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/power_title" android:name="Settings$PowerSettingsActivity" android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings_ex.FRAGMENT_CLASS" android:value="com.android.settings_ex.PowerSettings" />
+            <meta-data android:name="com.android.settings_ex.TOP_LEVEL_HEADER_ID" android:resource="@id/power_settings" />
+        </activity>
+    </application>
+</manifest>

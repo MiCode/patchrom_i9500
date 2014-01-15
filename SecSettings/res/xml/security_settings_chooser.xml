@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/lock_screen_security" android:key="lock_screen_security_category" />
+    <PreferenceScreen android:persistent="false" android:title="@string/unlock_set_unlock_launch_picker_title" android:key="unlock_set_or_change" android:summary="@string/unlock_set_unlock_mode_none" />
+    <PreferenceCategory android:title="@string/lock_screen_swipe_options" android:key="lock_screen_options_category" />
+    <SwitchPreferenceScreen android:title="@string/dualclock_settings_title" android:key="dualclock_settings" android:summary="@string/dualclock_settings_summary" android:fragment="com.android.settings_ex.dualclock.DualClockSetting" />
+    <PreferenceScreen android:title="@string/lock_screen_options" android:key="lock_screen_options" android:summary="@string/lock_screen_options_summary" android:fragment="com.android.settings_ex.LockScreenSettings" />
+    <PreferenceScreen android:title="@string/lock_screen_widget_options" android:key="lock_screen_widget_options" android:summary="@string/lock_screen_widget_options_summary" android:fragment="com.android.settings_ex.LockScreenSettings" />
+    <SwitchPreferenceScreen android:title="@string/lock_screen_shortcut_title" android:key="lock_screen_shortcut_menu" android:summary="@string/lock_screen_shortcut_summary">
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.lockscreenshortcut.LockScreenShortcutSettings" />
+    </SwitchPreferenceScreen>
+    <SwitchPreferenceScreen android:title="@string/safety_zone_title" android:key="safetyzone_settings" android:summary="@string/safety_zone_summary" android:fragment="com.android.settings_ex.safetyzone.SafetyZoneSettings" />
+    <ListPreference android:persistent="false" android:entries="@array/lock_screen_unlock_effect_entries" android:title="@string/unlock_effect" android:key="unlock_effect" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/lock_screen_unlock_effect_values" />
+    <CheckBoxPreference android:title="@string/ripple_effect" android:key="ripple_effect" android:summary="@string/ripple_effect_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:title="@string/ink_effect" android:key="ink_effect">
+        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.InkeffectPreview" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/help_text_title" android:key="help_text" android:summary="@string/help_text_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/samsung_unlock_option_say_your_wakeup_command_to_unlock_screen" android:key="say_your_wakeup" android:summary="@string/wakeup_in_lockscreen_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:title="@string/samsung_unlock_option_set_wakeup_command" android:key="set_wakeup_command">
+        <intent android:action="android.intent.action.VOICE_SETTING_SET_WAKEUP_COMMAND" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/quick_note_title" android:key="quick_note" android:summary="@string/quick_note_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/owner_info_settings_title" android:key="owner_info_settings" android:summary="@string/owner_info_settings_summary" android:fragment="com.android.settings_ex.OwnerInfoSettings" />
+</PreferenceScreen>

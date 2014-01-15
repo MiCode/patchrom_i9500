@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/APKTOOL_DUMMY_04b7" />
+    <item android:state_focused="true" android:state_enabled="false" android:state_pressed="true" android:drawable="@drawable/APKTOOL_DUMMY_04b7" />
+    <item android:state_focused="true" android:state_enabled="false" android:drawable="@drawable/APKTOOL_DUMMY_04b7" />
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/APKTOOL_DUMMY_04bd" />
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/APKTOOL_DUMMY_04bd" />
+    <item android:state_focused="true" android:drawable="@drawable/APKTOOL_DUMMY_04ba" />
+    <item android:state_selected="true" android:drawable="@drawable/APKTOOL_DUMMY_04c0" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_04b4" />
+</selector>

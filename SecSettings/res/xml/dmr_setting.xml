@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/allshare_nearby" android:key="dmr"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:persistent="false" android:title="@string/dmr_onoff_title" android:selectable="true" android:key="dmr_onoff" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/dmr_file_data_transfer" android:key="dmr_file_data_transfer">
+        <EditTextPreference android:singleLine="true" android:title="@string/dmr_device_name" android:key="dmr_device_name" android:summary="@string/dmr_device_name" android:dialogTitle="@string/dmr_device_name" android:positiveButtonText="Save" android:inputType="text" />
+        <Preference android:persistent="false" android:title="@string/dmr_allowed_device_list" android:key="dmr_accept_device" android:summary="@string/dmr_allowed_device_summary" android:widgetLayout="@layout/round_more_icon" android:dialogTitle="@string/dmr_allowed_device_list" />
+        <Preference android:persistent="false" android:title="@string/dmr_denied_device_list" android:key="dmr_reject_device" android:summary="@string/dmr_denied_device_summary" android:widgetLayout="@layout/round_more_icon" android:dialogTitle="@string/dmr_denied_device_list" />
+        <ListPreference android:persistent="true" android:entries="@array/dmr_access_mode_entries" android:title="@string/dmr_access_control_list" android:key="dmr_access_control" android:summary="@string/dmr_access_control_always_accept" android:widgetLayout="@layout/round_more_icon" android:defaultValue="AlwaysAllow" android:dialogTitle="@string/dmr_access_control_list" android:entryValues="@array/dmr_access_mode_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

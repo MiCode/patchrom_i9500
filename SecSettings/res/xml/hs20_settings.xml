@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.settings_ex.ProgressCategory android:title="@string/hs20_connectable_hs_pref" android:key="connectable_hs" />
+    <PreferenceCategory android:layout="@layout/wifi_hs20_nodevice_layout" android:key="no_connectable_hs" />
+    <PreferenceCategory android:title="@string/hs20_available_hs_pref" android:key="available_hs" />
+</PreferenceScreen>

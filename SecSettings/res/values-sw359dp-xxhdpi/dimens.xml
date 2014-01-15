@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="con_bg_height">100.0dip</dimen>
+    <dimen name="con_btn_turn_off_margin">2.0dip</dimen>
+    <dimen name="con_btn_turn_off_width">56.0dip</dimen>
+    <dimen name="con_img_turn_off_marginTop">3.0dip</dimen>
+    <dimen name="con_btn_text_size">13.0dip</dimen>
+    <dimen name="con_btn_turn_off_text_height">30.0dip</dimen>
+    <dimen name="con_btn_turn_off_text_marginSide">3.0dip</dimen>
+    <dimen name="con_img_icon_width">45.0dip</dimen>
+    <dimen name="con_img_icon_height">45.0dip</dimen>
+    <dimen name="con_text_height">17.0dip</dimen>
+    <dimen name="con_text_marginTop">4.0dip</dimen>
+    <dimen name="con_img_icon_marginTop">11.0dip</dimen>
+    <dimen name="con_ind_marginTop">10.0dip</dimen>
+    <dimen name="con_btn_wifi_width">58.0dip</dimen>
+    <dimen name="con_btn_bluetooth_width">58.0dip</dimen>
+    <dimen name="con_btn_data_width">58.0dip</dimen>
+    <dimen name="con_btn_gps_width">58.0dip</dimen>
+    <dimen name="con_btn_sync_width">58.0dip</dimen>
+    <dimen name="con_ind_wifi_width">54.0dip</dimen>
+    <dimen name="con_ind_bluetooth_width">54.0dip</dimen>
+    <dimen name="con_ind_data_width">54.0dip</dimen>
+    <dimen name="con_ind_gps_width">54.0dip</dimen>
+    <dimen name="con_ind_sync_width">54.0dip</dimen>
+    <dimen name="con_ind_height">7.0dip</dimen>
+    <dimen name="con_ind_marginLeft">1.0dip</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/p2p_nodevice" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/no_device_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31.0dip" android:src="@drawable/wifi_no_aps" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/no_device" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="31.0dip" android:text="@string/wifi_database_empty" />
+</LinearLayout>
