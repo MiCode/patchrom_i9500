@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tab_custom_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/tab_custom_view_icon" android:duplicateParentState="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="6.0dip" />
+    <TextView android:textSize="15.0dip" android:textColor="@drawable/color_tab_text" android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/tab_custom_view_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDy="3.0" android:shadowRadius="1.0" />
+</LinearLayout>

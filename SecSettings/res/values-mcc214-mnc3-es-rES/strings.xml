@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wfd_nfc_help_message_3">La información NFC se vinculará a la etiqueta de modo que cuando se complete la vinculación puede iniciar AllShare Cast al tocar la etiqueta NFC.</string>
+    <string name="wfd_tag_write_message_2">La información NFC se vinculará a la etiqueta de modo que cuando se complete la vinculación puede iniciar AllShare Cast al tocar la etiqueta NFC.</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="quick_setting_buttons_num_port">5</integer>
+    <integer name="quick_setting_buttons_num_land">8</integer>
+</resources>

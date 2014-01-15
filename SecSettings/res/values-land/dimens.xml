@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setupwizard_wifi_screen_margin_left">16.0dip</dimen>
+    <dimen name="setupwizard_wifi_screen_margin_right">16.0dip</dimen>
+    <dimen name="setupwizard_wifi_screen_margin_top">11.0dip</dimen>
+    <dimen name="setupwizard_wifi_screen_margin_bottom">0.0dip</dimen>
+    <dimen name="custom_splitcolorview_layoutHeight">32.0dip</dimen>
+    <dimen name="con_bg_height">100.0dip</dimen>
+    <dimen name="con_btn_turn_off_margin">2.0dip</dimen>
+    <dimen name="con_btn_turn_off_width">73.399994dip</dimen>
+    <dimen name="con_img_turn_off_marginTop">9.0dip</dimen>
+    <dimen name="con_btn_text_size">13.0dip</dimen>
+    <dimen name="con_btn_turn_off_text_height">30.0dip</dimen>
+    <dimen name="con_btn_turn_off_text_marginSide">3.0dip</dimen>
+    <dimen name="con_img_icon_width">45.0dip</dimen>
+    <dimen name="con_img_icon_height">45.0dip</dimen>
+    <dimen name="con_text_height">17.0dip</dimen>
+    <dimen name="con_text_marginTop">4.0dip</dimen>
+    <dimen name="con_img_icon_marginTop">8.0dip</dimen>
+    <dimen name="con_ind_marginTop">8.0dip</dimen>
+    <dimen name="con_btn_wifi_width">76.0dip</dimen>
+    <dimen name="con_btn_bluetooth_width">76.0dip</dimen>
+    <dimen name="con_btn_data_width">76.0dip</dimen>
+    <dimen name="con_btn_gps_width">76.0dip</dimen>
+    <dimen name="con_btn_sync_width">76.0dip</dimen>
+    <dimen name="con_ind_wifi_width">70.79999dip</dimen>
+    <dimen name="con_ind_bluetooth_width">70.79999dip</dimen>
+    <dimen name="con_ind_data_width">70.79999dip</dimen>
+    <dimen name="con_ind_gps_width">70.79999dip</dimen>
+    <dimen name="con_ind_sync_width">70.79999dip</dimen>
+    <dimen name="appwidget_width">421.0dip</dimen>
+    <dimen name="appwidget_height">68.0dip</dimen>
+</resources>

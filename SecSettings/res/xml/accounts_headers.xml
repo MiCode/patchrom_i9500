@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:id="@id/account_settings" android:title="@string/header_category_my_accounts" />
+    <header android:icon="@drawable/backup_assistant_icon" android:id="@id/bua_plus" android:title="@string/bua_plus_title">
+        <intent android:action="com.samsung.vmmhux.ACTION_VMMHUX_SETUPWIZARD" />
+    </header>
+    <header android:icon="@drawable/ic_menu_add" android:id="@id/account_add" android:title="@string/add_account_label">
+        <intent android:action="android.settings.ADD_ACCOUNT_SETTINGS" />
+    </header>
+    <header android:id="@id/backup_section" android:title="@string/header_category_backup_options" />
+    <header android:icon="@drawable/ic_settings_docomocloud" android:id="@id/docomocloud_settings" android:title="@string/docomocloud_settings">
+        <intent android:targetPackage="com.nttdocomo.android.cloudset" android:action="android.intent.action.MAIN" android:targetClass="com.nttdocomo.android.cloudset.CloudSettingActivity" />
+    </header>
+    <header android:icon="@drawable/ic_settings_cloud" android:id="@id/scloud_settings" android:title="@string/scloud_settings" android:fragment="com.android.settings_ex.cloud.CloudSettingsMainFragment" />
+    <header android:icon="@drawable/ic_settings_backup" android:id="@id/privacy_settings" android:title="@string/privacy_settings" android:fragment="com.android.settings_ex.PrivacySettings" />
+</preference-headers>

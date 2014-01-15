@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_long_press_timeout_preference_title">Touch and hold delay</string>
+    <string name="accessibility_sync_disabled">Sync is turned off</string>
+    <string name="sync_disabled">Sync is turned off</string>
+    <string name="cant_sync_dialog_message">Sync is turned off for this item. To turn on, turn on background data and automatic sync temporarily</string>
+    <string name="how_to_capture_the_screen_summary">Press the pen button, and touch and hold on the screen. You can capture the screen, draw on it, and share it from anywhere with the pen.</string>
+    <string name="pen_help_gesture_capture_msg">To capture the screen, touch and hold on the screen while pressing the pen button</string>
+    <string name="tilt_tutorial_content">Touch and hold at two points, then tilt device back and forth to zoom in or out of screen</string>
+    <string name="motion_camera_short_cut_summary">Touch and hold the screen while rotating the device to open Camera</string>
+    <string name="learn_about_rotate_content">Holding the device straight, touch and hold the screen and rotate the device to open Camera</string>
+    <string name="learn_about_air_clip_content_snote">To copy and paste selected text or images into a new S Note, touch and hold the selection. Then move your other hand left above the sensor.</string>
+    <string name="accessibility_speak_password_summary">When Explore by touch is turned on, characters entered in password fields are read out by your phone</string>
+    <string name="set_quick_setting_button_summary">You can customize which quick settings buttons appear on top of the notification panel first. The top %1$d quick settings buttons are shown on the notification panel (%2$d in Landscape mode). Touch and hold then drag buttons to add or reorder them.</string>
+    <string name="flight_mode_enabled_toast">Unable to connect to mobile networks while Airplane mode is enabled. Disable Airplane mode and try again</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/lock_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/advanced_settings" />
+    <CheckBoxPreference android:title="@string/safety_zone_ask_confirmation" android:key="safety_zone_notification" android:summary="@string/safety_zone_ask_confirmation_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/finger_air_view_sound_and_haptic_feedback_title" android:key="vibrate" android:summary="@string/safety_zone_notification_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceCategory android:title="@string/safety_zone_location" android:key="safety_zone_location" />
+    <PreferenceScreen android:title="@string/safety_zone_add_current_location" android:key="safety_zone_add_current_location" android:summary="@string/safety_zone_add_current_location_summary" />
+</PreferenceScreen>

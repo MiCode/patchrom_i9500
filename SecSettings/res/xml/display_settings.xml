@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceScreen android:title="@string/wallpaper" android:key="wallpaper" android:fragment="com.android.settings_ex.WallpaperSettings" />
+    <PreferenceScreen android:title="@string/led_indicator_settings" android:key="led_indicator_settings" android:fragment="com.android.settings_ex.LedIndicatorSettings" />
+    <PreferenceScreen android:title="@string/notification_panel_title" android:key="notification_panel_edit" android:fragment="com.android.settings_ex.NotificationPanelMenu" />
+    <CheckBoxPreference android:title="@string/multi_window_title" android:key="key_multi_window" android:summary="@string/multi_window_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <SwitchPreferenceScreen android:title="@string/page_buddy" android:key="contextualpage_settings" android:summary="@string/page_buddy_summary" android:fragment="com.android.settings_ex.ContextualPageSettings" />
+    <PreferenceScreen android:title="@string/screen_mode_setting" android:key="screen_mode" android:summary="@string/screen_mode_summary" />
+    <com.android.settings_ex.BrightnessPreference android:title="@string/brightness" android:key="brightness" android:widgetLayout="@layout/round_more_icon" android:dialogTitle="@string/brightness" />
+    <CheckBoxPreference android:title="@string/accelerometer_title_second" android:key="accelerometer_second" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/accelerometer_title" android:key="accelerometer" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:persistent="false" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/screen_timeout_values" />
+    <SwitchPreferenceScreen android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.android.settings_ex.DreamSettings" />
+    <PreferenceCategory android:title="@string/features_category_title" android:key="features_category" />
+    <PreferenceScreen android:title="@string/smart_screen_title" android:key="smart_screen" android:fragment="com.android.settings_ex.smartscreen.SmartScreenSettings" />
+    <CheckBoxPreference android:title="@string/intelligent_rotation_title" android:key="intelligent_rotation" android:summary="@string/intelligent_rotation_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/intelligent_sleep_title" android:key="intelligent_sleep" android:summary="@string/intelligent_sleep_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <com.android.settings_ex.flipfont.FontListPreference android:title="@string/monotype_preference_title" android:key="MONOTYPE" android:summary="@string/monotype_preference_summary" android:widgetLayout="@layout/round_more_icon" />
+    <com.android.settings_ex.FontSizeListPreference android:entries="@array/entries_font_size" android:title="@string/title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:widgetLayout="@layout/round_more_icon" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <CheckBoxPreference android:title="@string/clear_font_title" android:key="clear_font" android:summary="@string/clear_font_summary" />
+    <ListPreference android:persistent="false" android:entries="@array/quick_launch_entries" android:title="@string/quick_launch_title" android:key="quick_launch" android:summary="@string/screen_quick_launch_summary" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/quick_launch_values" />
+    <CheckBoxPreference android:title="@string/sub_lcd_auto_lock" android:key="sub_lcd_auto_lock" android:summary="@string/sub_lcd_auto_lock_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/key_night_mode" android:key="key_night_mode" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:persistent="false" android:entries="@array/key_backlight_entries" android:title="@string/key_backlight" android:key="key_backlight" android:entryValues="@array/key_backlight_values" />
+    <ListPreference android:persistent="false" android:entries="@array/touch_key_light_entries" android:title="@string/touch_key_light" android:key="touch_key_light" android:summary="@string/touch_key_light_summary" android:entryValues="@array/touch_key_light_values" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/display_battery_percentage" android:key="display_battery_level" android:summary="@string/display_battery_percentage_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/edit_screen_capture_title" android:key="edit_screen_capture" android:summary="@string/edit_screen_capture_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/display_saving" android:key="power_saving_mode" android:summary="@string/display_saving_mode_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/auto_adjust_touch_title" android:key="auto_adjust_touch" android:summary="@string/auto_adjust_touch_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:title="@string/wifi_display_settings_title" android:key="wifi_display" android:fragment="com.android.settings_ex.wfd.WifiDisplaySettings" />
+</PreferenceScreen>

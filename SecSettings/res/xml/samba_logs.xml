@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/client_title" android:layout_width="fill_parent" android:layout_height="30.0dip" style="?android:attr/listSeparatorTextViewStyle" />
+    <LinearLayout android:id="@id/client_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ListView android:id="@id/listview_client" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/client_title" />
+    </LinearLayout>
+    <TextView android:id="@id/log_title" android:layout_width="fill_parent" android:layout_height="30.0dip" style="?android:attr/listSeparatorTextViewStyle" />
+    <LinearLayout android:id="@id/log_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@id/listview_client">
+        <ListView android:id="@id/listview_log" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/log_title" />
+    </LinearLayout>
+</LinearLayout>

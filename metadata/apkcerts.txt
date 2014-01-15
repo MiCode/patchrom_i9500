@@ -190,6 +190,7 @@ name="SecMediaProvider.apk" certificate="build/target/product/security/media.x50
 name="SecMms.apk" certificate="PRESIGNED" private_key=""
 name="SecNoteMyFiles.apk" certificate="PRESIGNED" private_key=""
 name="SecPhone.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
+name="StockSettings.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="SecSafetyAssurance.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="SecSettings.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="SecSettingsProvider.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"

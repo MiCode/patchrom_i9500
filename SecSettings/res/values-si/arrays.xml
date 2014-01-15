@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="touch_key_light_entries">
+        <item>තත්පර 1.5</item>
+        <item>තත්පර 6</item>
+        <item>සැමවිටම ක්‍රියාවිරහිතයි</item>
+        <item>සැමවිටම සක්‍රියයි</item>
+    </string-array>
+    <string-array name="clock_position_entries">
+        <item>මුදුන</item>
+        <item>මැද</item>
+        <item>පතුල</item>
+    </string-array>
+    <string-array name="contents_type_entries">
+        <item>පුවත්</item>
+        <item>කොටස්</item>
+        <item>Facebook</item>
+    </string-array>
+    <string-array name="contents_type_entries_weibo">
+        <item>පුවත්</item>
+        <item>කොටස්</item>
+        <item>Weibo</item>
+    </string-array>
+    <string-array name="sliding_speed_entries">
+        <item>සෙමින්</item>
+        <item>සාමාන්‍ය</item>
+        <item>වේගවත්</item>
+    </string-array>
+    <string-array name="facebook_auto_refresh_entries">
+        <item>නොමැත</item>
+        <item>සෑම විනාඩි 30කටම</item>
+        <item>සෑම පැය 1 කට</item>
+        <item>සෑම පැය 2කට වරක්</item>
+        <item>සෑම පැය 4</item>
+    </string-array>
+    <string-array name="bluetooth_class_of_device_entries">
+        <item>හෙඩ්සෙටය</item>
+        <item>PC</item>
+        <item>දුරකථනය</item>
+        <item>HID (යතුරු පුවරුව, මූසිකය, වෙනත්.)</item>
+        <item>සියලු උපාංග</item>
+    </string-array>
+    <string-array name="audio_output_entries">
+        <item>ස්ටී‍රියෝ</item>
+        <item>වටලෑම</item>
+    </string-array>
+</resources>

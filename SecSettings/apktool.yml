@@ -1,0 +1,15 @@
+version: 1.5.2
+apkFileName: SecSettings.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2
+  - 6
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '17'
+packageInfo:
+  cur_package: android
+  orig_package: com.android.settings_ex
+compressionType: false

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/main" android:background="@drawable/power_bg" android:layout_width="fill_parent" android:layout_height="@dimen/con_bg_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/btn_turnoff" android:background="@drawable/power_button" android:layout_width="@dimen/con_btn_turn_off_width" android:layout_height="wrap_content" android:layout_margin="@dimen/con_btn_turn_off_margin">
+        <ImageView android:id="@id/img_turnoff" android:layout_width="@dimen/con_img_icon_width" android:layout_height="@dimen/con_img_icon_height" android:layout_marginTop="@dimen/con_img_turn_off_marginTop" />
+        <TextView android:textSize="@dimen/con_btn_text_size" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/text_turnoff" android:layout_width="wrap_content" android:layout_height="@dimen/con_btn_turn_off_text_height" android:layout_marginLeft="@dimen/con_btn_turn_off_text_marginSide" android:layout_marginTop="@dimen/con_text_marginTop" android:layout_marginRight="@dimen/con_btn_turn_off_text_marginSide" android:text="@string/turn_off_all" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_wifi" android:layout_width="@dimen/con_btn_wifi_width" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_wifi" android:layout_width="@dimen/con_img_icon_width" android:layout_height="@dimen/con_img_icon_height" android:layout_marginTop="@dimen/con_img_icon_marginTop" />
+        <TextView android:textSize="@dimen/con_btn_text_size" android:ellipsize="marquee" android:id="@id/text_wifi" android:layout_width="wrap_content" android:layout_height="@dimen/con_text_height" android:layout_marginTop="@dimen/con_text_marginTop" android:text="@string/wifi_quick_toggle_title" />
+        <ImageView android:id="@id/ind_wifi" android:layout_width="@dimen/con_ind_wifi_width" android:layout_height="@dimen/con_ind_height" android:layout_marginTop="@dimen/con_ind_marginTop" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_bluetooth" android:layout_width="@dimen/con_btn_bluetooth_width" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_bluetooth" android:layout_width="@dimen/con_img_icon_width" android:layout_height="@dimen/con_img_icon_height" android:layout_marginTop="@dimen/con_img_icon_marginTop" />
+        <TextView android:textSize="@dimen/con_btn_text_size" android:ellipsize="marquee" android:id="@id/text_bluetooth" android:layout_width="wrap_content" android:layout_height="@dimen/con_text_height" android:layout_marginTop="@dimen/con_text_marginTop" android:text="@string/bluetooth_abb" />
+        <ImageView android:id="@id/ind_bluetooth" android:layout_width="@dimen/con_ind_bluetooth_width" android:layout_height="@dimen/con_ind_height" android:layout_marginTop="@dimen/con_ind_marginTop" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_data" android:layout_width="@dimen/con_btn_data_width" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_data" android:layout_width="@dimen/con_img_icon_width" android:layout_height="@dimen/con_img_icon_height" android:layout_marginTop="@dimen/con_img_icon_marginTop" />
+        <TextView android:textSize="@dimen/con_btn_text_size" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/text_data" android:layout_width="wrap_content" android:layout_height="@dimen/con_text_height" android:layout_marginTop="@dimen/con_text_marginTop" android:text="@string/data_size_label" />
+        <ImageView android:id="@id/ind_data" android:layout_width="@dimen/con_ind_data_width" android:layout_height="@dimen/con_ind_height" android:layout_marginTop="@dimen/con_ind_marginTop" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_gps" android:layout_width="@dimen/con_btn_gps_width" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_gps" android:layout_width="@dimen/con_img_icon_width" android:layout_height="@dimen/con_img_icon_height" android:layout_marginTop="@dimen/con_img_icon_marginTop" />
+        <TextView android:textSize="@dimen/con_btn_text_size" android:ellipsize="marquee" android:id="@id/text_gps" android:layout_width="wrap_content" android:layout_height="@dimen/con_text_height" android:layout_marginTop="@dimen/con_text_marginTop" android:text="@string/usage_type_gps" />
+        <ImageView android:id="@id/ind_gps" android:layout_width="@dimen/con_ind_gps_width" android:layout_height="@dimen/con_ind_height" android:layout_marginLeft="@dimen/con_ind_marginLeft" android:layout_marginTop="@dimen/con_ind_marginTop" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/btn_sync" android:layout_width="@dimen/con_btn_sync_width" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_sync" android:layout_width="@dimen/con_img_icon_width" android:layout_height="@dimen/con_img_icon_height" android:layout_marginTop="@dimen/con_img_icon_marginTop" />
+        <TextView android:textSize="@dimen/con_btn_text_size" android:ellipsize="marquee" android:id="@id/text_sync" android:layout_width="wrap_content" android:layout_height="@dimen/con_text_height" android:layout_marginTop="@dimen/con_text_marginTop" android:text="@string/btn_sync" />
+        <ImageView android:id="@id/ind_sync" android:layout_width="@dimen/con_ind_sync_width" android:layout_height="@dimen/con_ind_height" android:layout_marginTop="@dimen/con_ind_marginTop" android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

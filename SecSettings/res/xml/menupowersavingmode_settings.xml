@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/power_saving_mode_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/power_saving_mode_setting" android:key="power_saving_mode_setting" />
+    <CheckBoxPreference android:title="@string/power_saving_cpu" android:key="power_saving_cpu" android:summary="@string/power_saving_cpu_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/power_saving_display" android:key="power_saving_display" android:summary="@string/power_saving_display_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/power_saving_background_colour" android:key="power_saving_background_color" android:summary="@string/power_saving_background_colour_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/power_saving_haptic" android:key="power_saving_haptic" android:summary="@string/power_saving_haptic_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

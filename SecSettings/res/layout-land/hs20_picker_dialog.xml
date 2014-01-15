@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/hs20_picker_dialog_btn_panel" android:layout_width="fill_parent" android:layout_height="49.0dip" android:minHeight="54.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:background="#ffacb0b2" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip" android:measureWithLargestChild="true" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" style="?android:attr/buttonBarStyle">
+            <LinearLayout android:orientation="horizontal" android:id="@id/leftSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+            <Button android:layout_gravity="start" android:id="@id/hs20_picker_dialog_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:maxLines="2" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <Button android:layout_gravity="end" android:id="@id/hs20_picker_dialog_scan" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wifi_menu_scan" android:maxLines="2" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rightSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/hs20_picker_dialog_devider" android:background="@drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/hs20_picker_dialog_btn_panel" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/hs20_picker_dialog_devider" android:layout_alignParentTop="true">
+        <fragment android:id="@id/hs20_picker_dialog_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" class="com.android.settings_ex.wifi.Hs20Settings" />
+    </FrameLayout>
+</RelativeLayout>

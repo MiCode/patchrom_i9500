@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <ImageView android:id="@*android:id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/left" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="@string/right" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.sec.android.touchwiz.widget.TwSeekBarSplit android:id="@id/seekbar" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="14.0dip" android:progressDrawable="@drawable/audio_balance_progress" android:layout_centerVertical="true" />
+</LinearLayout>

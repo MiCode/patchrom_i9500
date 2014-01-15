@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/all_details" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/backup_size_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_comment" />
+        <TextView android:id="@id/selected_backup_data_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/backup_size_title" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:textSize="15.0dip" android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/shared_data_header" android:layout_marginTop="8.0dip" android:text="@string/shared_data" style="?android:attr/listSeparatorTextViewStyle" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0dip" android:id="@id/backup_shared_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_shared_data" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/checkbox_shared" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:id="@id/shared_zone_path_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_path_music" />
+            <TextView android:id="@id/shared_zone_path_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_path_photo" />
+            <TextView android:id="@id/shared_zone_path_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_path_video" />
+            <TextView android:id="@id/shared_zone_path_documents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_path_documents" />
+            <TextView android:id="@id/shared_zone_path_files" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_path_files" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/private_data_header" android:layout_marginTop="8.0dip" android:text="@string/private_data" style="?android:attr/listSeparatorTextViewStyle" />
+            <RelativeLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0dip" android:id="@id/backup_private_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_private_data" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/checkbox_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:layout_gravity="center" android:id="@id/StartBackupButton" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/start_backup" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/homesync_account_mgmt_description" />
+    <include android:id="@id/header_admin" layout="@android:layout/preference_category" />
+    <include android:id="@id/admin" layout="@layout/homesync_account_management_row" />
+    <include android:id="@id/header_guest" layout="@android:layout/preference_category" />
+    <ListView android:id="@id/manage_account_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

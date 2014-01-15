@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <com.android.settings_ex.WrappingSwitchPreference android:persistent="true" android:title="@string/location_access_title" android:key="location_toggle" android:summary="@string/location_access_summary" />
+    <PreferenceCategory android:title="@string/location_sources_heading" android:key="location_sources" />
+    <Preference android:title="@string/location_e911" android:key="location_e911" android:summary="@string/location_e911_description" style="?android:preferenceInformationStyle" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/location_vzw" android:key="location_vzw" android:summary="@string/location_vzw_description" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="location_toggle" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/location_3rdparty_gps" android:key="location_vzw_gps" android:summary="@string/location_3rdparty_gps_vzw_description" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="location_toggle" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/location_vzw_network_based" android:key="location_vzw_network" android:summary="@string/location_vzw_neighborhood_level" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="location_toggle" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/location_gps" android:key="location_gps" android:summary="@string/location_street_level" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="location_toggle" />
+    <com.android.settings_ex.WrappingCheckBoxPreference android:persistent="false" android:title="@string/location_network_based" android:key="location_network" android:summary="@string/location_neighborhood_level" android:dependency="location_toggle" />
+    <SwitchPreferenceScreen android:title="@string/location_logs" android:key="location_history" android:summary="@string/summary_location_logs" android:defaultValue="true">
+        <intent android:action="android.intent.action.LocationLog" />
+    </SwitchPreferenceScreen>
+    <CheckBoxPreference android:title="@string/assisted_gps" android:key="assisted_gps" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:summaryOn="@string/assisted_gps_enabled" android:summaryOff="@string/assisted_gps_disabled" />
+    <PreferenceCategory android:title="@string/myplace_heading" android:key="place" />
+    <PreferenceScreen android:title="@string/myplace_title" android:key="key_my_place" android:summary="@string/myplace_menu_summary" android:fragment="com.android.settings_ex.myplace.MyPlaceSettings" />
+</PreferenceScreen>

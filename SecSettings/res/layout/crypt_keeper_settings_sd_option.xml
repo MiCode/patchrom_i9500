@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="bottom|left|center" android:id="@id/desc" android:padding="0.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/yes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sdcard_yes" android:layout_weight="1.0" />
+        <Button android:id="@id/no" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sdcard_no" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

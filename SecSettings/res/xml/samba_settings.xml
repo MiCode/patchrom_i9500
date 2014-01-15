@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex">
+    <com.android.settings_ex.samba.MultipleLineTitlePreference android:title="@string/samba_msg" android:key="samba_name" />
+    <PreferenceCategory android:title="@string/samba_server_info" android:key="category_samba_server_info" />
+    <PreferenceScreen android:title="@string/samba_netbios_name" android:key="samba_netbios_name" />
+    <PreferenceScreen android:title="@string/samba_network" android:key="samba_network" android:summary="" />
+    <PreferenceCategory android:title="@string/samba_access_from_pc" android:key="samba_access_from_pc" />
+    <PreferenceScreen android:title="@string/samba_support_windowos" android:key="samba_windowos" android:summary="@string/samba_windowos_plan" />
+</PreferenceScreen>

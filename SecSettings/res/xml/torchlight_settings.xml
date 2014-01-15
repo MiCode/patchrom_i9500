@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/torchlight_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings_ex"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:persistent="false" android:title="@string/torchlight_settings" android:key="torchlight_enable" android:summary="@string/torchlight_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:persistent="false" android:entries="@array/torchlight_timeout_entries" android:title="@string/torchlight_timeout_title" android:key="torchlight_timeout" android:summary="@string/torchlight_timeout_summary" android:widgetLayout="@layout/round_more_icon" android:dependency="torchlight_enable" android:entryValues="@array/torchlight_timeout_values" />
+</PreferenceScreen>

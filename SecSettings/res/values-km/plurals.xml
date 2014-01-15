@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">ឥឡូវ អ្នក​នៅ​សល់ %d ជំហាន​ទៀត​ពី​ការក្លាយ​ជា​អភិវឌ្ឍនករ</item>
+        <item quantity="one">ឥឡូវ អ្នក​នៅ​សល់ 1 ជំហាន​ទៀត​ពី​ការក្លាយ​ជា​អភិវឌ្ឍនករ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច %d អក្សរ</item>
+        <item quantity="one">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច 1 អក្សរ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច %d អក្សរ​តូច</item>
+        <item quantity="one">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច 1 អក្សរ​តូច</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច %d អក្សរ​ធំ</item>
+        <item quantity="one">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច 1 អក្សរ​ធំ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច​លេខ %d ខ្ទង់</item>
+        <item quantity="one">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច​លេខ 1 ខ្ទង់</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច %d និមិត្ត​សញ្ញា</item>
+        <item quantity="one">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច 1 និមិត្ត​សញ្ញា</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច​លេខ ឬ និមិត្ត​សញ្ញា %d</item>
+        <item quantity="one">ពាក្យ​សម្ងាត់​ត្រូវ​តែ​មាន​យ៉ាង​តិច​លេខ ឬ និមិត្ត​សញ្ញា 1</item>
+    </plurals>
+    <plurals name="lock_timeout_minutes">
+        <item quantity="other">%d នាទី</item>
+        <item quantity="one">1 នាទី</item>
+    </plurals>
+    <plurals name="lock_timeout_seconds">
+        <item quantity="other">%d វិនាទី</item>
+        <item quantity="one">1 វិនាទី</item>
+    </plurals>
+</resources>
