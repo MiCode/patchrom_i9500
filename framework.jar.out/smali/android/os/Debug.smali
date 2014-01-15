@@ -1454,7 +1454,12 @@
     return-void
 .end method
 
-.method public static native saveDumpstate(Ljava/lang/String;)V
+.method public static native saveDumpState(Ljava/lang/String;)V
+.end method
+
+.method public static saveDumpstate(Ljava/lang/String;)V
+    .locals 0
+    return-void
 .end method
 
 .method public static setAllocationLimit(I)I

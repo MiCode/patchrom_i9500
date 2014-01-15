@@ -45,6 +45,7 @@ local-pre-zip-misc:
 		$(AAPT) d --values resources $$apk | grep 'id=127 packageCount' | sed -e "s/^.*name=//" >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt; \
 	done
 	rm -rf $(ZIP_DIR)/system/media/audio/ui/PowerOn.ogg
+	sed -i 's/saveDumpstate/saveDumpState/g' $(ZIP_DIR)/system/lib/libandroid_runtime.so
 
 %.sign-plat : out/%
 	java -jar $(TOOL_DIR)/signapk.jar $(PORT_ROOT)/build/security/platform.x509.pem $(PORT_ROOT)/build/security/platform.pk8  $< $<.signed
