@@ -34,6 +34,7 @@ local-pre-zip-misc:
 	rm -rf $(ZIP_DIR)/system/csc/TGY/system/app/*
 	rm -rf $(ZIP_DIR)/system/containers/*
 	cp -rf other/system $(ZIP_DIR)/
+	cp -r other/StockSettings.apk $(ZIP_DIR)/system/app
 	cp -f stockrom/system/bin/installd $(ZIP_DIR)/system/bin/installd
 	cp -rf stockrom/system/app/mcRegistry $(ZIP_DIR)/system/app/mcRegistry
 	cp -f stockrom/system/app/FFFFFFFF000000000000000000000001.drbin $(ZIP_DIR)/system/app/FFFFFFFF000000000000000000000001.drbin
