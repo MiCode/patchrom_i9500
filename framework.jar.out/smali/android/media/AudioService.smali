@@ -470,6 +470,8 @@
 
 .field private pIdOfsetVolume:[I
 
+.field private mVolumeUpdateHandler:Landroid/os/Handler;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -1218,6 +1220,12 @@
 
     iput-object v0, p0, Landroid/media/AudioService;->mVolumePanel:Lmiui/view/VolumePanel;
 
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+    iput-object v0, p0, Landroid/media/AudioService;->mVolumeUpdateHandler:Landroid/os/Handler;
+ 
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/media/AudioService;->mMode:I
@@ -10630,7 +10638,7 @@
 
     const/16 v2, 0x40
 
-    invoke-direct {p0, v0, v9, v1, v2}, Landroid/media/AudioService;->sendVolumeUpdate(IIII)V
+    invoke-direct {p0, v0, v9, v1, v2}, Landroid/media/AudioService;->handleSendVolumeUpdate(IIII)V
 
     .line 4877
     if-nez v7, :cond_a
@@ -21821,4 +21829,47 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     goto :goto_0
+.end method
+
+.method private handleSendVolumeUpdate(IIII)V
+    .locals 7
+    .parameter "streamType"
+    .parameter "oldIndex"
+    .parameter "index"
+    .parameter "flags"
+
+    .prologue
+    iget-object v6, p0, Landroid/media/AudioService;->mVolumeUpdateHandler:Landroid/os/Handler;
+
+    new-instance v0, Landroid/media/AudioService$VolumeUpdateRunnable;
+
+    move-object v1, p0
+
+    move v2, p1
+
+    move v3, p2
+
+    move v4, p3
+
+    move v5, p4
+
+    invoke-direct/range {v0 .. v5}, Landroid/media/AudioService$VolumeUpdateRunnable;-><init>(Landroid/media/AudioService;IIII)V
+
+    invoke-virtual {v6, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method static synthetic access$sendVolumeUpdate(Landroid/media/AudioService;IIII)V
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+    .parameter "x2"
+    .parameter "x3"
+    .parameter "x4"
+
+    .prologue
+    invoke-direct {p0, p1, p2, p3, p4}, Landroid/media/AudioService;->sendVolumeUpdate(IIII)V
+
+    return-void
 .end method
