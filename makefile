@@ -10,7 +10,7 @@ local-previous-target-dir := ~/ota_test/i9500
 
 local-density := XXHDPI
 
-local-miui-modified-apps := Phone MiuiHome 
+local-miui-modified-apps := Phone MiuiHome MiuiSystemUI 
 
 local-miui-removed-apps := SettingsProvider MediaProvider
 

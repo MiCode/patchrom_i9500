@@ -47,3 +47,6 @@ if [ $1 = "MiuiHome" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
 fi
 
+if [ $1 = "MiuiSystemUI" ];then
+	$XMLMERGYTOOL $1/res/values $2/res/values
+fi
