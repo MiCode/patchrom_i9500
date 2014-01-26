@@ -2485,7 +2485,7 @@
     .line 2371
     const/16 v1, 0xb
 
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
+    #invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
 
     .line 2379
     :goto_0

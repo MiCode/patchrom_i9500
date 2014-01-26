@@ -491,25 +491,25 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "TW_Touch.ogg"
+    const-string v1, "Effect_Tick.ogg"
 
     aput-object v1, v0, v3
 
-    const-string v1, "TW_SIP.ogg"
+    const-string v1, "KeypressStandard.ogg"
 
     aput-object v1, v0, v4
 
-    const-string v1, "TW_Silent_mode_off.ogg"
+    const-string v1, "KeypressSpacebar.ogg"
 
     aput-object v1, v0, v5
 
-    const-string v1, "S_HW_Touch.ogg"
+    const-string v1, "KeypressDelete.ogg"
 
     aput-object v1, v0, v6
 
     const/4 v1, 0x4
 
-    const-string v2, "Highlight.ogg"
+    const-string v2, "KeypressReturn.ogg"
 
     aput-object v2, v0, v1
 
