@@ -45477,7 +45477,7 @@
 
     move-result v1
 
-    or-int/2addr p3, v1
+    or-int p3, p3, v1
 
     const/16 v1, 0x7d0
 
