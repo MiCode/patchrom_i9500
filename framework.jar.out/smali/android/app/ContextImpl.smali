@@ -706,7 +706,8 @@
 
     invoke-static {v2, v3}, Landroid/app/ContextImpl;->registerService(Ljava/lang/String;Landroid/app/ContextImpl$ServiceFetcher;)V
 
-    .line 829
+    invoke-static {}, Landroid/app/ContextImpl;->registerMiuiServices()V
+
     return-void
 .end method
 
@@ -1773,6 +1774,21 @@
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
+.end method
+
+.method static registerMiuiServices()V
+    .locals 2
+
+    .prologue
+    const-string v0, "security"
+
+    new-instance v1, Landroid/app/ContextImpl$41;
+
+    invoke-direct {v1}, Landroid/app/ContextImpl$41;-><init>()V
+
+    invoke-static {v0, v1}, Landroid/app/ContextImpl;->registerService(Ljava/lang/String;Landroid/app/ContextImpl$ServiceFetcher;)V
+
+    return-void
 .end method
 
 .method private registerReceiverInternal(Landroid/content/BroadcastReceiver;ILandroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;Landroid/content/Context;)Landroid/content/Intent;
