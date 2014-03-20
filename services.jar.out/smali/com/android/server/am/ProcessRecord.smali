@@ -233,6 +233,8 @@
 
 .field shortStringName:Ljava/lang/String;
 
+.field startedViaBroadcast:Z
+
 .field starting:Z
 
 .field stringName:Ljava/lang/String;
