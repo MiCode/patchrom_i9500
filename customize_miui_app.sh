@@ -41,6 +41,7 @@ function mergyXmlPart() {
 
 if [ $1 = "Phone" ];then
 	applyPatch $1 $2
+    appendSmaliPart $1
 fi
 
 if [ $1 = "MiuiHome" ];then
