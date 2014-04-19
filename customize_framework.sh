@@ -92,3 +92,7 @@ then
 	applyPatch "android.policy"
 fi
 
+if [ $2 = "$BUILD_OUT/telephony-common" ]
+then
+	./fixIccCard.sh $2
+fi
