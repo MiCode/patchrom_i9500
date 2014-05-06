@@ -40,10 +40,16 @@ local-pre-zip-misc:
 	cp -f stockrom/system/app/FFFFFFFF000000000000000000000001.drbin $(ZIP_DIR)/system/app/FFFFFFFF000000000000000000000001.drbin
 	mv $(ZIP_DIR)/system/framework/framework_ext.jar $(ZIP_DIR)/system/framework/framework2.jar &
 	sed -i '/# end build properties/r other/customize.prop' $(ZIP_DIR)/system/build.prop
-	find "$(ZIP_DIR)/data/media/preinstall_apps/" -name "*.apk" | wc -l > $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
-	for apk in $(ZIP_DIR)/data/media/preinstall_apps/*.apk; do \
-		$(AAPT) d --values resources $$apk | grep 'id=127 packageCount' | sed -e "s/^.*name=//" >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt; \
+	rm -f $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
+	for apk in $(ZIP_DIR)/data/miui/preinstall_apps/*.apk; do \
+		$(AAPT) d --values resources $$apk | grep 'id=127 packageCount' | sed -e "s/^.*name=//" >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages_tmp.txt; \
 	done
+	for apk in $(ZIP_DIR)/data/miui/cust/preinstall_apps/*.apk; do \
+		$(AAPT) d --values resources $$apk | grep 'id=127 packageCount' | sed -e "s/^.*name=//" >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages_tmp.txt; \
+	done
+	cat $(ZIP_DIR)/system/etc/enforcecopyinglibpackages_tmp.txt | wc -l > $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
+	cat $(ZIP_DIR)/system/etc/enforcecopyinglibpackages_tmp.txt >> $(ZIP_DIR)/system/etc/enforcecopyinglibpackages.txt
+	rm -f $(ZIP_DIR)/system/etc/enforcecopyinglibpackages_tmp.txt
 	rm -rf $(ZIP_DIR)/system/media/audio/ui/PowerOn.ogg
 	sed -i 's/saveDumpstate/saveDumpState/g' $(ZIP_DIR)/system/lib/libandroid_runtime.so
 
