@@ -136,7 +136,8 @@
 
     invoke-interface {v0, p2, p3}, Landroid/webkit/WebViewProvider;->updateSelectPopupRsrc(Landroid/util/AttributeSet;I)V
 
-    .line 519
+    invoke-static {p1}, Lmiui/content/res/ThemeFontChangeHelper;->markWebViewCreated(Landroid/content/Context;)V
+
     return-void
 .end method
 
