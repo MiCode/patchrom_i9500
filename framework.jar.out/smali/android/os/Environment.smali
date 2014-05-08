@@ -587,7 +587,7 @@
 
     invoke-interface {v0, v3}, Landroid/os/storage/IMountService;->getVolumeState(Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v3
 
@@ -601,7 +601,7 @@
     move-exception v2
 
     .line 594
-    .local v2, rex:Landroid/os/RemoteException;
+    .local v2, rex:Ljava/lang/Exception;
     const-string v3, "Environment"
 
     new-instance v4, Ljava/lang/StringBuilder;
