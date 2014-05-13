@@ -6394,9 +6394,9 @@
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHomeKeyTriggered:Z
+    #iget-boolean v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHomeKeyTriggered:Z
 
-    if-nez v0, :cond_0
+    #if-nez v0, :cond_0
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mCameraKeyTriggered:Z
 
