@@ -1,5 +1,5 @@
 
-local-phone-apps := ApplicationsProvider DefaultContainerService \
+local-phone-apps := ApplicationsProvider DefaultContainerService CertInstaller \
 					SecSettingsProvider SecMediaProvider \
 					UserDictionaryProvider \
 					SamsungChineseIME SamsungIME \
